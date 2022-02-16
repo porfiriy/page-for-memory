@@ -1,0 +1,28 @@
+body {
+   width: 360px;
+   margin: 0 auto;
+   height: 800px;
+}
+
+.wrapper {
+   display: flex;
+   justify-content: center;
+   border: 3px solid red;
+   background: rgb(255, 255, 255);
+   width: 360px;
+   margin: 0 auto;
+   height: 800px;
+}
+.main {
+   justify-content: center;
+   align-items: center;
+}
+.logo {
+   margin: 235px 12px 0 12px;
+   max-width: 336px;
+}
+.title {
+   text-align: center;
+   font-size: 24px;
+   color: #ffb017;
+}
