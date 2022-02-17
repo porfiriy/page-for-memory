@@ -74,10 +74,10 @@ h6 {
 }
 
 body {
+   border: 3px solid green;
    background: white;
    max-width: 360px;
    margin: 0 auto;
-   max-height: 800px;
 }
 
 .wrapper {
@@ -87,7 +87,6 @@ body {
    background: rgb(255, 255, 255);
    max-width: 360px;
    margin: 0 auto;
-   max-height: 800px;
 }
 .main {
    justify-content: center;
