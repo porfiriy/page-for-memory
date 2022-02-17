@@ -74,12 +74,14 @@ h6 {
 }
 
 body {
-   width: 360px;
+   background: white;
+   max-width: 360px;
    margin: 0 auto;
-   height: 800px;
+   max-height: 800px;
 }
 
 .wrapper {
+   border: 3px solid RED;
    display: flex;
    justify-content: center;
    background: rgb(255, 255, 255);
