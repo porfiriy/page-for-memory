@@ -75,18 +75,33 @@ h6 {
 
 body {
    border: 3px solid green;
-   background: white;
-   max-width: 768vw;
-   margin: 0 auto;
+   background-color: rgb(255, 255, 255);
 }
 
 .logo {
-   margin: 235px 12px 0 12px;
+   margin: 250px 0 0 115px;
+
    max-width: 94%;
 }
 .title {
-   margin: 300px 0 0 0;
+   margin: 100px 0 154px 0;
    text-align: center;
-   font-size: 24px;
+   font-size: 48px;
+   font-style: normal;
+   font-family: "Raleway";
+   font-weight: 700;
    color: #ffb017;
+}
+
+.text-loading {
+   font-family: "Roboto";
+   color: black;
+   font-style: normal;
+   font-weight: 500;
+   font-size: 24px;
+   line-height: 28px;
+   margin: 0px 0 0 154px;
+}
+.text-loading::after {
+   content: "...";
 }
