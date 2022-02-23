@@ -74,18 +74,15 @@ h6 {
 }
 
 body {
-   border: 3px solid green;
    background-color: rgb(255, 255, 255);
 }
 
 .logo {
-   margin: 250px 0 0 115px;
-
+   margin: 40% 0% 0 30%;
    max-width: 94%;
 }
 .title {
-   margin: 100px 0 154px 0;
-   text-align: center;
+   margin: 40% 0 40% 27%;
    font-size: 48px;
    font-style: normal;
    font-family: "Raleway";
@@ -94,13 +91,14 @@ body {
 }
 
 .text-loading {
+   display: block;
    font-family: "Roboto";
+   margin: 0 0 0 40%;
    color: black;
    font-style: normal;
    font-weight: 500;
    font-size: 24px;
    line-height: 28px;
-   margin: 0px 0 0 154px;
 }
 .text-loading::after {
    content: "...";
