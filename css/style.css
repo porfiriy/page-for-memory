@@ -87,7 +87,7 @@ body {
 }
 .title {
    font-size: 48px;
-   margin: 0 0 150px 0;
+   margin: 70px 0 150px 0;
    font-style: normal;
    font-family: "Raleway";
    font-weight: 700;
@@ -97,7 +97,7 @@ body {
 .text-loading {
    display: block;
    font-family: "Roboto";
-   margin: 0 0 94px 0;
+   margin: 0 0 94px 10px;
    color: black;
    font-style: normal;
    font-weight: 600;
