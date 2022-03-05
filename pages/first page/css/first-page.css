@@ -1,0 +1,150 @@
+* {
+   padding: 0;
+   margin: 0;
+   border: 0;
+}
+*,
+*:before,
+*:after {
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+}
+:focus,
+:active {
+   outline: none;
+}
+a:focus,
+a:active {
+   outline: none;
+}
+nav,
+footer,
+header,
+aside {
+   display: block;
+}
+html,
+body {
+   height: 100%;
+   width: 100%;
+   font-size: 100%;
+   line-height: 1;
+   font-size: 14px;
+   -ms-text-size-adjust: 100%;
+   -moz-text-size-adjust: 100%;
+   -webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+   font-family: inherit;
+}
+input::-ms-clear {
+   display: none;
+}
+button {
+   cursor: pointer;
+}
+button::-moz-focus-inner {
+   padding: 0;
+   border: 0;
+}
+a,
+a:visited {
+   text-decoration: none;
+}
+a:hover {
+   text-decoration: none;
+}
+ul li {
+   list-style: none;
+}
+img {
+   vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-size: inherit;
+   font-weight: 400;
+}
+
+.language {
+   margin: 10px 0 10px 0;
+   text-align: center;
+   padding: 10px;
+   font-size: 24px;
+   border-radius: 20px;
+   width: 204px;
+   height: 41px;
+   background-color: #c4c4c4;
+}
+body {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.title {
+   margin: 70px 0 40px 0;
+   color: #ffb017;
+   font-size: 24px;
+}
+.subtitle {
+   font-size: 24px;
+   margin: 0 0 20px 0;
+}
+.language:nth-child(1) {
+   background-image: url(/page-for-memory/img/flag-ssha.svg);
+   background-repeat: no-repeat;
+   background-position-x: 155px;
+   background-position-y: center;
+}
+
+.language:nth-child(2) {
+   background-image: url(/page-for-memory/img/Flag_of_Russia.svg);
+   background-repeat: no-repeat;
+   background-position-x: 155px;
+   background-position-y: center;
+}
+
+.language:nth-child(3) {
+   background-image: url(/page-for-memory/img/flag-china.svg);
+   background-repeat: no-repeat;
+   background-position-x: 155px;
+   background-position-y: center;
+}
+
+.language:nth-child(4) {
+   background-image: url(/page-for-memory/img/flag-spanish.svg);
+   background-repeat: no-repeat;
+   background-position-x: 155px;
+   background-position-y: center;
+}
+
+.language:nth-child(5) {
+   background-image: url(/page-for-memory/img/flag-franc.svg);
+   background-repeat: no-repeat;
+   background-position-x: 155px;
+   background-position-y: center;
+}
+
+.firstPageButton {
+   background-image: url(/page-for-memory/img/Arrow-button.svg);
+   background-size: 34px;
+   background-repeat: no-repeat;
+   background-position-x: 123px;
+   background-position-y: center;
+   font-weight: bold;
+   width: 170px;
+   height: 57px;
+
+   background-color: black;
+   color: #ffb017;
+   border-radius: 30px;
+   font-size: 24px;
+   margin: 60px 0 40px 0;
+}
