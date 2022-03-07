@@ -73,25 +73,71 @@ h6 {
    font-weight: 400;
 }
 
+.language {
+   margin: 15px 0 10px 0;
+   text-align: center;
+   padding: 7px 20px 0 0px;
+   font-size: 24px;
+   border-radius: 20px;
+   width: 204px;
+   height: 41px;
+   background-color: #c4c4c4;
+}
 body {
    display: flex;
    flex-direction: column;
    align-items: center;
 }
-img {
-   margin: 40px 0 0 0;
-}
-.text-description {
-   font-size: 34px;
+.title {
+   text-align: center;
+   margin: 70px 0 40px 0;
    color: transparent;
    -webkit-background-clip: text;
    background-clip: text;
    background-image: linear-gradient(to right, rgb(255, 136, 0), rgb(243, 227, 5));
-   height: 107px;
-   width: 290px;
-   text-align: center;
-   margin: 60px 0 0 0;
+   font-size: 24px;
+   font-weight: 700;
 }
+.subtitle {
+   text-align: center;
+   font-size: 24px;
+   margin: 15px 25% 40px 25%;
+}
+.language:nth-child(1) {
+   background-image: url(/page-for-memory/img/flag-ssha.svg);
+   background-repeat: no-repeat;
+   background-position-x: 155px;
+   background-position-y: center;
+}
+
+.language:nth-child(2) {
+   background-image: url(/page-for-memory/img/Flag_of_Russia.svg);
+   background-repeat: no-repeat;
+   background-position-x: 155px;
+   background-position-y: center;
+}
+
+.language:nth-child(3) {
+   background-image: url(/page-for-memory/img/flag-china.svg);
+   background-repeat: no-repeat;
+   background-position-x: 155px;
+   background-position-y: center;
+}
+
+.language:nth-child(4) {
+   background-image: url(/page-for-memory/img/flag-spanish.svg);
+   background-repeat: no-repeat;
+   background-position-x: 155px;
+   background-position-y: center;
+}
+
+.language:nth-child(5) {
+   background-image: url(/page-for-memory/img/flag-franc.svg);
+   background-repeat: no-repeat;
+   background-position-x: 155px;
+   background-position-y: center;
+}
+
 .firstPageButton {
    display: block;
    background-image: url(/page-for-memory/img/Arrow-button.svg);
@@ -108,7 +154,7 @@ img {
    color: #ffaa00;
    border-radius: 30px;
    font-size: 24px;
-   margin: 70px 7% 20px 7%;
+   margin: 100px 7% 20px 7%;
    padding: 15px 10px 0 0;
    border: none;
 }
