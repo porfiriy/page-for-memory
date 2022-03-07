@@ -85,14 +85,6 @@ body {
    max-width: 94%;
    margin: 222px 0px 0 5px;
 }
-.title {
-   font-size: 48px;
-   margin: 70px 0 150px 0;
-   font-style: normal;
-   font-family: "Raleway";
-   font-weight: 700;
-   color: #ffb017;
-}
 
 .text-loading {
    display: block;
