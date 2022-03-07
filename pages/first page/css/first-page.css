@@ -103,11 +103,6 @@ body {
    font-size: 24px;
    margin: 15px 25% 40px 25%;
 }
-.hint {
-   display: block;
-   font-size: 20px;
-   text-align: center;
-}
 .language:nth-child(1) {
    background-image: url(/page-for-memory/img/flag-ssha.svg);
    background-repeat: no-repeat;
@@ -157,11 +152,13 @@ body {
    color: #ffaa00;
    border-radius: 30px;
    font-size: 24px;
-   margin: 100px 7% 10px 7%;
+   margin: 100px 7% 20px 7%;
    border: none;
 }
 
 .firstPageButton:active {
    border: none;
-   color: #c4c4c4;
+   color: #ffbb00;
+   background-color: rgb(207, 204, 29);
+   box-shadow: 3px 2px 1px rgb(165, 107, 32);
 }
