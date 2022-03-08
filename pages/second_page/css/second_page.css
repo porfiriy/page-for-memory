@@ -78,8 +78,12 @@ body {
    flex-direction: column;
    align-items: center;
 }
+.comeback-button {
+   display: block;
+   margin: 15px 85% 0 0%;
+}
 img {
-   margin: 40px 0 0 0;
+   margin: 0px 0 0 0;
 }
 .text-description {
    font-size: 34px;
@@ -90,7 +94,7 @@ img {
    height: 107px;
    width: 290px;
    text-align: center;
-   margin: 60px 0 0 0;
+   margin: 40px 0 0 0;
 }
 .firstPageButton {
    display: block;
@@ -108,7 +112,7 @@ img {
    color: #ffaa00;
    border-radius: 30px;
    font-size: 24px;
-   margin: 70px 7% 20px 7%;
+   margin: 55px 7% 20px 7%;
    padding: 15px 10px 0 0;
    border: none;
 }
