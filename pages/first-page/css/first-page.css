@@ -74,7 +74,7 @@ h6 {
 }
 
 .language {
-   margin: 15px 0 10px 0;
+   margin: 25px 0 10px 0;
    text-align: center;
    padding: 7px 20px 0 0px;
    font-size: 24px;
@@ -101,13 +101,14 @@ body {
 .subtitle {
    text-align: center;
    font-size: 24px;
-   margin: 15px 25% 40px 25%;
+   margin: 15px 25% 70px 25%;
 }
 .language:nth-child(1) {
    background-image: url(/page-for-memory/img/flag-ssha.svg);
    background-repeat: no-repeat;
    background-position-x: 155px;
    background-position-y: center;
+   margin: 50px 0 0 0;
 }
 
 .language:nth-child(2) {
@@ -154,7 +155,7 @@ body {
    color: #ffaa00;
    border-radius: 30px;
    font-size: 24px;
-   margin: 140px 7% 20px 7%;
+   margin: 180px 7% 20px 7%;
    padding: 15px 10px 0 0;
    border: none;
 }
