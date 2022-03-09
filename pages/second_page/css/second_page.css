@@ -74,30 +74,34 @@ h6 {
 }
 
 body {
+   border: 3px solid red;
    display: flex;
    flex-direction: column;
    align-items: center;
 }
 .comeback-button {
+   border: 3px solid red;
    display: block;
    margin: 15px 85% 0 0%;
 }
 img {
+   border: 3px solid red;
    margin: 0px 0 0 0;
 }
 .text-description {
    font-size: 34px;
-
+   border: 3px solid red;
    color: transparent;
    -webkit-background-clip: text;
    background-clip: text;
    background-image: linear-gradient(to right, rgb(255, 136, 0), rgb(243, 227, 5));
-   height: 167px;
-   width: 290px;
+   height: 197px;
+   width: 340px;
    text-align: center;
    margin: 60px 0 0 0;
 }
 .firstPageButton {
+   border: 3px solid red;
    display: block;
    background-image: url(/page-for-memory/img/Arrow-button.svg);
    background-size: 34px;
@@ -113,7 +117,7 @@ img {
    color: #ffaa00;
    border-radius: 30px;
    font-size: 24px;
-   margin: 155px 7% 20px 7%;
+   margin: 175px 7% 20px 7%;
    padding: 15px 10px 0 0;
    border: none;
 }
