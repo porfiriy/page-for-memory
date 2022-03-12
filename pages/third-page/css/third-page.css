@@ -79,6 +79,7 @@ body {
    flex-direction: column;
    align-items: center;
 }
+
 .comeback-button {
    display: block;
    margin: 15px 85% 0 0%;
@@ -86,19 +87,40 @@ body {
 img {
    margin: 0px 0 0 0;
 }
-.text-description {
-   font-size: 34px;
 
-   color: transparent;
-   -webkit-background-clip: text;
-   background-clip: text;
-   background-image: linear-gradient(to right, rgb(255, 136, 0), rgb(243, 227, 5));
-   height: 197px;
-   width: 340px;
-   text-align: center;
-   margin: 60px 0 0 0;
+.game-list {
+   display: flex;
+   margin: 0 auto;
+   flex-wrap: wrap;
+   height: 236px;
+   width: 258px;
+   gap: 20px;
+   margin: 80px 0px 0 0px;
 }
-.firstPageButton {
+.game-list-item {
+   margin: 0px 0px 0 0px;
+
+   width: 116px;
+   height: 108px;
+   background-color: #f78708;
+}
+
+.game-list-item:nth-child(1) {
+   background-image: url(/page-for-memory/img/img1-fourthPageAll.svg);
+}
+.game-list-item:nth-child(2) {
+   background-image: url(/page-for-memory/img/img2-fourthPage.svg);
+}
+.game-list-item:nth-child(3) {
+   background-image: url(/page-for-memory/img/img3-fourthPageAll.svg);
+   background-position-x: -3px;
+   background-position-y: 1px;
+}
+.game-list-item:nth-child(4) {
+   background-image: url(/page-for-memory/img/img4-fourthPage.svg);
+   background-position-x: 0px;
+}
+.thirdPageButton {
    display: block;
    background-image: url(/page-for-memory/img/Arrow-button.svg);
    background-size: 34px;
@@ -114,22 +136,27 @@ img {
    color: #ffaa00;
    border-radius: 30px;
    font-size: 24px;
-   margin: 160px 7% 40px 7%;
+   margin: 140px 7% 40px 7%;
    padding: 15px 10px 0 0;
    border: none;
 }
 
-.firstPageButton:active {
+.thirdPageButton:active {
    border: none;
    color: #ffbb00;
    background-color: rgb(207, 204, 29);
    box-shadow: 3px 2px 1px rgb(165, 107, 32);
 }
 
-a {
-   outline: none !important;
-}
-a:active {
-   border: 0;
-   outline: none;
+.description-text {
+   font-size: 30px;
+   text-align: center;
+   color: transparent;
+   -webkit-background-clip: text;
+   background-clip: text;
+   background-image: linear-gradient(to right, rgb(255, 136, 0), rgb(243, 227, 5));
+   height: 74px;
+   width: 294px;
+   text-align: center;
+   margin: 140px 0 0 0;
 }
