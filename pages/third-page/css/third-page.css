@@ -132,14 +132,14 @@ img {
    font-weight: bold;
    text-align: center;
    width: 170px;
-   height: 77px;
+   height: 87px;
    background-color: rgb(255, 251, 0);
    box-shadow: 6px 5px 4px rgb(255, 145, 0);
    color: #ffaa00;
    border-radius: 30px;
    font-size: 24px;
    margin: 140px 7% 40px 7%;
-   padding: 15px 10px 0 0;
+   padding: 13px 10px 0 0;
    border: none;
 }
 
