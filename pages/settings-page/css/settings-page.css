@@ -79,30 +79,3 @@ body {
    flex-direction: column;
    align-items: center;
 }
-
-.comeback-button {
-   display: block;
-   margin: 15px 85% 0 0%;
-}
-img {
-   margin: 0px 0 0 0;
-}
-.fourtPageDescription {
-   margin: 90px 0 0 0;
-   width: 290px;
-}
-.fourthPageButton {
-   display: block;
-   font-weight: bold;
-   text-align: center;
-   width: 164px;
-   height: 87px;
-   background-color: rgb(0, 0, 0);
-   box-shadow: 6px 5px 4px rgb(121, 121, 121);
-   color: #c70000;
-   border-radius: 30px;
-   font-size: 24px;
-   margin: 170px 7% 40px 7%;
-   padding: 14px 0px 0 0;
-   border: none;
-}
