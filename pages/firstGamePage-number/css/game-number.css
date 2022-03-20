@@ -77,7 +77,8 @@ html {
 }
 
 body {
-   min-height: 790px;
+   height: 760px;
+   width: 360px;
    position: relative;
    display: flex;
    flex-direction: column;
@@ -99,9 +100,11 @@ img {
    align-items: center;
    height: 102px;
    width: 360px;
-   margin: auto auto;
+   margin: 20px 0 50px 0;
 }
-
+.comeback-button {
+   margin: 0 0 0 50px;
+}
 .main {
    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
    font-size: 34px;
@@ -132,7 +135,7 @@ img {
 }
 .blackLine {
    width: 410px;
-   height: 150px;
+   height: 120px;
 }
 
 hr {
