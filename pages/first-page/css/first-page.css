@@ -88,6 +88,10 @@ body {
    display: flex;
    flex-direction: column;
    align-items: center;
+   user-select: none;
+   -webkit-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
 }
 .title {
    text-align: center;
