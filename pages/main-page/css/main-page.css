@@ -82,6 +82,7 @@ body {
    -webkit-user-select: none;
    -moz-user-select: none;
    -ms-user-select: none;
+   outline: none;
 }
 .header {
    margin: 20px 0 0 0;
