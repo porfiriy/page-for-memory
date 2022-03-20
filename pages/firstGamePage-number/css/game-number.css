@@ -89,19 +89,19 @@ body {
    -ms-user-select: none;
 }
 
-.comeback-button {
-   margin: 30px 0px 0 0px;
-}
 img {
    vertical-align: middle;
 }
-.settings {
-   margin: 30px 125px 0 125px;
-}
+
 .header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
    height: 102px;
-   margin: 20px 0 0 0;
+   width: 360px;
+   margin: auto auto;
 }
+
 .main {
    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
    font-size: 34px;
@@ -131,8 +131,8 @@ img {
    margin: 0 0 150px 0;
 }
 .blackLine {
-   width: 360px;
-   height: 200px;
+   width: 410px;
+   height: 150px;
 }
 
 hr {
@@ -144,9 +144,11 @@ hr {
 }
 .number-for-input {
    color: black;
+   font-weight: 900;
    background: none;
-   margin: 0 0 0 10px;
-   font-size: 54px;
+   margin: 0 auto;
+
+   font-size: 34px;
 }
 .space-for-input {
    display: flex;
