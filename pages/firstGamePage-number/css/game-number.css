@@ -77,21 +77,15 @@ html {
 }
 
 body {
-   height: 760px;
-   width: 360px;
-   position: relative;
+   background-color: rgb(255, 255, 255);
+   min-height: 790px;
    display: flex;
    flex-direction: column;
    align-items: center;
-   z-index: 1;
    user-select: none;
    -webkit-user-select: none;
    -moz-user-select: none;
    -ms-user-select: none;
-}
-
-img {
-   vertical-align: middle;
 }
 
 .header {
