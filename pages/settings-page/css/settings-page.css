@@ -112,7 +112,7 @@ body {
    font-family: Arial, Helvetica, sans-serif;
    width: 140px;
    text-align: center;
-   font-size: 24px;
+   font-size: 23px;
    height: 50px;
    border: 3px solid black;
    border-radius: 30px;
@@ -134,6 +134,20 @@ body {
    display: flex;
    justify-content: space-between;
    align-items: center;
+}
+.main-item a {
+   color: black;
+}
+.main-item3 {
+   margin: 0 auto;
+   font-family: Arial, Helvetica, sans-serif;
+   width: 140px;
+   text-align: center;
+   font-size: 22px;
+   height: 50px;
+   border: 3px solid black;
+   border-radius: 30px;
+   padding: 8px 0 0 0;
 }
 .footer {
    width: 100%;
@@ -157,7 +171,7 @@ body {
    margin: 0 5px 0 0;
 }
 .sign-in {
-   font-size: 23px;
+   font-size: 20px;
    font-family: Arial, Helvetica, sans-serif;
    color: rgb(170, 20, 230);
    margin: 0 0 0 5px;
