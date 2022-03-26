@@ -75,7 +75,90 @@ h6 {
 
 body {
    min-height: 790px;
+   align-items: center;
+}
+.wrapper {
+   min-height: 100%;
+   min-width: 100%;
    display: flex;
    flex-direction: column;
+}
+.header {
+   display: flex;
+   width: 100%;
+   justify-content: space-between;
+   margin: 10px 0 0 0;
+}
+.comeback-button {
+   display: inline-block;
+   margin: 13px 0 0 20px;
+}
+.discord-img {
+   width: 50px;
+   border-radius: 50px;
+}
+.tik-tok-img {
+   width: 50px;
+}
+.main {
+   display: flex;
    align-items: center;
+   justify-content: center;
+   width: 100%;
+   flex: 1 1 auto;
+}
+.main-item {
+   margin: 0 auto;
+   font-family: Arial, Helvetica, sans-serif;
+   width: 140px;
+   text-align: center;
+   font-size: 24px;
+   height: 50px;
+   border: 3px solid black;
+   border-radius: 30px;
+   padding: 8px 0 0 0;
+}
+.main-item1 {
+   margin: 0 auto;
+   width: 140px;
+   height: 50px;
+   border: 3px solid black;
+   border-radius: 30px;
+}
+.main-item2 {
+   margin: 0 auto;
+   width: 140px;
+   height: 50px;
+   border: 3px solid black;
+   border-radius: 30px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.footer {
+   width: 100%;
+}
+.version {
+   font-size: 24px;
+}
+.settings-main-item {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   height: 300px;
+}
+
+.sound {
+   margin: 3px 0 0 49px;
+   width: 43px;
+}
+.gamepad {
+   width: 45px;
+   margin: 0 5px 0 0;
+}
+.sign-in {
+   font-size: 25px;
+   font-family: Arial, Helvetica, sans-serif;
+   color: rgb(170, 20, 230);
+   margin: 0 0 0 5px;
 }
