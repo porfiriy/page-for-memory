@@ -93,7 +93,7 @@ img {
 }
 .text-description {
    font-size: 34px;
-
+   line-height: 40px;
    color: transparent;
    -webkit-background-clip: text;
    background-clip: text;
@@ -119,7 +119,7 @@ img {
    color: #ffaa00;
    border-radius: 30px;
    font-size: 24px;
-   margin: 160px 7% 40px 7%;
+   margin: 150px 7% 40px 7%;
    padding: 15px 10px 0 0;
    border: none;
 }

@@ -142,7 +142,7 @@ img {
    color: #ffaa00;
    border-radius: 30px;
    font-size: 24px;
-   margin: 140px 7% 40px 7%;
+   margin: 127px 7% 40px 7%;
    padding: 13px 10px 0 0;
    border: none;
 }
@@ -155,14 +155,14 @@ img {
 }
 
 .description-text {
-   font-size: 30px;
+   font-size: 29px;
    text-align: center;
-   line-height: 35px;
+   line-height: 38px;
    color: transparent;
    -webkit-background-clip: text;
    background-clip: text;
    background-image: linear-gradient(to right, rgb(255, 136, 0), rgb(243, 227, 5));
-   height: 74px;
+   height: 84px;
    width: 294px;
    text-align: center;
    margin: 140px 0 0 0;
