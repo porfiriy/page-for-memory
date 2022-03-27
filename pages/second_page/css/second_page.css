@@ -89,6 +89,8 @@ body {
 .comeback-button {
    display: block;
    margin: 15px 85% 0 0%;
+   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+   -webkit-tap-highlight-color: transparent;
 }
 img {
    margin: 0px 0 0 0;
@@ -124,6 +126,8 @@ img {
    margin: 150px 7% 40px 7%;
    padding: 15px 10px 0 0;
    border: none;
+   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+   -webkit-tap-highlight-color: transparent;
 }
 
 .firstPageButton:active {

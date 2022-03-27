@@ -100,11 +100,15 @@ body {
 }
 .comeback-button {
    margin: 0 0 0 50px;
+   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+   -webkit-tap-highlight-color: transparent;
 }
 .main {
    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
    font-size: 34px;
    margin: 0 auto;
+   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+   -webkit-tap-highlight-color: transparent;
 }
 .firstSlot {
    display: inline-block;
@@ -176,6 +180,8 @@ hr {
    font-size: 37px;
    text-align: center;
    border-radius: 100%;
+   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+   -webkit-tap-highlight-color: transparent;
 }
 .number-game-start.activated {
    transition: all 0.3s ease 0s;

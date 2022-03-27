@@ -88,6 +88,8 @@ body {
 }
 .header {
    margin: 20px 0 0 0;
+   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+   -webkit-tap-highlight-color: transparent;
 }
 .hintMain {
    width: 298px;
@@ -112,6 +114,8 @@ body {
    height: 360px;
    gap: 5px;
    width: 223px;
+   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+   -webkit-tap-highlight-color: transparent;
 }
 
 .game-list__item:nth-child(1) {
@@ -145,6 +149,8 @@ body {
 }
 .achivement {
    margin: 0 200px 0 0;
+   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+   -webkit-tap-highlight-color: transparent;
 }
 .text-feedbackMain {
    display: block;

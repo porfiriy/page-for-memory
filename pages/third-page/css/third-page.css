@@ -89,6 +89,8 @@ body {
 .comeback-button {
    display: block;
    margin: 15px 85% 0 0%;
+   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+   -webkit-tap-highlight-color: transparent;
 }
 img {
    margin: 0px 0 0 0;
@@ -147,6 +149,8 @@ img {
    margin: 123px 7% 40px 7%;
    padding: 13px 10px 0 0;
    border: none;
+   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+   -webkit-tap-highlight-color: transparent;
 }
 
 .thirdPageButton:active {
@@ -154,6 +158,8 @@ img {
    color: #ffbb00;
    background-color: rgb(207, 204, 29);
    box-shadow: 3px 2px 1px rgb(165, 107, 32);
+   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+   -webkit-tap-highlight-color: transparent;
 }
 
 .description-text {
