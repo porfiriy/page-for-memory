@@ -74,6 +74,8 @@ h6 {
 }
 body {
    min-height: 790px;
+   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+   -webkit-tap-highlight-color: transparent;
 }
 .topButton-gameWords {
    display: flex;
