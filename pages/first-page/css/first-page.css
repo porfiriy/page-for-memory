@@ -175,6 +175,8 @@ body {
 
 .firstPageButton {
    display: block;
+   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+   -webkit-tap-highlight-color: transparent;
    background-image: url(/page-for-memory/img/Arrow-button.svg);
    background-size: 34px;
    background-repeat: no-repeat;
