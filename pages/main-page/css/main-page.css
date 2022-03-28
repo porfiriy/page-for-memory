@@ -86,6 +86,12 @@ body {
    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
    -webkit-tap-highlight-color: transparent;
 }
+.icon-settings:active {
+   opacity: 0;
+}
+.imgMainPage:active {
+   opacity: 0;
+}
 .header {
    margin: 20px 0 0 0;
    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -160,5 +166,6 @@ body {
    color: transparent;
    -webkit-background-clip: text;
    background-clip: text;
+
    background-image: linear-gradient(to right, rgb(255, 136, 0), rgb(243, 227, 5));
 }

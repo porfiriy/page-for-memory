@@ -93,6 +93,11 @@ body {
    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
    -webkit-tap-highlight-color: transparent;
 }
+.comeback-button:active {
+   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+   -webkit-tap-highlight-color: transparent;
+   opacity: 0;
+}
 img {
    margin: 0px 0 0 0;
 }
@@ -116,4 +121,9 @@ img {
    border: none;
    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
    -webkit-tap-highlight-color: transparent;
+}
+.fourthPageButton:active {
+   background-color: rgb(82, 79, 79);
+   box-shadow: 6px 5px 4px rgb(121, 121, 121);
+   color: #000000;
 }
