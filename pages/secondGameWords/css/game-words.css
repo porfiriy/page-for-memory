@@ -73,7 +73,7 @@ h6 {
    font-weight: 400;
 }
 body {
-   min-height: 790px;
+   height: 780px;
    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
    -webkit-tap-highlight-color: transparent;
 }
