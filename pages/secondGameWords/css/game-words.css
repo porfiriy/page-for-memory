@@ -72,16 +72,23 @@ h6 {
    font-size: inherit;
    font-weight: 400;
 }
+
 body {
+   position: relative;
    height: 780px;
    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
    -webkit-tap-highlight-color: transparent;
 }
+.wrapper {
+   position: relative;
+   z-index: 1;
+}
+
 .topButton-gameWords {
    display: flex;
    justify-content: space-between;
    width: 100%;
-   margin: 10px 0 0 0;
+   padding: 10px 0 0 0;
    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
    -webkit-tap-highlight-color: transparent;
 }
@@ -162,4 +169,40 @@ body {
 }
 .task1Text {
    margin: 0 auto;
+}
+.start-menu {
+   position: absolute;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 847px;
+   width: 100%;
+   background: rgb(255, 255, 255);
+   z-index: 3;
+   background: rgb(255, 255, 255);
+}
+.start-menu.activated {
+   position: absolute;
+   height: 0px;
+   width: 0px;
+   background: rgb(255, 255, 255);
+   transition: all 300ms ;
+}
+.words-game-start {
+   height: 200px;
+   width: 200px;
+   background: black;
+   color: rgb(255, 210, 9);
+   font-size: 37px;
+   text-align: center;
+   border-radius: 100%;
+   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+   -webkit-tap-highlight-color: transparent;
+}
+.words-game-start.activated {
+   font-size: 0px;
+   background: rgb(255, 255, 255);
+   height: 0px;
+   width: 0px;
+   transition: all 300ms ;
 }
