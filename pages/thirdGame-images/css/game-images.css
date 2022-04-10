@@ -87,7 +87,7 @@ html,body {
    z-index: 1;
 }
 .memory-game {
-   width: 400px;
+   width: 380px;
    height: 300px;
    display: flex;
    justify-content: center;
@@ -98,11 +98,10 @@ html,body {
 }
 .memory-card{
    display: flex;
-   
    justify-content: center;
    align-items: center;
    background: rgb(238, 173, 6);
-   width: 100px;
+   width: 25%;
    height:80px;
    margin: 5px;
    position: relative;
