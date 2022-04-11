@@ -23,11 +23,14 @@ let cardsChosenArr = [];
 let cardsChosenArrId = [];
 let nofOpenedCardsArr = [];
 
+
 const cards = document.querySelectorAll('.memory-card');
 
 let hasFlippedCard = false;
 let lockBoard = false;
 let firstCard, secondCard;
+
+
 
 function flipCard() {
    if (lockBoard) return;
@@ -45,11 +48,24 @@ function flipCard() {
    hasFlippedCard = false;
 
    checkForMatch();
+
+
+
 }
+/*добавляет счёт для открытых карт */
+let doom = 0;
+document.getElementById("scoreOpenedCards").innerHTML = doom;
 
 function checkForMatch() {
-   let isMatch = firstCard.dataset.framework === secondCard.dataset.framework;
-   isMatch ? disableCards() : unflipCards();
+   if (firstCard.dataset.framework === secondCard.dataset.framework) {
+
+      document.getElementById("scoreOpenedCards").innerHTML = doom += 1;
+
+      disableCards();
+      return;
+   }
+
+   unflipCards();
 }
 
 function disableCards() {
