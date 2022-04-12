@@ -9,6 +9,7 @@ document.querySelector('.words-game-start').onclick = function () {
 
 
 
+
 function createBorder() {
    for (let i = 0; i < cardsArr.length; i++) {
       const imgCard = document.createElement('IMG');
@@ -30,6 +31,8 @@ let hasFlippedCard = false;
 let lockBoard = false;
 let firstCard, secondCard;
 
+//звук
+var audio = new Audio('/page-for-memory/sound/successfull.mp3');
 
 
 function flipCard() {
@@ -52,7 +55,7 @@ function flipCard() {
 
 
 }
-/*добавляет счёт для открытых карт */
+//добавляет счёт для открытых карт
 let doom = 0;
 document.getElementById("scoreOpenedCards").innerHTML = doom;
 
@@ -60,6 +63,7 @@ function checkForMatch() {
    if (firstCard.dataset.framework === secondCard.dataset.framework) {
 
       document.getElementById("scoreOpenedCards").innerHTML = doom += 1;
+      audio.play();
 
       disableCards();
       return;
