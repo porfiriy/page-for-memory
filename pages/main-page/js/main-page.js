@@ -1,6 +1,6 @@
 'use strict'
 
-
+/*
 document.getElementById("demo").onmousedown = function () { mouseDown() };
 document.getElementById("demo").onmouseup = function () { mouseUp() };
 
@@ -11,3 +11,4 @@ function mouseDown() {
 function mouseUp() {
    document.getElementById("demo").innerHTML = "You released the mouse button.";
 }
+*/
