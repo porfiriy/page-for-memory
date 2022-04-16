@@ -153,60 +153,79 @@ html,body {
    -webkit-tap-highlight-color: transparent;
 }
 .game-mode{
-   margin: 10px 0;
-   font-size: 20px;
+   margin: 20px 0 0 0;
+   text-align: center;
+   font-size: 24px;
    color: rgb(102, 236, 25);
 }
 .text-openedCards{
    font-family:Arial, Helvetica, sans-serif;
-   padding: 15px 0 30px 0;
+   padding: 10px 0 15px 0;
    font-weight: 600;
    text-align: center;
    font-size: 28px;
 }
-.score {
-   font-size: 30px;
-   font-weight: 900;
-   text-align: center;
-   width: 100%;
-   height: 35px;
-   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-   margin: 40px 0 20px 0;
+.deadLineWrapper{
+   margin: 20px auto;
+   height: 17px;
+   width: 300px;
+   background-color: rgba(0, 0, 0, 0.06);
+   border: 3px solid black;
+   
+}
+#deadeLine{
+   position: relative;
+   bottom: 0px;
+   left: 0;
+   height: 11px;
+   width: 296px;
+   background-color: rgb(207, 6, 6);
+   animation: deadeLine 60s linear;
 }
 
-.start-menu {
-   position: absolute;
+@keyframes deadeLine {
+   0%{
+   
+   }
+   100%{
+      width: 1px;
+   }
+}
+
+.start-menu{
    display: flex;
    justify-content: center;
    align-items: center;
+   position: absolute;
+   top: 0px;
+   left: 0px;
    height: 100%;
    width: 100%;
-   background: rgb(255, 255, 255);
+   background-color: rgba(251, 247, 247, 0.858);
    z-index: 3;
-   background: rgb(255, 255, 255);
 }
-.start-menu.activated {
-   position: absolute;
+.button-start{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 50%;
+   height: 170px;
+   width: 170px;
+   color: rgb(236, 153, 29);
+   font-size: 24px;
+   background-color: black;
+   
+}
+.start-menu.activated{
+   transition: all 0.3s ;
+   visibility: hidden;
+}
+.button-start.activated{
+   transform: scale(0.5,0.5);
+   transition: 0.3s ;
+   color: azure;
+   background-color: rgb(115, 113, 114);
    height: 0px;
    width: 0px;
-   background: rgb(255, 255, 255);
-   transition: all 300ms ;
-}
-.words-game-start {
-   height: 200px;
-   width: 200px;
-   background: black;
-   color: rgb(255, 210, 9);
-   font-size: 37px;
-   text-align: center;
-   border-radius: 100%;
-   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-   -webkit-tap-highlight-color: transparent;
-}
-.words-game-start.activated {
    font-size: 0px;
-   background: rgb(255, 255, 255);
-   height: 0px;
-   width: 0px;
-   transition: all 300ms ;
 }

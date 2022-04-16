@@ -14,7 +14,11 @@
             src="/page-for-memory/img/settings.svg" alt="settings" class="icon-settings"></a>
    </header>
    <main class="main">
-      <p class="hintMain">Зажмите,чтобы узнать подробнее</p>
+      <div class="pageDiscription">
+         <div class="pageDiscription2"></div>
+         <div class="discr1game"></div>
+      </div>
+      <p id="demo" class="hintMain">Зажмите,чтобы узнать подробнее</p>
       <ul class="main-game">
          <li class="game-list__item"><a href="/page-for-memory/pages/firstGamePage-number/game-number.html"
                class="game-main"><img class="imgMainPage" src="/page-for-memory/img/main-1-icon.svg" alt="numbers"></a>
@@ -22,8 +26,9 @@
          <li class="game-list__item"><a href="/page-for-memory/pages/secondGameWords/game-words.html"
                class="game-main"><img class="imgMainPage" src="/page-for-memory/img/letters-iconMain.svg"
                   alt="letters"></a></li>
-         <li class="game-list__item"><a href="/page-for-memory/pages/thirdGame-images/game-images.html"
-               class="game-main"><img class="imgMainPage" src="/page-for-memory/img/img-iconMain.svg" alt="image"></a>
+         <li class="game-list__item"><a id="myP" onmousedown="mouseDown()" onmouseup="mouseUp()"
+               href="/page-for-memory/pages/thirdGame-images/game-images.html" class="game-main"><img
+                  class="imgMainPage" src="/page-for-memory/img/img-iconMain.svg" alt="image"></a>
          </li>
          <li class="game-list__item"><a class="game-main"><img class="imgMainPage"
                   src="/page-for-memory/img/shapes-iconMain.svg" alt="shapes"></a></li>
@@ -39,6 +44,7 @@
             class="img-achivement"></a>
       <span class="text-feedbackMain">Feedback</span>
    </footer>
+   <script src="/page-for-memory/pages/main-page/js/main-page.js"></script>
 </body>
 
 </html>

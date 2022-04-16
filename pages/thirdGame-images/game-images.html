@@ -10,10 +10,9 @@
 </head>
 
 <body>
+
    <div class="start-menu">
-      <form action="#">
-         <button class="words-game-start">START</button>
-      </form>
+      <a href="#" class="button-start">START</a>
    </div>
    <div class="wrapper">
       <div class="topButton-gameWords">
@@ -24,11 +23,18 @@
          <a href="#" class="linkToTheRestart"><img src="/page-for-memory/img/button-retryGame.svg" alt="restart"
                class="img-restart"></a>
       </div>
+      <div class="game-mode">easay mode</div>
+      <!--
       <div class="score">
          <span class="firstScoreNum">1</span> <span>/</span> <span class="secondScoreNum">∞</span>
-         <div class="game-mode">easay mode</div>
+         
       </div>
+   -->
+
       <h3 class="text-openedCards">opened cards:<span class="score-openedCards" id="scoreOpenedCards"></span>/9</h3>
+      <div class="deadLineWrapper">
+         <div id="deadeLine"></div>
+      </div>
       <section class="memory-game">
          <div class="memory-card" data-framework="1">
             <img src="/page-for-memory/pages/thirdGame-images/img/1.png" alt="1" class="front-face">
@@ -38,6 +44,7 @@
             <img src="/page-for-memory/pages/thirdGame-images/img/1.png" alt="1" class="front-face">
             <img src="/page-for-memory/pages/thirdGame-images/img/0.jpg" alt="memory card" class="back-face">
          </div>
+
          <div class="memory-card" data-framework="2">
             <img src="/page-for-memory/pages/thirdGame-images/img/2.png" alt="2" class="front-face">
             <img src="/page-for-memory/pages/thirdGame-images/img/0.jpg" alt="memory card" class="back-face">
