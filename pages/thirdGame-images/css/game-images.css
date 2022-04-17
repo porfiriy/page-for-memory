@@ -180,7 +180,8 @@ html,body {
    height: 11px;
    width: 296px;
    background-color: rgb(207, 6, 6);
-   animation: deadeLine 60s linear;
+   
+
 }
 
 @keyframes deadeLine {

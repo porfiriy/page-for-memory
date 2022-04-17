@@ -86,6 +86,7 @@ body {
    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
    -webkit-tap-highlight-color: transparent;
 }
+/*
 .pageDiscription{
    position: absolute;
    top: 0;
@@ -119,7 +120,6 @@ body {
    z-index: 3;
    
 }
-
 @keyframes firstgame {
    0%{
      border-radius: 30%;
@@ -145,6 +145,7 @@ body {
      top: 100px;
    }
 }
+*/
 .icon-settings:active {
    opacity: 0;
 }
