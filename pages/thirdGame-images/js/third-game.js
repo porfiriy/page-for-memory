@@ -14,6 +14,7 @@ BUTTON_START.onclick = function () {
 
 
 
+
 //линия времени 
 
 function getId(id) {
@@ -54,6 +55,7 @@ const cards = document.querySelectorAll('.memory-card');
 let hasFlippedCard = false;
 let lockBoard = false;
 let firstCard, secondCard;
+let victoryTab = document.querySelector('.textVictory');
 
 //звук
 let audio = new Audio('/page-for-memory/sound/successfull.mp3');
@@ -80,21 +82,28 @@ function flipCard() {
 
 }
 //добавляет счёт для открытых карт
-let doom = 0;
-document.getElementById("scoreOpenedCards").innerHTML = doom;
+let score = 0;
+document.getElementById("scoreOpenedCards").innerHTML = score;
 
 function checkForMatch() {
    if (firstCard.dataset.framework === secondCard.dataset.framework) {
 
-      document.getElementById("scoreOpenedCards").innerHTML = doom += 1;
+      document.getElementById("scoreOpenedCards").innerHTML = score += 1;
       audio.play();
 
+      //анимация победы 
+      if (score == 9) {
+         victoryTab.style = 'visibility:visible;';
+      }
       disableCards();
       return;
    }
 
    unflipCards();
 }
+
+
+
 
 function disableCards() {
    firstCard.removeEventListener('click', flipCard);
