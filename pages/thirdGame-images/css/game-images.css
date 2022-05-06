@@ -74,11 +74,8 @@ h6 {
 }
 
 html,body {
-   min-height: 700px;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   background: rgb(255, 255, 255);
+   background-color: #ffffff;
+   min-height: 790px;
 }
 .wrapper {
    width: 100%;
@@ -162,10 +159,10 @@ html,body {
    padding: 10px 0 15px 0;
    font-weight: 600;
    text-align: center;
-   font-size: 28px;
+   font-size: 22px;
 }
 .deadLineWrapper{
-   margin: 20px auto;
+   margin: 10px auto;
    height: 17px;
    width: 300px;
    background-color: rgba(0, 0, 0, 0.06);
@@ -199,7 +196,7 @@ html,body {
    position: absolute;
    top: 0px;
    left: 0px;
-   height: 100%;
+   min-height: 790px;
    width: 100%;
    background-color: rgba(251, 247, 247, 0.858);
    z-index: 3;
