@@ -36,8 +36,9 @@ function game() {
       let deadeLine = getId("deadeLine");
       deadeLine.style = "animation: deadeLine 60s linear";
    }
+   //анимация проигриша 
    function showMessage() {
-      alert("YOU LOSE");
+      looseTab.style = 'visibility:visible;';
    }
    deadeLine.addEventListener("animationend", showMessage);
 
@@ -65,6 +66,7 @@ function game() {
    let lockBoard = false;
    let firstCard, secondCard;
    let victoryTab = document.querySelector('.textVictory');
+   let looseTab = document.querySelector('.textLoose');
 
    //звук
    let audio = new Audio('/page-for-memory/sound/successfull.mp3');
