@@ -197,7 +197,7 @@ html,body {
    position: absolute;
    top: 0px;
    left: 0px;
-   height: 750px;
+   min-height: 800px;
    width: 100%;
    background-color: rgba(251, 247, 247, 0.858);
    z-index: 3;
@@ -242,7 +242,7 @@ html,body {
     font: 10.5em 'Montserrat';
     width: 100%;
     visibility:hidden;
-    height: 750px;
+    height: 100%;
     margin: 0 auto;
     z-index: 4;
     background-color: #040303cd;
@@ -298,7 +298,7 @@ html,body {
     width: 100%;
     visibility:hidden;
 
-    height: 750px;
+    height: 100%;
     margin: 0 auto;
     z-index: 4;
     background-color: #040303cd;
