@@ -75,17 +75,18 @@ h6 {
 
 html,body {
    background-color: #ffffff;
-   height: 700px;
+   height: 750px;
 }
 .wrapper {
+   background-color: #ffffff;
    width: 100%;
-
+   height: 750px;
    position: relative;
    z-index: 1;
 }
 .memory-game {
    width: 380px;
-   height: 300px;
+   height: 550px;
    display: flex;
    justify-content: center;
    align-items: center;
@@ -197,7 +198,7 @@ html,body {
    position: absolute;
    top: 0px;
    left: 0px;
-   min-height: 790px;
+   height: 750px;
    width: 100%;
    background-color: rgba(251, 247, 247, 0.858);
    z-index: 3;
@@ -242,7 +243,7 @@ html,body {
     font: 10.5em 'Montserrat';
     width: 100%;
     visibility:hidden;
-    min-height: 790px;
+    height: 750px;
     margin: 0 auto;
     z-index: 4;
     background-color: #040303cd;
