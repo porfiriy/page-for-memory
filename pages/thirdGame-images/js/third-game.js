@@ -34,7 +34,8 @@ function game() {
    function startDeadeLine() {
 
       let deadeLine = getId("deadeLine");
-      deadeLine.style = "animation: deadeLine 60s linear";
+      deadeLine.style = "animation: deadeLine 80s linear ";
+
    }
    //анимация проигриша 
    function showMessage() {
@@ -105,6 +106,7 @@ function game() {
          //анимация победы 
          if (score == 9) {
             victoryTab.style = 'visibility:visible;';
+            deadeLine.style = "animation-play-state: paused ";
          }
          disableCards();
          return;

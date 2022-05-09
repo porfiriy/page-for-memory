@@ -172,14 +172,13 @@ html,body {
    
 }
 #deadeLine{
+   animation-play-state: paused;
    position: relative;
    bottom: 0px;
    left: 0;
    height: 11px;
    width: 296px;
    background-color: rgb(207, 6, 6);
-   
-
 }
 
 @keyframes deadeLine {
@@ -298,6 +297,7 @@ html,body {
     font: 10.5em 'Montserrat';
     width: 100%;
     visibility:hidden;
+
     height: 750px;
     margin: 0 auto;
     z-index: 4;
