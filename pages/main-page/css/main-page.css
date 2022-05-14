@@ -75,7 +75,7 @@ h6 {
 
 body {
    
-   min-width: 400px;
+   min-width: 370px;
    height: 790px;
    display: flex;
    flex-direction: column;
