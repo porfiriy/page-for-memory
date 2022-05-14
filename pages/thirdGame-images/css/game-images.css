@@ -73,7 +73,8 @@ h6 {
    font-weight: 400;
 }
 
-html,body {
+body {
+   min-width: 400px;
    background-color: #ffffff;
    height: 750px;
 }
