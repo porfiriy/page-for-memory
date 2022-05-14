@@ -101,7 +101,7 @@ function game() {
       if (firstCard.dataset.framework === secondCard.dataset.framework) {
 
          document.getElementById("scoreOpenedCards").innerHTML = score += 1;
-         window.navigator.vibrate(1000);
+
          //добавляет звук
          audio.play();
 

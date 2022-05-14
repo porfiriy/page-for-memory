@@ -74,7 +74,9 @@ h6 {
 }
 
 body {
-   min-height: 790px;
+   
+   min-width: 400px;
+   height: 790px;
    display: flex;
    flex-direction: column;
    align-items: center;
@@ -146,6 +148,7 @@ body {
    }
 }
 */
+
 .icon-settings:active {
    opacity: 0;
 }
@@ -154,20 +157,21 @@ body {
    
 }
 .header {
+   
    margin: 20px 0 0 0;
    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
    -webkit-tap-highlight-color: transparent;
 }
 .hintMain {
-   width: 298px;
+   
+   width: 250px;
    height: 51px;
    font-family: "Roboto";
    font-style: normal;
    font-weight: 300;
    font-size: 18px;
    line-height: 21px;
-   display: flex;
-   align-items: center;
+   transform: translate(50%-250px);
    text-align: center;
    letter-spacing: 0.225em;
    margin: 100px 0 20px 0;
@@ -183,6 +187,7 @@ body {
    width: 223px;
    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
    -webkit-tap-highlight-color: transparent;
+   
 }
 
 .game-list__item:nth-child(1) {
