@@ -1,12 +1,20 @@
 "use strict"
 
+//звук
+let audioComplete = new Audio('/page-for-memory/sound/successfull2.mp3');
+let audioVictory = new Audio('/page-for-memory/sound/successfull.mp3');
+let audioStart = new Audio('/page-for-memory/sound/start-game.mp3');
+let audioFaile = new Audio('/page-for-memory/sound/aiaiai.mp3');
+let audioClick = new Audio('/page-for-memory/sound/click.mp3');
+
+
 //активация кнопки старт при нажатии
 const BUTTON_START = document.querySelector('.button-start');
 BUTTON_START.onclick = function () {
    document.querySelector('.start-menu').classList.add('activated');
    BUTTON_START.classList.add('activated');
    if (BUTTON_START.classList.contains('activated')) {
-
+      audioStart.play();
       game();
    }
 }
@@ -18,7 +26,7 @@ BUTTON_RESTART.onclick = function () {
    if (BUTTON_RESTART.classList.contains('activated')) {
       game();
       console.log('рестарт');
-
+      audioClick.play();
    }
 }
 
@@ -34,12 +42,13 @@ function game() {
    function startDeadeLine() {
 
       let deadeLine = getId("deadeLine");
-      deadeLine.style = "animation: deadeLine 80s linear ";
+      deadeLine.style = "animation: deadeLine 75s linear ";
 
    }
    //анимация проигриша 
    function showMessage() {
       looseTab.style = 'visibility:visible;';
+      audioFaile.play();
    }
    deadeLine.addEventListener("animationend", showMessage);
 
@@ -68,9 +77,6 @@ function game() {
    let firstCard, secondCard;
    let victoryTab = document.querySelector('.textVictory');
    let looseTab = document.querySelector('.textLoose');
-
-   //звук
-   let audio = new Audio('/page-for-memory/sound/successfull.mp3');
 
 
    function flipCard() {
@@ -102,14 +108,15 @@ function game() {
 
          document.getElementById("scoreOpenedCards").innerHTML = score += 1;
 
-         //добавляет звук
-         audio.play();
-
          //анимация победы 
          if (score == 9) {
             victoryTab.style = 'visibility:visible;';
             deadeLine.style = "animation-play-state: paused ";
+            audioVictory.play();
          }
+         //добавляет звук
+         audioComplete.play();
+
          disableCards();
          return;
       }

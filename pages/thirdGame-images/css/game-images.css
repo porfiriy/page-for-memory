@@ -76,7 +76,7 @@ h6 {
 body {
    min-width: 380px;
    background-color: #ffffff;
-   height: 750px;
+   min-height: 750px;
 }
 .wrapper {
    background-color: #ffffff;
@@ -199,7 +199,7 @@ body {
    top: 0px;
    left: 0px;
    min-height: 800px;
-   width: 100%;
+   min-width: 100%;
    background-color: rgba(251, 247, 247, 0.858);
    z-index: 3;
    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
