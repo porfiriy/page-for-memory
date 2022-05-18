@@ -4,36 +4,15 @@
 let audioComplete = new Audio('/page-for-memory/sound/successfull2.mp3');
 let audioVictory = new Audio('/page-for-memory/sound/successfull.mp3');
 let audioStart = new Audio('/page-for-memory/sound/start-game.mp3');
-let audioFaile = new Audio('/page-for-memory/sound/aiaiai.mp3');
+let audioFaile = new Audio('/page-for-memory/sound/faile.mp3');
 let audioClick = new Audio('/page-for-memory/sound/click.mp3');
 
 
-//активация кнопки старт при нажатии
-const BUTTON_START = document.querySelector('.button-start');
-BUTTON_START.onclick = function () {
-   document.querySelector('.start-menu').classList.add('activated');
-   BUTTON_START.classList.add('activated');
-   if (BUTTON_START.classList.contains('activated')) {
-      audioStart.play();
-      game();
-   }
-}
 
-//перезапуск при нажатии кнопки рестарт
-const BUTTON_RESTART = document.querySelector('.img-restart');
-BUTTON_RESTART.onclick = function () {
-   BUTTON_RESTART.classList.add('activated');
-   if (BUTTON_RESTART.classList.contains('activated')) {
-      game();
-      console.log('рестарт');
-      audioClick.play();
-   }
-}
 
 function game() {
 
    //линия времени 
-
    function getId(id) {
       return document.getElementById(id);
    }
@@ -42,7 +21,7 @@ function game() {
    function startDeadeLine() {
 
       let deadeLine = getId("deadeLine");
-      deadeLine.style = "animation: deadeLine 75s linear ";
+      deadeLine.style = "animation: deadeLine 70s linear ";
 
    }
    //анимация проигриша 
@@ -160,4 +139,29 @@ function game() {
 
    shuffle();
    cards.forEach(card => card.addEventListener('click', flipCard));
+}
+
+
+//активация кнопки старт при нажатии
+const BUTTON_START = document.querySelector('.button-start');
+BUTTON_START.onclick = function () {
+   document.querySelector('.start-menu').classList.add('activated');
+   BUTTON_START.classList.add('activated');
+   if (BUTTON_START.classList.contains('activated')) {
+      audioStart.play();
+      game();
+   }
+}
+
+//перезапуск при нажатии кнопки рестарт
+const BUTTON_RESTART = document.querySelector('.img-restart');
+BUTTON_RESTART.onclick = function () {
+   BUTTON_RESTART.classList.add('activated');
+   if (BUTTON_RESTART.classList.contains('activated')) {
+      game();
+
+      console.log('рестарт');
+      audioClick.play();
+      startDeadeLine();
+   }
 }
