@@ -117,16 +117,19 @@ padding: 0 20px;
 .maine {
 
 }
+.timer {
+   font-weight: 600;
+   font-size: 34px;
+}
 .maine__timer-container {
    
-   padding: 30px 0 0 0;
+   padding: 30px 0 60px 0;
    text-align: center;
    
 }
-.timer {
-   font-weight: 600;
-   font-size: 24px;
-}
+/*
+
+
 .maine__numbers-top-container {
    min-height: 200px;
    
@@ -149,7 +152,7 @@ padding: 0 20px;
    font-weight: 600;
    
 }
-
+*/
 .maine__container-calc {
    position: relative;
    min-width: 300px;
@@ -252,6 +255,3 @@ background: rgb(49, 150, 18);
    border-top: 1px solid #fff4;
 }
 
-@media (max-width: 800px) {
-
-}
