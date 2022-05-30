@@ -73,140 +73,92 @@ h6 {
    font-weight: 400;
 }
 
-:focus {
-   outline: none !important;
+input{
+   width: 100%;
+   height: 40px;
+   font-size: 26px;
 }
-::-moz-focus-outer,
-::-moz-focus-inner {
-   border: 0px !important;
-   padding: 0;
+img{
+   width: 80%;
+   height: 90%;
 }
-a:focus,
-a:active,
-button:focus {
-   outline: 0 !important;
-   outline-color: transparent !important;
-   outline-width: 0 !important;
-   outline-style: none !important;
-   box-shadow: 0 0 0 0 rgba(0, 123, 255, 0) !important;
+button{
+   width: 100%;
+   
 }
-input,
-textarea,
-input:active,
-textarea:active {
-   outline: none;
-}
-input[type="checkbox"]:focus,
-input[type="radio"]:focus {
-   visibility: hidden;
-}
-
-.language {
-   margin: 25px 0 10px 0;
+.sign-in{
+   margin: 20% auto 0 auto;
    text-align: center;
-   padding: 7px 20px 0 0px;
-   font-size: 24px;
-   border-radius: 20px;
-   width: 204px;
-   height: 41px;
-   background-color: #c4c4c4;
+width: 62%;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 3em;
+line-height: 28px;
+color: #FABC0D;
 }
-body {
-   min-height: 790px;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   user-select: none;
-   -webkit-user-select: none;
-   -moz-user-select: none;
-   -ms-user-select: none;
-   outline: none;
+.link{
+   display: inline-block;
+   width: 39%;
+   height: 8%;
+background: linear-gradient(277.86deg, #F1D855 -0.91%, #EBA51E 112.93%);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+margin: 60px 5% 20px 5%;
 }
-.title {
-   text-align: center;
-   margin: 70px 0 40px 0;
-   color: transparent;
-   -webkit-background-clip: text;
-   background-clip: text;
-   background-image: linear-gradient(to right, rgb(255, 136, 0), rgb(243, 227, 5));
-   font-size: 24px;
-   font-weight: 700;
-}
-.subtitle {
-   text-align: center;
-   font-size: 24px;
-   margin: 15px 25% 70px 25%;
-}
-.language:nth-child(1) {
-   background-image: url(/page-for-memory/img/flag-ssha.svg);
-   background-repeat: no-repeat;
-   background-position-x: 155px;
-   background-position-y: center;
-   margin: 50px 0 0 0;
-}
-
-.language:nth-child(2) {
-   background-image: url(/page-for-memory/img/Flag_of_Russia.svg);
-   background-repeat: no-repeat;
-   background-position-x: 155px;
-   background-position-y: center;
-}
-
-.language:nth-child(3) {
-   background-image: url(/page-for-memory/img/flag-china.svg);
-   background-repeat: no-repeat;
-   background-position-x: 155px;
-   background-position-y: center;
-}
-
-.language:nth-child(4) {
-   background-image: url(/page-for-memory/img/flag-spanish.svg);
-   background-repeat: no-repeat;
-   background-position-x: 155px;
-   background-position-y: center;
-}
-
-.language:nth-child(5) {
-   background-image: url(/page-for-memory/img/flag-franc.svg);
-   background-repeat: no-repeat;
-   background-position-x: 155px;
-   background-position-y: center;
-}
-
-.firstPageButton {
+.or{
    display: block;
+   font-size: 26px;
+   font-weight: 500;
+   font-family: Arial, Helvetica, sans-serif;
+   text-align: center;
+   margin: 0 auto;
+}
+.forgot-password{
+   display: block;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 1.5em;
+line-height: 16px;
+color: #421b7c;
+text-align: center;
+margin: 20px auto;
+-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+-webkit-tap-highlight-color: transparent;
+}
+.login{
+   margin: 0 auto;
+   border: 7px solid #FEC727;
+   width: 60%;
+   min-height: 40px;
+   margin: 20px auto;
+}
+.password{
+   border: 7px solid #FEC727;
+   width: 60%;
+   min-height: 40px;
+   margin: 0 auto;
+   
+}
+.send{
+   margin: 40px auto 0 auto;
+   display: block;
+   text-align: center;
+width: 50%;
+height: 60px;
+font-size: 24px;
+font-weight: 700;
+font-family:Arial, Helvetica, sans-serif;
+background: linear-gradient(72.67deg, #FFE927 -38.34%, #F3851F 176.48%);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.registration{
+   display: block;
+   text-align: center;
+   font-size: 34px;
+   color: #421b7c;
+   margin: 50px 0 0 0 ;
+   font-weight: 500;
    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
    -webkit-tap-highlight-color: transparent;
-   background-image: url(/page-for-memory/img/Arrow-button.svg);
-   background-size: 34px;
-   background-repeat: no-repeat;
-   background-position-x: 123px;
-   background-position-y: center;
-   font-weight: bold;
-   text-align: center;
-   width: 170px;
-   height: 57px;
-   background-color: rgb(255, 251, 0);
-   box-shadow: 6px 5px 4px rgb(255, 145, 0);
-   color: #ffaa00;
-   border-radius: 30px;
-   font-size: 24px;
-   margin: 180px 7% 20px 7%;
-   padding: 15px 10px 0 0;
-   border: none;
-}
-
-.firstPageButton:active {
-   border: none;
-   color: #ffbb00;
-   background-color: rgb(207, 204, 29);
-   box-shadow: 3px 2px 1px rgb(165, 107, 32);
-}
-
-a {
-   outline: none !important;
-}
-a:active {
-   border: 0;
-   outline: none;
 }

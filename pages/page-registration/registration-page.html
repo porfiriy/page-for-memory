@@ -5,23 +5,27 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width">
-   <link rel="stylesheet" href="/page-for-memory/pages/first-page/css/first-page.css">
+   <link rel="stylesheet" href="/page-for-memory/pages/page-registration/css/registration-page.css">
    <title>Document</title>
 </head>
 
 <body>
+   <h1 class="sign-in">Авторизация</h1>
+   <a href="#" class=" link link__google"><img src="/page-for-memory/pages/page-registration/img/google.png"
+         alt="google" class="img__google"></a>
+   <a href="#" class=" link link__facebook"><img src="/page-for-memory/pages/page-registration/img/facebook.svg"
+         alt="facebook" class="img__google"></a>
+   <span class="or">или</span>
    <form action="#">
-      <h1 class="title">LANGUAGE</h1>
-      <span class="subtitle">CHOOSE</span>
-      <ul>
-         <li class="language">English</li>
-         <li class="language">Русский</li>
-         <li class="language">中文</li>
-         <li class="language">Español</li>
-         <li class="language">Français</li>
-      </ul>
-
-      <a class="firstPageButton" name="next" href='/page-for-memory/pages/second_page/second-page.html'>NEXT</a>
+      <div class="login">
+         <input type="text" name="text" placeholder="Логин">
+      </div>
+      <div class="password">
+         <input type="password" name="password" placeholder="Пароль">
+      </div>
+      <a href="#" class="forgot-password">забыли пароль?</a>
+      <button class="send">Продолжить</button>
+      <a href="#" class="registration">Регистрация</a>
    </form>
 
 </body>
