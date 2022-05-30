@@ -100,14 +100,14 @@ body {
 }
 .text-loading::after {
    content: "";
-   animation: dot 1s infinite;
+   animation: dot 2s infinite;
 }
 
 @keyframes dot{
-   0%{
+   40%{
       content:'.';
    }
-   50%{
+   70%{
       content:'..';
    }
    100%{
