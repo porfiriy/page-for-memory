@@ -89,7 +89,7 @@ body {
 .text-loading {
    display: block;
    font-family: "Roboto";
-   margin: 0 0 34px 10px;
+   margin: 0 0 24px 10px;
    color: black;
    font-style: normal;
    font-weight: 600;
@@ -105,5 +105,6 @@ body {
    text-align: center;
    font-size: 24px;
    font-weight: 700;
+   padding: 0 0 20px 0;
 }
 
