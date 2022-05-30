@@ -151,7 +151,15 @@ body {
    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
    margin: 40px 0 40px 0;
 }
-
+.timer{
+   display: block;
+   width: 100px;
+   text-align: center;
+   color: rgb(161, 23, 23);
+   margin: 0 auto;
+   font-size: 32px;
+   font-weight: 600;
+}
 .separatingLine {
    display: inline-block;
    margin: 0 auto;

@@ -89,7 +89,7 @@ body {
 .text-loading {
    display: block;
    font-family: "Roboto";
-   margin: 0 0 94px 10px;
+   margin: 0 0 34px 10px;
    color: black;
    font-style: normal;
    font-weight: 600;
@@ -101,5 +101,9 @@ body {
    content: "...";
    
 }
-
+.version{
+   text-align: center;
+   font-size: 24px;
+   font-weight: 700;
+}
 
