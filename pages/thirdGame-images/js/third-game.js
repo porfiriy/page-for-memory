@@ -9,11 +9,12 @@ let audioClick = new Audio('/page-for-memory/sound/click.mp3');
 
 
 let settings = document.querySelector(".pop-up__container");
+let comeback = document.querySelector(".pop-up__container2");
 
-//при нажатии на отмену вспл окна 
+//при нажатии на отмену вспл окна настройки 
 document.querySelector('.pop-up__cancel').onclick = function () {
    settings.style = 'visibility:hidden;';
-   console.log('kscnss');
+
 };
 //при нажатии на иконку настроек
 document.querySelector('.linkToTheSettings').onclick = function () {
@@ -22,6 +23,17 @@ document.querySelector('.linkToTheSettings').onclick = function () {
 
 };
 
+//при нажатии на отмену вспл окна назад
+document.querySelector('.pop-up__cancel2').onclick = function () {
+   comeback.style = 'visibility:hidden;';
+
+};
+//при нажатии на иконку назад
+document.querySelector('.comeback-button').onclick = function () {
+
+   comeback.style = 'visibility:visible;';
+
+};
 
 function game() {
 

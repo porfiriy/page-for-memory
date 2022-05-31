@@ -159,6 +159,80 @@ height: 40px;
    width: 100px;
    background-color: rgb(194, 45, 45);
 }
+.pop-up__container2 {
+   visibility: hidden;
+   position: absolute;
+   background-color: #020000a7;
+   height: 100%;
+   width: 100%;
+   z-index: 20;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+  
+}
+.pop-up2 {
+   min-height: 20%;
+   min-width: 50%;
+   background-color: rgba(234, 171, 25, 0.84);
+   display: flex;
+   justify-content: space-around;
+   flex-direction: column;
+  
+}
+.pop-up__title2{
+   font-size: 28px;
+   font-family: Arial, Helvetica, sans-serif;
+   font-weight: 600;
+   text-align: center;
+}
+.pop-up__description2{
+   font-size: 20px;
+   font-weight: 600;
+   font-family: Arial, Helvetica, sans-serif;
+   text-align: left;
+   padding: 0 20px ;
+}
+.wrap__button2{
+   
+   display: flex;
+   justify-content: center;
+    align-items: center;
+width: 100%;
+height: 40px;
+}
+.pop-up__form2{
+   display: flex;
+  justify-content: space-around;
+   align-items: center;
+   gap: 60px;
+}
+.pop-up__ok2 {
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 20px;
+   display: block;
+   color: black;
+   font-weight: 600;
+   text-align: center;
+   padding: 10px 0;
+   height:40px;
+   width: 100px;
+   background-color: rgb(17, 190, 75);
+  
+}
+.pop-up__cancel2{
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 20px;
+   display: block;
+   color: black;
+   padding: 10px 0;
+   font-weight: 600;
+   text-align: center;
+   height:40px;
+   width: 100px;
+   background-color: rgb(194, 45, 45);
+}
 .memory-game {
    width: 380px;
    height: 550px;
