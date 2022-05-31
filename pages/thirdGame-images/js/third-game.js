@@ -8,9 +8,26 @@ let audioFaile = new Audio('/page-for-memory/sound/faile.mp3');
 let audioClick = new Audio('/page-for-memory/sound/click.mp3');
 
 
+let settings = document.querySelector(".pop-up__container");
+
+//при нажатии на отмену вспл окна 
+document.querySelector('.pop-up__cancel').onclick = function () {
+   settings.style = 'visibility:hidden;';
+   console.log('kscnss');
+};
+//при нажатии на иконку настроек
+document.querySelector('.linkToTheSettings').onclick = function () {
+
+   settings.style = 'visibility:visible;';
+
+};
 
 
 function game() {
+
+
+
+
 
    //линия времени 
    function getId(id) {
