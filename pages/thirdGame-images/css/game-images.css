@@ -95,18 +95,15 @@ html,body {
    display: flex;
    justify-content: center;
    align-items: center;
-
-  
 }
 .pop-up {
-   min-height: 20%;
+   min-height: 25%;
    border-radius: 10px;
    width: 85%;
    background-color: #DEDCDC;
    display: flex;
    justify-content: space-around;
    flex-direction: column;
-  
 }
 .pop-up__title{
    font-size: 28px;
@@ -150,7 +147,6 @@ height: 40px;
    font-family:Verdana, Geneva, Tahoma, sans-serif;
    border-radius: 10px;
    background-color: rgb(17, 190, 75);
-  
 }
 .pop-up__cancel{
    font-family:Verdana, Geneva, Tahoma, sans-serif;
@@ -175,18 +171,15 @@ height: 40px;
    display: flex;
    justify-content: center;
    align-items: center;
-
-  
 }
 .pop-up2 {
-   min-height: 20%;
+   min-height: 25%;
    border-radius: 10px;
    width: 85%;
    background-color: #DEDCDC;
    display: flex;
    justify-content: space-around;
    flex-direction: column;
-  
 }
 .pop-up__title2{
    font-size: 28px;
