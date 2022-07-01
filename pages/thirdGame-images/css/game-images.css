@@ -259,6 +259,11 @@ height: 40px;
    transform-style: preserve-3d;
    transition: transform .5s;
 }
+.brain-logo{
+   height: 60px;
+   width: 60px;
+   backface-visibility: hidden;
+}
 .memory-card.flip{
    transform: rotateY(180deg);
 }
