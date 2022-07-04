@@ -152,6 +152,9 @@ padding: 0 20px;
    padding: 0 15px;
    font-size: 23px;
 }
+.relo{
+   background-color: rgb(48, 159, 255);
+}
 .form__num-wrap{
    display: grid;
   grid-template-columns: 31% 31% 31%;
