@@ -147,6 +147,12 @@ height: 40px;
    font-family:Verdana, Geneva, Tahoma, sans-serif;
    border-radius: 10px;
    background-color: rgb(17, 190, 75);
+   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+   -webkit-tap-highlight-color: transparent;
+  
+}
+.pop-up__ok:active{
+   transform: scale(0.7);
 }
 .pop-up__cancel{
    font-family:Verdana, Geneva, Tahoma, sans-serif;
@@ -160,6 +166,11 @@ height: 40px;
    border-radius: 10px;
    width: 100px;
    background-color: rgb(194, 45, 45);
+   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+   -webkit-tap-highlight-color: transparent;
+}
+.pop-up__cancel:active{
+   transform: scale(0.7);
 }
 .pop-up__container2 {
    visibility: hidden;
@@ -221,6 +232,11 @@ height: 40px;
    background-color: rgb(17, 190, 75);
    font-family:Verdana, Geneva, Tahoma, sans-serif;
    border-radius: 10px;
+   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+   -webkit-tap-highlight-color: transparent;
+}
+.pop-up__ok2:active{
+   transform: scale(0.7);
 }
 .pop-up__cancel2{
    font-size: 20px;
@@ -234,6 +250,11 @@ height: 40px;
    background-color: rgb(194, 45, 45);
    font-family:Verdana, Geneva, Tahoma, sans-serif;
    border-radius: 10px;
+   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+   -webkit-tap-highlight-color: transparent;
+}
+.pop-up__cancel2:active{
+   transform: scale(0.7);
 }
 .memory-game {
    width: 380px;

@@ -182,15 +182,3 @@ BUTTON_START.onclick = function () {
    }
 }
 
-//перезапуск при нажатии кнопки рестарт
-const BUTTON_RESTART = document.querySelector('.img-restart');
-BUTTON_RESTART.onclick = function () {
-   BUTTON_RESTART.classList.add('activated');
-   if (BUTTON_RESTART.classList.contains('activated')) {
-      game();
-
-      console.log('рестарт');
-      audioClick.play();
-      startDeadeLine();
-   }
-}
