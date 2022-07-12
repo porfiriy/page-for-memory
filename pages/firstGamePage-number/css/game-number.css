@@ -160,6 +160,7 @@ padding: 0 20px;
   grid-template-columns: 31% 31% 31%;
   justify-items: center;
   gap: 10px;
+  
 }
 .num {
    display: flex;
@@ -175,7 +176,10 @@ padding: 0 20px;
 .clear {
    background-color: rgb(151, 59, 33);
 }
-.enter {
+.enter{
+   grid-column: 4 / 2;
    background-color: rgb(31, 106, 21);
+   font-family: Arial, Helvetica, sans-serif;
 }
+ 
 
