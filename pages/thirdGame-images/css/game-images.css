@@ -360,6 +360,7 @@ height: 40px;
    height:80px;
    margin: 5px;
    position: relative;
+   border-radius: 10px;
    box-shadow: 1px 1px 1px rgba(0, 0, 0, .3);
    transform: scale(1);
    transform-style: preserve-3d;
@@ -431,11 +432,12 @@ height: 40px;
    width: 300px;
    background-color: rgba(0, 0, 0, 0.06);
    border: 3px solid black;
-   
+   border-radius: 10px;
 }
 #deadeLine{
    animation-play-state: paused;
    position: relative;
+   border-radius: 10px;
    bottom: 0px;
    left: 0;
    height: 11px;
@@ -470,7 +472,7 @@ height: 40px;
    display: flex;
    align-items: center;
    justify-content: center;
-   border-radius: 50%;
+   border-radius: 30px;
    height: 170px;
    width: 170px;
    color: rgb(236, 153, 29);

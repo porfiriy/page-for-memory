@@ -198,7 +198,7 @@ body {
 }
 .sanbox-button {
    display: block;
-   border-radius: 30px;
+   border-radius: 10px;
    font-family: Arial, Helvetica, sans-serif;
    margin: 0 auto;
    color: #00edc2;
@@ -232,6 +232,6 @@ body {
    color: transparent;
    -webkit-background-clip: text;
    background-clip: text;
-
+   font-weight: 900;
    background-image: linear-gradient(to right, rgb(255, 136, 0), rgb(243, 227, 5));
 }
