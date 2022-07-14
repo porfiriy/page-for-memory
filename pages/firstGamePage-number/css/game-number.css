@@ -134,6 +134,14 @@ padding: 0 0px;
    display: flex;
    align-items: center;
    justify-content: center;
+   
+}
+.random-num-container__textGo {
+   display: none;
+   color: rgb(128, 4, 4);
+   font-size: 55px;
+   font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   animation: textgo 2s 1;
 }
 .random-num-container__text {
    display: none;
@@ -143,22 +151,23 @@ padding: 0 0px;
    animation: text 2s 1;
    margin: 0 0 120px 0;
 }
-.random-num-container__number {
+.rand-num {
    display: none;
    font-size: 0px;
    color: rgb(173, 108, 34);
-   
-   animation: numbers 2s infinite;
+   animation: numbers 2s 1;
 }
 @keyframes numbers {
    0%{
       font-size: 0px;
-      
+      opacity: 1;
    }
-   
+   70%{
+      opacity: 0.7;
+   }
    100%{
       font-size: 95px;
-      
+      opacity: 0;
    }
 }
 @keyframes text {
@@ -169,6 +178,16 @@ padding: 0 0px;
    100%{
       font-size: 50px;
       color: rgb(90, 19, 19);
+   }
+}
+@keyframes textgo {
+   0%{
+      font-size: 0px;
+      
+   }
+   100%{
+      font-size: 50px;
+      color: rgb(151, 11, 11);
    }
 }
 .header {
