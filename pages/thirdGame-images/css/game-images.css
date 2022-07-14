@@ -380,14 +380,34 @@ height: 40px;
 }
 .front-face{
    width: 80px;
-   height: 60px;
+   height: 70px;
    padding: 10px;
    position: absolute;
    border-radius: 5px;
-   background: rgb(255, 255, 255);
+   background: rgba(255, 255, 255, 0.016);
    backface-visibility: hidden;
    transform: rotateY(180deg);
   
+}
+.two-eagle{
+   height: 80px;
+   width: 90px;
+}
+.img-mouse{
+   height: 75px;
+   width: 95px;
+}
+.img-sheep{
+   height: 75px;
+   width: 100px;
+}
+.img-ice-creem{
+   height: 70px;
+   width: 95px;
+}
+.img-circle{
+   height: 80px;
+   width: 100px;
 }
 .back-face{
    width: 90px;
