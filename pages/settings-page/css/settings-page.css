@@ -116,6 +116,7 @@ body {
    justify-content: center;
    width: 100%;
    flex: 1 1 auto;
+  
 }
 
 .main-item {
@@ -171,8 +172,8 @@ body {
 .settings-main-item {
    display: flex;
    flex-direction: column;
-   justify-content: space-between;
-   height: 300px;
+   justify-content: space-around;
+   height: 400px;
 }
 
 .sound {
