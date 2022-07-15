@@ -29,7 +29,7 @@ BUTTON.onclick = function () {
 //рандомная генерация чисел
 let randomNum = []
 for (let i = 0; i < 10; i++) {
-   let num = Math.floor(Math.random() * 11)
+   let num = Math.floor(Math.random() * 10)
    randomNum.push(num)
 }
 console.log(randomNum)
