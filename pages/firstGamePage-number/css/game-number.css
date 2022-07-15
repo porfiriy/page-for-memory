@@ -213,10 +213,17 @@ padding: 0 0px;
 }
 
 .game-mode{
-   margin: 20px 0 0 0;
+   margin: 40px 0 25px 0;
    text-align: center;
-   font-size: 24px;
-   color: rgb(102, 236, 25);
+   font-family:Arial, Helvetica, sans-serif;
+   font-style: normal;
+   font-weight: 800;
+   font-size: 29px;
+   line-height: 29px;
+   text-align: center;
+   letter-spacing: 0.055em;
+   
+   color: #49BC2D;
 }
 .maine {
 
@@ -224,6 +231,7 @@ padding: 0 0px;
 .timer {
    font-weight: 600;
    font-size: 34px;
+   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .maine__timer-container {
    
@@ -236,25 +244,23 @@ padding: 0 0px;
 
 
 .maine__container-calc {
-   border: 3px solid rgb(0, 0, 0);
+   
    margin: 0 20px;
    border-radius: 30px;
 }
-.calculator {
-   padding: 20px;
-   height: 400px;
-   background-color: rgba(0, 0, 0, 0.244);
-   border-radius: 30px;
-}
+
 .value {
    display: block;
-   background-color: rgb(78, 82, 86);
-   width: calc(100% - 20px);
-   height: 50px;
-   border-radius: 10px;
+   background: linear-gradient(105.78deg, rgba(255, 255, 255, 0) -51.58%, rgba(238, 238, 238, 0.557292) 128.37%, rgba(217, 217, 217, 0) 128.39%);
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+border-radius: 10px;
+width: 296px;
+height: 60px;
+   box-shadow:  1px 1px 3px rgb(73, 71, 71);
    margin: 15px auto 30px auto;
-   padding: 0 15px;
+   padding: 0 35px;
    font-size: 23px;
+   letter-spacing: 10px;
 }
 .relo{
    background-color: rgb(48, 159, 255);
@@ -271,19 +277,26 @@ padding: 0 0px;
    justify-content: center;
    align-items: center;
    font-size: 34px;
-  height: 60px;
-  width:  90%;
-   background-color: rgb(233, 165, 38);
-   border-radius: 20px;
+   width: 90px;
+   height: 80px;
+   background: #D9D9D9;
+   border-radius: 5px;
    text-align: center;
+   box-shadow:  1px 1px 3px rgb(73, 71, 71);
 }
 .clear {
-   background-color: rgb(151, 59, 33);
+   background: #D9D9D9;
+   background-image: url(/page-for-memory/pages/firstGamePage-number/img/arrowDelate.svg);
+   background-repeat: no-repeat;
+   background-position: 50%;
 }
 .enter{
-   grid-column: 4 / 2;
-   background-color: rgb(31, 106, 21);
-   font-family: Arial, Helvetica, sans-serif;
+   
+   background: #D9D9D9;
+   background-image: url(/page-for-memory/pages/firstGamePage-number/img/Apply.svg);
+   background-repeat: no-repeat;
+   background-position: 50%;
+   
 }
  
 
