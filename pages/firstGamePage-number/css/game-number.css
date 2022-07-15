@@ -267,9 +267,10 @@ height: 60px;
 }
 .form__num-wrap{
    display: grid;
-  grid-template-columns: 31% 31% 31%;
+  grid-template-columns: 100px 100px 100px;
   justify-items: center;
-  gap: 10px;
+  justify-content: center;
+  gap: 12px;
   
 }
 .num {
@@ -277,7 +278,7 @@ height: 60px;
    justify-content: center;
    align-items: center;
    font-size: 34px;
-   width: 90px;
+   width: 98px;
    height: 80px;
    background: #D9D9D9;
    border-radius: 5px;
