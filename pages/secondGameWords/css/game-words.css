@@ -76,6 +76,10 @@ h6 {
 body {
    position: relative;
    height: 780px;
+   -webkit-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   outline: none;
    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
    -webkit-tap-highlight-color: transparent;
 }

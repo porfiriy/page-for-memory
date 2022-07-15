@@ -83,6 +83,12 @@ background-color: rgb(255, 255, 255);
 color: black;
 font-family: Arial, Helvetica, sans-serif;
 padding: 0 0px;
+-webkit-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   outline: none;
+   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+   -webkit-tap-highlight-color: transparent;
 }
 .wrapper{
    min-height: 100%;
@@ -270,7 +276,7 @@ width: 296px;
 height: 60px;
    box-shadow:  1px 1px 3px rgb(73, 71, 71);
    margin: 15px auto 30px auto;
-   padding: 0 30px;
+   padding: 0 28px;
    font-size: 23px;
    letter-spacing: 10px;
    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
