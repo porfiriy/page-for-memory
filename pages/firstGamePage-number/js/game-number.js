@@ -13,7 +13,9 @@ let startRandNumber10 = document.querySelector('.random-num-container__number10'
 let startText = document.querySelector('.random-num-container__text');
 let startTextGo = document.querySelector('.random-num-container__textGo');
 let startRandContainer = document.querySelector('.random-num-container');
-
+let inputNumbers = document.querySelector('.value');
+let screenResult = document.querySelector('.screenResult__container');
+let screenResultRandomNum = document.querySelector('.screenResult__randomNum-orange');
 
 // let audioClick = new Audio('/page-for-memory/sound/button-sound.mp3');
 
@@ -135,8 +137,13 @@ function pritnTextGo() {
    startTextGo.style = 'display:block;'
 }
 
-//принимаем данные введённые пользователем
+//принимаем данные введённые пользователем и выводим результат
+function inputResult() {
+   event.preventDefault();
+   screenResult.style = 'display: block;'
+   screenResultRandomNum.innerHTML = randomNum;
 
+}
 
 //активация кнопки старт при нажатии
 const BUTTON_START = document.querySelector('.button-start');
