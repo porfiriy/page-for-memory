@@ -94,6 +94,10 @@ padding: 0 0px;
    min-height: 100%;
    max-width: 800px;
 }
+.header__comeback-button{
+   position: relative;
+   z-index: 15;
+}
 .start-menu{
    display: flex;
    justify-content: center;
@@ -103,7 +107,7 @@ padding: 0 0px;
    left: 0px;
    min-height: 800px;
    min-width: 100%;
-   background-color: rgba(251, 247, 247, 0.858);
+   background-color: rgb(255, 255, 255);
    z-index: 15;
    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
    -webkit-tap-highlight-color: transparent;
@@ -113,10 +117,11 @@ padding: 0 0px;
    align-items: center;
    justify-content: center;
    border-radius: 50%;
-   height: 170px;
-   width: 170px;
-   color: rgb(236, 153, 29);
-   font-size: 24px;
+   height: 180px;
+   width: 180px;
+   color: rgb(249, 174, 1);
+   font-size: 38px;
+   font-weight: bold;
    background-color: black;
    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
    -webkit-tap-highlight-color: transparent;

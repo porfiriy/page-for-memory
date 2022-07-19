@@ -14,17 +14,17 @@ let startText = document.querySelector('.random-num-container__text');
 let startTextGo = document.querySelector('.random-num-container__textGo');
 let startRandContainer = document.querySelector('.random-num-container');
 
-/*
-let audioClick = new Audio('/page-for-memory/sound/button-sound.mp3');
 
-const BUTTON = document.querySelector('.num');
-BUTTON.onclick = function () {
-   BUTTON.classList.add('activated');
-   if (BUTTON.classList.contains('activated')) {
-      audioClick.play();
-   }
-}
-*/
+// let audioClick = new Audio('/page-for-memory/sound/button-sound.mp3');
+
+// const BUTTON = document.querySelector('.num');
+// BUTTON.onclick = function () {
+//    BUTTON.classList.add('activated');
+//    if (BUTTON.classList.contains('activated')) {
+//       audioClick.play();
+//    }
+// }
+
 
 //рандомная генерация чисел
 let randomNum = []
@@ -134,6 +134,8 @@ function closeRandWindow() {
 function pritnTextGo() {
    startTextGo.style = 'display:block;'
 }
+
+//принимаем данные введённые пользователем
 
 
 //активация кнопки старт при нажатии
