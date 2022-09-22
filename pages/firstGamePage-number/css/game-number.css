@@ -83,7 +83,7 @@ background-color: rgb(255, 255, 255);
 color: black;
 font-family: Arial, Helvetica, sans-serif;
 padding: 0 0px;
--webkit-user-select: none;
+   -webkit-user-select: none;
    -moz-user-select: none;
    -ms-user-select: none;
    outline: none;
@@ -318,23 +318,12 @@ background-clip: text;
    justify-content: space-between;
    padding: 20px 20px 0px 20px;
 }
-.header__comeback-button {
-}
 .header__img-comeback {
    padding: 4px 0px 0px 0px;
-}
-.header__settings-link {
-}
-.header__icon-settings {
-   
-}
-.header__button-restart {
-   
 }
 .header__img-restart {
    padding: 4px 0px 0px 0px;
 }
-
 .game-mode{
    margin: 40px 0 25px 0;
    text-align: center;
@@ -349,9 +338,6 @@ background-clip: text;
    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
    -webkit-tap-highlight-color: transparent;
 }
-.maine {
-
-}
 .timer {
    font-weight: 600;
    font-size: 34px;
@@ -362,15 +348,10 @@ background-clip: text;
 .maine__timer-container {
    
    padding: 30px 0 60px 0;
-   text-align: center;
-   
+   text-align: center;   
 }
 
-
-
-
-.maine__container-calc {
-   
+.maine__container-calc { 
    margin: 0 20px;
    border-radius: 30px;
    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
