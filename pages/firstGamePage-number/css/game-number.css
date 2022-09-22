@@ -92,7 +92,7 @@ padding: 0 0px;
 }
 .wrapper{
    min-height: 100%;
-   max-width: 800px;
+   max-width: 100%;
 }
 .header__comeback-button{
    position: relative;
@@ -144,19 +144,105 @@ padding: 0 0px;
    display: none;
    height: 100%;
    width: 100%;
-   background-color: #ffffff;
+   background-image: url(/page-for-memory/pages/firstGamePage-number/img/brainBackground.png);
+   background-repeat: no-repeat;
+   background-size: 100% 100%;
    z-index: 15;
+}
+.screenResult__textResult {
+   display: block;
+   margin: 80px 0 0 0 ;
+   text-align: center;
+   font-family: 'Roboto';
+font-style: normal;
+font-weight: 800;
+font-size: 2.3em;
+background: linear-gradient(130.92deg, #FFB017 18.75%, #EC0A0A 135.95%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+}
+.screenResult__textMode {
+   display: block;
+   margin: 20px 0 0 0 ;
+   text-align: center;
+   font-size:22px;
+   font-weight: 900;
+}
+.screenResult__timeResult {
+   display: block;
+   margin: 20px 0 0 0 ;
+   font-size:22px;
+   text-align: center;
+}
+.screenResult__timeResult::before{
+   content: "";
+   display: block;
+   position: absolute;
+   top: 170px;
+   left: 80px;
+   width: 60px;
+   height: 60px;
+   
+   background-image: url(/page-for-memory/pages/firstGamePage-number/img/clock\ 1.svg);
+   background-repeat: no-repeat;
 }
 .screenResult__discriptionRandomNum{
    font-size: 30px;
-   margin: 150px 0 0 0;
+   margin: 300px 0 0 0;
    text-align: center;
+   font-weight: 700;
 }
 .screenResult__randomNum-orange{
-   color:rgb(249, 174, 1);
+   color:#FFB017;
    font-size: 38px;
    text-align: center;
-   margin: 0px 0 0 0;
+   margin: 20px 0 0 0;
+}
+.screenResult__plusScoreIQ{
+   display: block;
+   margin: 3rem 0 3rem 0 ;
+   text-align: center;
+   font-weight: 900;
+}
+.screenResult__plusScoreIQ::before{
+   content: "";
+   display: block;
+   position: absolute;
+   right: 30px;
+   width: 50px;
+   height: 40px;
+   
+   background-image: url(/page-for-memory/pages/firstGamePage-number/img/iconBrain.png);
+   background-repeat: no-repeat;
+}
+.screenResult__button-container{
+   display: flex;
+   justify-content: space-around;
+   
+}
+.button-container__button-restart {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 60px;
+   width: 130px;
+   border-radius: 30px;
+   background-color: #FFB017;
+   font-size: 20px;
+   font-weight: 700;
+
+}
+.button-container__button-next {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 60px;
+   width: 130px;
+   border-radius: 30px;
+   background-color: #FFB017;
+   font-size: 19px;
+   font-weight: 700;
 }
 .random-num-container {
    position: absolute;
