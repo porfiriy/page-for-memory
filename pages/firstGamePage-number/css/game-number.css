@@ -248,6 +248,14 @@ background-clip: text;
    font-size: 19px;
    font-weight: 700;
 }
+.button-container__button-restart:active{
+   background-color: #e3c378;
+   transform: scale(0.8);
+}
+.button-container__button-next:active{
+   background-color: #e3c378;
+   transform: scale(0.8);
+}
 .random-num-container {
    position: absolute;
    height: 100%;
