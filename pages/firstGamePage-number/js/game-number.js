@@ -17,7 +17,48 @@ let inputNumbers = document.querySelector('.value');
 let screenResult = document.querySelector('.screenResult__container');
 let screenResultRandomNum = document.querySelector('.screenResult__randomNum-orange');
 
+let settings = document.querySelector(".pop-up__container");
+let comeback = document.querySelector(".pop-up__container2");
+let restart = document.querySelector(".pop-up__container3");
+
 // let audioClick = new Audio('/page-for-memory/sound/button-sound.mp3');
+
+//при нажатии на отмену вспл окна настройки 
+document.querySelector('.pop-up__cancel').onclick = function () {
+   settings.style = 'visibility:hidden;';
+
+};
+//при нажатии на иконку настроек
+document.querySelector('.header__icon-settings').onclick = function () {
+
+   settings.style = 'visibility:visible;';
+
+};
+
+//при нажатии на отмену вспл окна назад
+document.querySelector('.pop-up__cancel2').onclick = function () {
+   comeback.style = 'visibility:hidden;';
+
+};
+//при нажатии на иконку назад
+document.querySelector('.header__comeback-button').onclick = function () {
+
+   comeback.style = 'visibility:visible;';
+
+};
+
+//при нажатии на отмену вспл окна рестарт
+document.querySelector('.pop-up__cancel3').onclick = function () {
+   restart.style = 'visibility:hidden;';
+
+};
+//при нажатии на иконку рестарт
+document.querySelector('.header__button-restart').onclick = function () {
+
+   restart.style = 'visibility:visible;';
+
+};
+
 
 // const BUTTON = document.querySelector('.num');
 // BUTTON.onclick = function () {
@@ -143,6 +184,13 @@ function inputResult() {
    screenResult.style = 'display: block;'
    screenResultRandomNum.innerHTML = randomNum;
 
+   //подсветка неверно введённых цифр в меню результатов
+   if (inputResult == randomNum) {
+      console.log('вы победили');
+   }
+   else {
+      console.log('smxmsjcn');
+   }
 }
 
 //активация кнопки старт при нажатии

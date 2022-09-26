@@ -11,6 +11,55 @@
 
 <body>
    <div class="wrapper">
+      <div class="pop-up__container">
+         <div class="pop-up">
+            <div class="pop-up__title">
+               Внимание
+            </div>
+            <div class="pop-up__description">
+               Если вы перейдёте-результат не сохраниться
+            </div>
+            <div class="wrap__button">
+               <form class="pop-up__form" action="#">
+                  <a href="/page-for-memory/pages/settings-page/settings-page.html" class="pop-up__ok">Ok</a>
+                  <a class="pop-up__cancel">Отмена</a>
+               </form>
+            </div>
+         </div>
+      </div>
+      <div class="pop-up__container2">
+         <div class="pop-up2">
+            <div class="pop-up__title2">
+               Внимание
+            </div>
+            <div class="pop-up__description2">
+               Если вы перейдёте,результат не сохраниться
+            </div>
+            <div class="wrap__button2">
+               <form class="pop-up__form2" action="#">
+                  <a href="/page-for-memory/pages/main-page/main-page.html" class="pop-up__ok2">Ok</a>
+                  <a class="pop-up__cancel2">Отмена</a>
+               </form>
+            </div>
+         </div>
+      </div>
+
+      <div class="pop-up__container3">
+         <div class="pop-up3">
+            <div class="pop-up__title3">
+               Внимание
+            </div>
+            <div class="pop-up__description3">
+               Начать заново?
+            </div>
+            <div class="wrap__button3">
+               <form class="pop-up__form3" action="#">
+                  <a onClick="window.location.reload();" class="pop-up__ok3">Ok</a>
+                  <a class="pop-up__cancel3">Отмена</a>
+               </form>
+            </div>
+         </div>
+      </div>
       <div class="start-menu">
          <a href="#" class="button-start">START</a>
       </div>
@@ -48,10 +97,10 @@
       </div>
       <header class="header">
 
-         <a class="header__comeback-button" href="/page-for-memory/pages/main-page/main-page.html">
+         <a class="header__comeback-button" href="#">
             <img class="header__img-comeback" src="/page-for-memory/img/comeback-button.svg" alt="назад"></a>
-         <a href="/page-for-memory/pages/settings-page/settings-page.html" class="header__settings-link"><img
-               src="/page-for-memory/img/settings.svg" alt="settings" class="header__icon-settings"></a>
+         <a href="#" class="header__settings-link"><img src="/page-for-memory/img/settings.svg" alt="settings"
+               class="header__icon-settings"></a>
          <a href="#" onClick="window.location.reload();" class="header__button-restart"><img
                src="/page-for-memory/img/button-retryGame.svg" alt="заново" class="header__img-restart"></a>
       </header>
