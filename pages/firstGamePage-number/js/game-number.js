@@ -59,7 +59,7 @@ document.querySelector('.header__button-restart').onclick = function () {
 
 };
 
-
+// вроде бы звук при нажатии кнопки делейт
 // const BUTTON = document.querySelector('.num');
 // BUTTON.onclick = function () {
 //    BUTTON.classList.add('activated');
@@ -180,6 +180,7 @@ function pritnTextGo() {
 
 //принимаем данные введённые пользователем и выводим результат
 function inputResult() {
+   // функция ниже предотвращает перезагрузку страницы при нажатии на кнопку ОТПРАВИТЬ
    event.preventDefault();
    screenResult.style = 'display: block;'
    screenResultRandomNum.innerHTML = randomNum;
