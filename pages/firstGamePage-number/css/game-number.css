@@ -899,6 +899,7 @@ height: 60px;
    letter-spacing: 10px;
    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
    -webkit-tap-highlight-color: transparent;
+   border: solid 3px #FEC727;
 }
 .relo{
    background-color: rgb(48, 159, 255);
@@ -927,6 +928,7 @@ height: 60px;
    box-shadow:  1px 1px 3px rgb(73, 71, 71);
    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
    -webkit-tap-highlight-color: transparent;
+   border: solid 2px #FEC727;
 }
 .num:active{
    background: #686767;
