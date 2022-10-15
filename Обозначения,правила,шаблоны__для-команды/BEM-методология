@@ -1,0 +1,21 @@
+<!-- Пример кода -->
+<header class="header">
+   <h3 class="header__logo">Porfiriy Romanouskiy</h3>
+   <ul class="header__list">
+      <li class="header__list-item">Home</li>
+      <li class="header__list-item">Portfolio</li>
+      <li class="header__list-item">Contacts</li>
+   </ul>
+</header>
+
+<!-- Синтаксис lowwer case ,маленькие буквы в названии класса -->
+<div class="BLOCK-NAME">
+   <div class="BLOCK-NAME__ELEMENT-NAME">
+      <!-- Можно добавить блок в нутрь блока -->
+      <div class="BLOCK-NAME-2">
+         <div class="BLOCK-NAME-2__ELEMENT-NAME-2">
+
+         </div>
+      </div>
+   </div>
+</div>

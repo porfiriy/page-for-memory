@@ -185,14 +185,24 @@ function inputResult() {
    screenResult.style = 'display: block;'
    screenResultRandomNum.innerHTML = randomNum;
 
+   //получаю данные в эту переменную которые пользователь ввёл 
+   let inputedUserValue = document.getElementById('input').value;
+   // пытаюсь преобразовать строку в массив 
+   let arr = JSON.parse(inputedUserValue);
+   console.log(arr.length);
+
    //подсветка неверно введённых цифр в меню результатов
-   if (inputResult == randomNum) {
+   if (inputedUserValue == randomNum) {
       console.log('вы победили');
    }
    else {
       console.log('smxmsjcn');
    }
+
+
 }
+
+
 
 //активация кнопки старт при нажатии
 const BUTTON_START = document.querySelector('.button-start');
