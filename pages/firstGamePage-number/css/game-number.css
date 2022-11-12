@@ -81,7 +81,7 @@ height: 100%;
 font-size: 18px;
 background-color: rgb(255, 255, 255);
 color: black;
-font-family: Arial, Helvetica, sans-serif;
+font-family: cursive;
 padding: 0 0px;
    -webkit-user-select: none;
    -moz-user-select: none;
@@ -132,7 +132,7 @@ padding: 0 0px;
 }
 .pop-up__title{
    font-size: 28px;
-   font-family: Arial, Helvetica, sans-serif;
+   font-family: cursive;
    font-weight: 600;
    text-align: center;
    color: #cc9d1b;
@@ -141,7 +141,7 @@ padding: 0 0px;
    font-size: 20px;
    font-weight: 600;
    line-height: 30px;
-   font-family: Arial, Helvetica, sans-serif;
+   font-family: cursive;
    text-align: center;
    padding: 0 20px ;
 }
@@ -169,7 +169,7 @@ height: 40px;
    padding: 10px 0;
    height:40px;
    width: 100px;
-   font-family:Verdana, Geneva, Tahoma, sans-serif;
+   font-family:cursive;
    border-radius: 10px;
    background-color: rgb(17, 190, 75);
    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -180,7 +180,7 @@ height: 40px;
    transform: scale(0.7);
 }
 .pop-up__cancel{
-   font-family:Verdana, Geneva, Tahoma, sans-serif;
+   font-family:cursive;
    font-size: 20px;
    display: block;
    color: black;
@@ -219,7 +219,7 @@ height: 40px;
 }
 .pop-up__title2{
    font-size: 28px;
-   font-family: Arial, Helvetica, sans-serif;
+   font-family:cursive;
    font-weight: 600;
    text-align: center;
    color: #cc9d1b;
@@ -227,7 +227,7 @@ height: 40px;
 .pop-up__description2{
    font-size: 20px;
    font-weight: 600;
-   font-family: Arial, Helvetica, sans-serif;
+   font-family:cursive;
    text-align: center;
    padding: 0 20px ;
 }
@@ -255,7 +255,7 @@ height: 40px;
    height:40px;
    width: 100px;
    background-color: rgb(17, 190, 75);
-   font-family:Verdana, Geneva, Tahoma, sans-serif;
+   font-family:cursive;
    border-radius: 10px;
    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
    -webkit-tap-highlight-color: transparent;
@@ -273,7 +273,7 @@ height: 40px;
    height:40px;
    width: 100px;
    background-color: rgb(194, 45, 45);
-   font-family:Verdana, Geneva, Tahoma, sans-serif;
+   font-family:cursive;
    border-radius: 10px;
    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
    -webkit-tap-highlight-color: transparent;
@@ -304,7 +304,7 @@ height: 40px;
 }
 .pop-up__title3{
    font-size: 28px;
-   font-family: Arial, Helvetica, sans-serif;
+   font-family: cursive;
    font-weight: 600;
    text-align: center;
    color: #cc9d1b;
@@ -312,7 +312,7 @@ height: 40px;
 .pop-up__description3{
    font-size: 20px;
    font-weight: 600;
-   font-family: Arial, Helvetica, sans-serif;
+   font-family: cursive;
    text-align: center;
    padding: 0 20px ;
 }
@@ -340,7 +340,7 @@ height: 40px;
    height:40px;
    width: 100px;
    background-color: rgb(17, 190, 75);
-   font-family:Verdana, Geneva, Tahoma, sans-serif;
+   font-family:cursive;
    border-radius: 10px;
    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
    -webkit-tap-highlight-color: transparent;
@@ -358,7 +358,7 @@ height: 40px;
    height:40px;
    width: 100px;
    background-color: rgb(194, 45, 45);
-   font-family:Verdana, Geneva, Tahoma, sans-serif;
+   font-family:cursive;
    border-radius: 10px;
    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
    -webkit-tap-highlight-color: transparent;
@@ -387,7 +387,7 @@ height: 40px;
 }
 .pop-up__title{
    font-size: 28px;
-   font-family: Arial, Helvetica, sans-serif;
+   font-family: cursive;
    font-weight: 600;
    text-align: center;
    color: #cc9d1b;
@@ -396,7 +396,7 @@ height: 40px;
    font-size: 20px;
    font-weight: 600;
    line-height: 30px;
-   font-family: Arial, Helvetica, sans-serif;
+   font-family: cursive;
    text-align: center;
    padding: 0 20px ;
 }
@@ -424,7 +424,7 @@ height: 40px;
    padding: 10px 0;
    height:40px;
    width: 100px;
-   font-family:Verdana, Geneva, Tahoma, sans-serif;
+   font-family:cursive;
    border-radius: 10px;
    background-color: rgb(17, 190, 75);
    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -435,7 +435,7 @@ height: 40px;
    transform: scale(0.7);
 }
 .pop-up__cancel{
-   font-family:Verdana, Geneva, Tahoma, sans-serif;
+   font-family:cursive;
    font-size: 20px;
    display: block;
    color: black;
@@ -474,7 +474,7 @@ height: 40px;
 }
 .pop-up__title2{
    font-size: 28px;
-   font-family: Arial, Helvetica, sans-serif;
+   font-family: cursive;
    font-weight: 600;
    text-align: center;
    color: #cc9d1b;
@@ -482,7 +482,7 @@ height: 40px;
 .pop-up__description2{
    font-size: 20px;
    font-weight: 600;
-   font-family: Arial, Helvetica, sans-serif;
+   font-family: cursive;
    text-align: center;
    padding: 0 20px ;
 }
@@ -510,7 +510,7 @@ height: 40px;
    height:40px;
    width: 100px;
    background-color: rgb(17, 190, 75);
-   font-family:Verdana, Geneva, Tahoma, sans-serif;
+   font-family:cursive;
    border-radius: 10px;
    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
    -webkit-tap-highlight-color: transparent;
@@ -528,7 +528,7 @@ height: 40px;
    height:40px;
    width: 100px;
    background-color: rgb(194, 45, 45);
-   font-family:Verdana, Geneva, Tahoma, sans-serif;
+   font-family:cursive;
    border-radius: 10px;
    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
    -webkit-tap-highlight-color: transparent;
@@ -559,7 +559,7 @@ height: 40px;
 }
 .pop-up__title3{
    font-size: 28px;
-   font-family: Arial, Helvetica, sans-serif;
+   font-family: cursive;
    font-weight: 600;
    text-align: center;
    color: #cc9d1b;
@@ -567,7 +567,7 @@ height: 40px;
 .pop-up__description3{
    font-size: 20px;
    font-weight: 600;
-   font-family: Arial, Helvetica, sans-serif;
+   font-family: cursive;
    text-align: center;
    padding: 0 20px ;
 }
@@ -595,7 +595,7 @@ height: 40px;
    height:40px;
    width: 100px;
    background-color: rgb(17, 190, 75);
-   font-family:Verdana, Geneva, Tahoma, sans-serif;
+   font-family: cursive;
    border-radius: 10px;
    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
    -webkit-tap-highlight-color: transparent;
@@ -613,7 +613,7 @@ height: 40px;
    height:40px;
    width: 100px;
    background-color: rgb(171, 23, 23);
-   font-family:Verdana, Geneva, Tahoma, sans-serif;
+   font-family:cursive;
    border-radius: 10px;
    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
    -webkit-tap-highlight-color: transparent;
@@ -677,7 +677,7 @@ height: 40px;
    display: block;
    margin: 100px 0 0 0 ;
    text-align: center;
-   font-family: 'Roboto';
+   font-family: cursive;
 font-style: normal;
 font-weight: 800;
 font-size: 2.3em;
@@ -853,7 +853,7 @@ background-clip: text;
 .game-mode{
    margin: 40px 0 25px 0;
    text-align: center;
-   font-family:Arial, Helvetica, sans-serif;
+   font-family:cursive;
    font-style: normal;
    font-weight: 800;
    font-size: 29px;
@@ -867,7 +867,7 @@ background-clip: text;
 .timer {
    font-weight: 600;
    font-size: 34px;
-   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   font-family:cursive;
    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
    -webkit-tap-highlight-color: transparent;
 }

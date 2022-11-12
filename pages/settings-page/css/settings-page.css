@@ -38,7 +38,7 @@ body {
 input,
 button,
 textarea {
-   font-family: inherit;
+   font-family: cursive;
 }
 input::-ms-clear {
    display: none;
@@ -127,7 +127,7 @@ body {
 
 .main-item {
    margin: 0 auto;
-   font-family: Arial, Helvetica, sans-serif;
+   font-family: cursive;
    width: 140px;
    text-align: center;
    font-size: 23px;
@@ -152,7 +152,7 @@ body {
 }
 .main-item3 {
    margin: 0 auto;
-   font-family: Arial, Helvetica, sans-serif;
+   font-family:cursive;
    width: 140px;
    text-align: center;
    font-size: 22px;
@@ -168,6 +168,7 @@ body {
    width: 100%;
 }
 .version {
+   font-family: cursive;
    margin: 10px;
    font-size: 24px;
 }
@@ -192,7 +193,7 @@ body {
 }
 .sign-in {
    font-size: 20px;
-   font-family: Arial, Helvetica, sans-serif;
+   font-family: cursive;
    color: rgb(170, 20, 230);
    margin: 0 0 0 5px;
    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
