@@ -38,7 +38,7 @@ body {
 input,
 button,
 textarea {
-   font-family: cursive;
+   font-family: 'Balsamiq Sans', cursive;
 }
 input::-ms-clear {
    display: none;
@@ -166,7 +166,7 @@ body {
    
    width: 250px;
    height: 51px;
-   font-family: cursive;
+   font-family: 'Balsamiq Sans', cursive;
    font-style: normal;
    font-weight: 300;
    font-size: 18px;
@@ -199,7 +199,7 @@ body {
 .sanbox-button {
    display: block;
    border-radius: 10px;
-   font-family: cursive;
+   font-family: 'Balsamiq Sans', cursive;
    margin: 0 auto;
    color: #00edc2;
    font-style: normal;
@@ -232,7 +232,7 @@ body {
 .text-feedbackMain {
    display: block;
    margin: 10px 0 0 30%;
-   font-family: cursive;
+   font-family: 'Balsamiq Sans', cursive;
    font-size: 28px;
    color: transparent;
    -webkit-background-clip: text;

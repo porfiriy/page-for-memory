@@ -101,6 +101,11 @@ body {
    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
    -webkit-tap-highlight-color: transparent;
 }
+.social-list{
+   display: flex;
+   gap: 10px;
+   margin: 5px 15px 0 0px;
+}
 .discord-img {
    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
    -webkit-tap-highlight-color: transparent;
@@ -108,6 +113,10 @@ body {
 .tik-tok-img {
    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
    -webkit-tap-highlight-color: transparent;
+}
+.linkVK__img{
+   width: 50px;
+   border-radius: 50px;
 }
 .discord-img {
    width: 50px;
