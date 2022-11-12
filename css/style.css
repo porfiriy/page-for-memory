@@ -38,7 +38,7 @@ body {
 input,
 button,
 textarea {
-   font-family: inherit;
+   font-family: 'Balsamiq Sans', cursive;
 }
 input::-ms-clear {
    display: none;
@@ -88,7 +88,7 @@ body {
 
 .text-loading {
    transform: translate(50% - 130px);
-   font-family: "Roboto";
+   font-family: 'Balsamiq Sans', cursive;
    width: 130px;
    margin: 0 0 24px 10px;
    color: black;

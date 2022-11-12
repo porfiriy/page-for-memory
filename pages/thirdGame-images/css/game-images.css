@@ -38,7 +38,7 @@ body {
 input,
 button,
 textarea {
-   font-family: cursive;
+   font-family: 'Balsamiq Sans', cursive;
 }
 input::-ms-clear {
    display: none;
@@ -107,7 +107,7 @@ html,body {
 }
 .pop-up__title{
    font-size: 28px;
-   font-family: cursive;
+   font-family: 'Balsamiq Sans', cursive;
    font-weight: 600;
    text-align: center;
    color: #cc9d1b;
@@ -116,7 +116,7 @@ html,body {
    font-size: 20px;
    font-weight: 600;
    line-height: 30px;
-   font-family: cursive;
+   font-family: 'Balsamiq Sans', cursive;
    text-align: center;
    padding: 0 20px ;
 }
@@ -144,7 +144,7 @@ height: 40px;
    padding: 10px 0;
    height:40px;
    width: 100px;
-   font-family:cursive;
+   font-family: 'Balsamiq Sans', cursive;
    border-radius: 10px;
    background-color: rgb(17, 190, 75);
    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -155,7 +155,7 @@ height: 40px;
    transform: scale(0.7);
 }
 .pop-up__cancel{
-   font-family:cursive;
+   font-family: 'Balsamiq Sans', cursive;
    font-size: 20px;
    display: block;
    color: black;
@@ -194,7 +194,7 @@ height: 40px;
 }
 .pop-up__title2{
    font-size: 28px;
-   font-family:cursive;
+   font-family: 'Balsamiq Sans', cursive;
    font-weight: 600;
    text-align: center;
    color: #cc9d1b;
@@ -202,7 +202,7 @@ height: 40px;
 .pop-up__description2{
    font-size: 20px;
    font-weight: 600;
-   font-family: cursive;
+   font-family: 'Balsamiq Sans', cursive;
    text-align: center;
    padding: 0 20px ;
 }
@@ -230,7 +230,7 @@ height: 40px;
    height:40px;
    width: 100px;
    background-color: rgb(17, 190, 75);
-   font-family:cursive;
+   font-family: 'Balsamiq Sans', cursive;
    border-radius: 10px;
    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
    -webkit-tap-highlight-color: transparent;
@@ -248,7 +248,7 @@ height: 40px;
    height:40px;
    width: 100px;
    background-color: rgb(194, 45, 45);
-   font-family:cursive;
+   font-family: 'Balsamiq Sans', cursive;
    border-radius: 10px;
    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
    -webkit-tap-highlight-color: transparent;
@@ -279,7 +279,7 @@ height: 40px;
 }
 .pop-up__title3{
    font-size: 28px;
-   font-family: cursive;
+   font-family: 'Balsamiq Sans', cursive;
    font-weight: 600;
    text-align: center;
    color: #cc9d1b;
@@ -287,7 +287,7 @@ height: 40px;
 .pop-up__description3{
    font-size: 20px;
    font-weight: 600;
-   font-family: cursive;
+   font-family: 'Balsamiq Sans', cursive;
    text-align: center;
    padding: 0 20px ;
 }
@@ -315,7 +315,7 @@ height: 40px;
    height:40px;
    width: 100px;
    background-color: rgb(17, 190, 75);
-   font-family:cursive;
+   font-family: 'Balsamiq Sans', cursive;
    border-radius: 10px;
    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
    -webkit-tap-highlight-color: transparent;
@@ -333,7 +333,7 @@ height: 40px;
    height:40px;
    width: 100px;
    background-color: rgb(194, 45, 45);
-   font-family:cursive;
+   font-family: 'Balsamiq Sans', cursive;
    border-radius: 10px;
    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
    -webkit-tap-highlight-color: transparent;
@@ -440,7 +440,7 @@ height: 40px;
    color: rgb(102, 236, 25);
 }
 .text-openedCards{
-   font-family:cursive;
+   font-family: 'Balsamiq Sans', cursive;
    padding: 10px 0 15px 0;
    font-weight: 600;
    text-align: center;
@@ -496,7 +496,7 @@ height: 40px;
    height: 180px;
    width: 180px;
    font-weight: bold;
-   font-family: cursive;
+   font-family: 'Balsamiq Sans', cursive;
    color: rgb(249, 174, 1);
    font-size: 38px;
    background-color: black;

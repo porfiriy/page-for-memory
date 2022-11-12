@@ -38,7 +38,7 @@ body {
 input,
 button,
 textarea {
-   font-family: cursive;
+   font-family: 'Balsamiq Sans', cursive;
 }
 input::-ms-clear {
    display: none;
@@ -136,7 +136,7 @@ body {
 
 .main-item {
    margin: 0 auto;
-   font-family: cursive;
+   font-family: 'Balsamiq Sans', cursive;
    width: 140px;
    text-align: center;
    font-size: 23px;
@@ -161,7 +161,7 @@ body {
 }
 .main-item3 {
    margin: 0 auto;
-   font-family:cursive;
+   font-family: 'Balsamiq Sans', cursive;
    width: 140px;
    text-align: center;
    font-size: 22px;
@@ -177,7 +177,7 @@ body {
    width: 100%;
 }
 .version {
-   font-family: cursive;
+   font-family: 'Balsamiq Sans', cursive;
    margin: 10px;
    font-size: 24px;
 }
@@ -202,7 +202,7 @@ body {
 }
 .sign-in {
    font-size: 20px;
-   font-family: cursive;
+   font-family: 'Balsamiq Sans', cursive;
    color: rgb(170, 20, 230);
    margin: 0 0 0 5px;
    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
