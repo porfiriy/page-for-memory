@@ -186,17 +186,19 @@ function inputResult() {
    screenResultRandomNum.innerHTML = randomNum;
 
    //получаю данные в эту переменную которые пользователь ввёл 
-   let inputedUserValue = document.getElementById('input').value;
+   let test = [1];
+
+   let inputedUserValue = [document.getElementById('input').value];
    // пытаюсь преобразовать строку в массив 
    let arr = JSON.parse(inputedUserValue);
-   console.log(arr.length);
+   console.log(arr);
 
    //подсветка неверно введённых цифр в меню результатов
-   if (inputedUserValue == randomNum) {
+   if (inputedUserValue == test) {
       console.log('вы победили');
    }
    else {
-      console.log('smxmsjcn');
+      console.log(typeof ('no'));
    }
 
 
