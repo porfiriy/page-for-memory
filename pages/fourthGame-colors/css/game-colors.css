@@ -430,13 +430,34 @@ height: 40px;
 height: 79px;
 background: #6D0AD0;
 border-radius: 20px;
+animation: rectangle 2s;
 
+}
+@keyframes rectangle {
+   0%{
+      transform: scale(0);
+   }
+   100%{
+      transition: all 2s;
+      
+   }
 }
 .rectangle__text {
    font-family: 'Balsamiq Sans', cursive;
    font-size: 35px;
    font-weight: bold;
    color: #cc9d1b;
+   animation:  rectangle__text 2s;
+}
+@keyframes rectangle__text {
+   0%{
+      transform: scale(0);
+
+   }
+   100%{
+      transition: all 2s;
+      transform: scale(1);
+   }
 }
 .container-buttons{
    display: flex;
@@ -449,11 +470,22 @@ border-radius: 20px;
    border-radius: 20px;
    background-color: #c8000A;
 }
+.button_red:active{
+   transform: scale(0.7);
+   transition: all 0.2ms;
+   background-color: #c8000a79;
+}
+
 .button_green {
    height: 105px;
    width: 105px;
    border-radius: 20px;
    background-color: #598234;
+}
+.button_green:active{
+   transform: scale(0.7);
+   transition: all 0.2ms;
+   background-color: #5882346c;
 }
 .textVictory {
    position: absolute;
