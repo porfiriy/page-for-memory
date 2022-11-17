@@ -92,7 +92,7 @@ body {
    left: 0px;
    height: 100%;
    width: 100%;
-   background-color: rgba(251, 247, 247, 0.858);
+   background-color: rgb(251, 247, 247);
    z-index: 3;
    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
    -webkit-tap-highlight-color: transparent;
@@ -102,10 +102,12 @@ body {
    align-items: center;
    justify-content: center;
    border-radius: 50%;
-   height: 170px;
-   width: 170px;
-   color: rgb(236, 153, 29);
-   font-size: 24px;
+   height: 180px;
+   width: 180px;
+   font-weight: bold;
+   font-family: 'Balsamiq Sans', cursive;
+   color: rgb(249, 174, 1);
+   font-size: 38px;
    background-color: black;
    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
    -webkit-tap-highlight-color: transparent;
