@@ -70,13 +70,15 @@ function randomColorRectangle() {
    rectangleColor.style = `background:${arrayColorsRectangle[randomNumRectangle]};`;
    rectangleText.innerHTML = arrayColorsText[randomNumText];
 }
-randomColorRectangle();
-
-
-
 
 
 function game() {
+
+   randomColorRectangle();
+
+   //добавляет анимацию тексту
+   rectangleText.style = "animation:  rectangle__text 2s;";
+
    // при нажатии на красную кнопку
    redButton.onclick = function () {
       document.querySelector('.button_red').classList.add('activated');
@@ -96,10 +98,12 @@ function game() {
          }
 
          console.log(rightAnswer);
-         //запускаетзаново генерацию новых цветов
-         randomColorRectangle();
+         //запускает генерацию новых цветов
+
          randomNumRectangle = Math.floor(Math.random() * 4);
          randomNumText = Math.floor(Math.random() * 4);
+         randomColorRectangle();
+         //начинает анимацию при нажатии на кнопку
       }
    }
 
@@ -120,9 +124,10 @@ function game() {
 
          console.log(rightAnswer);
          //запускаетзаново генерацию новых цветов
-         randomColorRectangle();
+
          randomNumRectangle = Math.floor(Math.random() * 4);
          randomNumText = Math.floor(Math.random() * 4);
+         randomColorRectangle();
       }
    }
 

@@ -428,11 +428,12 @@ height: 40px;
    align-items: center;
    width: 300px;
 height: 79px;
-background: #6D0AD0;
 border-radius: 20px;
-
+background-color: #110707;
+animation: rectangle 2s;
 
 }
+
 @keyframes rectangle {
    0%{
       transform: scale(0);
@@ -447,7 +448,7 @@ border-radius: 20px;
    font-size: 35px;
    font-weight: bold;
    color: #cc9d1b;
-   animation:  rectangle__text 2s;
+   
 }
 @keyframes rectangle__text {
    0%{
@@ -461,7 +462,7 @@ border-radius: 20px;
 }
 .container-buttons{
    display: flex;
-   margin: 300px 0 0 0;
+   margin: 260px 0 0 0;
    justify-content: space-around;
 }
 .button_red {
