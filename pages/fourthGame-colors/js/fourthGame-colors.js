@@ -24,6 +24,11 @@ let arrayColorsText = ["Фиолетовый", "Зелёный", "Синий", "
 //создаёт рандомное число для цвета фигуры
 let randomNumRectangle = Math.floor(Math.random() * 4);
 let randomNumText = Math.floor(Math.random() * 4);
+//таймер
+let timer = document.querySelector(".timer");
+//счётчик пройденных фигур(по нажатию на кнопки)
+let varCounterClickButtons = 0;
+let counterChangeSymbol = document.querySelector(".counter-complited__number");
 
 //правильные-неправильные ответы
 let rightAnswer = 0;
@@ -63,7 +68,11 @@ document.querySelector('.linkToTheRestart').onclick = function () {
    restart.style = 'visibility:visible;';
 
 };
+//считает время с начала игры
+function timerGame() {
 
+}
+timerGame();
 //красит в рандомный цвет фигуру из массива и вставляет в фигуру новый текст с названием цвета
 function randomColorRectangle() {
 
@@ -76,6 +85,11 @@ function game() {
 
    randomColorRectangle();
 
+   //выводит переменную с количеством пройденных фигур 
+   function FuncCounterComplited() {
+      counterChangeSymbol.innerHTML = varCounterClickButtons;
+   }
+
    //добавляет анимацию тексту
    rectangleText.style = "animation:  rectangle__text 2s;";
 
@@ -85,8 +99,8 @@ function game() {
       redButton.classList.add('activated');
       if (redButton.classList.contains('activated')) {
 
-         console.log(randomNumRectangle);
-         console.log(randomNumText);
+         //считает нажатие на кнопку(для того что бы понять,сколько фигур было)
+         varCounterClickButtons += 1;
          //когда игрок нажал красную,и если он прав,то записываем на счёт,если нет,то записываем что ошибся
          if (randomNumRectangle !== randomNumText) {
             console.log("ты молодец");
@@ -103,6 +117,7 @@ function game() {
          randomNumRectangle = Math.floor(Math.random() * 4);
          randomNumText = Math.floor(Math.random() * 4);
          randomColorRectangle();
+         FuncCounterComplited();
          //начинает анимацию при нажатии на кнопку
       }
    }
@@ -113,6 +128,8 @@ function game() {
       greenButton.classList.add('activated');
       if (greenButton.classList.contains('activated')) {
 
+         //считает нажатие на кнопку(для того что бы понять,сколько фигур было)
+         varCounterClickButtons += 1;
          if (randomNumRectangle == randomNumText) {
             console.log("ты молодец");
             rightAnswer += 1;
@@ -128,6 +145,7 @@ function game() {
          randomNumRectangle = Math.floor(Math.random() * 4);
          randomNumText = Math.floor(Math.random() * 4);
          randomColorRectangle();
+         FuncCounterComplited();
       }
    }
 
