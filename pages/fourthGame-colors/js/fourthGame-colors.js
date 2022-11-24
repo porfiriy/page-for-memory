@@ -72,19 +72,18 @@ document.querySelector('.linkToTheRestart').onclick = function () {
 function timerGame() {
    let seconds = 0;
    let minutes = 0;
-   let hours = 0;
+   let zeroTimerValue = 0;
    setInterval(function () {
 
-      timer.innerHTML = `${minutes}.${seconds}`;//выводит на экран пользователю
+      timer.innerHTML = `0${minutes}:${seconds}`;//выводит на экран пользователю
       seconds += 1;
       if (seconds == 60) {
          minutes += 1;
          seconds = 0;
       }
-      else if (minutes == 60) {
-         hours += 1;
+      else if (seconds == 10) {
+         timer.innerHTML = `0${minutes}:${seconds}`;
       }
-
    }, 1000)
 }
 
