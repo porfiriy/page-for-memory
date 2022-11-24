@@ -70,9 +70,24 @@ document.querySelector('.linkToTheRestart').onclick = function () {
 };
 //считает время с начала игры
 function timerGame() {
+   let seconds = 0;
+   let minutes = 0;
+   let hours = 0;
+   setInterval(function () {
 
+      timer.innerHTML = `${minutes}.${seconds}`;//выводит на экран пользователю
+      seconds += 1;
+      if (seconds == 60) {
+         minutes += 1;
+         seconds = 0;
+      }
+      else if (minutes == 60) {
+         hours += 1;
+      }
+
+   }, 1000)
 }
-timerGame();
+
 //красит в рандомный цвет фигуру из массива и вставляет в фигуру новый текст с названием цвета
 function randomColorRectangle() {
 
@@ -84,7 +99,7 @@ function randomColorRectangle() {
 function game() {
 
    randomColorRectangle();
-
+   timerGame();
    //выводит переменную с количеством пройденных фигур 
    function FuncCounterComplited() {
       counterChangeSymbol.innerHTML = varCounterClickButtons;
