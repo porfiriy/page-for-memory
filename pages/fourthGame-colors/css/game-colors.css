@@ -408,14 +408,54 @@ height: 40px;
    width: 0px;
    font-size: 0px;
 }
-.timer{
-   display: block;
-   text-align: center;
+.container-timer{
+   display: flex;
+   justify-content: center;
+   gap: 10px;
+   align-items: center;
    font-family: 'Balsamiq Sans', cursive;
    font-weight: 800;
-   font-size: 29px;
+   font-size: 25px;
    margin: 40px 0 0 0;
 }
+.container-timer__box-hours {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 40px;
+   width: 40px;
+   border: 4px solid black;
+   border-radius: 10px;
+}
+.container-timer__box-hours::after{
+   content: ':';
+   position: absolute;
+   margin: 0 0 0 50px;
+}
+.container-timer__box-minutes {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 40px;
+   width: 40px;
+   border: 4px solid black;
+   border-radius: 10px;
+}
+.container-timer__box-minutes::after{
+   content: ':';
+   position: absolute;
+   margin: 0 0 0 50px;
+}
+.container-timer__box-seconds {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 40px;
+   width: 40px;
+   border: 4px solid black;
+   border-radius: 10px;
+}
+
 .counter-complited{
    display: block;
    text-align: center;

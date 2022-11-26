@@ -25,7 +25,8 @@ let arrayColorsText = ["Фиолетовый", "Зелёный", "Синий", "
 let randomNumRectangle = Math.floor(Math.random() * 4);
 let randomNumText = Math.floor(Math.random() * 4);
 //таймер
-let timer = document.querySelector(".timer");
+let timerBoxMinutes = document.querySelector(".container-timer__box-minutes");
+let timerBoxSeconds = document.querySelector(".container-timer__box-seconds");
 //счётчик пройденных фигур(по нажатию на кнопки)
 let varCounterClickButtons = 0;
 let counterChangeSymbol = document.querySelector(".counter-complited__number");
@@ -74,7 +75,8 @@ function timerGame() {
    let minutes = 0;
    setInterval(function () {
 
-      timer.innerHTML = `0${minutes}:${seconds}`;//выводит на экран пользователю
+      timerBoxMinutes.innerHTML = `${minutes}`;//выводит на экран пользователю
+      timerBoxSeconds.innerHTML = `${seconds}`;
       seconds += 1;
       if (seconds == 60) {
          minutes += 1;
