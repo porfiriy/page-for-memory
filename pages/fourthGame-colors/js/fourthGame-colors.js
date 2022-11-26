@@ -5,7 +5,7 @@ let audioComplete = new Audio('/page-for-memory/sound/successfull2.mp3');
 let audioVictory = new Audio('/page-for-memory/sound/successfull.mp3');
 let audioStart = new Audio('/page-for-memory/sound/start-game.mp3');
 let audioFaile = new Audio('/page-for-memory/sound/faile.mp3');
-let audioClick = new Audio('/page-for-memory/sound/click.mp3');
+let audioClick = new Audio('/page-for-memory/sound/fastSoftClick.mp3');
 
 
 let settings = document.querySelector(".pop-up__container");
@@ -72,7 +72,6 @@ document.querySelector('.linkToTheRestart').onclick = function () {
 function timerGame() {
    let seconds = 0;
    let minutes = 0;
-   let zeroTimerValue = 0;
    setInterval(function () {
 
       timer.innerHTML = `0${minutes}:${seconds}`;//выводит на экран пользователю
@@ -80,9 +79,6 @@ function timerGame() {
       if (seconds == 60) {
          minutes += 1;
          seconds = 0;
-      }
-      else if (seconds == 10) {
-         timer.innerHTML = `0${minutes}:${seconds}`;
       }
    }, 1000)
 }
@@ -112,7 +108,7 @@ function game() {
       document.querySelector('.button_red').classList.add('activated');
       redButton.classList.add('activated');
       if (redButton.classList.contains('activated')) {
-
+         audioClick.play();
          //считает нажатие на кнопку(для того что бы понять,сколько фигур было)
          varCounterClickButtons += 1;
          //когда игрок нажал красную,и если он прав,то записываем на счёт,если нет,то записываем что ошибся
@@ -141,7 +137,7 @@ function game() {
       document.querySelector('.button_red').classList.add('activated');
       greenButton.classList.add('activated');
       if (greenButton.classList.contains('activated')) {
-
+         audioClick.play();
          //считает нажатие на кнопку(для того что бы понять,сколько фигур было)
          varCounterClickButtons += 1;
          if (randomNumRectangle == randomNumText) {
