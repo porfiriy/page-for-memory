@@ -472,7 +472,7 @@ animation: rectangle 2s;
 }
 .container-buttons{
    display: flex;
-   margin: 260px 0 0 0;
+   margin: 210px 0 0 0;
    justify-content: space-around;
 }
 .button_red {
