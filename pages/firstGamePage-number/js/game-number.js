@@ -1,5 +1,7 @@
 'use strict'
 let audioStart = new Audio('/page-for-memory/sound/start-game.mp3');
+let audioClick = new Audio('/page-for-memory/sound/fastSoftClick.mp3');
+
 let startRandNumber1 = document.querySelector('.random-num-container__number');
 let startRandNumber2 = document.querySelector('.random-num-container__number2');
 let startRandNumber3 = document.querySelector('.random-num-container__number3');
@@ -59,14 +61,6 @@ document.querySelector('.header__button-restart').onclick = function () {
 
 };
 
-// вроде бы звук при нажатии кнопки делейт
-// const BUTTON = document.querySelector('.num');
-// BUTTON.onclick = function () {
-//    BUTTON.classList.add('activated');
-//    if (BUTTON.classList.contains('activated')) {
-//       audioClick.play();
-//    }
-// }
 
 
 //рандомная генерация чисел
