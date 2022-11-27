@@ -34,6 +34,12 @@ let counterChangeSymbol = document.querySelector(".counter-complited__number");
 //правильные-неправильные ответы
 let rightAnswer = 0;
 let wrongAnswer = 0;
+
+// меню результатов 
+let menuResultsContainer = document.querySelector(".container-results-menu");
+let menuResultsRedRectangle = document.querySelector(".box-informations-orange__rectangle-red");
+let menuResultsGreenRectangle = document.querySelector(".box-informations-orange__rectangle-green");
+
 //при нажатии на отмену вспл окна настройки 
 document.querySelector('.pop-up__cancel').onclick = function () {
    settings.style = 'visibility:hidden;';
@@ -97,9 +103,11 @@ function game() {
 
    randomColorRectangle();
    timerGame();
+
    //выводит переменную с количеством пройденных фигур 
    function FuncCounterComplited() {
       counterChangeSymbol.innerHTML = varCounterClickButtons;
+      openMenuResults();//функция которая смотрит на количество открытых карт и выводит менюрезультатов 
    }
 
    //добавляет анимацию тексту
@@ -160,12 +168,18 @@ function game() {
          FuncCounterComplited();
       }
    }
-
-
-
 }
 
 
+//вывод в меню результатов все данных
+function openMenuResults() {
+   if (varCounterClickButtons == 20) {
+      menuResultsContainer.style = 'display: block;';
+      console.log('djcdv');
+   }
+   menuResultsRedRectangle.innerHTML = rightAnswer;
+   menuResultsGreenRectangle.innerHTML = wrongAnswer;
+}
 //активация кнопки старт при нажатии
 const BUTTON_START = document.querySelector('.button-start');
 BUTTON_START.onclick = function () {

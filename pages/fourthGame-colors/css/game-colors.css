@@ -408,6 +408,98 @@ height: 40px;
    width: 0px;
    font-size: 0px;
 }
+.container-results-menu{
+   display: none;
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   background-color: #ffffff;
+   z-index: 20;
+}
+.results-menu__title{
+   display: flex;
+   justify-content: center;
+   margin: 50px 0 0 0;
+   font-family: 'Balsamiq Sans';
+   font-weight: 700;
+   font-size: 2.8rem;
+   line-height: 43px;
+   letter-spacing: 0.225em;
+   color: #F0BC2B;
+}
+.results-menu__box-informations-orange{
+   margin: 70px auto;
+   width: 68.5%;
+   height: 53.4%;
+   left: 50px;
+   top: 228px;
+   background: #FEC727;
+   border-radius: 14px;
+}
+.box-informations-orange__time {
+   font-family: 'Balsamiq Sans';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 26px;
+   line-height: 31px;
+   text-align: center;
+   letter-spacing: 0.09em;
+   padding: 7% 0 0 0;
+   color: #000000;
+}
+.box-informations-orange__circle-procent-results {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin: 50px auto;
+   font-size: 26px;
+   font-weight: 700;
+   font-family: 'Balsamiq Sans';
+   line-height: 31px;
+   letter-spacing: 0.09em;
+   color: #FF0000;
+   width: 110px;
+   height: 110px;
+   background: #000000;
+   border-radius: 50%;
+}
+.box-informations-orange__container-rectanles{
+   display: flex;
+   justify-content: space-around;
+}
+.box-informations-orange__rectangle-red {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 38%;
+   height: 60px;
+   background: #49BC2D;
+   border-radius: 10px;
+   font-family: 'Balsamiq Sans';
+   font-style: normal;
+   font-weight: 800;
+   font-size: 34px;
+   line-height: 38px;
+   letter-spacing: 0.225em;
+   color: #000000;
+
+}
+.box-informations-orange__rectangle-green {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 38%;
+   height: 60px;
+   background:#FF0000;
+   border-radius: 10px;
+   font-family: 'Balsamiq Sans';
+   font-style: normal;
+   font-weight: 800;
+   font-size: 34px;
+   line-height: 38px;
+   letter-spacing: 0.225em;
+   color: #000000;
+}
 .container-timer{
    display: flex;
    justify-content: center;
