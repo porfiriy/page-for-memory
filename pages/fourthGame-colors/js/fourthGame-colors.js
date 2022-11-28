@@ -40,6 +40,7 @@ let menuResultsContainer = document.querySelector(".container-results-menu");
 let menuResultsRedRectangle = document.querySelector(".box-informations-orange__rectangle-red");
 let menuResultsGreenRectangle = document.querySelector(".box-informations-orange__rectangle-green");
 let menuResultsCercleProcents = document.querySelector('.box-informations-orange__circle-procent-results');
+let menuResultsTimer = document.querySelector(".box-informations-orange__time");
 
 //при нажатии на отмену вспл окна настройки 
 document.querySelector('.pop-up__cancel').onclick = function () {
@@ -77,10 +78,10 @@ document.querySelector('.linkToTheRestart').onclick = function () {
 
 };
 //считает время с начала игры
+let seconds = 0;
+let minutes = 0;
 function timerGame() {
-   let seconds = 0;
-   let minutes = 0;
-   setInterval(function () {
+   let timerID = setInterval(function () {
 
       timerBoxMinutes.innerHTML = `${minutes}`;//выводит на экран пользователю
       timerBoxSeconds.innerHTML = `${seconds}`;
@@ -176,7 +177,8 @@ function game() {
 function openMenuResults() {
    if (varCounterClickButtons == 20) {
       menuResultsContainer.style = 'display: block;';
-      console.log('djcdv');
+      clearInterval(timerGame());//останавливает таймер
+      menuResultsTimer.innerHTML = `${minutes}.${seconds}`;
    }
    menuResultsRedRectangle.innerHTML = rightAnswer;
    menuResultsGreenRectangle.innerHTML = wrongAnswer;
