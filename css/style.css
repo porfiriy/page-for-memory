@@ -78,20 +78,26 @@ body {
    flex-direction: column;
    justify-content: space-between;
    align-items: center;
-   background-color: rgb(255, 255, 255);
+   background-color: #25345B;
 }
 
 .logo {
    max-width: 94%;
    margin: 222px 0px 0 5px;
 }
-
+.Memory-text{
+   color: #d09c0e;
+   font-size: 55px;
+   text-align: center;
+   font-family: 'Balsamiq Sans', cursive;
+   font-weight: 800;
+}
 .text-loading {
    transform: translate(50% - 130px);
    font-family: 'Balsamiq Sans', cursive;
    width: 130px;
    margin: 0 0 24px 10px;
-   color: black;
+   color: #d09c0e;
    font-style: normal;
    font-weight: 600;
    font-size: 24px;
@@ -117,6 +123,7 @@ body {
 
 .version{
    text-align: center;
+   color: #d09c0e;
    font-size: 24px;
    font-weight: 700;
    padding: 0 0 20px 0;
