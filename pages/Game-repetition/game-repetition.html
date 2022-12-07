@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="/page-for-memory/pages/Game-repetition/css/game-repetition.css">
+   <title>game words</title>
+</head>
+
+<body>
+   <div class="pop-up__container">
+      <div class="pop-up">
+         <div class="pop-up__title">
+            Внимание
+         </div>
+         <div class="pop-up__description">
+            Если вы перейдёте-результат не сохраниться
+         </div>
+         <div class="wrap__button">
+            <form class="pop-up__form" action="#">
+               <a href="/page-for-memory/pages/settings-page/settings-page.html" class="pop-up__ok">Ok</a>
+               <a class="pop-up__cancel">Отмена</a>
+            </form>
+         </div>
+      </div>
+   </div>
+   <div class="pop-up__container2">
+      <div class="pop-up2">
+         <div class="pop-up__title2">
+            Внимание
+         </div>
+         <div class="pop-up__description2">
+            Если вы перейдёте-результат не сохраниться
+         </div>
+         <div class="wrap__button2">
+            <form class="pop-up__form2" action="#">
+               <a href="/page-for-memory/pages/main-page/main-page.html" class="pop-up__ok2">Ok</a>
+               <a class="pop-up__cancel2">Отмена</a>
+            </form>
+         </div>
+      </div>
+   </div>
+
+   <div class="pop-up__container3">
+      <div class="pop-up3">
+         <div class="pop-up__title3">
+            Внимание
+         </div>
+         <div class="pop-up__description3">
+            Начать заново?
+         </div>
+         <div class="wrap__button3">
+            <form class="pop-up__form3" action="#">
+               <!--При нажатии окей в поп ап будет перезагрузка страницы-->
+               <a onClick="window.location.reload();" class="pop-up__ok3">Ok</a>
+               <a class="pop-up__cancel3">Отмена</a>
+            </form>
+         </div>
+      </div>
+   </div>
+
+   <div class="start-menu">
+      <a href="#" class="button-start">START</a>
+   </div>
+   <div class="wrapper">
+      <div class="topButton-gameWords">
+         <a class="comeback-button" href="#">
+            <img src="/page-for-memory/img/comeback-button.svg" alt="назад"></a>
+         <a href="#" class="linkToTheSettings"><img src="/page-for-memory/img/settings.svg" alt="settings"
+               class="imgSettings"></a>
+         <div class="linkToTheRestart"><img src="/page-for-memory/img/button-retryGame.svg" alt="restart"
+               class="img-restart"></div>
+      </div>
+      <div class="winnerTab">
+         <svg class="textVictory" viewBox="0 0 960 300">
+            <symbol id="s-text">
+               <text text-anchor="middle" x="50%" y="80%">ПОБЕДА</text>
+            </symbol>
+
+            <g class="g-ants">
+               <use xlink:href="#s-text" class="text-copy"></use>
+               <use xlink:href="#s-text" class="text-copy"></use>
+               <use xlink:href="#s-text" class="text-copy"></use>
+               <use xlink:href="#s-text" class="text-copy"></use>
+               <use xlink:href="#s-text" class="text-copy"></use>
+            </g>
+         </svg>
+      </div>
+      <div class="looseTab">
+         <svg class="textLoose" viewBox="0 0 960 300">
+            <symbol id="s-text2">
+               <text text-anchor="middle" x="50%" y="80%">НЕ УСПЕЛ</text>
+            </symbol>
+
+            <g class="g-ants">
+               <use xlink:href="#s-text2" class="text-copy2"></use>
+               <use xlink:href="#s-text2" class="text-copy2"></use>
+               <use xlink:href="#s-text2" class="text-copy2"></use>
+               <use xlink:href="#s-text2" class="text-copy2"></use>
+               <use xlink:href="#s-text2" class="text-copy2"></use>
+            </g>
+         </svg>
+      </div>
+      <div class="deadLineWrapper">
+         <div id="deadeLine"></div>
+      </div>
+
+   </div>
+   <script src="/page-for-memory/pages/thirdGame-images/js/third-game.js"></script>
+</body>
+
+</html>
