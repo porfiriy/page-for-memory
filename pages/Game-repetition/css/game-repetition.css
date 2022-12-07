@@ -360,23 +360,29 @@ height: 40px;
    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
    -webkit-tap-highlight-color: transparent;
 } 
+.text-level{
+   font-family: 'Balsamiq Sans', cursive;
+   margin: 30px 0 0 80%;
+   font-style: normal;
+   font-weight: 700;
+   font-size: 24px;
+   line-height: 29px;
+   color: #FEC727;
+}
 .deadLineWrapper{
-   margin: 10px auto;
-   height: 17px;
-   width: 300px;
-   background-color: rgba(0, 0, 0, 0.06);
-   border: 3px solid black;
+   margin: 80px auto;
+   width: 84%;
+   height: 30px;
+   background: #383DA6;
    border-radius: 10px;
 }
 #deadeLine{
    animation-play-state: paused;
    position: relative;
+   width: 100%;
+   height: 30px;
+   background: #FEC727;
    border-radius: 10px;
-   bottom: 0px;
-   left: 0;
-   height: 11px;
-   width: 296px;
-   background-color: rgb(207, 6, 6);
 }
 
 @keyframes deadeLine {
