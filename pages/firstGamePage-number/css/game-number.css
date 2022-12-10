@@ -79,7 +79,7 @@ h6 {
 body{
 height: 100%;
 font-size: 18px;
-background-color: rgb(255, 255, 255);
+background-color: #25345B;
 color: black;
 font-family: 'Balsamiq Sans', cursive;
 padding: 0 0px;
@@ -135,7 +135,7 @@ padding: 0 0px;
    font-family: 'Balsamiq Sans', cursive;
    font-weight: 600;
    text-align: center;
-   color: #cc9d1b;
+   color: #FEC727;
 }
 .pop-up__description{
    font-size: 20px;
@@ -464,20 +464,21 @@ height: 40px;
    align-items: center;
 }
 .pop-up2 {
-   min-height: 25%;
-   border-radius: 10px;
+   min-height: 30%;
+   border-radius: 20px;
    width: 85%;
-   background-color: #DEDCDC;
+   background-color: #FEC727;
    display: flex;
    justify-content: space-around;
    flex-direction: column;
 }
 .pop-up__title2{
-   font-size: 28px;
+   font-size: 30px;
    font-family: 'Balsamiq Sans', cursive;
    font-weight: 600;
    text-align: center;
-   color: #cc9d1b;
+   color: rgb(133, 2, 133);
+   text-decoration: underline;
 }
 .pop-up__description2{
    font-size: 20px;
@@ -632,7 +633,7 @@ height: 40px;
    left: 0px;
    min-height: 800px;
    min-width: 100%;
-   background-color: rgb(255, 255, 255);
+   background-color: #25345B;
    z-index: 15;
    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
    -webkit-tap-highlight-color: transparent;
@@ -669,7 +670,7 @@ height: 40px;
    display: none;
    height: 100%;
    width: 100%;
-   background: white;
+   background: #25345B;
    background-size: 100% 100%;
    z-index: 15;
 }

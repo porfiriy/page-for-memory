@@ -1,0 +1,97 @@
+body{
+	font-family: 'Balsamiq Sans', cursive;
+	background-color: #25345B;
+	text-align: center;
+}
+.title{
+	width: 250px;
+	font-size: 40px;
+	margin: 70px auto;
+	text-align: center;
+	font-weight: 900;
+	color: #FEC727;
+}
+
+.buttons{
+	font-size: 23px;
+	display: block;
+	position: relative;
+	}
+	
+	.button1{
+		padding-top: 1%;
+		padding-bottom: 1%;
+		margin: 3% auto;
+		background-color: #FEC727;
+		border-radius: 20px;
+		height: 8%;
+		width: 26%;
+	}
+	
+	.forbutton1{
+		
+		margin: 0% -4% auto;
+		
+	}
+
+	.krug1{
+		
+		width: auto;
+		height: 3%;
+		align-self: center;
+	}
+	
+	.button2{
+		padding-top: 1%;
+		padding-bottom: 1%;
+		margin: 3% auto;
+		background-color: #FEC727;
+		border-radius: 20px;
+		height: 8%;
+		width: 26%;
+	
+	}
+	.krug2{
+		
+	}
+	
+	.forbutton2{
+		
+		margin: -10px 10px auto;
+		
+	}
+
+	.button3{
+		padding-top: 1%;
+		padding-bottom: 1%;
+		margin: 3% auto;
+		background-color: #FEC727;
+		border-radius: 20px;
+		height: 8%;
+		width: 26%;
+	
+	}
+	
+	.forbutton3{
+	
+		margin: -10px 10px auto;
+		
+	}
+
+	.button4{
+		padding-top: 1%;
+		padding-bottom: 1%;
+		margin: 3% auto;
+		background-color: #FEC727;
+		border-radius: 20px;
+		height: 8%;
+		width: 26%;
+	
+	}
+	
+	.forbutton4{
+		
+		margin: -10px 10px auto;
+		
+	}
+	

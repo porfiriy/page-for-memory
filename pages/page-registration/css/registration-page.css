@@ -26,6 +26,7 @@ aside {
 }
 html,
 body {
+	background-color: #25345B;
    height: 100%;
    width: 100%;
    font-size: 100%;
@@ -90,7 +91,7 @@ button{
    margin: 20% auto 0 auto;
    text-align: center;
 width: 62%;
-font-family: 'Roboto';
+font-family: 'Balsamiq Sans', cursive;
 font-style: normal;
 font-weight: 400;
 font-size: 3em;
@@ -98,7 +99,9 @@ line-height: 28px;
 color: #FABC0D;
 }
 .link{
+	border-radius: 10px;
    display: inline-block;
+   text-align: center;
    width: 39%;
    height: 8%;
 background: linear-gradient(277.86deg, #F1D855 -0.91%, #EBA51E 112.93%);
@@ -106,59 +109,37 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 margin: 60px 5% 20px 5%;
 }
 .or{
+	color: #FEC727;
    display: block;
    font-size: 26px;
    font-weight: 500;
-   font-family: Arial, Helvetica, sans-serif;
+   font-family: 'Balsamiq Sans', cursive;
    text-align: center;
-   margin: 0 auto;
+   margin: 5% auto;
 }
-.forgot-password{
-   display: block;
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
-font-size: 1.5em;
-line-height: 16px;
-color: #421b7c;
-text-align: center;
-margin: 20px auto;
--webkit-tap-highlight-color: rgba(0, 0, 0, 0);
--webkit-tap-highlight-color: transparent;
+
+.ghost_mode{
+	display: table;
+	font-family: 'Balsamiq Sans', cursive;
+	border-radius: 10px;
+	font-size: 26px;
+	width: 28%;
+	font-weight: 600;
+ background: linear-gradient(277.86deg, #F1D855 -0.91%, #EBA51E 112.93%);
+ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+ margin: 8% auto;
 }
-.login{
-   margin: 0 auto;
-   border: 7px solid #FEC727;
-   width: 60%;
-   min-height: 40px;
-   margin: 20px auto;
-}
-.password{
-   border: 7px solid #FEC727;
-   width: 60%;
-   min-height: 40px;
-   margin: 0 auto;
-   
-}
+
 .send{
-   margin: 40px auto 0 auto;
+	border-radius: 30px;
+   margin: 20% auto 0 auto;
    display: block;
    text-align: center;
 width: 50%;
 height: 60px;
 font-size: 24px;
 font-weight: 700;
-font-family:Arial, Helvetica, sans-serif;
+font-family: 'Balsamiq Sans', cursive;
 background: linear-gradient(72.67deg, #FFE927 -38.34%, #F3851F 176.48%);
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-.registration{
-   display: block;
-   text-align: center;
-   font-size: 34px;
-   color: #421b7c;
-   margin: 50px 0 0 0 ;
-   font-weight: 500;
-   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-   -webkit-tap-highlight-color: transparent;
 }
