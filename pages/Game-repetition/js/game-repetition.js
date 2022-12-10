@@ -14,6 +14,8 @@ let restart = document.querySelector(".pop-up__container3");
 
 let allButtonsStyle = document.querySelectorAll('.game-buttons-container__button');//кнопки-квадратики 
 let button1 = document.querySelector('.button1');
+let lvlCounterText = document.querySelector('.lvl-counter');
+let lvlCounter = 1;
 
 //при нажатии на отмену вспл окна настройки 
 document.querySelector('.pop-up__cancel').onclick = function () {
@@ -66,8 +68,17 @@ function game() {
    function startDeadeLine() {
 
       let deadeLine = getId("deadeLine");
-      deadeLine.style = "animation: deadeLine 6s linear ";
+      deadeLine.style = "animation: deadeLine 8s linear ";
+   }
 
+   let arrElem = document.querySelectorAll('.game-buttons-container__button');
+   let arrayElem = [];
+
+   for (var i = 0; i < arrElem.length; i++) {
+      arrayElem.push(arrElem[i]);
+      arrElem[i].addEventListener('click', function (e) {
+         console.log(arrayElem.indexOf(e.target))
+      });
    }
 
    //при нажатии на кнопки в игре 
@@ -77,10 +88,11 @@ function game() {
          if (elem.classList.contains('activated')) {
             elem.classList.add('activated-button');
 
+            console.log(allButtonsStyle)
          }
       }
    //выдаёт рандомно нажвтые кнопки по лвлам //!НУЖНО ОПТИМИЗИРОВАТЬ
-   const range = 15; // максимальное значение (1..1000000 включительно)
+   const range = 15;
    const count = 4;      // кол-во требуемых чисел
 
    let m = {};
@@ -91,18 +103,28 @@ function game() {
       let l = range - i - 1;
       m[r] = (l in m) ? m[l] : l;
    }
+   let ButtonValue1;
+   let ButtonValue2;
+   let ButtonValue3;
    //Lvl 1
-   if (true) {
+   if (lvlCounter == 1) {
+      console.log(m);
       console.log(a);
-      allButtonsStyle[a[0]].classList.add('activated-button');
-      allButtonsStyle[a[1]].classList.add('activated-button');
-      allButtonsStyle[a[2]].classList.add('activated-button');
-      allButtonsStyle[a[3]].classList.add('activated-button');
+
+      allButtonsStyle[ButtonValue1 = a[0]].classList.add('activated-button');
+      allButtonsStyle[ButtonValue2 = a[1]].classList.add('activated-button');
+      allButtonsStyle[ButtonValue3 = a[2]].classList.add('activated-button');
+      setTimeout(() => {
+         allButtonsStyle[ButtonValue1 = a[0]].classList.remove('activated-button');
+         allButtonsStyle[ButtonValue2 = a[1]].classList.remove('activated-button');
+         allButtonsStyle[ButtonValue3 = a[2]].classList.remove('activated-button');
+      }, 3000);
 
    }
-   //Lvl 2
-   if (true) {
 
+   //Lvl 2
+   if (lvlCounter == 2) {
+      allButtonsStyle[a[0]].classList.add('activated-button');
    }
 
 
