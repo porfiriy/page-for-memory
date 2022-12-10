@@ -393,7 +393,26 @@ height: 40px;
       width: 1px;
    }
 }
+.game-buttons-container{
+   margin: 0 auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   width: 80%;
+   height: 40%;
+   gap: 15px;
+}
+.game-buttons-container__button {
+   width: 60px;
+   height: 60px;
+   background: #FFFFFF;
+   border-radius: 10px;
+}
 
+.button1{
+
+}
 .start-menu{
    display: flex;
    justify-content: center;

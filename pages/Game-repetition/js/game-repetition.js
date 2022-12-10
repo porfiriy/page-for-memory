@@ -12,6 +12,9 @@ let settings = document.querySelector(".pop-up__container");
 let comeback = document.querySelector(".pop-up__container2");
 let restart = document.querySelector(".pop-up__container3");
 
+let allButtonsStyle = document.querySelectorAll('.game-buttons-container__button');//кнопки-квадратики 
+let button1 = document.querySelector('.button1');
+
 //при нажатии на отмену вспл окна настройки 
 document.querySelector('.pop-up__cancel').onclick = function () {
    settings.style = 'visibility:hidden;';
@@ -66,22 +69,33 @@ function game() {
       deadeLine.style = "animation: deadeLine 70s linear ";
 
    }
+
+   //при нажатии на кнопки в игре 
+   for (let elem of allButtonsStyle)//перебирает колекцию по элементам
+      elem.onclick = function () {
+         elem.classList.add('activated');
+         if (elem.classList.contains('activated')) {
+            elem.style = 'background-color:#FEC727;'
+
+         }
+      }
+
    //анимация проигриша 
    function showMessage() {
       looseTab.style = 'visibility:visible;';
       audioFaile.play();
    }
    deadeLine.addEventListener("animationend", showMessage);
+}
 
-
-   //активация кнопки старт при нажатии
-   const BUTTON_START = document.querySelector('.button-start');
-   BUTTON_START.onclick = function () {
-      document.querySelector('.start-menu').classList.add('activated');
-      BUTTON_START.classList.add('activated');
-      if (BUTTON_START.classList.contains('activated')) {
-         audioStart.play();
-         game();
-      }
+//активация кнопки старт при нажатии
+const BUTTON_START = document.querySelector('.button-start');
+BUTTON_START.onclick = function () {
+   document.querySelector('.start-menu').classList.add('activated');
+   BUTTON_START.classList.add('activated');
+   if (BUTTON_START.classList.contains('activated')) {
+      audioStart.play();
+      game();
    }
+}
 
