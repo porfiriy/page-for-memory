@@ -26,6 +26,7 @@ aside {
 }
 html,
 body {
+	background-color: #25345B;
    height: 100%;
    width: 100%;
    font-size: 100%;
@@ -93,7 +94,7 @@ font-family: 'Balsamiq Sans', cursive;
    left: 0px;
    height: 100%;
    width: 100%;
-   background-color: rgb(251, 247, 247);
+   background-color: #25345B;
    z-index: 3;
    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
    -webkit-tap-highlight-color: transparent;
