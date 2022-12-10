@@ -1,97 +1,60 @@
 body{
-	font-family: 'Balsamiq Sans', cursive;
-	background-color: #25345B;
-	text-align: center;
+   background-color: #25345B;
+   font-family: 'Balsamiq Sans', cursive;
+   text-align: center;
+
 }
-.title{
-	width: 250px;
-	font-size: 40px;
-	margin: 70px auto;
-	text-align: center;
+
+.wrapper {
+}
+.Tasks{
 	font-weight: 900;
+	font-size: 32px;
+	text-align: center;
 	color: #FEC727;
+	margin: 20% auto 30% auto;
 }
+.tasks-container {
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   gap: 40px;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   height: 100%;
+}
+.task-body {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   width: 80%;
+   height: 70px;
+   background: #FEC727;
+   border-radius: 10px;
+}
+.tasks-body__mark-done {
+   height: 20px;
+   width: 20px;
+   border-radius: 50%;
+   border: 4px solid black;
+}
+.tasks-body__task-text {
+   width: 60%;
+   font-size: 16px;
+font-style: normal;
+}
+.tasks-body__task-reward {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FEC727;
+   text-align: center;
+   background-image: url(/page-for-memory/pages/Everyday-tasks-page/img/Star.png);
+   background-repeat: no-repeat;
+   height: 50px;
+   width: 50px;
+}
+.tasks-body__task-reward_star{
 
-.buttons{
-	font-size: 23px;
-	display: block;
-	position: relative;
-	}
-	
-	.button1{
-		padding-top: 1%;
-		padding-bottom: 1%;
-		margin: 3% auto;
-		background-color: #FEC727;
-		border-radius: 20px;
-		height: 8%;
-		width: 26%;
-	}
-	
-	.forbutton1{
-		
-		margin: 0% -4% auto;
-		
-	}
-
-	.krug1{
-		
-		width: auto;
-		height: 3%;
-		align-self: center;
-	}
-	
-	.button2{
-		padding-top: 1%;
-		padding-bottom: 1%;
-		margin: 3% auto;
-		background-color: #FEC727;
-		border-radius: 20px;
-		height: 8%;
-		width: 26%;
-	
-	}
-	.krug2{
-		
-	}
-	
-	.forbutton2{
-		
-		margin: -10px 10px auto;
-		
-	}
-
-	.button3{
-		padding-top: 1%;
-		padding-bottom: 1%;
-		margin: 3% auto;
-		background-color: #FEC727;
-		border-radius: 20px;
-		height: 8%;
-		width: 26%;
-	
-	}
-	
-	.forbutton3{
-	
-		margin: -10px 10px auto;
-		
-	}
-
-	.button4{
-		padding-top: 1%;
-		padding-bottom: 1%;
-		margin: 3% auto;
-		background-color: #FEC727;
-		border-radius: 20px;
-		height: 8%;
-		width: 26%;
-	
-	}
-	
-	.forbutton4{
-		
-		margin: -10px 10px auto;
-		
-	}
-	
+}
