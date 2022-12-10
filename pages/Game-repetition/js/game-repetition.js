@@ -66,7 +66,7 @@ function game() {
    function startDeadeLine() {
 
       let deadeLine = getId("deadeLine");
-      deadeLine.style = "animation: deadeLine 70s linear ";
+      deadeLine.style = "animation: deadeLine 6s linear ";
 
    }
 
@@ -75,10 +75,42 @@ function game() {
       elem.onclick = function () {
          elem.classList.add('activated');
          if (elem.classList.contains('activated')) {
-            elem.style = 'background-color:#FEC727;'
+            elem.classList.add('activated-button');
 
          }
       }
+   //выдаёт рандомно нажвтые кнопки по лвлам //!НУЖНО ОПТИМИЗИРОВАТЬ
+   const range = 15; // максимальное значение (1..1000000 включительно)
+   const count = 4;      // кол-во требуемых чисел
+
+   let m = {};
+   let a = [];
+   for (let i = 0; i < count; ++i) {
+      let r = Math.floor(Math.random() * (range - i));
+      a.push(((r in m) ? m[r] : r) + 1);
+      let l = range - i - 1;
+      m[r] = (l in m) ? m[l] : l;
+   }
+   //Lvl 1
+   if (true) {
+      console.log(a);
+      allButtonsStyle[a[0]].classList.add('activated-button');
+      allButtonsStyle[a[1]].classList.add('activated-button');
+      allButtonsStyle[a[2]].classList.add('activated-button');
+      allButtonsStyle[a[3]].classList.add('activated-button');
+
+   }
+   //Lvl 2
+   if (true) {
+
+   }
+
+
+
+   function viewCards() {
+
+   }
+   viewCards();
 
    //анимация проигриша 
    function showMessage() {

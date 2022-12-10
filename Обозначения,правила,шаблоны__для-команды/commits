@@ -3,13 +3,14 @@
 "File:(clr-gm) описание коммита"
 
 1: коммит может быть двух видов:
- 1.1 Fix (Чтото исправил или изменил)
- 1.2 File (Что-то добавил,доделал)
+ 1.1 Fix(Чтото исправил или изменил)
+ 1.2 File(Что-то добавил,доделал)
 2: название игры в скобочках
  2.1  (clr-gm)-colors
  2.2  (nbrs-gm)-numbers
  2.3  (wrds-gm)-words
  2.4  (imgs-gm)-images
  2.5  (prjct)-project (изменения в папках проекта)
- 2.6 (stngs)-settings
+ 2.6  (stngs)-settings
+ 2.7  (rptn-gm)-repetition game
 и т.д

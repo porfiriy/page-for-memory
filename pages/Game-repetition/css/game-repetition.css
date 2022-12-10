@@ -413,6 +413,9 @@ height: 40px;
 .button1{
 
 }
+.activated-button{
+   background-color: #FEC727;
+}
 .start-menu{
    display: flex;
    justify-content: center;
