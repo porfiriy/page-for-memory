@@ -397,20 +397,20 @@ height: 40px;
 	background-color: black;
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 	-webkit-tap-highlight-color: transparent;
-}
-.start-menu.activated{
-   transition: all 0.3s ;
-   visibility: hidden;
-}
-.button-start.activated{
-   transform: scale(0.5,0.5);
-   transition: 0.3s ;
-   color: azure;
-   background-color: rgb(115, 113, 114);
-   height: 0px;
-   width: 0px;
-   font-size: 0px;
-}
+ }
+ .start-menu.activated{
+	transition: all 0.5s ;
+	visibility: hidden;
+ }
+ .button-start.activated{
+	transform: scale(0.0,0.0);
+	transition: 0.7s ;
+	color: rgba(240, 255, 255, 0);
+	background-color: rgba(115, 113, 114, 0);
+	height: 0px;
+	width: 0px;
+	font-size: 0px;
+ }
 .container-results-menu{
    display: none;
    position: absolute;
