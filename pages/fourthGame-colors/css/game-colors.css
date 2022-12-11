@@ -513,7 +513,7 @@ height: 40px;
    margin: 40px 0 0 0;
 }
 .container-timer__box-hours {
-
+   background-color: #000000;
    color: #FEC727;
    display: flex;
    align-items: center;
@@ -529,8 +529,8 @@ height: 40px;
    margin: 0 0 0 60px;
 }
 .container-timer__box-minutes {
-	
-	color: #FEC727;
+   background-color: #000000;
+   color: #FEC727;
    display: flex;
    align-items: center;
    justify-content: center;
@@ -545,8 +545,8 @@ height: 40px;
    margin: 0 0 0 60px;
 }
 .container-timer__box-seconds {
-
-	color: #FEC727;
+   background-color: #000000;
+   color: #FEC727;
    display: flex;
    align-items: center;
    justify-content: center;
@@ -565,7 +565,10 @@ height: 40px;
    margin: 40px 0 0 0;
 }
 .counter-complited__number{
-   color: #020000;
+   color: #FEC727;
+}
+.schet{
+	color: #FEC727;
 }
 .conntainer-rectangle{
    display: flex;
