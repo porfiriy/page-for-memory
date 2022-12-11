@@ -513,12 +513,14 @@ height: 40px;
    margin: 40px 0 0 0;
 }
 .container-timer__box-hours {
+
+   color: #FEC727;
    display: flex;
    align-items: center;
    justify-content: center;
    height: 50px;
    width: 50px;
-   border: 4px solid black;
+   border: 4px solid #FEC727;
    border-radius: 10px;
 }
 .container-timer__box-hours::after{
@@ -527,12 +529,14 @@ height: 40px;
    margin: 0 0 0 60px;
 }
 .container-timer__box-minutes {
+	
+	color: #FEC727;
    display: flex;
    align-items: center;
    justify-content: center;
    height: 50px;
    width: 50px;
-   border: 4px solid black;
+   border: 4px solid #FEC727;
    border-radius: 10px;
 }
 .container-timer__box-minutes::after{
@@ -541,12 +545,14 @@ height: 40px;
    margin: 0 0 0 60px;
 }
 .container-timer__box-seconds {
+
+	color: #FEC727;
    display: flex;
    align-items: center;
    justify-content: center;
    height: 50px;
    width: 50px;
-   border: 4px solid black;
+   border: 4px solid #FEC727;
    border-radius: 10px;
 }
 
