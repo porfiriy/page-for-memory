@@ -870,6 +870,7 @@ background-clip: text;
    -webkit-tap-highlight-color: transparent;
 }
 .timer {
+   color: #FEC727;
    font-weight: 600;
    font-size: 34px;
    font-family: 'Balsamiq Sans', cursive;
