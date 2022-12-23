@@ -104,7 +104,7 @@ button{
    
 }
 .sign-in{
-   margin: 15% auto 10% auto;
+   margin: 20% auto 35% auto;
    text-align: center;
 width: 100%;
 font-family: 'Balsamiq Sans', cursive;
@@ -148,25 +148,13 @@ margin: 10% 3% 20px 5%;
 	font-family: 'Balsamiq Sans', cursive;
 	border-radius: 10px;
 	font-size: 26px;
-	width: 45%;
+	width: 52%;
+	height: 50px;
 	font-weight: 600;
+	color: #50027e;
  background: linear-gradient(277.86deg, #F1D855 -0.91%, #EBA51E 112.93%);
  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
- margin: 15% auto;
-}
-
-.send{
-	border-radius: 30px;
-   margin: 30% auto 0 auto;
-   display: block;
-   text-align: center;
-width: 50%;
-height: 60px;
-font-size: 24px;
-font-weight: 700;
-font-family: 'Balsamiq Sans', cursive;
-background: linear-gradient(72.67deg, #FFE927 -38.34%, #F3851F 176.48%);
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+ margin: 13% auto;
 }
 .main{
 	flex: 1 1 auto;
