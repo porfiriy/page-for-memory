@@ -36,6 +36,11 @@ body {
    -moz-text-size-adjust: 100%;
    -webkit-text-size-adjust: 100%;
 }
+.wrapper{
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+}
 input,
 button,
 textarea {
@@ -73,7 +78,18 @@ h6 {
    font-size: inherit;
    font-weight: 400;
 }
-
+.header {
+	margin: 5% 0 0 0;
+ }
+.comeback-button {
+	margin: 5px 0 0 20px;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	-webkit-tap-highlight-color: transparent;
+}
+.img_comeback-button{
+width: 5%;
+height: 5%;
+}
 input{
    width: 100%;
    height: 40px;
@@ -88,12 +104,12 @@ button{
    
 }
 .sign-in{
-   margin: 10% auto 0 auto;
+   margin: 15% auto 10% auto;
    text-align: center;
-width: 62%;
+width: 100%;
 font-family: 'Balsamiq Sans', cursive;
 font-style: normal;
-font-weight: 400;
+font-weight: 200;
 font-size: 3em;
 line-height: 28px;
 color: #FABC0D;
@@ -102,11 +118,20 @@ color: #FABC0D;
 	border-radius: 10px;
    display: inline-block;
    text-align: center;
-   width: 39%;
-   height: 8%;
+   width: 41%;
 background: linear-gradient(277.86deg, #F1D855 -0.91%, #EBA51E 112.93%);
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-margin: 10% 5% 20px 5%;
+margin: 10% 3% 20px 5%;
+}
+.img__facebook{
+	width: 158px;
+	height: 45px;
+	margin: 0 0 0 -2%;
+}
+.img__google{
+	width: 180px;
+	height: 45px;
+	margin: 0 -6%;
 }
 .or{
 	color: #FEC727;
@@ -115,24 +140,24 @@ margin: 10% 5% 20px 5%;
    font-weight: 500;
    font-family: 'Balsamiq Sans', cursive;
    text-align: center;
-   margin: 5% auto;
+   margin: 10% auto;
 }
 
-.ghost_mode{
+.sign_in_ghost{
 	display: table;
 	font-family: 'Balsamiq Sans', cursive;
 	border-radius: 10px;
 	font-size: 26px;
-	width: 28%;
+	width: 45%;
 	font-weight: 600;
  background: linear-gradient(277.86deg, #F1D855 -0.91%, #EBA51E 112.93%);
  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
- margin: 8% auto;
+ margin: 15% auto;
 }
 
 .send{
 	border-radius: 30px;
-   margin: 10% auto 0 auto;
+   margin: 30% auto 0 auto;
    display: block;
    text-align: center;
 width: 50%;
@@ -143,7 +168,9 @@ font-family: 'Balsamiq Sans', cursive;
 background: linear-gradient(72.67deg, #FFE927 -38.34%, #F3851F 176.48%);
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-
+.main{
+	flex: 1 1 auto;
+}
 .footer{
 	display: flex;
 	flex-wrap: nowrap;
@@ -152,7 +179,25 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .support{
 	font-family: 'Balsamiq Sans', cursive;
-	font-size: 22px;
-	color: black;
-	margin: 10% auto 0 auto;
+	font-size: 25px;
+	font-weight: 500;
+	margin: 0% 5% 3% auto;
+	color: #FEC727;
+	text-shadow: 
+		-0   -1px 1px #000000,
+		 0   -1px 1px #000000,
+		-0    1px 1px #000000,
+		 0    1px 1px #000000,
+		-1px -0   1px #000000,
+		 1px -0   1px #000000,
+		-1px  0   1px #000000,
+		 1px  0   1px #000000,
+		-1px -1px 1px #000000,
+		 1px -1px 1px #000000,
+		-1px  1px 1px #000000,
+		 1px  1px 1px #000000,
+		-1px -1px 1px #000000,
+		 1px -1px 1px #000000,
+		-1px  1px 1px #000000,
+		 1px  1px 1px #000000;
 }
