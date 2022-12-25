@@ -452,21 +452,20 @@ height: 40px;
 }
 .deadLineWrapper{
    margin: 10px auto;
-   height: 17px;
+   height: 24px;
    width: 300px;
-   background-color: rgba(0, 0, 0, 0.06);
-   border: 3px solid black;
-   border-radius: 10px;
+   background-color: #383DA6;
+   border-radius: 6px;
 }
 #deadeLine{
    animation-play-state: paused;
    position: relative;
-   border-radius: 10px;
+   border-radius: 6px;
    bottom: 0px;
    left: 0;
-   height: 11px;
+   height: 24px;
    width: 296px;
-   background-color: rgb(207, 6, 6);
+   background-color: #FEC727;
 }
 
 @keyframes deadeLine {
