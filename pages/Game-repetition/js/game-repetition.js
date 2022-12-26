@@ -16,6 +16,7 @@ let allButtonsStyle = document.querySelectorAll('.game-buttons-container__button
 let button1 = document.querySelector('.button1');
 let lvlCounterText = document.querySelector('.lvl-counter');
 let lvlCounter = 1;
+let pressButtons = [];
 
 //при нажатии на отмену вспл окна настройки 
 document.querySelector('.pop-up__cancel').onclick = function () {
@@ -71,15 +72,9 @@ function game() {
       deadeLine.style = "animation: deadeLine 8s linear ";
    }
 
-   let arrElem = document.querySelectorAll('.game-buttons-container__button');
-   let arrayElem = [];
 
-   for (var i = 0; i < arrElem.length; i++) {
-      arrayElem.push(arrElem[i]);
-      arrElem[i].addEventListener('click', function (e) {
-         console.log(arrayElem.indexOf(e.target))
-      });
-   }
+
+
 
    //при нажатии на кнопки в игре 
    for (let elem of allButtonsStyle)//перебирает колекцию по элементам
@@ -88,68 +83,106 @@ function game() {
          if (elem.classList.contains('activated')) {
             elem.classList.add('activated-button');
 
-            console.log(allButtonsStyle)
+
          }
       }
-   //выдаёт рандомно нажвтые кнопки по лвлам //!НУЖНО ОПТИМИЗИРОВАТЬ
-   const range = 15;
-   const count = 4;      // кол-во требуемых чисел
-
-   let m = {};
-   let a = [];
-   for (let i = 0; i < count; ++i) {
-      let r = Math.floor(Math.random() * (range - i));
-      a.push(((r in m) ? m[r] : r) + 1);
-      let l = range - i - 1;
-      m[r] = (l in m) ? m[l] : l;
-   }
-   let ButtonValue1;
-   let ButtonValue2;
-   let ButtonValue3;
-   //Lvl 1
-   if (lvlCounter == 1) {
-      console.log(m);
-      console.log(a);
-
-      allButtonsStyle[ButtonValue1 = a[0]].classList.add('activated-button');
-      allButtonsStyle[ButtonValue2 = a[1]].classList.add('activated-button');
-      allButtonsStyle[ButtonValue3 = a[2]].classList.add('activated-button');
-      setTimeout(() => {
-         allButtonsStyle[ButtonValue1 = a[0]].classList.remove('activated-button');
-         allButtonsStyle[ButtonValue2 = a[1]].classList.remove('activated-button');
-         allButtonsStyle[ButtonValue3 = a[2]].classList.remove('activated-button');
-      }, 3000);
-
-   }
-
-   //Lvl 2
-   if (lvlCounter == 2) {
-      allButtonsStyle[a[0]].classList.add('activated-button');
-   }
 
 
 
    function viewCards() {
 
+      //выдаёт рандомнst кнопки по лвлам //!НУЖНО ОПТИМИЗИРОВАТЬ
+      const range = 15;
+      const count = 15;      // кол-во требуемых чисел
+
+      let m = {};
+      let a = [];//массив рандобных чисел для блоков без повторения
+      for (let i = 0; i < count; ++i) {
+         let r = Math.floor(Math.random() * (range - i));
+         a.push(((r in m) ? m[r] : r) + 1);
+         let l = range - i - 1;
+         m[r] = (l in m) ? m[l] : l;
+      }
+
+      let arrElem = document.querySelectorAll('.game-buttons-container__button');
+      let arrayElem = [];
+      const result = [];
+      //показывает индекс нажатого элем
+      for (let i = 0; i < arrElem.length; i++) {
+         arrayElem.push(arrElem[i]);
+         arrElem[i].addEventListener('click', function (e) {
+
+            pressButtons.push(arrayElem.indexOf(e.target));//записывает индекс в массив
+
+            console.log('pressButton')
+            console.log(pressButtons)
+
+            console.log('results')
+            console.log(result);
+            for (let k = 0; k < pressButtons.length; k++) {
+               for (let j = 0; j < ButtonValue.length; j++) {
+                  if (pressButtons[k] === ButtonValue[j]) {
+                     result.push(pressButtons[k])
+
+                  }
+               }
+
+               if (pressButtons.length == result.length) {
+                  console.log("ecuel");
+               }
+            }
+         });
+      }
+
+      let ButtonValue = [];
+
+      //Lvl 1
+      if (lvlCounter == 1) {
+         ButtonValue.push(a[0]);
+         ButtonValue.push(a[1]);
+         ButtonValue.push(a[2]);
+         //выводит рандомные блоки на экран
+         allButtonsStyle[a[0]].classList.add('activated-button');
+         allButtonsStyle[a[1]].classList.add('activated-button');
+         allButtonsStyle[a[2]].classList.add('activated-button');
+         setTimeout(() => {//убирает ранд блоки с экрана
+            allButtonsStyle[a[0]].classList.remove('activated-button');
+            allButtonsStyle[a[1]].classList.remove('activated-button');
+            allButtonsStyle[a[2]].classList.remove('activated-button');
+         }, 3000);
+         if (ButtonValue == pressButtons) {
+            console.log('всё введено верно')
+         }
+      }
+
+      console.log('buttnValue');
+      console.log(ButtonValue);
+
+      //Lvl 2
+      if (lvlCounter == 2) {
+         allButtonsStyle[a[0]].classList.add('activated-button');
+      }
+
    }
    viewCards();
 
    //анимация проигриша 
-   function showMessage() {
-      looseTab.style = 'visibility:visible;';
-      audioFaile.play();
-   }
-   deadeLine.addEventListener("animationend", showMessage);
-}
+   //    function showMessage() {
+   //       looseTab.style = 'visibility:visible;';
+   //       audioFaile.play();
+   //    }
+   //    deadeLine.addEventListener("animationend", showMessage);
+   // }
 
-//активация кнопки старт при нажатии
-const BUTTON_START = document.querySelector('.button-start');
-BUTTON_START.onclick = function () {
-   document.querySelector('.start-menu').classList.add('activated');
-   BUTTON_START.classList.add('activated');
-   if (BUTTON_START.classList.contains('activated')) {
-      audioStart.play();
-      game();
+   //активация кнопки старт при нажатии
+   const BUTTON_START = document.querySelector('.button-start');
+   BUTTON_START.onclick = function () {
+      document.querySelector('.start-menu').classList.add('activated');
+      BUTTON_START.classList.add('activated');
+      if (BUTTON_START.classList.contains('activated')) {
+         audioStart.play();
+         game();
+      }
    }
 }
 
