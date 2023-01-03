@@ -109,7 +109,7 @@ h6 {
 
 .main{
 	flex: 1 1 auto;
-	padding: 40% 0 0 0;
+	padding: 20% 0 0 0;
 }
 .wrapper{
 	min-height: 100%;
@@ -180,7 +180,7 @@ h6 {
    animation-name: icon-settings;
    animation-duration: 3s;
    animation-direction: alternate;
-   animation-iteration-count: 2;
+   animation-iteration-count: 2,infinite;
    animation-delay: 4s;
 }
 
@@ -193,6 +193,16 @@ h6 {
    }
    
 }
+@keyframes icon-settings2 {
+   0%{
+      transform: rotate(0deg);
+   }
+   100%{
+      transform: rotate(360deg);
+   }
+   
+}
+
 .icon-settings:active {
    opacity: 0;
 }
@@ -258,10 +268,104 @@ h6 {
 	align-items: center;
 	width: 100%;
 	height: 70px;
-	background: #FEC727;
 	margin: 0 auto;
    flex-direction: row;
+   
 }
+.navigation{
+   display: flex;
+   border-top-left-radius: 10px;
+   border-top-right-radius: 10px;
+   width: 100%;
+   height: 100%;
+   background-color: #FEC727;
+   justify-content: center;
+   align-items: center;
+}
+.navigation ul {
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   width: 350px;
+}
+.navigation ul li {
+   position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   list-style: none;
+   width: 50px;
+   height: 50px;
+   z-index: 1;
+}
+.navigation ul li a {
+   position: relative;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   text-align: center;
+   width: 100%;
+  font-weight: 500;
+}
+.navigation ul li:hover a {
+  transform: translateY(-45px);
+}
+.navigation ul li a .icon {
+   position: relative;
+   display: block;
+   line-height: 30px;
+   font-size: 1.5em;
+   text-align: center;
+   transition: 1s;
+   color: black;
+}
+.navigation ul li a .text {
+   position: absolute;
+   color: black;
+   font-family: 'Balsamiq Sans', cursive;
+   font-weight: 700;
+   font-size: 1.3em;
+   letter-spacing: 0.05em;
+   transition: 1s;
+   opacity: 0;
+}
+.navigation ul li:hover a .text {
+  opacity: 1;
+  transform: translateY(50px);
+}
+.indicator{
+   position: absolute;
+   top: 85%;
+   width: 70px;
+   height: 70px;
+   background-color: #27fe2e;
+   border-radius: 50%;
+   border: 6px solid #25345B;
+   transition: 0.5s;
+}
+.indicator::before{
+   content: "";
+   position: absolute;
+   top: 0;
+   width: 20px;
+   height: 20px;
+}
+.navigation ul li:nth-child(1):hover ~ .indicator{
+   transform: translateX(calc(70px*-2));
+}  
+.navigation ul li:nth-child(2):hover ~ .indicator{
+   transform: translateX(calc(70px*-1));
+}  
+.navigation ul li:nth-child(3):hover ~ .indicator{
+   transform: translateX(calc(70px*0));
+}  
+.navigation ul li:nth-child(4):hover ~ .indicator{
+   transform: translateX(calc(70px*1));
+}  
+.navigation ul li:nth-child(5):hover ~ .indicator{
+   transform: translateX(calc(70px*2));
+}  
 .achivement-img{
 	height: 50px;
 	width: 40px;
