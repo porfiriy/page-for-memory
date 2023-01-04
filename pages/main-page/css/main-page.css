@@ -308,9 +308,28 @@ h6 {
    width: 100%;
   font-weight: 500;
 }
-.navigation ul li:hover a {
+.navigation ul li:hover a  {
   transform: translateY(-48px);
   transition: 1s;
+}
+.list-home  {
+   transform: translateY(-48px);
+   transition: 1s;
+ }
+.text-list-item{
+   position: absolute;
+   color: black;
+   font-family: 'Balsamiq Sans', cursive;
+   font-weight: 700;
+   font-size: 1.3em;
+   letter-spacing: 0.05em;
+   transition: 1s;
+   opacity: 0;
+}
+.text-active{
+   opacity: 1;
+   transition: 1s;
+   transform: translateY(50px);
 }
 .navigation ul li a .icon {
    position: relative;
