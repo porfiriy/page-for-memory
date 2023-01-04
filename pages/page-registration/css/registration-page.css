@@ -83,14 +83,19 @@ h6 {
 }
 .header {
 	display: flex;
-	margin: 7% 0 0 0;
+	margin: 10px 0 0 0;
 	width: 100%;
  }
-.comeback-button {
-	display: inline-block;
-	margin: 13px 0 0 20px;
+ .comeback-button{
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 	-webkit-tap-highlight-color: transparent;
+ }
+.img_comeback-button {
+	display: inline-block;
+	width: 17px;
+	height: 30px;
+	margin: 13px 0 0 20px;
+	
 }
 input{
    width: 100%;
