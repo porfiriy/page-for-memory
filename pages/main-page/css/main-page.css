@@ -109,7 +109,7 @@ h6 {
 
 .main{
 	flex: 1 1 auto;
-	padding: 20% 0 0 0;
+	padding: 17% 0 0 0;
 }
 .wrapper{
 	min-height: 100%;
@@ -309,7 +309,8 @@ h6 {
   font-weight: 500;
 }
 .navigation ul li:hover a {
-  transform: translateY(-45px);
+  transform: translateY(-48px);
+  transition: 1s;
 }
 .navigation ul li a .icon {
    position: relative;
@@ -332,6 +333,7 @@ h6 {
 }
 .navigation ul li:hover a .text {
   opacity: 1;
+  transition: 1s;
   transform: translateY(50px);
 }
 .indicator{
