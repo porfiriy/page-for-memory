@@ -1,0 +1,272 @@
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+ }
+ *,
+ *:before,
+ *:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+ }
+ :focus,
+ :active {
+	outline: none;
+ }
+ a:focus,
+ a:active {
+	outline: none;
+ }
+ nav,
+ footer,
+ header,
+ aside {
+	display: block;
+ }
+ input,
+ button,
+ textarea { 
+	font-family: 'Balsamiq Sans', cursive;
+ }
+ input::-ms-clear {
+	display: none;
+ }
+ button {
+	cursor: pointer;
+ }
+ button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+ }
+ a,
+ a:visited {
+	text-decoration: none;
+ }
+ a:hover {
+	text-decoration: none;
+ }
+ ul li {
+	list-style: none;
+ }
+ img {
+	vertical-align: top;
+ }
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6 {
+	font-size: inherit;
+	font-weight: 400;
+ }
+html,
+body {
+	background-color: rgb(255,0,168);
+	background: linear-gradient(0deg, black 0%, #25345B 100%);
+   font-family: 'Balsamiq Sans', cursive;
+   height: 100%;
+   width: 100%;
+   font-size: 100%;
+   line-height: 1;
+   font-size: 14px;
+   -ms-text-size-adjust: 100%;
+   -moz-text-size-adjust: 100%;
+   -webkit-text-size-adjust: 100%;
+}
+.wrapper {
+	min-height: 100%;
+	min-width: 100%;
+	display: flex;
+	flex-direction: column;
+ }
+.header {
+	display: flex;
+	width: 100%;
+	margin: 10px 0 0 0;
+ }
+ .comeback-button {
+	display: inline-block;
+	margin: 13px 0 0 20px;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	-webkit-tap-highlight-color: transparent;
+ }
+ .Achievements{
+	font-size: 32px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #FEC727;
+ }
+ .main {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	width: 100%;
+	height: 100%;
+	flex: 1 1 auto;
+	
+ }
+ .achievments-container{
+	font-family: 'Balsamiq Sans', cursive;
+	font-size: 20px;
+	color: #11ff60;
+ }
+ .container-achieve1{
+	margin: 50px 0;
+	background: rgb(255,0,168);
+    background: linear-gradient(90deg, rgba(255,0,168,1) 10%, rgba(5,0,242,1) 100%);
+	border-radius: 10px;
+ }
+ .achieve1{
+	font-size: 24px;
+	height: 30px;
+	text-shadow: 1px 0 1px #000,
+	0 1px 1px #000, 
+	-1px 0 1px #000, 
+	0 -1px 1px #000;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+ }
+ .forachieve1{
+	color:#FEC727;
+	height: 30px;
+	text-shadow: 1px 0 1px #000,
+	0 1px 1px #000, 
+	-1px 0 1px #000, 
+	0 -1px 1px #000;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+ }
+ .container-achieve2{
+	margin: 50px 0;
+	background: rgb(255,0,168);
+    background: linear-gradient(90deg, rgba(255,0,168,1) 10%, rgba(5,0,242,1) 100%);
+	border-radius: 10px;
+ }
+ .achieve2{
+	font-size: 24px;
+	height: 30px;
+	text-shadow: 1px 0 1px #000,
+	0 1px 1px #000, 
+	-1px 0 1px #000, 
+	0 -1px 1px #000;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+ }
+ .forachieve2{
+	color:#FEC727;
+	height: 30px;
+	text-shadow: 1px 0 1px #000,
+	0 1px 1px #000, 
+	-1px 0 1px #000, 
+	0 -1px 1px #000;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+ }
+ .container-achieve3{
+	margin: 50px 0;
+	background: rgb(255,0,168);
+    background: linear-gradient(90deg, rgba(255,0,168,1) 10%, rgba(5,0,242,1) 100%);
+	border-radius: 10px;
+ }
+ .achieve3{
+	font-size: 24px;
+	height: 30px;
+	text-shadow: 1px 0 1px #000,
+	0 1px 1px #000, 
+	-1px 0 1px #000, 
+	0 -1px 1px #000;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+ }
+ .forachieve3{
+	color:#FEC727;
+	height: 30px;
+	text-shadow: 1px 0 1px #000,
+	0 1px 1px #000, 
+	-1px 0 1px #000, 
+	0 -1px 1px #000;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+ }
+ .container-achieve4{
+	margin: 50px 0;
+	background: rgb(255,0,168);
+    background: linear-gradient(90deg, rgba(255,0,168,1) 10%, rgba(5,0,242,1) 100%);
+	border-radius: 10px;
+ }
+ .achieve4{
+	font-size: 24px;
+	height: 30px;
+	text-shadow: 1px 0 1px #000,
+	0 1px 1px #000, 
+	-1px 0 1px #000, 
+	0 -1px 1px #000;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+ }
+ .forachieve4{
+	color:#FEC727;
+	height: 30px;
+	text-shadow: 1px 0 1px #000,
+	0 1px 1px #000, 
+	-1px 0 1px #000, 
+	0 -1px 1px #000;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+ }
+ .container-achieve5{
+	margin: 50px 0;
+	background: rgb(255,0,168);
+    background: linear-gradient(90deg, rgba(255,0,168,1) 10%, rgba(5,0,242,1) 100%);
+	border-radius: 10px;
+ }
+ .achieve5{
+	font-size: 24px;
+	height: 30px;
+	text-shadow: 1px 0 1px #000,
+	0 1px 1px #000, 
+	-1px 0 1px #000, 
+	0 -1px 1px #000;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+ }
+ .forachieve5{
+	color:#FEC727;
+	height: 30px;
+	text-shadow: 1px 0 1px #000,
+	0 1px 1px #000, 
+	-1px 0 1px #000, 
+	0 -1px 1px #000;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+ }
+ .footer {
+	display: flex;
+	flex-wrap: nowrap;
+	gap: 20%;
+	width: 100%;
+	height: 100%;
+	align-items: center;
+	justify-content: center;
+ }
+ .Down-button{
+transform: rotate(-90deg);
+ }
+ .Snow{
+	background-image: url('snowflake1.png'), url('snowflake3.png'), url('snowflake2.png');
+    height:100%;
+ }
