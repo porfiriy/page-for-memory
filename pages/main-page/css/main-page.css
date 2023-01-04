@@ -366,27 +366,3 @@ h6 {
 .navigation ul li:nth-child(5):hover ~ .indicator{
    transform: translateX(calc(70px*2));
 }  
-.achivement-img{
-	height: 50px;
-	width: 40px;
- }
-.achivement {
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    -webkit-tap-highlight-color: transparent;
-}
-.statistics-img {
-	height: 50px;
-	width: 50px;
-}
-.home-img {
-	height: 50px;
-	width: 50px;
-}
-.gamepad-img {
-	height: 50px;
-	width: 50px;
-}
-.Bonus-img{
-	height: 50px;
-	width: 50px;
-}
