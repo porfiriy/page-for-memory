@@ -426,3 +426,12 @@ h6 {
    letter-spacing: 0.225em;
    color: #FEC727;
 }
+
+.page-achievments-container{
+   position: absolute;
+   display: none;
+   height: 100%;
+   width: 100%;
+   background-color:#25345B;
+   z-index: 0;
+}
