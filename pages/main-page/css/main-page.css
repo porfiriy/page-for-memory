@@ -426,6 +426,31 @@ h6 {
    letter-spacing: 0.225em;
    color: #FEC727;
 }
+.container-list-games{
+   display: flex;
+   margin: 23% auto;
+   align-items: center;
+   justify-content: center;
+   flex-wrap: wrap;
+   width: 250px;
+   gap: 15px;
+}
+.item-games{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100px;
+   height: 100px;
+   background: rgba(5, 0, 242, 0.74);
+   border: 4px solid #000000;
+   border-radius: 18px;
+}
+.colorsGame-title{
+   color: #000;
+   font-family: 'Balsamiq Sans';
+   font-size: 25px;
+   font-weight: 900;
+}
 
 .page-achievments-container{
    position: absolute;
