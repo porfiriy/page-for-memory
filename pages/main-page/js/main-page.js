@@ -2,6 +2,8 @@
 const list = document.querySelectorAll('.list')
 const itemHomeNavigation = document.querySelector('.list-home');
 const itemHomeTextNavigation = document.querySelector('.text-list-item');
+const itemGamesNavigation = document.querySelector('.list-games');
+const containerGamesPage = document.querySelector('.page-games-container');
 
 function activeLink() {
   list.forEach((item) =>
@@ -17,4 +19,9 @@ list.forEach((item) =>
 itemHomeNavigation.onclick = function () {//при нажатии на элем home в меню навигац
   itemHomeTextNavigation.classList.add('text-active-again');
   itemHomeNavigation.classList.add('home-active-again');
+  containerGamesPage.style = 'display: none;'; //убирает страницу игр
+}
+
+itemGamesNavigation.onclick = function () { //при нажатии на кнопку Games
+  containerGamesPage.style = 'display: block;';
 }

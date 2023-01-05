@@ -263,6 +263,7 @@ h6 {
    height: 41px;
 }
 .footer { 
+   position: relative;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
@@ -270,7 +271,7 @@ h6 {
 	height: 70px;
 	margin: 0 auto;
    flex-direction: row;
-   
+   z-index: 1;
 }
 .navigation{
    display: flex;
@@ -372,7 +373,7 @@ h6 {
 }
 .indicator{
    position: absolute;
-   top: 85%;
+   bottom: 75%;
    width: 70px;
    height: 70px;
    background-color: #27fe2e;
@@ -402,3 +403,26 @@ h6 {
 .navigation ul li:nth-child(5):hover ~ .indicator{
    transform: translateX(calc(70px*2));
 }  
+
+.page-games-container{
+   position: absolute;
+   display: none;
+   height: 100%;
+   width: 100%;
+   background-color:#25345B;
+   z-index: 0;
+}
+.page-title {
+   margin: 30px auto 0 auto;
+   width: 60%;
+   font-family: 'Balsamiq Sans';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 24px;
+   line-height: 29px;
+   display: flex;
+   align-items: center;
+   text-align: center;
+   letter-spacing: 0.225em;
+   color: #FEC727;
+}
