@@ -110,11 +110,18 @@ h6 {
 .main{
 	flex: 1 1 auto;
 	padding: 17% 0 0 0;
+   font-family: 'Balsamiq Sans', cursive;
 }
 .wrapper{
 	min-height: 100%;
 	display:flex;
 	flex-direction: column;
+}
+.funy-text{
+   margin: auto auto;
+   font-size: 45px;
+   font-weight: 900;
+   color: #FEC727;
 }
 /*
 .pageDiscription{
@@ -206,38 +213,8 @@ h6 {
 .icon-settings:active {
    opacity: 0;
 }
-.imgMainPage:active {
-   transform: scale(0.7);
-   
-}
 
-.hintMain {
-   
-   width: 250px;
-   height: 51px;
-   font-family: 'Balsamiq Sans', cursive;
-   font-style: normal;
-   font-weight: 300;
-   font-size: 18px;
-   line-height: 21px;
-   transform: translate(50%-250px);
-   text-align: center;
-   letter-spacing: 0.225em;
-   margin: 0 auto;
-   color: #FEC727;
-}
-.main-game {
-   margin: 0 auto;
-   display: flex;
-   flex-wrap: wrap;
-   flex-direction: row;
-   height: 360px;
-   gap: 5px;
-   width: 223px;
-   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-   -webkit-tap-highlight-color: transparent;
-   
-}
+
 
 .game-list__item:nth-child(1) {
    margin: 0 0px 0 2px;
