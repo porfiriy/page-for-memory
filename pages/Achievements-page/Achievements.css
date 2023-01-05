@@ -83,8 +83,10 @@ body {
  }
 .header {
 	display: flex;
+	justify-content: center;
+	align-items: center;
 	width: 100%;
-	margin: 10px 0 0 0;
+	margin: 50px 0 0 0;
  }
  .comeback-button {
 	display: inline-block;
@@ -119,6 +121,10 @@ body {
 	background: rgb(255,0,168);
     background: linear-gradient(90deg, rgba(255,0,168,1) 10%, rgba(5,0,242,1) 100%);
 	border-radius: 10px;
+	height: 70px;
+	width: 100%;
+	
+ 
  }
  .achieve1{
 	font-size: 24px;
@@ -141,12 +147,14 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
- }
+}
  .container-achieve2{
 	margin: 50px 0;
 	background: rgb(255,0,168);
     background: linear-gradient(90deg, rgba(255,0,168,1) 10%, rgba(5,0,242,1) 100%);
 	border-radius: 10px;
+	height: 70px;
+	width: 100%;
  }
  .achieve2{
 	font-size: 24px;
@@ -175,6 +183,8 @@ body {
 	background: rgb(255,0,168);
     background: linear-gradient(90deg, rgba(255,0,168,1) 10%, rgba(5,0,242,1) 100%);
 	border-radius: 10px;
+	height: 70px;
+	width: 100%;
  }
  .achieve3{
 	font-size: 24px;
@@ -203,6 +213,8 @@ body {
 	background: rgb(255,0,168);
     background: linear-gradient(90deg, rgba(255,0,168,1) 10%, rgba(5,0,242,1) 100%);
 	border-radius: 10px;
+	height: 70px;
+	width: 100%;
  }
  .achieve4{
 	font-size: 24px;
@@ -231,6 +243,8 @@ body {
 	background: rgb(255,0,168);
     background: linear-gradient(90deg, rgba(255,0,168,1) 10%, rgba(5,0,242,1) 100%);
 	border-radius: 10px;
+	height: 70px;
+	width: 100%;
  }
  .achieve5{
 	font-size: 24px;
@@ -254,19 +268,13 @@ body {
 	align-items: center;
 	justify-content: center;
  }
- .footer {
-	display: flex;
-	flex-wrap: nowrap;
-	gap: 20%;
-	width: 100%;
-	height: 100%;
-	align-items: center;
-	justify-content: center;
- }
  .Down-button{
 transform: rotate(-90deg);
- }
- .Snow{
-	background-image: url('snowflake1.png'), url('snowflake3.png'), url('snowflake2.png');
-    height:100%;
+display: flex;
+flex-wrap: nowrap;
+gap: 20%;
+width: 100%;
+height: 100%;
+align-items: center;
+justify-content: center;
  }
