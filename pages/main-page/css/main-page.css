@@ -308,15 +308,16 @@ h6 {
    width: 100%;
   font-weight: 500;
 }
-.navigation ul li:hover a  {
+.navigation ul li:hover a .icon  {
   transform: translateY(-48px);
   transition: 1s;
 }
-.list-home  {
+
+ .home-active-again{
    transform: translateY(-48px);
-   transition: 1s;
  }
 .text-list-item{
+   
    position: absolute;
    color: black;
    font-family: 'Balsamiq Sans', cursive;
@@ -326,12 +327,26 @@ h6 {
    transition: 1s;
    opacity: 0;
 }
+
 .text-active{
    opacity: 1;
    transition: 1s;
    transform: translateY(50px);
 }
+.text-active-again{
+   opacity: 1;
+   transform: translateY(50px);
+}
 .navigation ul li a .icon {
+   position: relative;
+   display: block;
+   line-height: 30px;
+   font-size: 1.5em;
+   text-align: center;
+   transition: 1s;
+   color: black;
+}
+.navigation ul li a .icon-home {
    position: relative;
    display: block;
    line-height: 30px;
@@ -353,7 +368,7 @@ h6 {
 .navigation ul li:hover a .text {
   opacity: 1;
   transition: 1s;
-  transform: translateY(50px);
+  
 }
 .indicator{
    position: absolute;
