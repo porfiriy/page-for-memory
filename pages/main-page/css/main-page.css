@@ -686,12 +686,6 @@ margin: 0% auto;
 	height: 50px;
 	width: 50px;
  }
- .everyday-tasks-header{
-   display: flex;
-   justify-content: flex-end;
-   width: 100%;
-   height: 20px;
- }
  .close-window{
    display: flex;
    align-items: center;
@@ -703,7 +697,7 @@ margin: 0% auto;
    color: red;
    font-weight: 900;
    font-size: 29px;
-   margin: 10px 10px 0 0;
+   margin: 10px;
  }
  .close-window:active{
    transform: scale(0.5);
