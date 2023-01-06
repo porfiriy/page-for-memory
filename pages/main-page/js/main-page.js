@@ -3,9 +3,11 @@ const list = document.querySelectorAll('.list')
 const itemHomeNavigation = document.querySelector('.list-home');
 const itemHomeTextNavigation = document.querySelector('.text-list-item');
 const itemGamesNavigation = document.querySelector('.list-games');
+const itemStoreNavigation = document.querySelector('.list-store');
 const itemAchievmentsNavigation = document.querySelector('.list-achievements');
 const containerGamesPage = document.querySelector('.page-games-container');
 const containerAchievmentsPage = document.querySelector('.page-achievments-container');
+const containerStorePage = document.querySelector('.page-store-container');
 
 function activeLink() {
   list.forEach((item) =>
@@ -23,13 +25,21 @@ itemHomeNavigation.onclick = function () {//при нажатии на элем 
   itemHomeNavigation.classList.add('home-active-again');
   containerGamesPage.style = 'display: none;'; //убирает страницу игр
   containerAchievmentsPage.style = 'display: none;';
+  containerStorePage.style = 'display: none;';
 }
 
 itemGamesNavigation.onclick = function () { //при нажатии на кнопку Games
   containerGamesPage.style = 'display: block;';
   containerAchievmentsPage.style = 'display: none;';//убирает страницу игр
+  containerStorePage.style = 'display: none;';
 }
 
 itemAchievmentsNavigation.onclick = function () { //при нажатии на кнопку Achievments
   containerAchievmentsPage.style = 'display: block;';
+  containerStorePage.style = 'display: none;';
+}
+
+itemStoreNavigation.onclick = function () { //при нажатии на кнопку Achievments
+  containerStorePage.style = 'display: block;';
+
 }
