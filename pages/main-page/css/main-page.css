@@ -686,3 +686,25 @@ margin: 0% auto;
 	height: 50px;
 	width: 50px;
  }
+ .everyday-tasks-header{
+   display: flex;
+   justify-content: flex-end;
+   width: 100%;
+   height: 20px;
+ }
+ .close-window{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: #FEC727;
+   border-radius: 50%;
+   width: 30px;
+   height: 30px;
+   color: red;
+   font-weight: 900;
+   font-size: 29px;
+   margin: 10px 10px 0 0;
+ }
+ .close-window:active{
+   transform: scale(0.5);
+ }
