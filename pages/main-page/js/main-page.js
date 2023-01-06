@@ -9,6 +9,7 @@ const containerGamesPage = document.querySelector('.page-games-container');
 const containerAchievmentsPage = document.querySelector('.page-achievments-container');
 const containerStorePage = document.querySelector('.page-store-container');
 const containerEverydayTasks = document.querySelector('.everyday-tasks-container');
+const containerGrayBackground = document.querySelector('.gray-background-container');
 const everydayTasksButton = document.querySelector('.everyday-tasks-button');
 
 function activeLink() {
@@ -51,6 +52,6 @@ itemStoreNavigation.onclick = function () { //при нажатии на кно�
 
 everydayTasksButton.onclick = function () { //при нажатии на кнопку ежедневки
   containerEverydayTasks.style = 'display: block;';
-
+  containerGrayBackground.style = 'display: block;';
 
 }
