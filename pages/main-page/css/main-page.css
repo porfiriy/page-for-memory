@@ -632,6 +632,7 @@ margin: 0% auto;
  }
 
  .everyday-tasks-container{
+   font-family: 'Balsamiq Sans', cursive;
    position: absolute;
    margin: 20% 10%;
    display: none;
@@ -642,11 +643,35 @@ margin: 0% auto;
    border: 4px solid #FEC727;
    border-radius: 15px;
  }
- .everyday-tasks-header{
+ .task-body {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 80%;
+	height: 70px;
+	background: #FEC727;
+	border-radius: 10px;
+	margin: 12.5% auto;
+ }
+ .tasks-body__mark-done {
+	height: 20px;
+	width: 20px;
+	border-radius: 10px;
+	border: 4px solid black;
+ }
+ .tasks-body__task-text {
+	width: 60%;
+ }
+ .tasks-body__task-reward {
    display: flex;
-   justify-content: flex-end;
-   width: 100%;
-   height: 20px;
+   align-items: center;
+   justify-content: center;
+   color: #FEC727;
+	text-align: center;
+	background-image: url(/page-for-memory/img/Dark/Dark\ Star.png);
+	background-repeat: no-repeat;
+	height: 50px;
+	width: 50px;
  }
  .close-window{
    display: flex;
@@ -659,7 +684,7 @@ margin: 0% auto;
    color: red;
    font-weight: 900;
    font-size: 29px;
-   margin: 10px 10px 0 0;
+   margin: 10px;
  }
  .close-window:active{
    transform: scale(0.5);
