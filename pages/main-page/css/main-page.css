@@ -425,12 +425,12 @@ h6 {
 	align-items: center;
 	justify-content: center;
 	color: #FEC727;
-	margin: 50px 0 0 0;
+	margin: 40px 0 0 0;
 	width: 100%;
 	height: 100%;
  }
  .main-achievements {
-	margin: -60px 0 0 0;
+	margin: -90px 0 0 0;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -451,7 +451,7 @@ h6 {
     background: linear-gradient(90deg, rgba(255,0,168,1) 10%, rgba(5,0,242,1) 100%);
 	border-radius: 10px;
 	height: 70px;
-	width: 95%;
+	width: 90%;
 	
  
  }
@@ -483,7 +483,7 @@ h6 {
     background: linear-gradient(90deg, rgba(255,0,168,1) 10%, rgba(5,0,242,1) 100%);
 	border-radius: 10px;
 	height: 70px;
-	width: 95%;
+	width: 90%;
  }
  .achieve2{
 	font-size: 24px;
@@ -513,7 +513,7 @@ h6 {
     background: linear-gradient(90deg, rgba(255,0,168,1) 10%, rgba(5,0,242,1) 100%);
 	border-radius: 10px;
 	height: 70px;
-	width: 95%;
+	width: 90%;
  }
  .achieve3{
 	font-size: 24px;
@@ -543,7 +543,7 @@ h6 {
     background: linear-gradient(90deg, rgba(255,0,168,1) 10%, rgba(5,0,242,1) 100%);
 	border-radius: 10px;
 	height: 70px;
-	width: 95%;
+	width: 90%;
  }
  .achieve4{
 	font-size: 24px;
