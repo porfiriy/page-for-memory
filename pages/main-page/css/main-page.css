@@ -117,12 +117,6 @@ h6 {
 	display:flex;
 	flex-direction: column;
 }
-.funy-text{
-   margin: auto auto;
-   font-size: 45px;
-   font-weight: 900;
-   color: #FEC727;
-}
 .icon-settings{
    animation-name: icon-settings;
    animation-duration: 3s;
@@ -248,7 +242,7 @@ h6 {
    color: black;
    font-family: 'Balsamiq Sans', cursive;
    font-weight: 700;
-   font-size: 1.3em;
+   font-size: 1em;
    letter-spacing: 0.05em;
    transition: 1s;
    opacity: 0;
@@ -286,7 +280,7 @@ h6 {
    color: black;
    font-family: 'Balsamiq Sans', cursive;
    font-weight: 700;
-   font-size: 1.3em;
+   font-size: 1em;
    letter-spacing: 0.05em;
    transition: 1s;
    opacity: 0;
