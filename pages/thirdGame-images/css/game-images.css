@@ -76,13 +76,13 @@ h6 {
 html,body {
    min-width: 380px;
    background-color: #25345B;
-   min-height: 750px;
+   height: 100%;
    font-family: 'Balsamiq Sans', cursive;
 }
 .wrapper {
    background-color: #25345B;
    width: 100%;
-   height: 750px;
+   height: 100%;
    position: relative;
    z-index: 1;
 }
@@ -124,6 +124,13 @@ html,body {
    height: 50px;
    background: rgba(51, 255, 0, 0.92);
    border-radius: 10px;
+   text-align: center;
+   font-style: normal;
+   font-weight: 700;
+   font-size: 32px;
+   line-height: 38px;
+   letter-spacing: 0.095em;
+   color: #000000;
 }
 .normal-mode-button {
    display: flex;
@@ -133,6 +140,13 @@ html,body {
    height: 50px;
    background: #E27B02;
    border-radius: 10px;
+   text-align: center;
+   font-style: normal;
+   font-weight: 700;
+   font-size: 32px;
+   line-height: 38px;
+   letter-spacing: 0.095em;
+   color: #000000;
 }
 .hard-mode-button {
    display: flex;
@@ -142,6 +156,13 @@ html,body {
    height: 50px;
    background: #FA4B00;
    border-radius: 10px;
+   text-align: center;
+   font-style: normal;
+   font-weight: 700;
+   font-size: 32px;
+   line-height: 38px;
+   letter-spacing: 0.095em;
+   color: #000000;
 }
 .crazy-mode-button {
    display: flex;
@@ -151,18 +172,20 @@ html,body {
    height: 50px;
    background: #8619B9;
    border-radius: 10px;
-}
-.mode-text{
-   font-family: 'Balsamiq Sans';
+   text-align: center;
    font-style: normal;
    font-weight: 700;
    font-size: 32px;
    line-height: 38px;
-   display: flex;
-   align-items: center;
-   text-align: center;
    letter-spacing: 0.095em;
    color: #000000;
+}
+.mode-text{
+   font-family: 'Balsamiq Sans';
+   
+   display: flex;
+   align-items: center;
+  
 }
 .mode-text:active{
    transform: scale(0.5);
@@ -429,8 +452,8 @@ height: 40px;
 }
 
 .memory-game {
-   width: 380px;
-   height: 550px;
+   width: 90%;
+   height: 70%;
    display: flex;
    justify-content: center;
    align-items: center;
@@ -444,7 +467,7 @@ height: 40px;
    align-items: center;
    background: #FEC727;
    width: 25%;
-   height:80px;
+   height:15%;
    margin: 5px;
    position: relative;
    border-radius: 10px;
@@ -615,8 +638,8 @@ height: 40px;
    position: absolute;
    top: 0px;
    left: 0px;
-   min-height: 800px;
-   min-width: 100%;
+   height: 100%;
+   width: 100%;
    background-color: #25345B;
    z-index: 3;
    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
