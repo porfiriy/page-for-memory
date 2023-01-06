@@ -7,10 +7,25 @@ let audioStart = new Audio('/page-for-memory/sound/start-game.mp3');
 let audioFaile = new Audio('/page-for-memory/sound/faile.mp3');
 let audioClick = new Audio('/page-for-memory/sound/click.mp3');
 
+let ModeTimeAnim;
 
 let settings = document.querySelector(".pop-up__container");
 let comeback = document.querySelector(".pop-up__container2");
 let restart = document.querySelector(".pop-up__container3");
+
+
+let deadeLine = document.getElementById("deadeLine");
+let easyModeButton = document.querySelector('.easy-mode-button');
+let normalModeButton = document.querySelector('.normal-mode-button');
+let hardModeButton = document.querySelector('.hard-mode-button');
+let crazyModeButton = document.querySelector('.crazy-mode-button');
+let modeOptionsContainer = document.querySelector('.mode-options-container');
+let gameMode = document.querySelector('.game-mode');
+let gameModeStyleEasy = document.querySelector('.game-mode-style-easy');
+const startButtonContainer = document.querySelector('.button-start-container');
+const startButtonGameMode = document.querySelector('.start-menu__game-mode');
+
+
 
 //при нажатии на отмену вспл окна настройки 
 document.querySelector('.pop-up__cancel').onclick = function () {
@@ -48,24 +63,49 @@ document.querySelector('.linkToTheRestart').onclick = function () {
 
 };
 
+easyModeButton.onclick = function () {//при нажатии на изи кнопку сложности
+   modeOptionsContainer.style = 'display: none;';
+   gameMode.innerHTML = 'Легко';
+   gameMode.classList.add('game-mode-style-easy');
+   ModeTimeAnim = '60';
+   startButtonContainer.style = 'display: block;'
+   startButtonGameMode.innerHTML = 'Легко';
+   startButtonGameMode.classList.add('start-menu__easy-game-mode');
+}
+normalModeButton.onclick = function () {
+   modeOptionsContainer.style = 'display: none;';
+   gameMode.innerHTML = 'Нормально';
+   gameMode.classList.add('game-mode-style-normal');
+   ModeTimeAnim = '50';
+   startButtonContainer.style = 'display: block;'
+   startButtonGameMode.innerHTML = 'Нормально';
+   startButtonGameMode.classList.add('start-menu__normal-game-mode');
+}
+hardModeButton.onclick = function () {
+   modeOptionsContainer.style = 'display: none;';
+   gameMode.innerHTML = 'Сложно';
+   gameMode.classList.add('game-mode-style-hard');
+   ModeTimeAnim = '40';
+   startButtonContainer.style = 'display: block;'
+   startButtonGameMode.innerHTML = 'Сложно';
+   startButtonGameMode.classList.add('start-menu__hard-game-mode');
+}
+crazyModeButton.onclick = function () {
+   modeOptionsContainer.style = 'display: none;';
+   gameMode.innerHTML = 'Безумие';
+   gameMode.classList.add('game-mode-style-crazy');
+   ModeTimeAnim = '30';
+   startButtonContainer.style = 'display: block;'
+   startButtonGameMode.innerHTML = 'Безумие';
+   startButtonGameMode.classList.add('start-menu__crazy-game-mode');
+}
+
 function game() {
 
 
 
+   deadeLine.style = `animation: deadeLine ${ModeTimeAnim}s linear `;//запуск анимации,c переменной под каждый мод игы
 
-
-   //линия времени 
-   function getId(id) {
-      return document.getElementById(id);
-   }
-
-   startDeadeLine();
-   function startDeadeLine() {
-
-      let deadeLine = getId("deadeLine");
-      deadeLine.style = "animation: deadeLine 70s linear ";
-
-   }
    //анимация проигриша 
    function showMessage() {
       looseTab.style = 'visibility:visible;';

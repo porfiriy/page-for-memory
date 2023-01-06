@@ -13,6 +13,7 @@ const containerGrayBackground = document.querySelector('.gray-background-contain
 const everydayTasksButton = document.querySelector('.everyday-tasks-button');
 const everydayTasksCloseButton = document.querySelector('.close-window');
 
+
 function activeLink() {
   list.forEach((item) =>
     item.classList.remove('active'));
