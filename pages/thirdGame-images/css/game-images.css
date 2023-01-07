@@ -78,6 +78,12 @@ html,body {
    background-color: #25345B;
    height: 100%;
    font-family: 'Balsamiq Sans', cursive;
+   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+   -webkit-tap-highlight-color: transparent;
+   -webkit-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   outline: none;
 }
 .wrapper {
    background-color: #25345B;
@@ -120,8 +126,8 @@ html,body {
    display: flex;
    justify-content: center;
    align-items: center;
-   width: 220px;
-   height: 50px;
+   width: 70%;
+   height: 55px;
    background: rgba(51, 255, 0, 0.92);
    border-radius: 10px;
    text-align: center;
@@ -136,8 +142,8 @@ html,body {
    display: flex;
    justify-content: center;
    align-items: center;
-   width: 220px;
-   height: 50px;
+   width: 70%;
+   height: 55px;
    background: #E27B02;
    border-radius: 10px;
    text-align: center;
@@ -152,8 +158,8 @@ html,body {
    display: flex;
    justify-content: center;
    align-items: center;
-   width: 220px;
-   height: 50px;
+   width: 70%;
+   height: 55px;
    background: #FA4B00;
    border-radius: 10px;
    text-align: center;
@@ -168,8 +174,8 @@ html,body {
    display: flex;
    justify-content: center;
    align-items: center;
-   width: 220px;
-   height: 50px;
+   width: 70%;
+   height: 55px;
    background: #8619B9;
    border-radius: 10px;
    text-align: center;
@@ -541,11 +547,32 @@ height: 40px;
    color: #FEC727;
    z-index: 2;
 }
-
+.comeback-button-body:active{
+   transform: scale(0.5);
+}
+.linkToTheSettings{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 34px;
+   color: #FEC727;
+}
+.linkToTheSettings:active{
+   transform: scale(0.5);
+}
 .linkToTheRestart {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 34px;
+   font-weight: 900;
+   color: #FEC727;
    margin: 5px 10px 0 0;
    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
    -webkit-tap-highlight-color: transparent;
+}
+.linkToTheRestart:active{
+   transform: scale(0.5);
 }
 .game-mode{
    margin: 20px 0 0 0;
@@ -553,6 +580,8 @@ height: 40px;
    font-size: 28px;
    font-weight: 900;
    font-family: 'Balsamiq Sans', cursive;
+   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+   -webkit-tap-highlight-color: transparent;
 }
 .game-mode-style-easy{
    color: rgb(102, 236, 25);
@@ -573,6 +602,8 @@ height: 40px;
    text-align: center;
    font-size: 22px;
    color: #72fe27;
+   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+   -webkit-tap-highlight-color: transparent;
 }
 .hint-button{
    position: absolute;
