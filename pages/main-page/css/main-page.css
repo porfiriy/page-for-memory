@@ -659,12 +659,12 @@ margin: 0% auto;
 	width: 60%;
  }
  .tasks-body__task-reward {
+	font-size: 16px;
    display: flex;
    align-items: center;
    justify-content: center;
-   color: #FEC727;
+   color: #000000;
 	text-align: center;
-	background-image: url(/page-for-memory/img/Dark/Dark\ Star.png);
 	background-repeat: no-repeat;
 	height: 50px;
 	width: 50px;
@@ -729,14 +729,28 @@ margin: 0% auto;
 	justify-content: space-between;
 	height: 200px;
  }
+ .block3{
+	margin: 0px 0 0 0;
+	width: 26%;
+	background: #FFC632;
+	border: 3px solid #000;
+	border-radius: 10px 10px 20px 20px;
+	min-width: 56%;
+	min-height: 20%;
+	text-align: center;
+	font-size: 17px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+ }
  .block1{
 	margin: 20px 0 0 0;
 	width: 26%;
 	background: #FFC632;
 	border: 3px solid #000;
-	border-radius: 18px;
-	min-width: 36%;
-	max-height: 50%;
+	border-radius: 20px 20px  10px  10px;
+	min-width: 56%;
+	min-height: 44%;
 	text-align: center;
 	font-size: 17px;
 	display: flex;
@@ -757,7 +771,7 @@ margin: 0% auto;
 	justify-content: center;
  }
  .currency1{
-	margin: 20px auto;
+	margin: 0px auto;
 	display:flex;
 	justify-content:space-around;
  }
@@ -797,7 +811,7 @@ margin: 0% auto;
 	border-radius: 15px;
 	width: 40%;
 	height: 50px;
-	margin: 40px auto;
+	margin: 20px auto;
  }
  .ads{
 	font-size: 16px;
@@ -809,7 +823,7 @@ margin: 0% auto;
 	border-radius: 10px;
 	width: 70%;
 	height: 5%;
-	margin: 0 auto;
+	margin: 0px auto;
  }
  .noads{
 	width: 14%;
