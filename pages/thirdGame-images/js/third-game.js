@@ -24,6 +24,13 @@ let gameMode = document.querySelector('.game-mode');
 let gameModeStyleEasy = document.querySelector('.game-mode-style-easy');
 const startButtonContainer = document.querySelector('.button-start-container');
 const startButtonGameMode = document.querySelector('.start-menu__game-mode');
+const victoryLooseScreenContainer = document.querySelector('.victory-loose-screen-container');
+const victoryLooseScreenGameMode = document.querySelector('.victory-loose-screen__mode');
+const victoryLooseScreenWinLooseText = document.querySelector('.victory-loose-screen__win-loose-text');
+const victoryLooseScreenResultsButton = document.querySelector('.victory-loose-screen__results-button');
+const resultsMenuContainer = document.querySelector('.results-menu-container');
+const resultsMenuMode = document.querySelector('.results-menu__mode');
+
 
 
 
@@ -71,6 +78,10 @@ easyModeButton.onclick = function () {//при нажатии на изи кно
    startButtonContainer.style = 'display: block;'
    startButtonGameMode.innerHTML = 'Легко';
    startButtonGameMode.classList.add('start-menu__easy-game-mode');
+   victoryLooseScreenGameMode.classList.add('victory-loose-screen__easy-mode');
+   victoryLooseScreenGameMode.innerHTML = 'Легко';
+   resultsMenuMode.classList.add('results-menu__easy-mode');
+   resultsMenuMode.innerHTML = 'Легко';
 }
 normalModeButton.onclick = function () {
    modeOptionsContainer.style = 'display: none;';
@@ -80,6 +91,10 @@ normalModeButton.onclick = function () {
    startButtonContainer.style = 'display: block;'
    startButtonGameMode.innerHTML = 'Нормально';
    startButtonGameMode.classList.add('start-menu__normal-game-mode');
+   victoryLooseScreenGameMode.classList.add('victory-loose-screen__normal-mode');
+   victoryLooseScreenGameMode.innerHTML = 'Нормально';
+   resultsMenuMode.classList.add('results-menu__normal-mode');
+   resultsMenuMode.innerHTML = 'Нормально';
 }
 hardModeButton.onclick = function () {
    modeOptionsContainer.style = 'display: none;';
@@ -89,6 +104,10 @@ hardModeButton.onclick = function () {
    startButtonContainer.style = 'display: block;'
    startButtonGameMode.innerHTML = 'Сложно';
    startButtonGameMode.classList.add('start-menu__hard-game-mode');
+   victoryLooseScreenGameMode.classList.add('victory-loose-screen__hard-mode');
+   victoryLooseScreenGameMode.innerHTML = 'Сложно';
+   resultsMenuMode.classList.add('results-menu__hard-mode');
+   resultsMenuMode.innerHTML = 'Сложно';
 }
 crazyModeButton.onclick = function () {
    modeOptionsContainer.style = 'display: none;';
@@ -98,6 +117,13 @@ crazyModeButton.onclick = function () {
    startButtonContainer.style = 'display: block;'
    startButtonGameMode.innerHTML = 'Безумие';
    startButtonGameMode.classList.add('start-menu__crazy-game-mode');
+   victoryLooseScreenGameMode.classList.add('victory-loose-screen__crazy-mode');
+   victoryLooseScreenGameMode.innerHTML = 'Безумие';
+   resultsMenuMode.classList.add('results-menu__crazy-mode');
+   resultsMenuMode.innerHTML = 'Безумие';
+}
+victoryLooseScreenResultsButton.onclick = function () {
+   resultsMenuContainer.style = 'display:block;'
 }
 
 function game() {
@@ -108,8 +134,9 @@ function game() {
 
    //анимация проигриша 
    function showMessage() {
-      looseTab.style = 'visibility:visible;';
-      audioFaile.play();
+      victoryLooseScreenContainer.style = 'display:flex;';
+      victoryLooseScreenWinLooseText.innerHTML = 'Поражение!'
+      victoryLooseScreenWinLooseText.classList.add('loose-text-red');
    }
    deadeLine.addEventListener("animationend", showMessage);
 
@@ -171,9 +198,10 @@ function game() {
 
          //анимация победы 
          if (score == 9) {
-            victoryTab.style = 'visibility:visible;';
+            victoryLooseScreenContainer.style = 'display:flex;';
             deadeLine.style = "animation-play-state: paused ";
-            audioVictory.play();
+            victoryLooseScreenWinLooseText.innerHTML = 'Победа!'
+            victoryLooseScreenWinLooseText.classList.add('victory-text-green');
          }
          //добавляет звук
          audioComplete.play();
