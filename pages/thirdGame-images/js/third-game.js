@@ -30,6 +30,12 @@ const victoryLooseScreenWinLooseText = document.querySelector('.victory-loose-sc
 const victoryLooseScreenResultsButton = document.querySelector('.victory-loose-screen__results-button');
 const resultsMenuContainer = document.querySelector('.results-menu-container');
 const resultsMenuMode = document.querySelector('.results-menu__mode');
+const resultsMenuWinLooseItem = document.querySelector('.items-container__win-loose-item');
+const resultsMenuTimeItem = document.querySelector('.items-container__time-item');
+const resultsMenuOpenedCardsItem = document.querySelector('.opened-cards');
+const resultsMenuDoneCardsItem = document.querySelector('.items-container__done-cards-item');
+const resultsMenuWinLooseIcon = document.querySelector('.items-container__win-loose-icon');
+
 
 
 
@@ -137,6 +143,12 @@ function game() {
       victoryLooseScreenContainer.style = 'display:flex;';
       victoryLooseScreenWinLooseText.innerHTML = 'Поражение!'
       victoryLooseScreenWinLooseText.classList.add('loose-text-red');
+      resultsMenuWinLooseItem.innerHTML = 'Поражение!'
+      resultsMenuWinLooseItem.classList.add('items-container__win-loose-item-red');
+      resultsMenuWinLooseIcon.innerHTML = '<ion-icon name="thumbs-down-outline"></ion-icon>';
+      resultsMenuOpenedCardsItem.innerHTML = `${score}`;
+      resultsMenuDoneCardsItem.classList.add('items-container__done-cards-item-red');
+      resultsMenuTimeItem.classList.add('items-container__time-item-red');
    }
    deadeLine.addEventListener("animationend", showMessage);
 
@@ -198,10 +210,16 @@ function game() {
 
          //анимация победы 
          if (score == 9) {
-            victoryLooseScreenContainer.style = 'display:flex;';
             deadeLine.style = "animation-play-state: paused ";
+            victoryLooseScreenContainer.style = 'display:flex;';
             victoryLooseScreenWinLooseText.innerHTML = 'Победа!'
             victoryLooseScreenWinLooseText.classList.add('victory-text-green');
+            resultsMenuWinLooseItem.innerHTML = 'Победа!'
+            resultsMenuWinLooseItem.classList.add('items-container__win-loose-item-green');
+            resultsMenuWinLooseIcon.innerHTML = '<ion-icon name="thumbs-up-outline"></ion-icon>';
+            resultsMenuOpenedCardsItem.innerHTML = '9';
+            resultsMenuDoneCardsItem.classList.add('items-container__done-cards-item-green');
+            resultsMenuTimeItem.classList.add('items-container__time-item-green');
          }
          //добавляет звук
          audioComplete.play();

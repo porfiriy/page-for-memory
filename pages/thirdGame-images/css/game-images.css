@@ -733,7 +733,7 @@ height: 40px;
 
 .victory-loose-screen-container{
    position: absolute;
-   display: flex;
+   display: none;
    flex-direction: column;
    align-items: center;
    justify-content: space-around;
@@ -883,25 +883,33 @@ height: 40px;
 .results-menu__easy-mode {
    text-align: center;
    font-size: 26px;
+   font-weight: 700;
+   margin: 10px 0 0 0 ;
    color: #30EC03;
 }
 .results-menu__normal-mode {
    text-align: center;
    font-size: 26px;
+   font-weight: 700;
+   margin: 10px 0 0 0 ;
    color: #E27B02;
 }
 .results-menu__hard-mode {
    text-align: center;
    font-size: 26px;
+   margin: 10px 0 0 0 ;
+   font-weight: 700;
    color: #FA4B00;
 }
 .results-menu__crazy-mode {
    text-align: center;
+   font-weight: 700;
+   margin: 10px 0 0 0 ;
    font-size: 26px;
    color: #8619B9;
 }
 .results-menu__items-container {
-   margin: 20px auto;
+   margin: 40px auto;
    width: 76%;
    height: 40%;
    background: rgba(0, 0, 0, 0.6);
@@ -935,9 +943,14 @@ height: 40px;
    align-items: center;
    text-align: center;
    letter-spacing: 0.095em;
-   color: #32EF07;
-
 }
+.items-container__win-loose-item-red{
+   color: #FA4B00;
+}
+.items-container__win-loose-item-green{
+   color: #32EF07;
+}
+
 .items-container__time-icon {
    font-size: 35px;
    color: #FEC727;
@@ -950,8 +963,13 @@ height: 40px;
    align-items: center;
    text-align: center;
    letter-spacing: 0.095em;
-   color: #32EF07;
    white-space: nowrap;
+}
+.items-container__time-item-green { 
+   color: #32EF07;
+}
+.items-container__time-item-red {
+   color: #FA4B00;
 }
 .items-container__done-cards-icon {
    font-size: 35px;
@@ -966,9 +984,14 @@ height: 40px;
    align-items: center;
    text-align: center;
    letter-spacing: 0.095em;
+}
+.items-container__done-cards-item-green {
    color: #32EF07;
 }
-.opends-cards {
+.items-container__done-cards-item-red{
+   color: #FA4B00;
+}
+.opened-cards {
    margin: 0 0px 0 5px;
 }
 .items-container__iq-icon {
