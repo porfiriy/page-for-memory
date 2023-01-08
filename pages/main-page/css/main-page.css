@@ -659,12 +659,12 @@ margin: 0% auto;
 	width: 60%;
  }
  .tasks-body__task-reward {
+	font-size: 16px;
    display: flex;
    align-items: center;
    justify-content: center;
-   color: #FEC727;
+   color: #000000;
 	text-align: center;
-	background-image: url(/page-for-memory/img/Dark/Dark\ Star.png);
 	background-repeat: no-repeat;
 	height: 50px;
 	width: 50px;
