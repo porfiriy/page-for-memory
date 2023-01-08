@@ -743,6 +743,9 @@ margin: 0% auto;
 	align-items: center;
 	justify-content: center;
  }
+ .block3:active{
+   transform: scale(0.7);
+ }
  .block1{
 	margin: 20px 0 0 0;
 	width: 26%;

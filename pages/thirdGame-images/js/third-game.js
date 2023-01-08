@@ -38,8 +38,6 @@ const resultsMenuWinLooseIcon = document.querySelector('.items-container__win-lo
 
 
 
-
-
 //при нажатии на отмену вспл окна настройки 
 document.querySelector('.pop-up__cancel').onclick = function () {
    settings.style = 'visibility:hidden;';
@@ -131,6 +129,8 @@ crazyModeButton.onclick = function () {
 victoryLooseScreenResultsButton.onclick = function () {
    resultsMenuContainer.style = 'display:block;'
 }
+
+
 
 function game() {
 
