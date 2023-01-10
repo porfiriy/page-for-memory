@@ -52,7 +52,7 @@ everydayTasksButton.onclick = function () { //при нажатии на кно�
   containerEverydayTasks.style = 'display: block;';
   containerGrayBackground.style = 'display: block;';
 }
-everydayTasksCloseButton.onclick = function () { //при нажатии на кнопку ежедневки
+everydayTasksCloseButton.onclick = function () {
   containerEverydayTasks.style = 'display: none;';
   containerGrayBackground.style = 'display: none;';
 

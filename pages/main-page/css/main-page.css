@@ -678,11 +678,11 @@ margin: 0% auto;
    justify-content: center;
    background-color: #FEC727;
    border-radius: 50%;
-   width: 30px;
-   height: 30px;
+   width: 40px;
+   height: 40px;
    color: red;
    font-weight: 900;
-   font-size: 29px;
+   font-size: 37px;
    margin: 10px;
  }
  .close-window:active{
