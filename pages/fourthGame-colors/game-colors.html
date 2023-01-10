@@ -66,14 +66,17 @@
       <a href="#" class="button-start">START</a>
    </div>
    <div class="wrapper">
-      <div class="topButton-GameColor">
-         <a class="comeback-button" href="#">
-            <img src="/page-for-memory/img/comeback-button.svg" alt="назад"></a>
-         <a href="#" class="linkToTheSettings"><img src="/page-for-memory/img/settings.svg" alt="settings"
-               class="imgSettings"></a>
-         <div class="linkToTheRestart"><img src="/page-for-memory/img/button-retryGame.svg" alt="restart"
-               class="img-restart"></div>
-      </div>
+
+      <div class="topButton-gameWords">
+		<a class="comeback-button" href="#">
+		   <div class="comeback-button-body">
+			  <ion-icon name="chevron-back-outline"></ion-icon>
+		   </div>
+		</a>
+		<a href="#" class="linkToTheSettings"><ion-icon class="imgSettings" name="settings-outline"></ion-icon></a>
+		<div class="linkToTheRestart"><ion-icon class="img-restart" name="refresh-outline"></ion-icon></div>
+	 </div>
+
       <div class="container-results-menu results-menu">
          <div class="results-menu__title">Результаты</div>
          <div class="results-menu__box-informations-orange box-informations-orange">
@@ -104,6 +107,8 @@
          </div>
       </div>
    </div>
+   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
    <script src="/page-for-memory/pages/fourthGame-colors/js/fourthGame-colors.js"></script>
 </body>
 
