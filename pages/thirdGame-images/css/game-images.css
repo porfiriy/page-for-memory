@@ -927,7 +927,7 @@ height: 40px;
 }
 .items-container__each-item-container {
    display: flex;
-   gap: 15%;
+   gap: 25px;
    margin: 0 10%;
 }
 .items-container__win-loose-icon {
@@ -956,6 +956,8 @@ height: 40px;
    color: #FEC727;
 }
 .items-container__time-item {
+   margin: 0 10px 0 0px;
+   display: flex;
    font-style: normal;
    font-weight: 700;
    font-size: 24px;
@@ -964,6 +966,9 @@ height: 40px;
    text-align: center;
    letter-spacing: 0.095em;
    white-space: nowrap;
+}
+.results-menu__time{
+   margin: 0 10px 0 0;
 }
 .items-container__time-item-green { 
    color: #32EF07;

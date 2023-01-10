@@ -35,6 +35,8 @@ const resultsMenuTimeItem = document.querySelector('.items-container__time-item'
 const resultsMenuOpenedCardsItem = document.querySelector('.opened-cards');
 const resultsMenuDoneCardsItem = document.querySelector('.items-container__done-cards-item');
 const resultsMenuWinLooseIcon = document.querySelector('.items-container__win-loose-icon');
+const resultsMenuTime = document.querySelector('.results-menu__time');
+const resultsMenuIqItem = document.querySelector('.items-container__iq-item');
 
 
 
@@ -134,7 +136,16 @@ victoryLooseScreenResultsButton.onclick = function () {
 
 function game() {
 
+   //считает время с начала игры
+   let seconds = 0;
+   let minutes = 0;
+   function timerGame() {
+      let timerID = setInterval(function () {
 
+         seconds += 1;
+      }, 1000)
+   }
+   timerGame();
 
    deadeLine.style = `animation: deadeLine ${ModeTimeAnim}s linear `;//запуск анимации,c переменной под каждый мод игы
 
@@ -149,6 +160,7 @@ function game() {
       resultsMenuOpenedCardsItem.innerHTML = `${score}`;
       resultsMenuDoneCardsItem.classList.add('items-container__done-cards-item-red');
       resultsMenuTimeItem.classList.add('items-container__time-item-red');
+      resultsMenuTime.innerHTML = `${seconds}`;
    }
    deadeLine.addEventListener("animationend", showMessage);
 
@@ -220,6 +232,8 @@ function game() {
             resultsMenuOpenedCardsItem.innerHTML = '9';
             resultsMenuDoneCardsItem.classList.add('items-container__done-cards-item-green');
             resultsMenuTimeItem.classList.add('items-container__time-item-green');
+            resultsMenuTime.innerHTML = `${seconds}`;
+            resultsMenuIqItem.innerHTML = '+50';
          }
          //добавляет звук
          audioComplete.play();
