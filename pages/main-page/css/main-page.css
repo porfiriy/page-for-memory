@@ -724,29 +724,12 @@ margin: 0% auto;
 	justify-content: center;
 	margin: 20px auto;
  }
- .block{
+ .shop-items{
 	display: flex;
 	justify-content: space-between;
 	height: 200px;
  }
- .block3{
-	margin: 0px 0 0 0;
-	width: 26%;
-	background: #FFC632;
-	border: 3px solid #000;
-	border-radius: 10px 10px 20px 20px;
-	min-width: 56%;
-	min-height: 20%;
-	text-align: center;
-	font-size: 17px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
- }
- .block3:active{
-   transform: scale(0.7);
- }
- .block1{
+ .free-hints{
 	margin: 20px 0 0 0;
 	width: 26%;
 	background: #FFC632;
@@ -760,7 +743,24 @@ margin: 0% auto;
 	align-items: center;
 	justify-content: center;
  }
- .block2{
+ .claim-free-hints{
+	margin: 0px 0 0 0;
+	width: 26%;
+	background: #FFC632;
+	border: 3px solid #000;
+	border-radius: 10px 10px 20px 20px;
+	min-width: 56%;
+	min-height: 20%;
+	text-align: center;
+	font-size: 17px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+ }
+ .claim-free-hints:active{
+   transform: scale(0.7);
+ }
+ .iq-trade{
 	width: 26%;
 	background: #FFC632;
 	border: 3px solid #000;
