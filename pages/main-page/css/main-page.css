@@ -58,7 +58,23 @@ body {
    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
    -webkit-tap-highlight-color: transparent;
 } 
-.lvl{
+.player-ui{
+	margin: -5% auto;
+text-align: center;
+font-size: 20px;
+}
+.player-level{
+color: #FEC727;
+margin: 5% auto;
+}
+.player-exp-scale{
+	margin: 0 auto;
+	width: 80%;
+	border-radius: 10px;
+	background: rgb(83,86,89);
+	background: linear-gradient(270deg, hsla(210, 93%, 32%, 0.5) 67%, rgba(254,199,39,1) 68%);
+}
+.IQ{
 	font-family: 'Balsamiq Sans', cursive;
 	font-size: 20px;
 	font-weight: 400;
