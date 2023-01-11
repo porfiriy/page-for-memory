@@ -11,7 +11,9 @@ const containerStorePage = document.querySelector('.page-store-container');
 const containerEverydayTasks = document.querySelector('.everyday-tasks-container');
 const containerGrayBackground = document.querySelector('.gray-background-container');
 const everydayTasksButton = document.querySelector('.everyday-tasks-button');
-const everydayTasksCloseButton = document.querySelector('.close-window');
+const everydayTasksCloseButton = document.querySelector('.evaery-day-tasks-close-button');
+const wordDayContainer = document.querySelector('.day-word-container');
+const wordDayCloseButton = document.querySelector('.word-day-close-button');
 
 
 function activeLink() {
@@ -55,5 +57,9 @@ everydayTasksButton.onclick = function () { //при нажатии на кно�
 everydayTasksCloseButton.onclick = function () {
   containerEverydayTasks.style = 'display: none;';
   containerGrayBackground.style = 'display: none;';
-
+  wordDayContainer.style = 'display: none;';
+}
+wordDayCloseButton.onclick = function () {
+  containerGrayBackground.style = 'display: none;';
+  wordDayContainer.style = 'display: none;';
 }
