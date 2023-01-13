@@ -117,16 +117,16 @@ hardModeButton.onclick = function () {
 }
 crazyModeButton.onclick = function () {
    modeOptionsContainer.style = 'display: none;';
-   gameMode.innerHTML = 'Безумие';
+   gameMode.innerHTML = 'Безумно';
    gameMode.classList.add('game-mode-style-crazy');
-   ModeTimeAnim = '30';
+   ModeTimeAnim = '34';
    startButtonContainer.style = 'display: block;'
-   startButtonGameMode.innerHTML = 'Безумие';
+   startButtonGameMode.innerHTML = 'Безумно';
    startButtonGameMode.classList.add('start-menu__crazy-game-mode');
    victoryLooseScreenGameMode.classList.add('victory-loose-screen__crazy-mode');
-   victoryLooseScreenGameMode.innerHTML = 'Безумие';
+   victoryLooseScreenGameMode.innerHTML = 'Безумно';
    resultsMenuMode.classList.add('results-menu__crazy-mode');
-   resultsMenuMode.innerHTML = 'Безумие';
+   resultsMenuMode.innerHTML = 'Безумно';
 }
 victoryLooseScreenResultsButton.onclick = function () {
    resultsMenuContainer.style = 'display:block;'

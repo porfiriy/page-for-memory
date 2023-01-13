@@ -63,3 +63,24 @@ wordDayCloseButton.onclick = function () {
   containerGrayBackground.style = 'display: none;';
   wordDayContainer.style = 'display: none;';
 }
+
+function getSum(a, b) {
+  if (a == b) {
+    return a;
+  }
+  else if (a < 0) {
+    while (b !== 0) {
+      console.log(a += b--);
+    }
+  }
+  else if (b < 0) {
+
+    console.log(a + b);
+
+  }
+  else {
+    console.log(a + b);
+  }
+
+}
+getSum(511, 506);
