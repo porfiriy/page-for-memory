@@ -1,3 +1,12 @@
+@media (prefers-color-scheme: dark) { 
+   img { 
+     opacity: .75; 
+     transition: opacity .5s ease-in-out; 
+   } 
+   img:hover { 
+     opacity: 1; 
+   } 
+ }
 * {
    padding: 0;
    margin: 0;
@@ -210,7 +219,7 @@ h6 {
    display: flex;
    justify-content: space-between;
    align-items: center;
-   margin: 40% 0 0 0;
+   margin: 20% 0 0 0;
    padding: 0 5%;
 }
 .bonus-button {
