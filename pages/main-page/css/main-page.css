@@ -1,12 +1,4 @@
-@media (prefers-color-scheme: dark) { 
-   img { 
-     opacity: .75; 
-     transition: opacity .5s ease-in-out; 
-   } 
-   img:hover { 
-     opacity: 1; 
-   } 
- }
+
 * {
    padding: 0;
    margin: 0;
@@ -107,9 +99,8 @@ h6 {
    z-index: 2;
 }
 .header{
-	box-sizing: border-box;
    width: 100%;
-   height: 205px;
+   height: 210px;
    background: #FEC727;
    border-width: 0px 1px 2px 1px;
    border-style: solid;
@@ -122,6 +113,7 @@ h6 {
    align-items: center;
    margin: 15px 0 0 0;
    gap: 48px;
+   font-size: 18px;
 }
 .header__top-button-title{
    font-size: 34px;
@@ -139,12 +131,16 @@ h6 {
    align-items: center;
    justify-content: space-around;
    width: 97px;
-   height: 31px;
+   height: 34px;
    background: #372BC2;
    border-width: 0px 2px 2px 0px;
    border-style: solid;
    border-color: #000000;
    border-radius: 10px;
+}
+.memany-container{
+   font-size: 16px;
+   font-weight: 900;
 }
 .hint-container {
    font-size: 16px;
@@ -155,7 +151,8 @@ h6 {
    font-weight: 900;
 }
 .iq-container {
-
+   font-size: 16px;
+   font-weight: 900;
 }
 .lvl-container{
 
@@ -205,15 +202,41 @@ h6 {
    font-weight: 800;
 }
 .profile{
-	width: 40px;
-	height: 40px;
+	width: 45px;
+	height: 45px;
 	border: 2px solid black;
 	border-radius: 20%; 
 }
 .main{
 	flex: 1 1 auto;
-	padding: 17% 0 0 0;
    font-family: 'Balsamiq Sans', cursive;
+}
+.everyday-word-button{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 10px;
+   margin: 30px auto 0 auto;
+   width: 171px;
+   height: 30px;
+   background: #FEC727;
+   border-width: 0px 2px 2px 0px;
+   border-style: solid;
+   border-color: #000000;
+   border-radius: 15px;
+   font-style: normal;
+   font-weight: 700;
+   font-size: 18px;
+   line-height: 22px;
+   text-align: center;
+   color: #000000;
+}
+.everyday-word-button:active{
+   transform: scale(0.8);
+}
+.book-img{
+   font-size: 24px;
+   font-weight: 900;
 }
 .tasks-bonus-iq-container{
    display: flex;
@@ -753,7 +776,7 @@ h6 {
    font-family: 'Balsamiq Sans', cursive;
    position: absolute;
    margin: 20% 10%;
-   display: block;
+   display: none;
    height: 70%;
    width: 80%;
    background-color:#25345B;

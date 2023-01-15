@@ -14,6 +14,7 @@ const everydayTasksButton = document.querySelector('.everyday-tasks-button');
 const everydayTasksCloseButton = document.querySelector('.evaery-day-tasks-close-button');
 const wordDayContainer = document.querySelector('.day-word-container');
 const wordDayCloseButton = document.querySelector('.word-day-close-button');
+const wordDayButton = document.querySelector('.everyday-word-button');
 
 
 function activeLink() {
@@ -62,6 +63,10 @@ everydayTasksCloseButton.onclick = function () {
 wordDayCloseButton.onclick = function () {
   containerGrayBackground.style = 'display: none;';
   wordDayContainer.style = 'display: none;';
+}
+wordDayButton.onclick = function () {
+  wordDayContainer.style = 'display: block;';
+  containerGrayBackground.style = 'display: block;';
 }
 
 function getSum(a, b) {
