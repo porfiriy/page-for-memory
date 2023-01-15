@@ -117,6 +117,7 @@ h6 {
 .header__top-button-title{
    font-size: 34px;
    font-weight: 800;
+   color: #000;
 }
 .header-score-container{
    margin: 20px 0 ;
