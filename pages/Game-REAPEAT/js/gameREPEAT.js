@@ -53,7 +53,7 @@ document.querySelector('.linkToTheRestart').onclick = function () {
    restart.style = 'visibility:visible;';
 
 };
-
+game();
 function game() {
 
 
@@ -65,12 +65,13 @@ function game() {
       return document.getElementById(id);
    }
 
-   startDeadeLine();
+
    function startDeadeLine() {
 
       let deadeLine = getId("deadeLine");
       deadeLine.style = "animation: deadeLine 8s linear ";
    }
+   startDeadeLine();
 
 
 
@@ -145,6 +146,7 @@ function game() {
          allButtonsStyle[a[0]].classList.add('activated-button');
          allButtonsStyle[a[1]].classList.add('activated-button');
          allButtonsStyle[a[2]].classList.add('activated-button');
+
          setTimeout(() => {//убирает ранд блоки с экрана
             allButtonsStyle[a[0]].classList.remove('activated-button');
             allButtonsStyle[a[1]].classList.remove('activated-button');
@@ -166,7 +168,7 @@ function game() {
    }
    viewCards();
 
-   //анимация проигриша 
+   //анимация проигриша
    //    function showMessage() {
    //       looseTab.style = 'visibility:visible;';
    //       audioFaile.play();
@@ -174,15 +176,4 @@ function game() {
    //    deadeLine.addEventListener("animationend", showMessage);
    // }
 
-   //активация кнопки старт при нажатии
-   const BUTTON_START = document.querySelector('.button-start');
-   BUTTON_START.onclick = function () {
-      document.querySelector('.start-menu').classList.add('activated');
-      BUTTON_START.classList.add('activated');
-      if (BUTTON_START.classList.contains('activated')) {
-         audioStart.play();
-         game();
-      }
-   }
 }
-
