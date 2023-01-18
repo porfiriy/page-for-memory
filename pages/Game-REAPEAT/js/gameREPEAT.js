@@ -16,7 +16,10 @@ let allButtonsStyle = document.querySelectorAll('.game-buttons-container__button
 let button1 = document.querySelector('.button1');
 let lvlCounterText = document.querySelector('.lvl-counter');
 let lvlCounter = 1;
+let numberButtonFofLvls = 2;//с учетом нуля 3
 let pressButtons = [];
+let ButtonValue = [];
+
 
 //при нажатии на отмену вспл окна настройки 
 document.querySelector('.pop-up__cancel').onclick = function () {
@@ -53,12 +56,36 @@ document.querySelector('.linkToTheRestart').onclick = function () {
    restart.style = 'visibility:visible;';
 
 };
+
+
+function checkEcualPressAndValueBttn(arr1, arr2) {//сравнивает массивы 
+   console.log(ButtonValue);
+   console.log(pressButtons);
+   for (let i = 0; i < arr1.length; i++) {
+      for (let k = 0; k < arr2.length; k++) {
+
+         if (arr1[i] == arr2[k]) {
+            let results;
+            results += 1;
+            if (results == numberButtonFofLvls) {
+               console.log('массивы равны');
+            }
+         }
+
+      }
+   }
+
+
+}
+function checkLengthPressButtons() {
+   if (pressButtons.length === numberButtonFofLvls) {
+      console.log("3 ecual");
+      checkEcualPressAndValueBttn(pressButtons, ButtonValue);
+   }
+}
+
 game();
 function game() {
-
-
-
-
 
    //линия времени 
    function getId(id) {
@@ -75,16 +102,13 @@ function game() {
 
 
 
-
-
    //при нажатии на кнопки в игре 
    for (let elem of allButtonsStyle)//перебирает колекцию по элементам
       elem.onclick = function () {
+         checkLengthPressButtons();
          elem.classList.add('activated');
          if (elem.classList.contains('activated')) {
             elem.classList.add('activated-button');
-
-
          }
       }
 
@@ -97,10 +121,10 @@ function game() {
       const count = 15;      // кол-во требуемых чисел
 
       let m = {};
-      let a = [];//массив рандобных чисел для блоков без повторения
+      let arrayRandomNumbers = [];//массив рандобных чисел для блоков без повторения
       for (let i = 0; i < count; ++i) {
          let r = Math.floor(Math.random() * (range - i));
-         a.push(((r in m) ? m[r] : r) + 1);
+         arrayRandomNumbers.push(((r in m) ? m[r] : r) + 1);
          let l = range - i - 1;
          m[r] = (l in m) ? m[l] : l;
       }
@@ -118,43 +142,31 @@ function game() {
             console.log('pressButton')
             console.log(pressButtons)
 
-            console.log('results')
-            console.log(result);
-            for (let k = 0; k < pressButtons.length; k++) {
-               for (let j = 0; j < ButtonValue.length; j++) {
-                  if (pressButtons[k] === ButtonValue[j]) {
-                     result.push(pressButtons[k])
 
-                  }
-               }
 
-               if (pressButtons.length == result.length) {
-                  console.log("ecuel");
-               }
-            }
+
          });
       }
 
-      let ButtonValue = [];
 
       //Lvl 1
       if (lvlCounter == 1) {
-         ButtonValue.push(a[0]);
-         ButtonValue.push(a[1]);
-         ButtonValue.push(a[2]);
+         ButtonValue.push(arrayRandomNumbers[0]);
+         ButtonValue.push(arrayRandomNumbers[1]);
+         ButtonValue.push(arrayRandomNumbers[2]);
          //выводит рандомные блоки на экран
-         allButtonsStyle[a[0]].classList.add('activated-button');
-         allButtonsStyle[a[1]].classList.add('activated-button');
-         allButtonsStyle[a[2]].classList.add('activated-button');
+         allButtonsStyle[arrayRandomNumbers[0]].classList.add('activated-button');
+         allButtonsStyle[arrayRandomNumbers[1]].classList.add('activated-button');
+         allButtonsStyle[arrayRandomNumbers[2]].classList.add('activated-button');
 
          setTimeout(() => {//убирает ранд блоки с экрана
-            allButtonsStyle[a[0]].classList.remove('activated-button');
-            allButtonsStyle[a[1]].classList.remove('activated-button');
-            allButtonsStyle[a[2]].classList.remove('activated-button');
+            allButtonsStyle[arrayRandomNumbers[0]].classList.remove('activated-button');
+            allButtonsStyle[arrayRandomNumbers[1]].classList.remove('activated-button');
+            allButtonsStyle[arrayRandomNumbers[2]].classList.remove('activated-button');
          }, 3000);
-         if (ButtonValue == pressButtons) {
-            console.log('всё введено верно')
-         }
+
+
+
       }
 
       console.log('buttnValue');
@@ -177,3 +189,4 @@ function game() {
    // }
 
 }
+

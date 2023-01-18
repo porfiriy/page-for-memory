@@ -4,11 +4,13 @@ const itemHomeNavigation = document.querySelector('.list-home');
 const itemHomeTextNavigation = document.querySelector('.text-list-item');
 const itemGamesNavigation = document.querySelector('.list-games');
 const itemStoreNavigation = document.querySelector('.list-store');
+const itemAnalyticNavigation = document.querySelector('.list-analytic');
 const itemAchievmentsNavigation = document.querySelector('.list-achievements');
 const containerGamesPage = document.querySelector('.page-games-container');
 const containerAchievmentsPage = document.querySelector('.page-achievments-container');
 const containerStorePage = document.querySelector('.page-store-container');
 const containerEverydayTasks = document.querySelector('.everyday-tasks-container');
+const containerAnalyticPage = document.querySelector('.analytic-container');
 const containerGrayBackground = document.querySelector('.gray-background-container');
 const everydayTasksButton = document.querySelector('.everyday-tasks-button');
 const everydayTasksCloseButton = document.querySelector('.evaery-day-tasks-close-button');
@@ -34,23 +36,35 @@ itemHomeNavigation.onclick = function () {//при нажатии на элем 
   containerGamesPage.style = 'display: none;'; //убирает страницу игр
   containerAchievmentsPage.style = 'display: none;';
   containerStorePage.style = 'display: none;';
+  containerAnalyticPage.style = 'display:none;';
 }
 
 itemGamesNavigation.onclick = function () { //при нажатии на кнопку Games
   containerGamesPage.style = 'display: block;';
-  containerAchievmentsPage.style = 'display: none;';//убирает страницу игр
+  containerAchievmentsPage.style = 'display: none;';
   containerStorePage.style = 'display: none;';
+  containerAnalyticPage.style = 'display:none;';
 }
 
 itemAchievmentsNavigation.onclick = function () { //при нажатии на кнопку Achievments
   containerAchievmentsPage.style = 'display: block;';
+  containerGamesPage.style = 'display: none;'; //убирает страницу игр
   containerStorePage.style = 'display: none;';
+  containerAnalyticPage.style = 'display:none;';
 }
 
 itemStoreNavigation.onclick = function () { //при нажатии на кнопку Store
   containerStorePage.style = 'display: block;';
+  containerGamesPage.style = 'display: none;'; //убирает страницу игр
+  containerAchievmentsPage.style = 'display: none;';
+  containerAnalyticPage.style = 'display:none;';
 }
-
+itemAnalyticNavigation.onclick = function () {
+  containerAnalyticPage.style = 'display: block;';
+  containerGamesPage.style = 'display: none;'; //убирает страницу игр
+  containerAchievmentsPage.style = 'display: none;';
+  containerStorePage.style = 'display: none;';
+}
 everydayTasksButton.onclick = function () { //при нажатии на кнопку ежедневки
   containerEverydayTasks.style = 'display: block;';
   containerGrayBackground.style = 'display: block;';
@@ -68,6 +82,7 @@ wordDayButton.onclick = function () {
   wordDayContainer.style = 'display: block;';
   containerGrayBackground.style = 'display: block;';
 }
+
 
 function getSum(a, b) {
   if (a == b) {
