@@ -81,7 +81,7 @@ easyModeButton.onclick = function () {//при нажатии на изи кно
    gameMode.innerHTML = 'Легко';
    gameMode.classList.add('game-mode-style-easy');
    ModeTimeAnim = '60';
-   startButtonContainer.style = 'display: block;'
+   startButtonContainer.style = 'display: block;';
    startButtonGameMode.innerHTML = 'Легко';
    startButtonGameMode.classList.add('start-menu__easy-game-mode');
    victoryLooseScreenGameMode.classList.add('victory-loose-screen__easy-mode');
@@ -94,7 +94,7 @@ normalModeButton.onclick = function () {
    gameMode.innerHTML = 'Нормально';
    gameMode.classList.add('game-mode-style-normal');
    ModeTimeAnim = '50';
-   startButtonContainer.style = 'display: block;'
+   startButtonContainer.style = 'display: block;';
    startButtonGameMode.innerHTML = 'Нормально';
    startButtonGameMode.classList.add('start-menu__normal-game-mode');
    victoryLooseScreenGameMode.classList.add('victory-loose-screen__normal-mode');
@@ -107,7 +107,7 @@ hardModeButton.onclick = function () {
    gameMode.innerHTML = 'Сложно';
    gameMode.classList.add('game-mode-style-hard');
    ModeTimeAnim = '40';
-   startButtonContainer.style = 'display: block;'
+   startButtonContainer.style = 'display: block;';
    startButtonGameMode.innerHTML = 'Сложно';
    startButtonGameMode.classList.add('start-menu__hard-game-mode');
    victoryLooseScreenGameMode.classList.add('victory-loose-screen__hard-mode');
@@ -120,7 +120,7 @@ crazyModeButton.onclick = function () {
    gameMode.innerHTML = 'Безумно';
    gameMode.classList.add('game-mode-style-crazy');
    ModeTimeAnim = '34';
-   startButtonContainer.style = 'display: block;'
+   startButtonContainer.style = 'display: block;';
    startButtonGameMode.innerHTML = 'Безумно';
    startButtonGameMode.classList.add('start-menu__crazy-game-mode');
    victoryLooseScreenGameMode.classList.add('victory-loose-screen__crazy-mode');

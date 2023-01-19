@@ -186,16 +186,7 @@ html,body {
    letter-spacing: 0.095em;
    color: #000000;
 }
-.mode-text{
-   font-family: 'Balsamiq Sans';
-   
-   display: flex;
-   align-items: center;
-  
-}
-.mode-text:active{
-   transform: scale(0.5);
-}
+
 
 .pop-up__container {
    visibility: hidden;
@@ -678,7 +669,7 @@ height: 40px;
 }
 .start-menu__normal-game-mode{
    color: #E27B02;
-}
+} 
 .start-menu__hard-game-mode{
    color:  #FA4B00;
 }
