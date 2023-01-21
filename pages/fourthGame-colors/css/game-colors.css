@@ -79,6 +79,12 @@ html,body {
    background-color: #25345B;
    min-height: 750px;
    font-family: 'Balsamiq Sans';
+   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+   -webkit-tap-highlight-color: transparent;
+   -webkit-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   outline: none;
 }
 .wrapper {
    width: 100%;

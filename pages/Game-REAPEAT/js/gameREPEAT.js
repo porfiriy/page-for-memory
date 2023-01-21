@@ -13,12 +13,14 @@ let comeback = document.querySelector(".pop-up__container2");
 let restart = document.querySelector(".pop-up__container3");
 
 let allButtonsStyle = document.querySelectorAll('.game-buttons-container__button');//кнопки-квадратики 
+let ButtonsStyleGreen = document.querySelector('.game-buttons-container__button-green');
 let button1 = document.querySelector('.button1');
 let lvlCounterText = document.querySelector('.lvl-counter');
 let lvlCounter = 1;
-let numberButtonFofLvls = 2;//с учетом нуля 3
+let numberButtonFofLvls = 3;//с учетом нуля 3
 let pressButtons = [];
 let ButtonValue = [];
+let rightWrongAnswer;
 
 
 //при нажатии на отмену вспл окна настройки 
@@ -58,48 +60,53 @@ document.querySelector('.linkToTheRestart').onclick = function () {
 };
 
 
-function checkEcualPressAndValueBttn(arr1, arr2) {//сравнивает массивы 
-   console.log(ButtonValue);
-   console.log(pressButtons);
-   for (let i = 0; i < arr1.length; i++) {
-      for (let k = 0; k < arr2.length; k++) {
-
-         if (arr1[i] == arr2[k]) {
-            let results;
-            results += 1;
-            if (results == numberButtonFofLvls) {
-               console.log('массивы равны');
-            }
-         }
-
-      }
-   }
-
-
-}
-function checkLengthPressButtons() {
-   if (pressButtons.length === numberButtonFofLvls) {
-      console.log("3 ecual");
-      checkEcualPressAndValueBttn(pressButtons, ButtonValue);
-   }
-}
 
 game();
 function game() {
 
+   viewCards();
    //линия времени 
    function getId(id) {
       return document.getElementById(id);
    }
 
+   function changesLvlCounter() {
+      if (rightWrongAnswer == true) {
+         console.log('тру говорит');
+         allButtonsStyle[ButtonValue[0]].style = 'background-color: green;';
+         allButtonsStyle[ButtonValue[1]].style = 'background-color: green;';
+         allButtonsStyle[ButtonValue[2]].style = 'background-color: green;';
+         lvlCounter += 1;
+      }
+      else {
+         console.log('в ответе фолс пишет')
+         allButtonsStyle[pressButtons[0]].style = 'background-color: red;';
+
+      }
+   }
 
    function startDeadeLine() {
 
       let deadeLine = getId("deadeLine");
-      deadeLine.style = "animation: deadeLine 8s linear ";
+      deadeLine.style = "animation: deadeLine 7s linear ";
    }
-   startDeadeLine();
 
+
+   function checkEcualPressAndValueBttn(arr1, arr2) {//сравнивает массивы 
+      console.log(ButtonValue);
+      console.log(pressButtons);
+      rightWrongAnswer = pressButtons.sort().toString() == ButtonValue.sort().toString();//сортирует массивы и сравнивает
+
+
+   }
+   function checkLengthPressButtons() {
+      if (pressButtons.length === numberButtonFofLvls) {
+         console.log("3 ecual");
+         checkEcualPressAndValueBttn(pressButtons, ButtonValue);
+         changesLvlCounter();
+         viewCards();
+      }
+   }
 
 
    //при нажатии на кнопки в игре 
@@ -136,49 +143,62 @@ function game() {
       for (let i = 0; i < arrElem.length; i++) {
          arrayElem.push(arrElem[i]);
          arrElem[i].addEventListener('click', function (e) {
-
             pressButtons.push(arrayElem.indexOf(e.target));//записывает индекс в массив
-
             console.log('pressButton')
             console.log(pressButtons)
-
-
-
-
          });
       }
 
+      checkLvlCounter();
+      function checkLvlCounter() {
+         //Lvl 1
+         if (lvlCounter == 1) {
+            lvlCounterText.innerHTML = '1';
+            ButtonValue.push(arrayRandomNumbers[0]);
+            ButtonValue.push(arrayRandomNumbers[1]);
+            ButtonValue.push(arrayRandomNumbers[2]);
+            //выводит рандомные блоки на экран
+            allButtonsStyle[arrayRandomNumbers[0]].classList.add('activated-button');
+            allButtonsStyle[arrayRandomNumbers[1]].classList.add('activated-button');
+            allButtonsStyle[arrayRandomNumbers[2]].classList.add('activated-button');
 
-      //Lvl 1
-      if (lvlCounter == 1) {
-         ButtonValue.push(arrayRandomNumbers[0]);
-         ButtonValue.push(arrayRandomNumbers[1]);
-         ButtonValue.push(arrayRandomNumbers[2]);
-         //выводит рандомные блоки на экран
-         allButtonsStyle[arrayRandomNumbers[0]].classList.add('activated-button');
-         allButtonsStyle[arrayRandomNumbers[1]].classList.add('activated-button');
-         allButtonsStyle[arrayRandomNumbers[2]].classList.add('activated-button');
+            setTimeout(() => {//убирает ранд блоки с экрана
+               allButtonsStyle[arrayRandomNumbers[0]].classList.remove('activated-button');
+               allButtonsStyle[arrayRandomNumbers[1]].classList.remove('activated-button');
+               allButtonsStyle[arrayRandomNumbers[2]].classList.remove('activated-button');
+               startDeadeLine();
+            }, 3000);
 
-         setTimeout(() => {//убирает ранд блоки с экрана
-            allButtonsStyle[arrayRandomNumbers[0]].classList.remove('activated-button');
-            allButtonsStyle[arrayRandomNumbers[1]].classList.remove('activated-button');
-            allButtonsStyle[arrayRandomNumbers[2]].classList.remove('activated-button');
-         }, 3000);
+         }
+         //lvl 2
+         if (lvlCounter == 2) {
+            lvlCounterText.innerHTML = '2';
+            ButtonValue.push(arrayRandomNumbers[0]);
+            ButtonValue.push(arrayRandomNumbers[1]);
+            ButtonValue.push(arrayRandomNumbers[2]);
+            //выводит рандомные блоки на экран
+            allButtonsStyle[arrayRandomNumbers[0]].classList.add('activated-button');
+            allButtonsStyle[arrayRandomNumbers[1]].classList.add('activated-button');
+            allButtonsStyle[arrayRandomNumbers[2]].classList.add('activated-button');
 
-
-
+            setTimeout(() => {//убирает ранд блоки с экрана
+               allButtonsStyle[arrayRandomNumbers[0]].classList.remove('activated-button');
+               allButtonsStyle[arrayRandomNumbers[1]].classList.remove('activated-button');
+               allButtonsStyle[arrayRandomNumbers[2]].classList.remove('activated-button');
+               startDeadeLine();
+            }, 3000);
+         }
       }
+
+
 
       console.log('buttnValue');
       console.log(ButtonValue);
 
-      //Lvl 2
-      if (lvlCounter == 2) {
-         allButtonsStyle[a[0]].classList.add('activated-button');
-      }
+
 
    }
-   viewCards();
+
 
    //анимация проигриша
    //    function showMessage() {
