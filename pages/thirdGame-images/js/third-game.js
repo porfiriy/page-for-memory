@@ -1,7 +1,7 @@
 "use strict"
 
 //звук
-let audioComplete = new Audio('/page-for-memory/sound/successfull2.mp3');
+let audioComplete = new Audio('/page-for-memory/sound/successfull2.mp3'); 
 let audioVictory = new Audio('/page-for-memory/sound/successfull.mp3');
 let audioStart = new Audio('/page-for-memory/sound/start-game.mp3');
 let audioFaile = new Audio('/page-for-memory/sound/faile.mp3');
