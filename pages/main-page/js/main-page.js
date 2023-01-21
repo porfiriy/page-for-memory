@@ -2,6 +2,7 @@
 //звук 
 let audioClick = new Audio('/page-for-memory/pages/main-page/sounds/mixkit-modern-click-box-check-1120.wav');
 let audioSwap = new Audio('/page-for-memory/pages/main-page/sounds/25d7ee378d6addc.mp3');
+let audiomeme = new Audio('/page-for-memory/pages/main-page/sounds/dwayne-sound.mp3')
 const list = document.querySelectorAll('.list')
 const itemHomeNavigation = document.querySelector('.list-home');
 const itemHomeTextNavigation = document.querySelector('.text-list-item');
@@ -21,6 +22,8 @@ const wordDayContainer = document.querySelector('.day-word-container');
 const wordDayCloseButton = document.querySelector('.word-day-close-button');
 const wordDayButton = document.querySelector('.everyday-word-button');
 const settingsButton = document.querySelector('.settings')
+
+const Profile = document.querySelector('.profile')
 
 
 function activeLink() {
@@ -102,6 +105,9 @@ wordDayButton.onclick = function () {
 }
 settingsButton.onclick = function (){
 	audioClick.play();
+}
+Profile.onclick = function (){
+	audiomeme.play();
 }
 
 function getSum(a, b) {
