@@ -103,6 +103,9 @@ body {
    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
    -webkit-tap-highlight-color: transparent;
 }
+.comeback-button:active{
+	transform: scale(0.5);
+ }
 .social-list{
    display: flex;
    justify-content: center;
@@ -138,8 +141,11 @@ body {
 .active:active{
    transform: scale(0.5);
 }
-
-.main-item2 {
+.sign-in {
+	color: rgb(160, 40, 207);
+}
+.connect {
+	padding: 0 0 0 10px;
    margin: 0 auto;
    width: 140px;
    height: 50px;
@@ -149,11 +155,32 @@ body {
    justify-content: space-between;
    align-items: center;
    background-color: #FEC727;
+	font-size: 20px;
+	font-family: 'Balsamiq Sans', cursive;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	-webkit-tap-highlight-color: transparent;
 }
+.connect:active {
+	transform: scale(0.5);
+	outline: none;
+	user-select: none;
+}
+.gamepad {
+	width: 45px;
+	margin: 0 10px 0 0;
+ }
 .main-item a {
    color: black;
 }
-.main-item3 {
+.gray-background-container{
+	position: absolute;
+	display: none;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(108, 108, 108, 0.584);
+	z-index: 2;
+}
+.developers-container {
    margin: 0 auto;
    font-family: 'Balsamiq Sans', cursive;
    width: 140px;
@@ -163,8 +190,27 @@ body {
    border: 3px solid black;
    border-radius: 10px;
    padding: 8px 0 0 0;
-   background-color: #FEC727;       
+   background-color: #FEC727;
 }
+.developers-container_body{
+	display: none;
+	font-size: 22px;
+	font-family: 'Balsamiq Sans', cursive;
+	position: absolute;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	margin: 0 auto;
+	height: 15%;
+	width: 40%;
+	background-color:#d66d0b;
+	z-index: 3;
+	border: 4px solid #FEC727;
+	border-radius: 15px;
+}
+.developers-container:active{
+	transform: scale(0.5);
+ }
 .footer {
    display: flex;
    flex-wrap: nowrap;
@@ -191,19 +237,22 @@ body {
    margin: 3px 0 0 49px;
    width: 43px;
 }
-.gamepad {
-   width: 45px;
-   margin: 0 5px 0 0;
-}
-.sign-in {
-   font-size: 20px;
-   font-family: 'Balsamiq Sans', cursive;
-   color: rgb(170, 20, 230);
-   margin: 0 0 0 5px;
-   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-   -webkit-tap-highlight-color: transparent;
-}
 .language {
    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
    -webkit-tap-highlight-color: transparent;
 }
+.close{
+	margin: -10px 0 0 0 ;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #FEC727;
+	border-radius: 40%;
+	color: red;
+  }
+  .Porfiriy{
+	margin: 15%;
+  }
+  .Aleksey{
+	margin: 15%;
+  }
