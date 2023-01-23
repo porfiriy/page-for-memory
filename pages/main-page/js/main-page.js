@@ -17,7 +17,7 @@ const containerEverydayTasks = document.querySelector('.everyday-tasks-container
 const containerAnalyticPage = document.querySelector('.analytic-container');
 const containerGrayBackground = document.querySelector('.gray-background-container');
 const everydayTasksButton = document.querySelector('.everyday-tasks-button');
-const everydayTasksCloseButton = document.querySelector('.evaery-day-tasks-close-button');
+const everydayTasksCloseButton = document.querySelector('.every-day-tasks-close-button');
 const wordDayContainer = document.querySelector('.day-word-container');
 const wordDayCloseButton = document.querySelector('.word-day-close-button');
 const wordDayButton = document.querySelector('.everyday-word-button');
@@ -103,11 +103,11 @@ wordDayButton.onclick = function () {
   containerGrayBackground.style = 'display: block;';
   audioClick.play();
 }
-settingsButton.onclick = function (){
-	audioClick.play();
+settingsButton.onclick = function () {
+  audioClick.play();
 }
-Profile.onclick = function (){
-	audiomeme.play();
+Profile.onclick = function () {
+  audiomeme.play();
 }
 
 function getSum(a, b) {
