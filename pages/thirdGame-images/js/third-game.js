@@ -1,7 +1,7 @@
 "use strict"
 
 //звук
-let audioComplete = new Audio('/page-for-memory/sound/successfull2.mp3'); 
+let audioComplete = new Audio('/page-for-memory/sound/successfull2.mp3');
 let audioVictory = new Audio('/page-for-memory/sound/successfull.mp3');
 let audioStart = new Audio('/page-for-memory/sound/start-game.mp3');
 let audioFaile = new Audio('/page-for-memory/sound/faile.mp3');
@@ -37,6 +37,7 @@ const resultsMenuDoneCardsItem = document.querySelector('.items-container__done-
 const resultsMenuWinLooseIcon = document.querySelector('.items-container__win-loose-icon');
 const resultsMenuTime = document.querySelector('.results-menu__time');
 const resultsMenuIqItem = document.querySelector('.items-container__iq-item');
+const resultsMenuExpItem = document.querySelector('.items-container__exp-item');
 
 
 
@@ -234,6 +235,7 @@ function game() {
             resultsMenuTimeItem.classList.add('items-container__time-item-green');
             resultsMenuTime.innerHTML = `${seconds}`;
             resultsMenuIqItem.innerHTML = '+50';
+            resultsMenuExpItem.innerHTML = '+20';
          }
          //добавляет звук
          audioComplete.play();

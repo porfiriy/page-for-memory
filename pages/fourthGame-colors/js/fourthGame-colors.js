@@ -66,6 +66,7 @@ const resultsMenuDoneCardsItem = document.querySelector('.items-container__done-
 const resultsMenuWinLooseIcon = document.querySelector('.items-container__win-loose-icon');
 const resultsMenuTime = document.querySelector('.results-menu__time');
 const resultsMenuIqItem = document.querySelector('.items-container__iq-item');
+const resultsMenuExpItem = document.querySelector('.items-container__exp-item');
 
 //при нажатии на отмену вспл окна настройки 
 document.querySelector('.pop-up__cancel').onclick = function () {
@@ -231,6 +232,7 @@ function game() {
          resultsMenuTimeItem.classList.add('items-container__time-item-green');
          resultsMenuTime.innerHTML = `${seconds}`;
          resultsMenuIqItem.innerHTML = '+50';
+         resultsMenuExpItem.innerHTML = '+20';
       }
       else if (varCounterClickButtons == 20 && wrongAnswer > 0) {
          showMessage();
