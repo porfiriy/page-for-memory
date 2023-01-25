@@ -130,9 +130,12 @@ form{
 	background: #4E9A3B;
 	border: 3px solid #FEC727;
 	font-size: 24px;
+	font-weight: 800;
 	color: black;
+	padding: 0 0px 0 10px;
 }
 input::placeholder{
+	padding: 0 0px 0 10px;
 	color: black;
 	font-size: 20px;
 	font-weight: bold;
@@ -154,7 +157,13 @@ input::placeholder{
 	border-width: 0px 0px 0px 0px;
 }
 .forgot-pass{
+	color: #FEC727;
 	font-size: 20px;
+	margin: 10px auto;
+}
+.forgot-pass:active{
+	color: #ffffff;
+	
 	margin: 10px auto;
 }
 .bttn-authorisation{
@@ -166,6 +175,7 @@ input::placeholder{
 	height: 40px;
 	background-color: #FEC727;
 	font-size: 26px;
+	font-weight: 800;
 	border-radius: 10px;
 	border-width: 0px 3px 3px 0px;
 	border-style: solid;
@@ -180,6 +190,7 @@ input::placeholder{
 	height: 40px;
 	background-color: #FEC727;
 	font-size: 26px;
+	font-weight: 800;
 	border-radius: 10px;
 	border-width: 0px 3px 3px 0px;
 	border-style: solid;
