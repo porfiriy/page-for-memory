@@ -769,6 +769,25 @@ h6 {
    font-size: 37px;
    margin: 10px;
  }
+ .word-day-close-button{
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #FEC727;
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	color: red;
+	font-weight: 900;
+	font-size: 37px;
+	margin: 10px;
+ }
+ .word-day-close-button:active{
+	transform: scale(0.5);
+ }
  .close-window:active{
    transform: scale(0.5);
  }
