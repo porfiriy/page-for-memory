@@ -1014,7 +1014,7 @@ h6 {
  }
  .container-analytics-games-list{
 	display: flex;
-	margin: 23% auto 0 auto;
+	margin: 7% auto 0 auto;
 	align-items: center;
 	justify-content: center;
 	flex-wrap: wrap;
@@ -1040,7 +1040,7 @@ h6 {
 	color: #000;
  }
  .full-statistics-button{
-	width: 85%;
+	width: 55%;
 	height: 60px;
 	background: #FEC727;
 	-webkit-box-shadow: 0px 2px 20px 2px rgba(254, 199, 39, 0.43);
@@ -1057,7 +1057,8 @@ h6 {
 	text-align: center;
 	justify-content: center;
 	letter-spacing: 0.10em;
-	margin: 20px auto;
+	margin: 30% auto 0 auto;
+	padding: 20px;
 	color: #000000;
  }
  .full-statistics-button:active{
