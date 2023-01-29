@@ -430,8 +430,20 @@ h6 {
    height: 70px;
    background-color: #27fe2e;
    border-radius: 50%;
-   border: 6px solid #25345B;
+   border: 4px solid rgba(0, 0, 0, 0.3);;
    transition: 0.5s;
+   -moz-background-clip: border;     /* Firefox 3.6 */
+   -webkit-background-clip: border;  /* Safari 4? Chrome 6? */
+   background-clip: border-box;      /* Firefox 4, Safari 5, Opera 10, IE 9 */
+				 
+   -moz-background-clip: padding;     /* Firefox 3.6 */
+   -webkit-background-clip: padding;  /* Safari 4? Chrome 6? */
+   background-clip: padding-box;      /* Firefox 4, Safari 5, Opera 10, IE 9 */
+				 
+   -moz-background-clip: content;     /* Firefox 3.6 */
+   -webkit-background-clip: content;  /* Safari 4? Chrome 6? */
+   background-clip: content-box;      /* Firefox 4, Safari 5, Opera 10, IE 9 */
+  
 }
 .indicator::before{
    content: "";
@@ -971,11 +983,79 @@ h6 {
  .noads{
 	width: 37px;
  }
+ 
 .analytic-container{
-   position: absolute;
-   display: none;
-   height: 100%;
-   width: 100%;
-   background-color:#25345B;
-   z-index: 0;
-}
+	position: absolute;
+	display: none;
+	height: 100%;
+	width: 100%;
+	background: rgb(0,8,82);
+    background: linear-gradient(180deg, rgb(5, 0, 82) 10%, rgb(170, 58, 13) 100%);
+	z-index: 0;
+ }
+ .page-title {
+	margin: 50px auto 0 auto;
+	width: 60%;
+	font-family: 'Balsamiq Sans';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 28px;
+	line-height: 29px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	letter-spacing: 0.225em;
+	color: #FEC727;
+ }
+ .container-analytics-games-list{
+	display: flex;
+	margin: 23% auto 0 auto;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	width: 250px;
+	gap: 15px;
+ }
+ .item-statistics-games{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100px;
+	height: 100px;
+	background: #FEC727;
+	border: 4px solid #000000;
+	border-radius: 18px;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+ }
+ .item-statistics-games:active{
+	transform: scale(0.5);
+ }
+ .img-colors{
+	font-size: 54px;
+	color: #000;
+ }
+ .full-statistics-button{
+	width: 85%;
+	height: 60px;
+	background: #FEC727;
+	-webkit-box-shadow: 0px 2px 20px 2px rgba(254, 199, 39, 0.43);
+	-moz-box-shadow: 0px 2px 20px 2px rgba(254, 199, 39, 0.43);
+	box-shadow: 0px 2px 20px 2px rgba(254, 199, 39, 0.43);
+	border-radius: 10px;
+	font-family: 'Balsamiq Sans';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 28px;
+	line-height: 94.19%;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	letter-spacing: 0.10em;
+	margin: 20px auto;
+	color: #000000;
+ }
+ .full-statistics-button:active{
+	transform: scale(0.5);
+ }
