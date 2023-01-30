@@ -29,4 +29,140 @@
 	height: 100%;
 	width: 100%;
 	font-family: 'Balsamiq Sans', cursive;
+	background: linear-gradient(165deg, #010042 0%, #4E0000 100%);
+ }
+header{
+	display: flex;
+text-align: center;
+padding: 10px 0 20px 0;
+ }
+ .comeback-button {
+	display: flex;
+	color: #FEC727;
+	font-size: 44px;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	-webkit-tap-highlight-color: transparent;
+ }
+ .comeback-button:active{
+	 transform: scale(0.5);
+  }
+  .main-names{
+	align-items: center;
+	text-align: center;
+	margin: 0 0 10px 0;
+ }
+ .statistic-name{
+font-weight: 700;
+font-size: 28px;
+letter-spacing: 0.10em;
+color: #FEC727;
+margin: 20px auto;
+ }
+ .User-name{
+	font-weight: 800;
+	font-size: 34px;
+	letter-spacing: 0.10em;
+	color: #18d100;
+ }
+ .main{
+	text-align: center;
+ }
+ .analitycs{
+font-weight: 700;
+font-size: 24px;
+letter-spacing: 0.10em;
+color: #FEC727;
+ }
+ .analitycs-container{
+	max-height: 600px;
+	align-items: center;
+	text-align: center;
+	margin: 0 auto;
+	overflow-y: scroll;
+ }
+ ion-icon  {
+	font-size: 46px;
+	color: #FEC727;
+  }
+ .reaction-container{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	color: #f8f5f5;
+	border: 3px solid #FEC727;
+	border-radius: 10px; 
+    margin: 20px auto;
+	max-width: 70%;
+	min-height: 40%;
+ }
+ .middle-container{
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+ }
+ .main-info{
+	color: aqua;
+    font-size: 20px;
+ }
+ .info{
+	font-size: 20px;
+	display: flex;
+	text-align: center;
+	margin: 5px auto;
+	color: #32f518;
+ }
+ .time-container{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	color: #f8f5f5;
+	border: 3px solid #FEC727;
+	border-radius: 10px; 
+    margin: 20px auto;
+	max-width: 70%;
+	min-height: 40%;
+ }
+ .wins-container{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	color: #f8f5f5;
+	border: 3px solid #FEC727;
+	border-radius: 10px; 
+    margin: 20px auto;
+	max-width: 70%;
+	min-height: 40%;
+ }
+ .loses-container{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	color: #f8f5f5;
+	border: 3px solid #FEC727;
+	border-radius: 10px; 
+    margin: 20px auto;
+	max-width: 70%;
+	min-height: 40%;
+ }
+ .favorite_mode-container{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	color: #f8f5f5;
+	border: 3px solid #FEC727;
+	border-radius: 10px; 
+    margin: 20px auto;
+	max-width: 70%;
+	min-height: 40%;
+ }
+ .earned_iq-container{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	color: #f8f5f5;
+	border: 3px solid #FEC727;
+	border-radius: 10px; 
+    margin: 20px auto;
+	max-width: 70%;
+	min-height: 40%;
  }
