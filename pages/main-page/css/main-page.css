@@ -834,10 +834,46 @@ h6 {
    display: none;
    height: 70%;
    width: 80%;
-   background-color:#25345B;
+   background-color:#25345bee;
    z-index: 3;
    border: 4px solid #FEC727;
    border-radius: 15px;
+ }
+ .everyday_day-word-container{
+	font-family: 'Balsamiq Sans', cursive;
+	position: absolute;
+	margin: 20% 10%;
+	display: none;
+	height: 70%;
+	width: 80%;
+	background-color:#25345b;
+	z-index: 3;
+	border: 4px solid #FEC727;
+	border-radius: 15px;
+ }
+ .everyday_date-container{
+	font-family: 'Balsamiq Sans', cursive;
+	position: absolute;
+	margin: 20% 10%;
+	display: none;
+	height: 70%;
+	width: 80%;
+	background-color:#25345b;
+	z-index: 3;
+	border: 4px solid #FEC727;
+	border-radius: 15px;
+ }
+ .everyday_new-word-container{
+	font-family: 'Balsamiq Sans', cursive;
+	position: absolute;
+	margin: 20% 10%;
+	display: none;
+	height: 70%;
+	width: 80%;
+	background-color:#25345b;
+	z-index: 3;
+	border: 4px solid #FEC727;
+	border-radius: 15px;
  }
 .everyday-title {
    font-style: normal;
@@ -861,6 +897,12 @@ h6 {
    letter-spacing: 0.01em;
    color: #FFFFFF;
 }
+.day-date{
+	font-style: normal;
+	font-size: 14px;
+	line-height: 155%;
+	color: #FFFFFF;
+ }
 .yellow-word{
    font-size: 27px;
    color: #FEC727;
