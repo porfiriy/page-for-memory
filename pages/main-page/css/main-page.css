@@ -248,17 +248,14 @@ h6 {
 	justify-content: center;
 	align-items: center;
 }
-.everyday_word:active{
-	transform: scale(0.8);
-}
 .everyday_icon_body{
-	width: 20%;
+	width: 22%;
 	margin: 5px auto;
 	display: flex;
 	background-color: #FEC727;
 	border: 3px solid #FEC727;
 	border-radius: 10px;
-	min-height: 50px;
+	min-height: 60px;
 	justify-content: center;
 	align-items: center;
 }
@@ -269,10 +266,13 @@ h6 {
 	background-color: #FEC727;
 	border: 3px solid #FEC727;
 	border-radius: 10px;
-	min-height: 50px;
+	min-height: 60px;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
+}
+.everyday_text_body:active{
+	transform: scale(0.8);
 }
 .day_history{
 	display: flex;
@@ -283,9 +283,6 @@ h6 {
 	justify-content: center;
 	align-items: center;
 }
-.day_history:active{
-	transform: scale(0.8);
-}
 .new_word{
 	display: flex;
 	min-height: 50px;
@@ -294,9 +291,6 @@ h6 {
 	margin: 30px auto;
 	justify-content: center;
 	align-items: center;
-}
-.new_word:active{
-	transform: scale(0.8);
 }
 .book-img{
    font-size: 24px;
