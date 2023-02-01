@@ -120,7 +120,6 @@ everydayWord.onclick = function () {
 	everydayWordButton .style = 'display: block';
 }
 everydayWordCloseButton.onclick = function () {
-	containerGrayBackground.style = 'display: none;';
 	everydayWordButton .style = 'display: none';
 }
 
@@ -129,7 +128,6 @@ dayHistoryButton.onclick = function () {
 	everydayDateButton.style = 'display: block';
 }
 everydayDateCloseButton.onclick = function () {
-	containerGrayBackground.style = 'display: none;';
 	everydayDateButton.style = 'display: none';
 }
 
@@ -138,7 +136,6 @@ newWordButton.onclick = function () {
 	everydayNewWordButton.style = 'display: block';
 }
 everydayNewWordCloseButton.onclick = function () {
-	containerGrayBackground.style = 'display: none;';
 	everydayNewWordButton.style = 'display: none';
 }
 
