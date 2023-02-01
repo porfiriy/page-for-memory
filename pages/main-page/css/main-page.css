@@ -237,7 +237,6 @@ h6 {
 }
 .everyday_body{
 	width: 100%;
-	font-size: 28px;
 }
 .everyday_word{
 	display: flex;
@@ -258,6 +257,7 @@ h6 {
 	min-height: 60px;
 	justify-content: center;
 	align-items: center;
+	font-size: 30px;
 }
 .everyday_text_body{
 	width: 75%;
@@ -270,6 +270,7 @@ h6 {
 	justify-content: center;
 	align-items: center;
 	text-align: center;
+	font-size: 24px;
 }
 .everyday_text_body:active{
 	transform: scale(0.8);
