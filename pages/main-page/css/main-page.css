@@ -235,6 +235,46 @@ h6 {
 .everyday-word-button:active{
    transform: scale(0.8);
 }
+.everyday_body{
+	width: 100%;
+	font-size: 22px;
+}
+.everyday_word{
+	display: flex;
+    padding: 0 0 0 2%;
+	background-color: #FEC727;
+	border: 3px solid #FEC727;
+	border-radius: 10px;
+	width: 60%;
+	margin: 30px auto;
+}
+.everyday_word:active{
+	transform: scale(0.8);
+}
+.day_history{
+	display: flex;
+    padding: 0 0 0 2%;
+	background-color: #FEC727;
+	border: 3px solid #FEC727;
+	border-radius: 10px;
+	width: 60%;
+	margin: 30px auto;
+}
+.day_history:active{
+	transform: scale(0.8);
+}
+.new_word{
+	display: flex;
+    padding: 0 0 0 2%;
+	background-color: #FEC727;
+	border: 3px solid #FEC727;
+	border-radius: 10px;
+	width: 60%;
+	margin: 30px auto;
+}
+.new_word:active{
+	transform: scale(0.8);
+}
 .book-img{
    font-size: 24px;
    font-weight: 900;
@@ -799,7 +839,7 @@ h6 {
    border: 4px solid #FEC727;
    border-radius: 15px;
  }
-.day-word-title {
+.everyday-title {
    font-style: normal;
    font-weight: 400;
    font-size: 32px;
