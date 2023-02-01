@@ -862,6 +862,7 @@ h6 {
 	z-index: 3;
 	border: 4px solid #FEC727;
 	border-radius: 15px;
+	overflow: scroll;
  }
  .everyday_new-word-container{
 	font-family: 'Balsamiq Sans', cursive;
@@ -885,7 +886,7 @@ h6 {
    margin: 30% 0 20% 0;
 }
 .day-word__body {
-   margin: 0 auto;
+   margin: 0 0 0 5%;
    width: 96%;
    height: 50%;
 }
@@ -899,9 +900,10 @@ h6 {
 }
 .day-date{
 	font-style: normal;
-	font-size: 14px;
+	font-size: 20px;
 	line-height: 155%;
 	color: #FFFFFF;
+	
  }
 .yellow-word{
    font-size: 27px;
