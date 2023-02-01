@@ -238,39 +238,46 @@ h6 {
 .everyday_body{
 	width: 100%;
 	font-size: 22px;
+	font-size: 24px;
 }
 .everyday_word{
 	display: flex;
-    padding: 0 0 0 2%;
+	min-height: 50px;
 	background-color: #FEC727;
 	border: 3px solid #FEC727;
 	border-radius: 10px;
-	width: 60%;
+	width: 70%;
 	margin: 30px auto;
+	justify-content: center;
+	align-items: center;
 }
 .everyday_word:active{
 	transform: scale(0.8);
 }
 .day_history{
 	display: flex;
-    padding: 0 0 0 2%;
+	min-height: 50px;
 	background-color: #FEC727;
 	border: 3px solid #FEC727;
 	border-radius: 10px;
-	width: 60%;
+	width: 70%;
 	margin: 30px auto;
+	justify-content: center;
+	align-items: center;
 }
 .day_history:active{
 	transform: scale(0.8);
 }
 .new_word{
 	display: flex;
-    padding: 0 0 0 2%;
+	min-height: 50px;
 	background-color: #FEC727;
 	border: 3px solid #FEC727;
 	border-radius: 10px;
-	width: 60%;
+	width: 70%;
 	margin: 30px auto;
+	justify-content: center;
+	align-items: center;
 }
 .new_word:active{
 	transform: scale(0.8);
