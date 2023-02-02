@@ -26,7 +26,7 @@ aside {
 }
 html,
 body {
-   background-color: #25345B;
+	background: radial-gradient(50% 50% at 50% 50%, #9E00FF 0%, #000000 100%);
    height: 100%;
    width: 100%;
    font-size: 100%;
@@ -127,7 +127,7 @@ form{
 .form-control {
 	width: 50%;
 	height: 40px;
-	background: #4E9A3B;
+	background: linear-gradient(92.08deg, #AC0086 0%, #AD3E00 100%);
 	border: 3px solid #FEC727;
 	font-size: 24px;
 	font-weight: 800;
@@ -199,4 +199,28 @@ input::placeholder{
 .bttn-authorisation:active{
 	transform: scale(0.8);
 	border-width: 0px 0px 0px 0px;
+}
+.reg-icon{
+	color: #FEC727;
+}
+.support{
+	font-size: 18px;
+	position: absolute;
+	display: flex;
+	text-align: center;
+	margin: 0 auto;
+	color: #ffffff;
+	width: 100%;
+	bottom: 10px;
+}
+.if_problem{
+margin: 0 10px;
+}
+.support_text{
+	color: #FEC727;
+text-decoration: underline;
+text-decoration-color: hsl(91, 100%, 40%);
+}
+.support_text:active{
+	transform: scale(0.8);
 }
