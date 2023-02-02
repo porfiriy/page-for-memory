@@ -795,6 +795,8 @@ h6 {
  }
  .everyday-tasks-body{
    margin: 29% 0 0 0;
+   overflow: scroll;
+   max-height: 80%;
  }
  .task-body {
 	display: flex;
