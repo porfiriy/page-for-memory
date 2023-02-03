@@ -179,3 +179,9 @@ margin: 0 0 5% 0;
  .speedometer-icon{
 	color: #3700ff;
  }
+ .good-result{
+	color: #00ff00;
+ }
+ .bad-result{
+	color: #ff0000;
+ }
