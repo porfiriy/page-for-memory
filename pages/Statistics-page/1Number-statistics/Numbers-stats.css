@@ -34,7 +34,7 @@
 header{
 	display: flex;
 text-align: center;
-padding: 10px 0 20px 0;
+padding: 10px 0 0px 0;
  }
  .comeback-button {
 	display: flex;
@@ -53,10 +53,10 @@ padding: 10px 0 20px 0;
  }
  .statistic-name{
 font-weight: 700;
-font-size: 28px;
+font-size: 34px;
 letter-spacing: 0.10em;
 color: #FEC727;
-margin: 20px auto;
+margin: 10px auto;
  }
  .User-name{
 	font-weight: 800;
@@ -80,10 +80,6 @@ color: #FEC727;
 	margin: 0 auto;
 	overflow-y: scroll;
  }
- ion-icon  {
-	font-size: 46px;
-	color: #FEC727;
-  }
  .reaction-container{
 	display: flex;
 	align-items: center;
@@ -109,7 +105,7 @@ color: #FEC727;
 	display: flex;
 	text-align: center;
 	margin: 5px auto;
-	color: #32f518;
+	color: #ffffff;
  }
  .time-container{
 	display: flex;
@@ -165,4 +161,17 @@ color: #FEC727;
     margin: 20px auto;
 	max-width: 70%;
 	min-height: 40%;
+ }
+ ion-icon  {
+	font-size: 46px;
+	color: #FEC727;
+  }
+ .stonks-icon{
+	color: #09ff00;
+ }
+ .notstonks-icon{
+	color: rgb(255, 0, 0);
+ }
+ .speedometer-icon{
+	color: #3700ff;
  }
