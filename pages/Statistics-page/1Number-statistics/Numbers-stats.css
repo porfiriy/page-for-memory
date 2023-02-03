@@ -35,6 +35,7 @@ header{
 	display: flex;
 text-align: center;
 padding: 10px 0 0px 0;
+height: 4%;
  }
  .comeback-button {
 	display: flex;
@@ -53,7 +54,7 @@ padding: 10px 0 0px 0;
  }
  .statistic-name{
 font-weight: 700;
-font-size: 34px;
+font-size: 36px;
 letter-spacing: 0.10em;
 color: #FEC727;
 margin: 10px auto;
