@@ -92,13 +92,31 @@ margin: 0 0 5% 0;
 	border: 3px solid #FEC727;
 	border-radius: 10px; 
     margin: 20px auto;
-	max-width: 70%;
-	min-height: 40%;
+ }
+ .first-icon-container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 48px;
+	width: 70px;
+	height: 80px;
+ }
+ .second-icon-container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 48px;
+	width: 70px;
+	height: 80px;
  }
  .middle-container{
 	display: flex;
 	flex-direction: column;
+	height: 100%;
+	width: 50%;
 	gap: 15px;
+	font-size: 46px;
+	color: #FEC727;
  }
  .main-info{
 	color: aqua;
@@ -119,8 +137,6 @@ margin: 0 0 5% 0;
 	border: 3px solid #FEC727;
 	border-radius: 10px; 
     margin: 20px auto;
-	max-width: 70%;
-	min-height: 40%;
  }
  .wins-container{
 	display: flex;
@@ -130,8 +146,6 @@ margin: 0 0 5% 0;
 	border: 3px solid #FEC727;
 	border-radius: 10px; 
     margin: 20px auto;
-	max-width: 70%;
-	min-height: 40%;
  }
  .loses-container{
 	display: flex;
@@ -141,8 +155,6 @@ margin: 0 0 5% 0;
 	border: 3px solid #FEC727;
 	border-radius: 10px; 
     margin: 20px auto;
-	max-width: 70%;
-	min-height: 40%;
  }
  .favorite_mode-container{
 	display: flex;
@@ -152,8 +164,6 @@ margin: 0 0 5% 0;
 	border: 3px solid #FEC727;
 	border-radius: 10px; 
     margin: 20px auto;
-	max-width: 70%;
-	min-height: 40%;
  }
  .earned_iq-container{
 	display: flex;
@@ -163,13 +173,8 @@ margin: 0 0 5% 0;
 	border: 3px solid #FEC727;
 	border-radius: 10px; 
     margin: 20px auto;
-	max-width: 70%;
-	min-height: 40%;
  }
- ion-icon  {
-	font-size: 46px;
-	color: #FEC727;
-  }
+ 
  .stonks-icon{
 	color: #09ff00;
  }
@@ -184,4 +189,8 @@ margin: 0 0 5% 0;
  }
  .bad-result{
 	color: #ff0000;
+ }
+ .statistic-item{
+	width: 70%;
+	height: 40%;
  }

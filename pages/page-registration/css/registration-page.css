@@ -217,9 +217,8 @@ input::placeholder{
 margin: 0 10px;
 }
 .support_text{
+	margin: 0 0 10px 0;
 	color: #FEC727;
-text-decoration: underline;
-text-decoration-color: hsl(91, 100%, 40%);
 }
 .support_text:active{
 	transform: scale(0.8);
