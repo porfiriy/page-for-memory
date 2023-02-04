@@ -10,6 +10,7 @@
    -moz-box-sizing: border-box;
    -webkit-box-sizing: border-box;
    box-sizing: border-box;
+   scroll-behavior: smooth;
 }
 :focus,
 :active {
@@ -237,43 +238,61 @@ h6 {
 }
 .everyday_body{
 	width: 100%;
-	font-size: 22px;
 }
 .everyday_word{
 	display: flex;
-    padding: 0 0 0 2%;
+	min-height: 50px;
+	border-radius: 10px;
+	width: 90%;
+	margin: 30px auto;
+	justify-content: center;
+	align-items: center;
+}
+.everyday_icon_body{
+	width: 22%;
+	margin: 5px auto;
+	display: flex;
 	background-color: #FEC727;
 	border: 3px solid #FEC727;
 	border-radius: 10px;
-	width: 60%;
-	margin: 30px auto;
+	min-height: 60px;
+	justify-content: center;
+	align-items: center;
+	font-size: 30px;
 }
-.everyday_word:active{
+.everyday_text_body{
+	width: 75%;
+	margin: 5px auto;
+	display: flex;
+	background-color: #FEC727;
+	border: 3px solid #FEC727;
+	border-radius: 10px;
+	min-height: 60px;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	font-size: 24px;
+}
+.everyday_text_body:active{
 	transform: scale(0.8);
 }
 .day_history{
 	display: flex;
-    padding: 0 0 0 2%;
-	background-color: #FEC727;
-	border: 3px solid #FEC727;
+	min-height: 50px;
 	border-radius: 10px;
-	width: 60%;
+	width: 90%;
 	margin: 30px auto;
-}
-.day_history:active{
-	transform: scale(0.8);
+	justify-content: center;
+	align-items: center;
 }
 .new_word{
 	display: flex;
-    padding: 0 0 0 2%;
-	background-color: #FEC727;
-	border: 3px solid #FEC727;
+	min-height: 50px;
 	border-radius: 10px;
-	width: 60%;
+	width: 90%;
 	margin: 30px auto;
-}
-.new_word:active{
-	transform: scale(0.8);
+	justify-content: center;
+	align-items: center;
 }
 .book-img{
    font-size: 24px;
@@ -471,7 +490,7 @@ h6 {
    height: 70px;
    background-color: #27fe2e;
    border-radius: 50%;
-   border: 4px solid rgba(0, 0, 0, 0.3);;
+   border: 4px solid rgb(180, 51, 0);
    transition: 0.5s;
    -moz-background-clip: border;     /* Firefox 3.6 */
    -webkit-background-clip: border;  /* Safari 4? Chrome 6? */
@@ -618,7 +637,7 @@ h6 {
 	height: 100%;
  }
  .main-achievements {
-	margin: -90px 0 0 0;
+	margin: -130px 0 0 0;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -626,24 +645,23 @@ h6 {
 	width: 100%;
 	height: 100%;
 	flex: 1 1 auto;
-	
  }
- .achievments-container{
+ #achievments-container{
 	font-family: 'Balsamiq Sans', cursive;
 	font-size: 20px;
 	color: #11ff60;
+	overflow: scroll;
+	height: 500px;
  }
- .container-achieve1{
+ .container-achieve{
 	margin: 50px auto;
 	background: rgb(255,0,168);
     background: linear-gradient(90deg, rgba(255,0,168,1) 10%, rgba(5,0,242,1) 100%);
 	border-radius: 10px;
 	height: 70px;
 	width: 90%;
-	
- 
  }
- .achieve1{
+ .achieve{
 	font-size: 24px;
 	height: 30px;
 	text-shadow: 1px 0 1px #000,
@@ -654,7 +672,7 @@ h6 {
 	align-items: center;
 	justify-content: center;
  }
- .forachieve1{
+ .forachieve{
 	color:#FEC727;
 	height: 30px;
 	text-shadow: 1px 0 1px #000,
@@ -664,104 +682,22 @@ h6 {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-}
- .container-achieve2{
-	margin: 50px auto;
-	background: rgb(255,0,168);
-    background: linear-gradient(90deg, rgba(255,0,168,1) 10%, rgba(5,0,242,1) 100%);
-	border-radius: 10px;
-	height: 70px;
-	width: 90%;
- }
- .achieve2{
-	font-size: 24px;
-	height: 30px;
-	text-shadow: 1px 0 1px #000,
-	0 1px 1px #000, 
-	-1px 0 1px #000, 
-	0 -1px 1px #000;
+} 
+ .scrollTop{
 	display: flex;
+	text-align: center;
 	align-items: center;
-	justify-content: center;
+	justify-content: center; 
  }
- .forachieve2{
-	color:#FEC727;
-	height: 30px;
-	text-shadow: 1px 0 1px #000,
-	0 1px 1px #000, 
-	-1px 0 1px #000, 
-	0 -1px 1px #000;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+ .Up-button{ 
+	position: absolute;
+    bottom: 15%;
+    font-size: 45px;
+    color: #FEC727;
  }
- .container-achieve3{
-	margin: 50px auto;
-	background: rgb(255,0,168);
-    background: linear-gradient(90deg, rgba(255,0,168,1) 10%, rgba(5,0,242,1) 100%);
-	border-radius: 10px;
-	height: 70px;
-	width: 90%;
+ .Up-button:active{
+	transform: scale(0.5);
  }
- .achieve3{
-	font-size: 24px;
-	height: 30px;
-	text-shadow: 1px 0 1px #000,
-	0 1px 1px #000, 
-	-1px 0 1px #000, 
-	0 -1px 1px #000;
-	display: flex;
-	align-items: center;
-	justify-content: center;
- }
- .forachieve3{
-	color:#FEC727;
-	height: 30px;
-	text-shadow: 1px 0 1px #000,
-	0 1px 1px #000, 
-	-1px 0 1px #000, 
-	0 -1px 1px #000;
-	display: flex;
-	align-items: center;
-	justify-content: center;
- }
- .container-achieve4{
-	margin: 50px auto;
-	background: rgb(255,0,168);
-    background: linear-gradient(90deg, rgba(255,0,168,1) 10%, rgba(5,0,242,1) 100%);
-	border-radius: 10px;
-	height: 70px;
-	width: 90%;
- }
- .achieve4{
-	font-size: 24px;
-	height: 30px;
-	text-shadow: 1px 0 1px #000,
-	0 1px 1px #000, 
-	-1px 0 1px #000, 
-	0 -1px 1px #000;
-	display: flex;
-	align-items: center;
-	justify-content: center;
- }
- .forachieve4{
-	color:#FEC727;
-	height: 30px;
-	text-shadow: 1px 0 1px #000,
-	0 1px 1px #000, 
-	-1px 0 1px #000, 
-	0 -1px 1px #000;
-	display: flex;
-	align-items: center;
-	justify-content: center;
- }
- .Down-button{
-   margin: 0% auto;
-   font-size: 45px;
-   color: #FEC727;
- }
-
-
 
  .everyday-tasks-container{
    font-family: 'Balsamiq Sans', cursive;
@@ -777,6 +713,8 @@ h6 {
  }
  .everyday-tasks-body{
    margin: 29% 0 0 0;
+   overflow: scroll;
+   max-height: 80%;
  }
  .task-body {
 	display: flex;
@@ -834,10 +772,46 @@ h6 {
    display: none;
    height: 70%;
    width: 80%;
-   background-color:#25345B;
+   background-color:#25345bee;
    z-index: 3;
    border: 4px solid #FEC727;
    border-radius: 15px;
+ }
+ .everyday_day-word-container{
+	font-family: 'Balsamiq Sans', cursive;
+	position: absolute;
+	margin: 20% 10%;
+	display: none;
+	height: 70%;
+	width: 80%;
+	background-color:#25345b;
+	z-index: 3;
+	border: 4px solid #FEC727;
+	border-radius: 15px;
+ }
+ .everyday_date-container{
+	font-family: 'Balsamiq Sans', cursive;
+	position: absolute;
+	margin: 20% 10%;
+	display: none;
+	height: 70%;
+	width: 80%;
+	background-color:#25345b;
+	z-index: 3;
+	border: 4px solid #FEC727;
+	border-radius: 15px;
+ }
+ .everyday_new-word-container{
+	font-family: 'Balsamiq Sans', cursive;
+	position: absolute;
+	margin: 20% 10%;
+	display: none;
+	height: 70%;
+	width: 80%;
+	background-color:#25345b;
+	z-index: 3;
+	border: 4px solid #FEC727;
+	border-radius: 15px;
  }
 .everyday-title {
    font-style: normal;
@@ -849,9 +823,10 @@ h6 {
    margin: 30% 0 20% 0;
 }
 .day-word__body {
-   margin: 0 auto;
+   margin: 0 0 0 5%;
    width: 96%;
    height: 50%;
+   overflow: scroll;
 }
 .day-word {
    font-style: normal;
@@ -861,6 +836,12 @@ h6 {
    letter-spacing: 0.01em;
    color: #FFFFFF;
 }
+.day-date{
+	font-style: normal;
+	font-size: 20px;
+	line-height: 155%;
+	color: #FFFFFF;
+ }
 .yellow-word{
    font-size: 27px;
    color: #FEC727;
