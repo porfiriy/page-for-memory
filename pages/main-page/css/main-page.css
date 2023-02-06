@@ -1088,3 +1088,13 @@ h6 {
  .full-statistics-button:active{
 	transform: scale(0.5);
  }
+ .in_dev{
+	background-color: rgb(43,43,43);
+filter: blur(2px);
+ }
+ .in_dev_text{
+	position: absolute;
+	color: #FEC727;
+	margin: -15% 2%;
+	text-decoration: underline;
+ }
