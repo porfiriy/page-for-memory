@@ -1,0 +1,240 @@
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+ }
+ *,
+ *:before,
+ *:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+ }
+ :focus,
+ :active {
+	outline: none;
+ }
+ a:focus,
+ a:active {
+	outline: none;
+ }
+ nav,
+ footer,
+ header,
+ aside {
+	display: block;
+ }
+ html,
+ body {
+	 background-color: #25345B;
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+ }
+ input,
+ button,
+ textarea {
+	font-family: 'Balsamiq Sans', cursive;
+ }
+ input::-ms-clear {
+	display: none;
+ }
+ button {
+	cursor: pointer;
+ }
+ button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+ }
+ a,
+ a:visited {
+	text-decoration: none;
+ }
+ a:hover {
+	text-decoration: none;
+ }
+ ul li {
+	list-style: none;
+ }
+ img {
+	vertical-align: top;
+ }
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6 {
+	font-size: inherit;
+	font-weight: 400;
+ }
+ html,body {
+    width: 100%;
+    height: 100%;
+	background: linear-gradient(174.76deg, #0400BE 6.65%, #4D0614 69.15%);
+	font-family: 'Balsamiq Sans';
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	-webkit-tap-highlight-color: transparent;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	outline: none;
+ }
+ header{
+	margin: 0 0 10% auto;
+ }
+ .topButton-gameWords {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	padding: 14px 10px 0 10px;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	-webkit-tap-highlight-color: transparent;
+ }
+ .comeback-button-body{
+	position: relative;
+	width: 40px;
+	height: 40px;
+	font-size: 44px;
+	color: #FEC727;
+	z-index: 2;
+ }
+ .comeback-button-body:active{
+	transform: scale(0.5);
+ }
+ .linkToTheSettings{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 34px;
+	color: #FEC727;
+ }
+ .linkToTheSettings:active{
+	transform: scale(0.5);
+ }
+ .linkToTheRestart {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 34px;
+	font-weight: 900;
+	color: #FEC727;
+	margin: 5px 10px 0 0;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	-webkit-tap-highlight-color: transparent;
+ }
+ .linkToTheRestart:active{
+	transform: scale(0.5);
+ }
+ .deadLineWrapper{
+	margin: 10px auto;
+	height: 24px;
+	width: 300px;
+	background-color: #383DA6;
+	border-radius: 6px;
+ }
+ #deadeLine{
+	animation-play-state: paused;
+	position: relative;
+	border-radius: 6px;
+	bottom: 0px;
+	left: 0;
+	height: 24px;
+	width: 296px;
+	background-color: #FEC727;
+ }
+ @keyframes deadeLine {
+	0%{
+	
+	}
+	100%{
+	   width: 1px;
+	}
+ }
+ .answers{
+	display: flex;
+	justify-content: space-between;
+	width: 90%;
+	margin: 10% auto;
+ }
+ .correct{
+display: flex;
+text-align: center;
+align-items: center;
+justify-content: center;
+color: rgb(0, 255, 0);
+border: 2px solid #FEC727;
+border-radius: 10px;
+font-size: 40px;
+width: 20%;
+ }
+ .incorrect{
+display: flex;
+text-align: center;
+align-items: center;
+justify-content: center;
+color: rgb(255, 0, 0);
+border: 2px solid #FEC727;
+border-radius: 10px;
+font-size: 40px;
+width: 20%;
+ }
+ .count{
+text-align: center;
+align-items: center;
+justify-content: center;
+font-size: 30px;
+ }
+ .flags{
+display: flex;
+align-items: center;
+justify-content: center;
+border: 5px solid #FEC727;
+padding: 2%;
+border-radius: 10px;
+width: 60%;
+margin: 20% auto;
+ }
+ .ch{
+width: 100%;
+height: 150px;
+ }
+ .country-answers{
+width: 100%;
+color: #FEC727;
+display: flex;
+align-items: center;
+justify-content: space-around;
+text-align: center;
+margin: 30% auto;
+ }
+ .country{
+font-size: 24px;
+width: 100%;
+border: 2px solid #FEC727;
+border-radius: 10px;
+margin: 10% auto;
+align-items: center;
+justify-content: center;
+text-align: center;
+
+ }
+ .second-grid{
+	display: grid;
+	height: 220px;
+	width: 40%;
+ }
+ .first-grid{
+	display: grid;
+	height: 220px;
+	width: 40%;
+ }
+ .country:active{
+	transform: scale(0.5);
+ }
