@@ -70,6 +70,16 @@ itemAchievmentsNavigation.onclick = function () { //при нажатии на �
   containerAnalyticPage.style = 'display:none;';
   audioSwap.play();
 }
+//поворот нижней кнопка Достижений
+let arrows = document.getElementsByClassName("scrollTop");
+for (let i = 0; i < arrows.length; i++) {
+  arrows[i].addEventListener("click", function(event) {
+    if (this.style.transform == "")
+      this.style.transform = "rotate(180deg)";
+    else
+      this.style.transform = "";
+  });
+}
 
 //Магазин
 itemStoreNavigation.onclick = function () { //при нажатии на кнопку Store

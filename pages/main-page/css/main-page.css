@@ -686,15 +686,13 @@ h6 {
 	align-items: center;
 	justify-content: center;
 } 
- .scrollTop{
-	display: flex;
-	text-align: center;
-	align-items: center;
-	justify-content: center; 
- }
- .Up-button{ 
+.DownButton{
 	position: absolute;
-    bottom: 15%;
+	display: flex;
+	margin: 20px;
+	bottom: 13%
+}
+ .Up-button{
     font-size: 45px;
     color: #FEC727;
  }
@@ -1098,3 +1096,4 @@ filter: blur(2px);
 	margin: -15% 2%;
 	text-decoration: underline;
  }
+ 
