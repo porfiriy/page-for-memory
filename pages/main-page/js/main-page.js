@@ -116,27 +116,27 @@ Profile.onclick = function () {
   audiomeme.play();
 }
 everydayWord.onclick = function () {
-	containerGrayBackground.style = 'display: block;';
-	everydayWordButton .style = 'display: block';
+  containerGrayBackground.style = 'display: block;';
+  everydayWordButton.style = 'display: block';
 }
 everydayWordCloseButton.onclick = function () {
-	everydayWordButton .style = 'display: none';
+  everydayWordButton.style = 'display: none';
 }
 
 dayHistoryButton.onclick = function () {
-	containerGrayBackground.style = 'display: block;';
-	everydayDateButton.style = 'display: block';
+  containerGrayBackground.style = 'display: block;';
+  everydayDateButton.style = 'display: block';
 }
 everydayDateCloseButton.onclick = function () {
-	everydayDateButton.style = 'display: none';
+  everydayDateButton.style = 'display: none';
 }
 
 newWordButton.onclick = function () {
-	containerGrayBackground.style = 'display: block;';
-	everydayNewWordButton.style = 'display: block';
+  containerGrayBackground.style = 'display: block;';
+  everydayNewWordButton.style = 'display: block';
 }
 everydayNewWordCloseButton.onclick = function () {
-	everydayNewWordButton.style = 'display: none';
+  everydayNewWordButton.style = 'display: none';
 }
 
 function getSum(a, b) {
