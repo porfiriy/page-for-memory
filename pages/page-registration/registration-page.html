@@ -8,60 +8,72 @@
       <link rel="stylesheet" href="/page-for-memory/pages/page-registration/css/registration-page.css">
       <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
       <title>registration-page</title>
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+	  integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+	  crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
 <body>
-      <div class="pg-registr-container">
-            <header>
-                  <a href="/page-for-memory/index.html" class="scip-pg-registr">Пропустить</a>
-            </header>
-            <div class="pg-registr-title"><ion-icon class="reg-icon" name="id-card-outline"></ion-icon>Регистрация</div>
-            <main>
-
-                  <form action="" method="post">
-                        <input type="text" class="form-control" name="login" id="login" placeholder="Логин">
-                        <input type="text" class="form-control" name="name" id="name" placeholder="Имя">
-                        <input type="password" class="form-control" id="pass" name="pass" placeholder="Пароль">
-                        <button type="submit" class="btn btn-send">Отправить</button>
-                  </form>
-
-                  <div class="bttn-authorisation">Авторизация</div>
-            </main>
-			<footer>
-				<div class="support">
-					<div class="if_problem">Есть проблемы?</div>
-					<div class="support_text"> Поддержка</div>
-				</div>
-				</footer>
-      </div>
-      <div class="pg-authoris-container">
-            <header>
-                  <a href="/page-for-memory/index.html" class="scip-pg-registr">Пропустить</a>
-            </header>
-            <div class="pg-registr-title"><ion-icon class="reg-icon" name="id-card-outline"></ion-icon>Авторизация</div>
-			
-            <main>
-				
-
-                  <form action="" method="post">
-                        <input type="text" class="form-control" name="login" id="login" placeholder="Логин">
-                        <input type="password" class="form-control" id="pass" name="pass" placeholder="Пароль">
-                        <a href="#" class="forgot-pass">Забыли пароль?</a>
-                        <button type="submit" class="btn btn-send">Отправить</button>
-                  </form>
-
-                  <div class="bttn-registr">Регистрация</div>
-            </main>
-			<footer>
-				<div class="support">
-			<div class="if_problem">Есть проблемы?</div>
-			<div class="support_text"> Поддержка</div>
+<div class="container">
+	<div class="form signup">
+		<h2>Зарегистрироваться</h2>
+		<div class="inputBox">
+			<input type="text" required="required">
+			<i class="fa-regular fa-user"></i>
+			<span>Логин</span>
 		</div>
-			</footer>
-      </div>
-</body>
+		<div class="inputBox">
+			<input type="password" required="required">
+			<i class="fa-regular fa-lock"></i>
+			<span>Пароль</span>
+		</div>
+		<div class="inputBox">
+			<input type="text" required="required">
+			<i class="fa-regular fa-lock"></i>
+			<span>Email</span>
+		</div>
+		<div class="inputBox">
+			<input type="password" required="required">
+			<i class="fa-regular fa-lock"></i>
+			<span>Подтвердить Пароль</span>
+		</div>
+		<div class="inputBox">
+			<input type="submit" value="Create Account">
+		</div>
+		<p>Есть аккаунт? <a href="#" class="login">Войти</a></p>
+	</div>
+	
+	<div class="form signin">
+		<h2>Войти</h2>
+		<div class="inputBox">
+			<input type="text" required="required">
+			<i class="fa-regular fa-user"></i>
+			<span>Логин</span>
+		</div>
+		<div class="inputBox">
+			<input type="password" required="required">
+			<i class="fa-regular fa-lock"></i>
+			<span>Пароль</span>
+	</div>
+	<div class="inputBox">
+		<input type="submit" value="Login">
+	</div>
+	<p>Не Зарегистрированы? <a href="#" class="create">Создать аккаунт</a></p>
+</div>
+<script>
+	let login = document.querySelector('.login');
+	let create = document.querySelector('.create');
+	let container = document.querySelector('.container');
+
+	login.onclick = function(){
+		container.classList.add('signinForm');
+	}
+
+	create.onclick = function(){
+		container.classList.remove('signinForm');
+	}
+</script>
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 <script src="/page-for-memory/pages/page-registration/registration-page.js"></script>
-
+</body>
 </html>
