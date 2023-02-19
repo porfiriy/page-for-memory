@@ -32,6 +32,7 @@ const everydayNewWordButton = document.querySelector('.everyday_new-word-contain
 const everydayNewWordCloseButton = document.querySelector('.everyday_new-word-close-button');
 const dayHistoryButton = document.querySelector('.day_history');
 const newWordButton = document.querySelector('.new_word');
+const AchievmentsScrollButton = document.querySelector('.scroll');
 function activeLink() {
   list.forEach((item) =>
     item.classList.remove('active'));
@@ -70,6 +71,23 @@ itemAchievmentsNavigation.onclick = function () { //при нажатии на �
   containerAnalyticPage.style = 'display:none;';
   audioSwap.play();
 }
+//поворот нижней кнопки Достижений
+let arrows = document.getElementsByClassName("scroll");
+for (let i = 0; i < arrows.length; i++) {
+  arrows[i].addEventListener("click", function(event) {
+    if (this.style.transform == "")
+      this.style.transform = "rotate(180deg)";
+    else
+      this.style.transform = "";
+  });
+}
+//Скрипт на скролл у ачивок
+AchievmentsScrollButton.onclick = function scrollToDown() {
+	document.getElementById('achievments-container').scrollTo(9999, 9999);
+}
+AchievmentsScrollButton.onclick = function scrollToTop() {
+	document.getElementById('achievments-container').scrollTo(0, 0);
+};
 
 //Магазин
 itemStoreNavigation.onclick = function () { //при нажатии на кнопку Store
