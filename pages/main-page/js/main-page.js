@@ -111,15 +111,12 @@ everydayTasksButton.onclick = function () { //при нажатии на кно�
   containerGrayBackground.style = 'display: block;';
   audioClick.play();
 }
-function closeEverydayTasks() {
+everydayTasksCloseButton.onclick = function () {
   containerEverydayTasks.style = 'display: none;';
   containerGrayBackground.style = 'display: none;';
   wordDayContainer.style = 'display: none;';
   audioClick.play();
 }
-everydayTasksCloseButton.addEventListener('click', closeEverydayTasks);
-
-
 wordDayCloseButton.onclick = function () {
   containerGrayBackground.style = 'display: none;';
   wordDayContainer.style = 'display: none;';
