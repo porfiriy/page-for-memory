@@ -74,7 +74,7 @@ itemAchievmentsNavigation.onclick = function () { //при нажатии на �
 //поворот нижней кнопки Достижений
 let arrows = document.getElementsByClassName("scroll");
 for (let i = 0; i < arrows.length; i++) {
-  arrows[i].addEventListener("click", function(event) {
+  arrows[i].addEventListener("click", function (event) {
     if (this.style.transform == "")
       this.style.transform = "rotate(180deg)";
     else
@@ -83,10 +83,10 @@ for (let i = 0; i < arrows.length; i++) {
 }
 //Скрипт на скролл у ачивок
 AchievmentsScrollButton.onclick = function scrollToDown() {
-	document.getElementById('achievments-container').scrollTo(9999, 9999);
+  document.getElementById('achievments-container').scrollTo(9999, 9999);
 }
 AchievmentsScrollButton.onclick = function scrollToTop() {
-	document.getElementById('achievments-container').scrollTo(0, 0);
+  document.getElementById('achievments-container').scrollTo(0, 0);
 };
 
 //Магазин
@@ -111,12 +111,15 @@ everydayTasksButton.onclick = function () { //при нажатии на кно�
   containerGrayBackground.style = 'display: block;';
   audioClick.play();
 }
-everydayTasksCloseButton.onclick = function () {
+function closeEverydayTasks() {
   containerEverydayTasks.style = 'display: none;';
   containerGrayBackground.style = 'display: none;';
   wordDayContainer.style = 'display: none;';
   audioClick.play();
 }
+everydayTasksCloseButton.addEventListener('click', closeEverydayTasks);
+
+
 wordDayCloseButton.onclick = function () {
   containerGrayBackground.style = 'display: none;';
   wordDayContainer.style = 'display: none;';
@@ -134,27 +137,27 @@ Profile.onclick = function () {
   audiomeme.play();
 }
 everydayWord.onclick = function () {
-	containerGrayBackground.style = 'display: block;';
-	everydayWordButton .style = 'display: block';
+  containerGrayBackground.style = 'display: block;';
+  everydayWordButton.style = 'display: block';
 }
 everydayWordCloseButton.onclick = function () {
-	everydayWordButton .style = 'display: none';
+  everydayWordButton.style = 'display: none';
 }
 
 dayHistoryButton.onclick = function () {
-	containerGrayBackground.style = 'display: block;';
-	everydayDateButton.style = 'display: block';
+  containerGrayBackground.style = 'display: block;';
+  everydayDateButton.style = 'display: block';
 }
 everydayDateCloseButton.onclick = function () {
-	everydayDateButton.style = 'display: none';
+  everydayDateButton.style = 'display: none';
 }
 
 newWordButton.onclick = function () {
-	containerGrayBackground.style = 'display: block;';
-	everydayNewWordButton.style = 'display: block';
+  containerGrayBackground.style = 'display: block;';
+  everydayNewWordButton.style = 'display: block';
 }
 everydayNewWordCloseButton.onclick = function () {
-	everydayNewWordButton.style = 'display: none';
+  everydayNewWordButton.style = 'display: none';
 }
 
 function getSum(a, b) {
