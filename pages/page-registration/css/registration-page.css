@@ -146,6 +146,7 @@ outline: none;
 	transition: 0.5s;
 	letter-spacing: 0.05em;
 	color: rgba(255,255,255,0.5);
+	font-size: 1.5em;
 }
 .container .form .inputBox input:valid ~ span,
 .container .form .inputBox input:focus ~ span{
