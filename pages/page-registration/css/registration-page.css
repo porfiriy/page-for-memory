@@ -87,11 +87,17 @@ header {
 .skip-button {
 	display: inline;
 	color: #00dfc4;
-	font-size: 26px;
 	margin: 13px 20px 0 auto;
 	text-align: right;
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 	-webkit-tap-highlight-color: transparent;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 24px;
+	align-items: center;
+	text-align: center;
+	color: #FEC727;
  }
 .skip-button:active{
     transform: scale(0.5);
