@@ -28,11 +28,8 @@ aside {
 }
 html,
 body {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background: #223243;
-	min-height: 100vh;
+   background: #223243;
+   min-height: 100vh;
    height: 100%;
    width: 100%;
    font-size: 100%;
@@ -83,15 +80,29 @@ h6 {
    font-size: inherit;
    font-weight: 400;
 }
-header{
-	
+header {
+	width: 100%;
+	display: flex;
+}
+.skip-button {
+	display: inline;
+	color: #00dfc4;
+	font-size: 26px;
+	margin: 13px 20px 0 auto;
+	text-align: right;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	-webkit-tap-highlight-color: transparent;
+ }
+.skip-button:active{
+    transform: scale(0.5);
 }
 .container .form{
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	gap: 25px;
+	gap: 40px;
+	margin: 50% 0 0 0;
 }
 .container .form.signin,
 .container.signinForm .form.signup{
@@ -102,8 +113,9 @@ header{
 }
 .container .form h2{
 	color: #fff;
-	font-weight: 500;
+	font-weight: 600;
 	letter-spacing: 0.1em;
+	font-size: 24px;
 }
 .container .form .inputBox{
 	position: relative;
@@ -127,7 +139,7 @@ outline: none;
 .container .form .inputBox span{
 	position: absolute;
 	left: 0;
-	padding: 12px 10px 12px 48px;
+	padding: 12px 10px 12px 52px;
 	pointer-events: none;
 	font-size: 1em;
 	font-weight: 300;
@@ -170,7 +182,7 @@ outline: none;
 	box-shadow: -5px -5px 15px rgba(255,255,255,0.1),
 	5px 5px 15px rgba(0,0,0,0.35),
 	inset -5px -5px 15px rgba(255,255,255,0.1),
-	inset 5px 5px 15px rgba(0,0,0,0.35),
+	inset 5px 5px 15px rgba(0,0,0,0.35);
 }
 .container .form p{
 	color: rgba(255,255,255,0.5);
@@ -180,4 +192,21 @@ outline: none;
 .container .form p a{
 	font-weight: 500;
 	color: #fff;
+}
+footer{
+	display: flex;
+	position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	-webkit-tap-highlight-color: transparent;
+}
+.Support{
+	color: #FFC632;
+	font-size: 20px;
+	margin: 0 20px 15px auto;
+}
+.Support:hover{
+	color: #ffffff;
 }
