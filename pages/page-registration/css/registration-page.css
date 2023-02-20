@@ -139,14 +139,13 @@ outline: none;
 .container .form .inputBox span{
 	position: absolute;
 	left: 0;
-	padding: 12px 10px 12px 52px;
+	padding: 18px 10px 12px 52px;
 	pointer-events: none;
 	font-size: 1em;
 	font-weight: 300;
 	transition: 0.5s;
 	letter-spacing: 0.05em;
 	color: rgba(255,255,255,0.5);
-	font-size: 1.5em;
 }
 .container .form .inputBox input:valid ~ span,
 .container .form .inputBox input:focus ~ span{
@@ -169,7 +168,7 @@ outline: none;
 	top: 15px;
 	left: 16px;
 	width: 25px;
-	padding: 2px 0;
+	padding: 3px 0;
 	padding-right: 8px;
 	color: #00dfc4;
 	border-right: 1px solid #00dfc4;
