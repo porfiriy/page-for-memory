@@ -560,7 +560,7 @@
 	height: 100%;
 	width: 100%;
 	background: rgb(0,8,82);
-	background: linear-gradient(180deg, rgb(5, 0, 82) 10%, rgb(170, 58, 13) 100%);
+	background: linear-gradient(180deg, rgb(5, 0, 82) 24%, rgb(211, 63, 4) 80%);
 	z-index: 0;
  }
  .page-title {
@@ -639,7 +639,7 @@
 	height: 100%;
 	width: 100%;
 	background: rgb(0,8,82);
-	background: linear-gradient(180deg, rgb(5, 0, 82) 10%, rgb(170, 58, 13) 100%);
+	background: linear-gradient(180deg, rgb(5, 0, 82) 24%, rgb(211, 63, 4) 80%);
 	z-index: 0;
 	font-family: 'Balsamiq Sans', cursive;
    font-size: 100%;
@@ -898,7 +898,7 @@
 	 height: 100%;
 	 width: 100%;
 	 background: rgb(0,8,82);
-	 background: linear-gradient(180deg, rgb(5, 0, 82) 10%, rgb(170, 58, 13) 100%);
+	 background: linear-gradient(180deg, rgb(5, 0, 82) 24%, rgb(211, 63, 4) 80%);
 	 z-index: 0;
    }
   .Shop{
@@ -1039,7 +1039,7 @@
 	 height: 100%;
 	 width: 100%;
 	 background: rgb(0,8,82);
-	 background: linear-gradient(180deg, rgb(5, 0, 82) 10%, rgb(170, 58, 13) 100%);
+	 background: linear-gradient(180deg, rgb(5, 0, 82) 24%, rgb(211, 63, 4) 80%);
 	 z-index: 0;
   }
   .page-title {
