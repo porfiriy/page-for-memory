@@ -1,0 +1,170 @@
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+ }
+ *,
+ *:before,
+ *:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+ }
+ :focus,
+ :active {
+	outline: none;
+ }
+ a:focus,
+ a:active {
+	outline: none;
+ }
+ nav,
+ footer,
+ header,
+ aside {
+	display: block;
+ }
+html,
+body {
+height: 100%;
+width: 100%;
+font-size: 100%;
+line-height: 1;
+font-size: 14px;
+-ms-text-size-adjust: 100%;
+-moz-text-size-adjust: 100%;
+-webkit-text-size-adjust: 100%;
+font-family: 'Balsamiq Sans';
+}
+input,
+button,
+textarea {
+font-family: 'Balsamiq Sans', cursive;
+}
+input::-ms-clear {
+display: none;
+}
+button {
+cursor: pointer;
+}
+button::-moz-focus-inner {
+padding: 0;
+border: 0;
+}
+a,
+a:visited {
+text-decoration: none;
+}
+a:hover {
+text-decoration: none;
+}
+ul li {
+list-style: none;
+}
+img {
+vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+font-size: inherit;
+font-weight: 400;
+}
+
+body {
+	background: linear-gradient(174.76deg, #0400BE 6.65%, #4D0614 69.15%);
+}
+header {
+display: flex;
+width: 100%;
+align-items: center;
+justify-content: space-between;
+margin: 10px 0 100px 0;
+font-size: 32px;
+color: #FEC727;
+}
+.comeback-button {
+color: #FEC727;
+font-size: 44px;
+-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+-webkit-tap-highlight-color: transparent;
+}
+.comeback-button:active{
+transform: scale(0.5);
+}
+.settings:active{
+	transform: scale(0.5);
+}
+.profile-container{
+	border: 3px solid #FEC727;
+	border-radius: 25px;
+	width: 80%;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	margin: 0% auto;
+}
+.profile_first{
+display: flex;
+justify-content: space-around;
+color: rgb(0, 255, 0);
+font-size: 26px;
+text-align: center;
+align-items: center;
+margin: 10% auto;
+}
+.profile-picture{
+border: 2px solid black;
+border-radius: 13px;
+}
+.profile_second{
+    
+}
+.currency{
+	display: flex;  
+	justify-content: space-around;  
+	font-size: 20px; 
+	color: #FEC727;
+	margin: 20% auto;
+}
+.memoney{
+	border: 2px solid #FEC727;  
+	border-radius: 10px;
+}
+.iq{
+	border: 3px solid #FEC727;  
+	border-radius: 10px;
+}
+.hints{
+	border: 3px solid #FEC727;  
+	border-radius: 10px;
+}
+.statistics{
+font-size: 26px;
+color: #FEC727;
+width: 80%;
+margin: 0% auto;
+}
+.zvanie{
+	display: block;
+	border: 2px solid #FEC727;  
+	border-radius: 10px;
+	margin: 10%;
+	padding: 10px;
+}
+.leave{
+	display: flex;
+	font-size: 26px;
+	color: rgb(255, 0, 0);
+	border: 3px solid #FEC727;  
+	border-radius: 10px;
+	width: 40%;
+	margin: 10% auto;
+	height: 40px;
+align-items: center;
+text-align: center;
+justify-content: center;
+}
