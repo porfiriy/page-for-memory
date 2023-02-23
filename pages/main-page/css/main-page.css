@@ -143,7 +143,7 @@
  }
  .currency-text{
 	padding: 1px 0 0 0;
- }
+ } 
  .memany-container{
 	font-size: 16px;
 	font-weight: 900;
@@ -158,7 +158,7 @@
  .eye-icon{
 	font-size: 28px;
 	font-weight: 900;
-	color: #000;
+	color: #FEC727;
  }
  .iq-container {
 	font-size: 16px;
@@ -189,7 +189,7 @@
 	 box-sizing: border-box;
 	width: 60%;
 	height: 25px;
-	background: #535659;
+	background: #2f4860;
 	border-width: 0px 2px 2px 0px;
 	border-style: solid;
 	border-color: #000000;
@@ -202,13 +202,14 @@
 	height: 23px;
 	left: 69px;
 	top: 155px;
-	background: #372BC2;
+	background: #642ab1;
 	border-radius: 10px 0px 0px 10px;
  }
  .player-exp__text {
    position: relative;
    top: -17px;
 	font-weight: 800;
+	color: #05efd4;
  }
  .profile{
 	 width: 45px;
