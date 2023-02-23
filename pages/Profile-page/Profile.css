@@ -138,6 +138,8 @@ border-radius: 13px;
 	height: 40px;
 	text-align: center;
 	align-items: center;
+	justify-content: center;
+	width: 80px;
 }
 .iq{
 	display: flex;
@@ -148,7 +150,7 @@ border-radius: 13px;
 	text-align: center;
 	align-items: center;
 	justify-content: center;
-	width: 24%;
+	width: 80px;
 }
 .hints{
 	display: flex;
@@ -159,7 +161,7 @@ border-radius: 13px;
 	text-align: center;
 	align-items: center;
 	justify-content: center;
-	width: 24%;
+	width: 80px;
 }
 .statistics{
 font-size: 26px;
