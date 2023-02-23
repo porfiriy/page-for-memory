@@ -28,8 +28,7 @@
  }
  html,
  body {
-	 background: rgb(0,8,82);
-	 background: linear-gradient(180deg, rgb(5, 0, 82) 24%, rgb(211, 63, 4) 80%);
+	 background: #213242;
 	height: 100%;
 	width: 100%;
 	font-size: 100%;
@@ -103,11 +102,11 @@
  .header{
 	width: 100%;
 	height: 210px;
-	background: #FEC727;
-	border-width: 0px 1px 2px 1px;
+	background: #213242;
 	border-style: solid;
-	border-color: #C53B00;
-	border-radius: 0px 0px 30px 30px;
+	border-bottom: 2px solid #05EFD4;
+	box-shadow: 0px 5px 6px 2px rgba(0, 0, 0, 0.25), inset 0px 6px 12px -3px rgba(255, 255, 255, 0.25);
+	border-radius: 0px 0px 20px 20px;
  } 
  .header__top-button-container{
 	display: flex;
@@ -116,11 +115,14 @@
 	margin: 15px 0 0 0;
 	gap: 48px;
 	font-size: 18px;
+	
  }
+	
+ 
  .header__top-button-title{
 	font-size: 34px;
 	font-weight: 800;
-	color: #000;
+	color: #ffffff;
  }
  .header-score-container{
 	margin: 20px 0 ;
@@ -134,11 +136,11 @@
 	justify-content: space-around;
 	width: 97px;
 	height: 34px;
-	background: #372BC2;
 	border-width: 0px 2px 2px 0px;
 	border-style: solid;
 	border-color: #000000;
 	border-radius: 10px;
+	color: #FFFFFF;
  }
  .currency-text{
 	padding: 1px 0 0 0;
@@ -146,22 +148,25 @@
  .memany-container{
 	font-size: 16px;
 	font-weight: 900;
+	background: #213242;
+	box-shadow: 0px -1px 4px rgba(255, 255, 255, 0.25), 0px 3px 0px rgba(1, 1, 1, 0.25);
  }
  .hint-container {
 	font-size: 16px;
 	font-weight: 900;
+	box-shadow: 0px -1px 4px rgba(255, 255, 255, 0.25), 0px 3px 0px rgba(1, 1, 1, 0.25);
  }
  .eye-icon{
 	font-size: 28px;
 	font-weight: 900;
+	
  }
  .iq-container {
 	font-size: 16px;
 	font-weight: 900;
+	box-shadow: 0px -1px 4px rgba(255, 255, 255, 0.25), 0px 3px 0px rgba(1, 1, 1, 0.25);
  }
- .lvl-container{
  
- }
  .player-level{
 	display: flex;
 	align-items: center;
@@ -179,7 +184,7 @@
 	align-items: center;
 	text-align: center;
 	letter-spacing: 0.225em;
-	color: #FEC727;
+	color: #05EFD4;
  }
  .player-exp-scale{
 	 box-sizing: border-box;
@@ -224,7 +229,7 @@
 	margin: 30px auto 0 auto;
 	width: 171px;
 	height: 30px;
-	background: #FEC727;
+	background: #05EFD4;
 	border-width: 0px 2px 2px 0px;
 	border-style: solid;
 	border-color: #000000;
@@ -314,11 +319,10 @@
 	justify-content: center;
 	width: 82px;
 	height: 82px;
-	background: #6B089A;
-	border: 2px solid #FEC727;
-	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	box-shadow: -1px -2px 5px rgba(255, 255, 255, 0.25), 0px 2px 4px 1px rgba(0, 0, 0, 0.45);
 	border-radius: 50%;
 	font-size: 40px;
+	color: #05EFD4;
  }
  .bonus-button:active{
 	transform: scale(0.6);
@@ -332,11 +336,11 @@
 	justify-content: center;
 	width: 82px;
 	height: 82px;
-	background: #6B089A;
-	border: 2px solid #FEC727;
-	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	background: #213242;
+	box-shadow: -1px -2px 5px rgba(255, 255, 255, 0.25), 0px 2px 4px 1px rgba(0, 0, 0, 0.45);
 	border-radius: 50%;
 	font-size: 40px;
+	color: #05EFD4;
  }
  
  .icon-settings{
@@ -345,6 +349,7 @@
 	animation-direction: alternate;
 	animation-iteration-count: 2,infinite;
 	animation-delay: 4s;
+	
  }
  
  @keyframes icon-settings {
@@ -372,7 +377,7 @@
 	font-size: 2.2em;
 	text-align: center;
 	transition: 1s;
-	color: black;
+	color: #05EFD4;
  }
  .icon-settings:active {
 	opacity: 0;
@@ -390,13 +395,13 @@
  }
  .navigation{
 	display: flex;
-	border-top-left-radius: 10px;
-	border-top-right-radius: 10px;
 	width: 100%;
 	height: 100%;
 	background-color: #213242;
 	justify-content: center;
 	align-items: center;
+	border-top: 2px solid #05EFD4;
+	border-radius: 15px 15px 0px 0px;
  }
  .navigation ul {
 	position: relative;
@@ -429,7 +434,7 @@
 	position: relative;
 	display: block;
 	font-size: 1.5em;
-	line-height: 70px;
+	line-height: 60px;
    transition: 0.5s;
 	color: #5a6683;
  }
@@ -458,8 +463,8 @@
  }
  .indicator{
 	position: absolute;
-	width: 70px;
-	height: 70px;
+	width: 73px;
+	height: 60px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -468,7 +473,7 @@
  .indicator::before{
 	content: '';
 	position: absolute;
-	bottom: 18px;
+	bottom: 14px;
 	width: 100%;
 	height: 14px;
 	background-color: #05EFD4;
