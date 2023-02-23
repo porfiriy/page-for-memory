@@ -115,14 +115,13 @@
 	margin: 15px 0 0 0;
 	gap: 48px;
 	font-size: 18px;
-	
+	color: #FFFFFF;
  }
 	
  
  .header__top-button-title{
 	font-size: 34px;
 	font-weight: 800;
-	color: #ffffff;
  }
  .header-score-container{
 	margin: 20px 0 ;
@@ -159,7 +158,7 @@
  .eye-icon{
 	font-size: 28px;
 	font-weight: 900;
-	
+	color: #000;
  }
  .iq-container {
 	font-size: 16px;
@@ -501,7 +500,7 @@
 	height: 100%;
 	width: 100%;
 	background: rgb(0,8,82);
-	background: linear-gradient(180deg, rgb(5, 0, 82) 24%, rgb(211, 63, 4) 80%);
+	background: #213242;
 	z-index: 0;
  }
  .page-title {
@@ -580,7 +579,7 @@
 	height: 100%;
 	width: 100%;
 	background: rgb(0,8,82);
-	background: linear-gradient(180deg, rgb(5, 0, 82) 24%, rgb(211, 63, 4) 80%);
+	background: #213242;
 	z-index: 0;
 	font-family: 'Balsamiq Sans', cursive;
    font-size: 100%;
@@ -839,7 +838,7 @@
 	 height: 100%;
 	 width: 100%;
 	 background: rgb(0,8,82);
-	 background: linear-gradient(180deg, rgb(5, 0, 82) 24%, rgb(211, 63, 4) 80%);
+	 background: #213242;
 	 z-index: 0;
    }
   .Shop{
@@ -980,7 +979,7 @@
 	 height: 100%;
 	 width: 100%;
 	 background: rgb(0,8,82);
-	 background: linear-gradient(180deg, rgb(5, 0, 82) 24%, rgb(211, 63, 4) 80%);
+	 background: #213242;
 	 z-index: 0;
   }
   .page-title {
