@@ -321,6 +321,7 @@
 	box-shadow: -1px -2px 5px rgba(255, 255, 255, 0.25), 0px 2px 4px 1px rgba(0, 0, 0, 0.45);
 	border-radius: 50%;
 	font-size: 40px;
+	border: 1px solid #05EFD4;
 	color: #05EFD4;
  }
  .bonus-button:active{
@@ -337,6 +338,7 @@
 	height: 82px;
 	background: #213242;
 	box-shadow: -1px -2px 5px rgba(255, 255, 255, 0.25), 0px 2px 4px 1px rgba(0, 0, 0, 0.45);
+	border: 1px solid #05EFD4;
 	border-radius: 50%;
 	font-size: 40px;
 	color: #05EFD4;
