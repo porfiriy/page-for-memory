@@ -1,11 +1,10 @@
 'use strict'
 //звук 
 let audioClick = new Audio('/page-for-memory/pages/main-page/sounds/mixkit-modern-click-box-check-1120.wav');
-let audioSwap = new Audio('/page-for-memory/pages/main-page/sounds/25d7ee378d6addc.mp3');
+let audioSwap = new Audio('');
 let audiomeme = new Audio('/page-for-memory/pages/main-page/sounds/dwayne-sound.mp3')
 const list = document.querySelectorAll('.list')
 const itemHomeNavigation = document.querySelector('.list-home');
-const itemHomeTextNavigation = document.querySelector('.text-list-item');
 const itemGamesNavigation = document.querySelector('.list-games');
 const itemStoreNavigation = document.querySelector('.list-store');
 const itemAnalyticNavigation = document.querySelector('.list-analytic');
@@ -36,8 +35,6 @@ const AchievmentsScrollButton = document.querySelector('.scroll');
 function activeLink() {
   list.forEach((item) =>
     item.classList.remove('active'));
-  itemHomeNavigation.classList.remove('home-active-again');//нужно для того чтобы сбросить стили у элемента home при нажатии любого другого
-  itemHomeTextNavigation.classList.remove('text-active', 'text-active-again');
   this.classList.add('active');
 }
 list.forEach((item) =>
@@ -45,8 +42,6 @@ list.forEach((item) =>
 
 //Дом
 itemHomeNavigation.onclick = function () {//при нажатии на элем home в меню навигац
-  itemHomeTextNavigation.classList.add('text-active-again');
-  itemHomeNavigation.classList.add('home-active-again');
   containerGamesPage.style = 'display: none;'; //убирает страницу игр
   containerAchievmentsPage.style = 'display: none;';
   containerStorePage.style = 'display: none;';
