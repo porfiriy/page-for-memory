@@ -672,10 +672,11 @@
 	display: none;
 	height: 70%;
 	width: 80%;
-	background-color:#25345B;
+	background: #213242;
 	z-index: 3;
-	border: 4px solid #FEC727;
+	border: 4px solid #213242;
 	border-radius: 15px;
+	color: #FFFFFF;
   }
   .everyday-tasks-body{
 	margin: 29% 0 0 0;
@@ -687,8 +688,10 @@
 	 justify-content: space-around;
 	 align-items: center;
 	 width: 80%;
+	 box-shadow: -1px -2px 5px rgba(255, 255, 255, 0.25), 0px 2px 4px 1px rgba(0, 0, 0, 0.45);
 	 height: 70px;
-	 background: #FEC727;
+	 background: #213242;
+	 border: 1px solid #05EFD4;
 	 border-radius: 10px;
 	 margin: 12% auto;
   }
@@ -696,7 +699,7 @@
 	 height: 20px;
 	 width: 20px;
 	 border-radius: 10px;
-	 border: 4px solid black;
+	 border: 4px solid #05EFD4;
   }
   .tasks-body__task-text {
 	 width: 60%;
@@ -706,7 +709,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	color: #000000;
+	color: #05EFD4;
 	 text-align: center;
 	 background-repeat: no-repeat;
 	 height: 50px;
@@ -719,7 +722,8 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background-color: #FEC727;
+	background-color: #213242;
+	box-shadow: -1px -2px 5px rgba(255, 255, 255, 0.25), 0px 2px 4px 1px rgba(0, 0, 0, 0.45);
 	border-radius: 50%;
 	width: 45px;
 	height: 45px;
@@ -819,7 +823,8 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background-color: #FEC727;
+	background-color: #213242;
+	box-shadow: -1px -2px 5px rgba(255, 255, 255, 0.25), 0px 2px 4px 1px rgba(0, 0, 0, 0.45);
 	border-radius: 50%;
 	width: 45px;
 	height: 45px;
