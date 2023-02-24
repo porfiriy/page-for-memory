@@ -75,7 +75,7 @@ font-weight: 400;
 }
 
 body {
-	background: linear-gradient(174.76deg, #0400BE 6.65%, #4D0614 69.15%);
+	background: linear-gradient(180deg, #213242 10%, #4D0614 85.15%);
 }
 header {
 display: flex;
@@ -84,10 +84,10 @@ align-items: center;
 justify-content: space-between;
 margin: 10px 0 100px 0;
 font-size: 32px;
-color: #FEC727;
+color: #05EFD4;
 }
 .comeback-button {
-color: #FEC727;
+color: #05EFD4;
 font-size: 44px;
 -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 -webkit-tap-highlight-color: transparent;
@@ -99,13 +99,14 @@ transform: scale(0.5);
 	transform: scale(0.5);
 }
 .profile-container{
-	border: 3px solid #FEC727;
+	border: 3px solid  #05EFD4;
 	border-radius: 25px;
 	width: 80%;
 	text-align: center;
 	align-items: center;
 	justify-content: center;
 	margin: 0% auto;
+	background-color: #213242; ;
 }
 .profile_first{
 display: flex;
@@ -117,54 +118,64 @@ align-items: center;
 margin: 10% auto;
 }
 .profile-picture{
-border: 2px solid black;
+border: 3px solid #05EFD4;
 border-radius: 13px;
-}
-.profile_second{
-    
 }
 .currency{
 	display: flex;  
 	justify-content: space-around;  
 	font-size: 20px; 
-	color: #FEC727;
+	color: #05EFD4;
+	text-align: center;
+	align-items: center;
 	margin: 20% auto;
 }
+.eye-icon{
+	color: #fec727;
+}
 .memoney{
-	border: 2px solid #FEC727;  
+	display: flex;
+	border: 2px solid #05EFD4;  
 	border-radius: 10px;
+	padding: 5px;
+	height: 40px;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	width: 80px;
 }
 .iq{
-	border: 3px solid #FEC727;  
+	display: flex;
+	border: 2px solid #05EFD4;  
 	border-radius: 10px;
+	padding: 5px;
+	height: 40px;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	width: 80px;
 }
 .hints{
-	border: 3px solid #FEC727;  
+	display: flex;
+	border: 2px solid #05EFD4;  
 	border-radius: 10px;
+	padding: 5px;
+	height: 40px;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	width: 80px;
 }
 .statistics{
 font-size: 26px;
-color: #FEC727;
+color: #05EFD4;
 width: 80%;
 margin: 0% auto;
 }
 .zvanie{
 	display: block;
-	border: 2px solid #FEC727;  
+	border: 2px solid #05EFD4;  
 	border-radius: 10px;
 	margin: 10%;
 	padding: 10px;
-}
-.leave{
-	display: flex;
-	font-size: 26px;
-	color: rgb(255, 0, 0);
-	border: 3px solid #FEC727;  
-	border-radius: 10px;
-	width: 40%;
-	margin: 10% auto;
-	height: 40px;
-align-items: center;
-text-align: center;
-justify-content: center;
 }
