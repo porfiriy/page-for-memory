@@ -565,6 +565,8 @@ height: 40px;
    transform: scale(1);
    transform-style: preserve-3d;
    transition: transform .5s;
+   box-shadow: 0px -1px 5px rgb(255 255 255 / 25%), 0px 4px 4px rgb(0 0 0 / 25%);
+    text-shadow: 0px -1px 5px rgb(255 255 255 / 25%), 0px 4px 4px rgb(0 0 0 / 25%);
 }
 .brain-logo{
    height: 60px;
@@ -728,7 +730,7 @@ height: 40px;
    left: 0;
    height: 24px;
    width: 296px;
-   background-color: #FEC727;
+   background-color: #05EFD4;
 }
 
 @keyframes deadeLine {
@@ -750,7 +752,7 @@ height: 40px;
 .start-menu__game-mode-title{
    margin: 10px auto;
    font-size: 38px;
-   color: #FEC727;
+   color: #05EFD4;
 }
 .start-menu__game-mode{
    display: flex;
@@ -842,7 +844,7 @@ height: 40px;
    align-items: center;
    text-align: center;
    letter-spacing: 0.095em;
-   color: #FEC727;
+   color: #05EFD4;
 
 }
 .victory-loose-screen__easy-mode {
@@ -955,7 +957,7 @@ height: 40px;
    margin: 10% 0 0 0;
    text-align: center;
    font-size: 38px;
-   color: #FEC727;
+   color: #05EFD4;
 }
 .results-menu__mode-container {
    margin: 15% 0 0 0;
@@ -963,7 +965,7 @@ height: 40px;
 .results-menu__mode-title {
    text-align: center;
    font-size: 28px;
-   color: #FEC727;
+   color: #05EFD4;
 }
 .results-menu__easy-mode {
    text-align: center;
