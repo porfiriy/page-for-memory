@@ -145,6 +145,9 @@ html,body {
    letter-spacing: 0.095em;
    color: #000000;
 }
+.easy-mode-text:active{
+	transform: scale(0.7);
+}
 .easy-mode-count{
 	width: 65px;
 	display: flex;
@@ -180,6 +183,9 @@ html,body {
    line-height: 38px;
    letter-spacing: 0.095em;
    color: #000000;
+}
+.normal-mode-text:active{
+	transform: scale(0.7);
 }
 .normal-mode-count{
 	width: 65px;
@@ -217,6 +223,9 @@ html,body {
    letter-spacing: 0.095em;
    color: #000000;
 }
+.hard-mode-text:active{
+	transform: scale(0.7);
+}
 .hard-mode-count{
 	width: 65px;
 	display: flex;
@@ -252,6 +261,9 @@ html,body {
    line-height: 38px;
    letter-spacing: 0.095em;
    color: #000000;
+}
+.crazy-mode-text:active{
+	transform: scale(0.7);
 }
 .crazy-mode-count{
 	width: 65px;
