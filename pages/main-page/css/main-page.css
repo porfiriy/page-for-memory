@@ -508,21 +508,6 @@
 	background: #213242;
 	z-index: 0;
  }
- .page-title {
-	margin: 30px auto 0 auto;
-	width: 60%;
-	font-family: 'Balsamiq Sans';
-	font-style: normal;
-	font-weight: 700;
-	font-size: 24px;
-	line-height: 29px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	text-align: center;
-	letter-spacing: 0.225em;
-	color: #FEC727;
- }
  .container-list-games{
 	display: flex;
 	margin: 80px auto 0 auto;
@@ -596,16 +581,6 @@
 	 min-width: 100%;
 	 display: flex;
 	 flex-direction: column;
-  }
-  .Achievements{
-	 font-size: 34px;
-	 display: flex;
-	 align-items: center;
-	 justify-content: center;
-	 color: #FEC727;
-	 margin: 40px 0 0 0;
-	 width: 100%;
-	 height: 100%;
   }
   .main-achievements {
 	 margin: -130px 0 0 0;
@@ -866,14 +841,6 @@
 	 background: #213242;
 	 z-index: 0;
    }
-  .Shop{
-	 font-size: 34px;
-	 display: flex;
-	 align-items: center;
-	 justify-content: center;
-	 color: #FEC727;
-	 margin: 50px auto;
-  }
   .time{
 	 color: white;
 	 font-size: 18px;
@@ -881,7 +848,7 @@
 	 display: flex;
 	 align-items: center;
 	 justify-content: center;
-	 margin: 0 auto;
+	 margin: 10px auto;
 	 text-align: center;
   }
   .timeoclock{
@@ -1020,7 +987,7 @@
 	 justify-content: center;
 	 text-align: center;
 	 letter-spacing: 0.225em;
-	 color: #FEC727;
+	 color: #05EFD4;
   }
   .container-analytics-games-list{
 	 display: flex;
@@ -1037,13 +1004,17 @@
 	 align-items: center;
 	 width: 100px;
 	 height: 100px;
-	 background: #FEC727;
-	 border: 4px solid #000000;
+	 background: linear-gradient(225deg, rgba(169, 0, 228, 0.74) 0%, rgba(0, 23, 225, 0.74) 100%);
+	 border: 2px solid #05EFD4;
 	 border-radius: 18px;
-	 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	 -webkit-box-shadow: inset 2px 3px 3px rgb(255 255 255 / 25%);
+	 -moz-box-shadow: inset 2px 3px 3px rgb(255 255 255 / 25%);
+	 box-shadow: inset 2px 3px 3px rgb(255 255 255 / 25%);
+	 box-shadow: inset 2px 3px 3px rgb(255 255 255 / 25%);
   }
   .item-statistics-games:active{
-	 transform: scale(0.5);
+	 transform: scale(0.9);
+	 box-shadow: inset 2px 3px 3px rgb(255 255 255 / 25%), 0px 0px 20px 0px rgb(119 0 255);
   }
   .img-colors{
 	 font-size: 54px;
@@ -1052,10 +1023,10 @@
   .full-statistics-button{
 	 width: 210px;
 	 height: 60px;
-	 background: #FEC727;
-	 -webkit-box-shadow: 0px 2px 20px 2px rgba(254, 199, 39, 0.43);
-	 -moz-box-shadow: 0px 2px 20px 2px rgba(254, 199, 39, 0.43);
-	 box-shadow: 0px 2px 20px 2px rgba(254, 199, 39, 0.43);
+	 background: linear-gradient(225deg, rgba(169, 0, 228, 0.74) 0%, rgba(0, 23, 225, 0.74) 100%);
+	 -webkit-box-shadow: inset 2px 3px 3px rgb(255 255 255 / 25%);
+	 -moz-box-shadow: inset 2px 3px 3px rgb(255 255 255 / 25%);
+	 box-shadow: inset 2px 3px 3px rgb(255 255 255 / 25%);
 	 border-radius: 10px;
 	 font-family: 'Balsamiq Sans';
 	 font-style: normal;
@@ -1069,10 +1040,12 @@
 	 letter-spacing: 0.10em;
 	 margin: 130px auto 0 auto;
 	 padding: 20px;
-	 color: #000000;
+	 color: #ffffff;
+	 border: 2px solid #05EFD4;
   }
   .full-statistics-button:active{
-	 transform: scale(0.5);
+	transform: scale(0.9);
+	box-shadow: inset 2px 3px 3px rgb(255 255 255 / 25%), 0px 0px 20px 0px rgb(119 0 255);
   }
   .in_dev{
 	 background-color: rgb(43,43,43);
