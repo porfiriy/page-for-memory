@@ -861,7 +861,7 @@ height: 40px;
    letter-spacing: 0.095em;
    color: #32EF07;
 }
-.victory-loose-screen__crazy-mode {
+.victory-loose-screen__normal-mode {
    font-style: normal;
    font-weight: 700;
    font-size: 32px;
@@ -978,7 +978,7 @@ height: 40px;
    margin: 10px 0 0 0 ;
    color: #30EC03;
 }
-.results-menu__crazy-mode {
+.results-menu__normal-mode {
    text-align: center;
    font-size: 26px;
    font-weight: 700;
