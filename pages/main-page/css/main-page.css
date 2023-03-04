@@ -858,33 +858,23 @@
 	text-align: center;
  }
 .currency{
-	margin: 30px 0 0 0;
+	margin: 30px auto;
 	display: flex;
 	justify-content: space-around;
 	font-size: 22px;
 align-items: center;
 text-align: center;
-}
-.currency-iq{
-	display: flex;
-	border: 2px solid #05EFD4;
-	border-radius: 10px;
-	width: 110px;
-	color: #05EFD4;
-	text-align: center;
-	align-items: center;
-	justify-content: space-around;
-	padding: 5px;
+max-width: 390px;
 }
 .currency-memoney{
 	display: flex;
 	border: 2px solid #05EFD4;
 	border-radius: 10px;
-	width: 110px;
+	min-width: 110px;
 	text-align: center;
 	align-items: center;
 	justify-content: space-around;
-	padding: 5px;
+	padding: 10px;
 }
 .memoneyicon{
 	width: 28px;
@@ -893,11 +883,11 @@ text-align: center;
 	display: flex;
 	border: 2px solid #05EFD4;
 	border-radius: 10px;
-	width: 110px;
+	min-width: 110px;
 	text-align: center;
 	align-items: center;
 	justify-content: space-around;
-	padding: 5px;
+	padding: 10px;
 }
 .hintsicon{
 	width: 30px;
@@ -922,8 +912,9 @@ color: #ffffff;
 }
 .buy-currency{
 	margin: 50px auto;
+	max-width: 350px;
 }
-.buy-iq{
+.buy-memoney{
 	color: #000000;
 	display: flex;
 	flex-wrap: wrap;
@@ -935,11 +926,16 @@ color: #ffffff;
 	justify-content: center;
 }
 .buy{
+	display: flex;
 	border: 2px solid #05EFD4;
 	border-radius: 5px;
 	width: 142px;
-	padding: 8px;
+	padding: 6px;
 	background: radial-gradient(100.38% 678.6% at 50% 50%, #00FFC2 0%, rgba(5, 113, 239, 0.7) 100%);
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	gap: 5px;
 }
 
 
