@@ -514,8 +514,10 @@
 	align-items: center;
 	justify-content: center;
 	flex-wrap: wrap;
-	width: 250px;
+	width: 300px;
 	gap: 15px;
+	overflow: scroll;
+	height:65%;
  }
  .item-games{
 	display: flex;
@@ -523,20 +525,46 @@
 	align-items: center;
 	width: 100px;
 	height: 100px;
-	background: rgba(5, 0, 242, 0.74);
-	border: 4px solid #000000;
+	background: linear-gradient(225deg, rgba(169, 0, 228, 0.74) 0%, rgba(0, 23, 225, 0.74) 100%);
+	border: 2px solid #05EFD4;
 	border-radius: 18px;
-	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	-webkit-box-shadow: inset 2px 3px 3px rgb(255 255 255 / 25%);
+	-moz-box-shadow: inset 2px 3px 3px rgb(255 255 255 / 25%);
+	box-shadow: inset 2px 3px 3px rgb(255 255 255 / 25%);
+	box-shadow: inset 2px 3px 3px rgb(255 255 255 / 25%);
+	transition: 0.2s;
  }
  .item-games:active{
 	transform: scale(0.5);
  }
+ .item-games-in-dev{ 
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	width: 100px;
+	height: 100px;
+	background: rgba(82, 82, 82, 0.74);
+	border: 4px solid #9c9c9c;
+	border-radius: 18px;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	filter: blur(1px);
+ }
+ .item-games-in-dev:hover{
+	-webkit-box-shadow: 0px 0px 20px 10px rgba(255, 255, 255, 0.30);
+	-moz-box-shadow: 0px 0px 20px 10px rgba(255, 255, 255, 0.30);
+	box-shadow: 0px 0px 20px 1px rgba(255, 255, 255, 0.30);
+	transition: 0.6s;
+ }
+ .in-dev{ 
+	display: flex;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+ }
  .img-colors{
 	font-size: 54px;
 	color: #000;
- }
- .yellow-item{
-	background-color: #FEC727;
  }
  .random-game-button{
 	width: 85%;
@@ -595,14 +623,17 @@
   #achievments-container{
 	 font-family: 'Balsamiq Sans', cursive;
 	 font-size: 20px;
-	 color: #11ff60;
+	 color: #05EFD4;
 	 overflow: scroll;
 	 height: 500px;
   }
+  .scroll{
+	rotate: 180deg;
+  }
   .container-achieve{
 	 margin: 50px auto;
-	 background: rgb(255,0,168);
-	 background: linear-gradient(90deg, rgba(255,0,168,1) 10%, rgba(5,0,242,1) 100%);
+	 background: rgb(0,121,255);
+	 background: linear-gradient(270deg, rgb(0 73 155) 0%, rgb(0 249 229 / 70%) 130%);
 	 border-radius: 10px;
 	 height: 70px;
 	 width: 90%;
@@ -619,7 +650,7 @@
 	 justify-content: center;
   }
   .forachieve{
-	 color:#FEC727;
+	 color:#ffffff;
 	 height: 30px;
 	 text-shadow: 1px 0 1px #000,
 	 0 1px 1px #000, 
@@ -641,6 +672,11 @@
   }
   .Up-button:active{
 	 transform: scale(0.5);
+	transition: 50ms;
+  }
+  .Up-button:hover{
+	transition: 2s;
+	rotate: 1080deg;
   }
  
   .everyday-tasks-container{
@@ -908,11 +944,11 @@ padding: 8px;
 width: 270px;
 color: #ffffff;
 background: #213242;
-transition: 1s /* Время изменения */
+transition: 0.8s /* Время изменения */
 }
 .convert-currency-button:hover{
-	background: #05EFD4;
-	color: #000;
+background: #05EFD4;
+color: #000;
 text-decoration: none;
 }
 .buy-currency{
@@ -941,6 +977,11 @@ text-decoration: none;
 	align-items: center;
 	justify-content: center;
 	gap: 5px;
+	transition: 0.2s /* Время изменения */
+}
+.buy:active{
+	transform: scale(0.8);
+
 }
 
 
@@ -991,6 +1032,7 @@ text-decoration: none;
 	 -moz-box-shadow: inset 2px 3px 3px rgb(255 255 255 / 25%);
 	 box-shadow: inset 2px 3px 3px rgb(255 255 255 / 25%);
 	 box-shadow: inset 2px 3px 3px rgb(255 255 255 / 25%);
+	 transition: 0.2s;
   }
   .item-statistics-games:active{
 	 transform: scale(0.9);
@@ -1033,7 +1075,7 @@ text-decoration: none;
   }
   .in_dev_text{
 	 position: absolute;
-	 color: #FEC727;
+	 color: #05EFD4;
 	 margin: -60px 6px;
 	 text-decoration: underline;
   }
