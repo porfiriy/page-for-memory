@@ -901,14 +901,19 @@ max-width: 390px;
 	font-size: 20px;
 	border: 2px solid #05EFD4;
 	border-radius: 10px;
-	background: rgb(0,255,178);
-	background: radial-gradient(50% 102.04% at 50% 50%, #00ffb2 0%, rgb(34 51 135) 100%);
 align-items: center;
 text-align: center;
 justify-content: center;
 padding: 8px;
 width: 270px;
 color: #ffffff;
+background: #213242;
+transition: 1s /* Время изменения */
+}
+.convert-currency-button:hover{
+	background: #05EFD4;
+	color: #000;
+text-decoration: none;
 }
 .buy-currency{
 	margin: 50px auto;
