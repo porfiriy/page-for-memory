@@ -637,7 +637,7 @@
  }
   .Up-button{
 	 font-size: 45px;
-	 color: #FEC727;
+	 color: #05EFD4;
   }
   .Up-button:active{
 	 transform: scale(0.5);
@@ -841,130 +841,109 @@
 	 background: #213242;
 	 z-index: 0;
    }
-  .time{
-	 color: white;
-	 font-size: 18px;
-	 width: 40%;
-	 display: flex;
-	 align-items: center;
-	 justify-content: center;
-	 margin: 10px auto;
-	 text-align: center;
-  }
   .timeoclock{
 	 display: flex;
 	 align-items: center;
 	 justify-content: center;
 	 margin: 20px auto;
   }
-  .shop-items{
-	 display: flex;
-	 justify-content: space-between;
-	 height: 200px;
-  }
-  .free-hints{
-	 margin: 20px 0 0 0;
-	 width: 26%;
-	 background: #FFC632;
-	 border: 3px solid #000;
-	 border-radius: 20px 20px  10px  10px;
-	 min-width: 56%;
-	 min-height: 44%;
-	 text-align: center;
-	 font-size: 17px;
-	 display: flex;
-	 align-items: center;
-	 justify-content: center;
-  }
-  .claim-free-hints{
-	 margin: 0px 0 0 0;
-	 width: 26%;
-	 background: #FFC632;
-	 border: 3px solid #000;
-	 border-radius: 10px 10px 20px 20px;
-	 min-width: 56%;
-	 min-height: 20%;
-	 text-align: center;
-	 font-size: 17px;
-	 display: flex;
-	 align-items: center;
-	 justify-content: center;
-  }
-  .claim-free-hints:active{
-	transform: scale(0.7);
-  }
-  .iq-trade{
-	 width: 26%;
-	 background: #FFC632;
-	 border: 3px solid #000;
-	 border-radius: 16px;
-	 min-width: 32%;
-	 max-height: 80%;
-	 text-align: center;
-	 font-size: 17px;
-	 display: flex;
-	 align-items: center;
-	 justify-content: center;
-  }
-  .currency1{
-	 margin: 0px auto;
-	 display:flex;
-	 justify-content:space-around;
-  }
-  .littleIQ{
-	 font-size: 16px;
-	 display: flex;
-	 align-items: center;
-	 justify-content: center;
-	 background: #FFC632;
-	 border: 3px solid #000;
-	 text-align: center;
-	 border-radius: 15px;
-	 width: 40%;
-	 height: 50px;
- 
-  }
-  .normalIQ{
-	 font-size: 16px;
-	 display: flex;
-	 align-items: center;
-	 justify-content: center;
-	 background: #FFC632;
-	 border: 3px solid #000;
-	 text-align: center;
-	 border-radius: 15px;
-	 width: 40%;
-	 height: 50px;
-  }
-  .hugeIQ{
-	 font-size: 16px;
-	 display: flex;
-	 align-items: center;
-	 justify-content: center;
-	 background: #FFC632;
-	 border: 3px solid #000;
-	 text-align: center;
-	 border-radius: 15px;
-	 width: 40%;
-	 height: 50px;
-	 margin: 20px auto;
-  }
-  .ads{
-	 font-size: 16px;
-	 display: flex;
-	 align-items: center;
-	 justify-content: center;
-	 background: rgb(204,49,0);
-	 background: linear-gradient(180deg, rgba(204,49,0,1) 0%, rgba(255,230,0,1) 100%);
-	 border-radius: 10px;
-	 width: 70%;
-	 height: 5%;
-	 margin: 0px auto;
-  }
-  .noads{
-	 width: 37px;
-  }
- 
+  .time{
+	color: white;
+	font-size: 18px;
+	width: 60%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 10px auto;
+	text-align: center;
+ }
+.currency{
+	margin: 30px 0 0 0;
+	display: flex;
+	justify-content: space-around;
+	font-size: 22px;
+align-items: center;
+text-align: center;
+}
+.currency-iq{
+	display: flex;
+	border: 2px solid #05EFD4;
+	border-radius: 10px;
+	width: 110px;
+	color: #05EFD4;
+	text-align: center;
+	align-items: center;
+	justify-content: space-around;
+	padding: 5px;
+}
+.currency-memoney{
+	display: flex;
+	border: 2px solid #05EFD4;
+	border-radius: 10px;
+	width: 110px;
+	text-align: center;
+	align-items: center;
+	justify-content: space-around;
+	padding: 5px;
+}
+.memoneyicon{
+	width: 28px;
+}
+.currency-hints{
+	display: flex;
+	border: 2px solid #05EFD4;
+	border-radius: 10px;
+	width: 110px;
+	text-align: center;
+	align-items: center;
+	justify-content: space-around;
+	padding: 5px;
+}
+.hintsicon{
+	width: 30px;
+}
+.count{
+	color: #ffffff;
+}
+.convert-currency-button{
+	display: flex;
+	margin: 30px auto;
+	font-size: 20px;
+	border: 2px solid #05EFD4;
+	border-radius: 10px;
+	background: rgb(0,255,178);
+	background: radial-gradient(50% 102.04% at 50% 50%, #00ffb2 0%, rgb(34 51 135) 100%);
+align-items: center;
+text-align: center;
+justify-content: center;
+padding: 8px;
+width: 270px;
+color: #ffffff;
+}
+.buy-currency{
+	margin: 50px auto;
+}
+.buy-iq{
+	color: #000000;
+	display: flex;
+	flex-wrap: wrap;
+	font-size: 15px;
+	margin: 0 auto;
+	gap: 20px;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+}
+.buy{
+	border: 2px solid #05EFD4;
+	border-radius: 5px;
+	width: 142px;
+	padding: 8px;
+	background: radial-gradient(100.38% 678.6% at 50% 50%, #00FFC2 0%, rgba(5, 113, 239, 0.7) 100%);
+}
+
+
+
  .analytic-container{
 	 position: absolute;
 	 display: none;
