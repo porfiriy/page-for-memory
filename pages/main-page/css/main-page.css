@@ -146,6 +146,9 @@
  .currency-text{
 	padding: 1px 0 0 0;
  } 
+ .currency-memoney-icon{
+	width: 30px;
+ }
  .memany-container{
 	font-size: 16px;
 	font-weight: 900;
