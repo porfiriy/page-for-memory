@@ -151,7 +151,7 @@ function game() {
    deadeLine.style = `animation: deadeLine ${ModeTimeAnim}s linear `;//запуск анимации,c переменной под каждый мод игы
 
    //анимация проигриша 
-   function showMessage() {
+   function showMessageLoose() {
       victoryLooseScreenContainer.style = 'display:flex;';
       victoryLooseScreenWinLooseText.innerHTML = 'Поражение!'
       victoryLooseScreenWinLooseText.classList.add('loose-text-red');
@@ -163,7 +163,7 @@ function game() {
       resultsMenuTimeItem.classList.add('items-container__time-item-red');
       resultsMenuTime.innerHTML = `${seconds}`;
    }
-   deadeLine.addEventListener("animationend", showMessage);
+   deadeLine.addEventListener("animationend", showMessageLoose);
 
 
 

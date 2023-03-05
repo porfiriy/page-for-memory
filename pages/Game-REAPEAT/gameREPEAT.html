@@ -63,8 +63,41 @@
       </div>
    </div>
 
-
+   <div class="victory-loose-screen-container">
+      <div class="victory-loose-screen__win-loose-text">Победа!</div>
+      <div class="victory-loose-screen__results-button">Результаты</div>
+   </div>
+   <div class="results-menu-container">
+      <div class="results-menu__title">Результаты</div>
+      <div class="results-menu__items-container items-container">
+         <div class="items-container__each-item-container">
+            <div class="items-container__win-loose-icon"></div>
+            <div class="items-container__win-loose-item"></div>
+         </div>
+         <div class="items-container__each-item-container">
+            <div class="items-container__done-levels-icon"><ion-icon name="checkmark-outline"></ion-icon></div>
+            <div class="items-container__done-levels-item">Уровень<div class="done-levels">0</div>
+            </div>
+         </div>
+         <div class="items-container__each-item-container">
+            <div class="items-container__iq-icon">IQ</div>
+            <div class="items-container__iq-item">+20</div>
+         </div>
+         <div class="items-container__each-item-container">
+            <div class="items-container__exp-icon">Exp</div>
+            <div class="items-container__exp-item">+10</div>
+         </div>
+      </div>
+      <div class="results-menu__buttons-container">
+         <div onClick="window.location.reload();" class=" results-menu__button results-menu__button-restart">
+            <ion-icon name="refresh-outline"></ion-icon>
+         </div>
+         <a href="/page-for-memory/index.html" class=" results-menu__button result-menu__button-home"><ion-icon
+               name="home-outline"></ion-icon></a>
+      </div>
+   </div>
    <div class="wrapper">
+
       <div class="topButton-gameWords">
          <a class="comeback-button" href="#">
             <div class="comeback-button-body">
@@ -77,7 +110,7 @@
       <div class="text-level">Lvl <span class="lvl-counter">1</span>
       </div>
       <div class="deadLineWrapper">
-         <div id="deadeLine"></div>
+         <div class="deadeLine"></div>
       </div>
       <div class="game-buttons-container">
          <div class="game-buttons-container__button" class="button1" id="1"></div>
@@ -97,7 +130,9 @@
          <div class="game-buttons-container__button" class="button15"></div>
          <div class="game-buttons-container__button" class="button16"></div>
       </div>
+
    </div>
+
    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
    <script src="/page-for-memory/pages/Game-REAPEAT/js/gameREPEAT.js"></script>

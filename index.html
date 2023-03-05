@@ -1,3 +1,8 @@
+<?php
+   
+   include "C:\ospanel\domains\mem.com\dataBase\surencyAndScore.php";
+?>
+
 <!DOCTYPE html>
 <html lang="ru">
 
@@ -24,21 +29,21 @@
          </div>
          <div class="header-score-container">
             <div class="memany-container currency-container">
-               <img class="currency-icons"src="/page-for-memory/pages/main-page/img/memanyImg.svg" alt="memany">
-               <div class="currency-text">
-                  50
+               <img class="currency-icons" src="/page-for-memory/pages/main-page/img/memanyImg.svg" alt="memany">
+               <div class="memany-count">
+                  0
                </div>
             </div>
             <div class="hint-container currency-container">
                <ion-icon class="eye-icon currency-icons" name="eye-outline"></ion-icon>
-               <div class="currency-text">
-                  24
+               <div class="memany-count">
+                  0
                </div>
             </div>
             <div class="iq-container currency-container">
                <img class="currency-icons" src="/page-for-memory/pages/main-page/img/brainImg2.png" alt="iq">
-               <div class="currency-text">
-                  207
+               <div class="memany-count">
+                  0
                </div>
             </div>
          </div>
@@ -51,6 +56,14 @@
          </div>
       </header>
       <main class="main">
+         <?php if(isset($_SESSION['id'])): ?>
+
+         <div class="text-hello">Привет
+            <?php echo $_SESSION['login'];?>!
+         </div>
+         <?php else: ?>
+         <div class="text-hello">Зарегистрируйся :)</div>
+         <?php endif;?>
          <div class="everyday-word-button"><ion-icon name="calendar-number-outline"></ion-icon>Ежедневно</div>
          <div class="tasks-bonus-iq-container">
             <div class="bonus-button"><ion-icon name="gift-outline"></ion-icon></div>

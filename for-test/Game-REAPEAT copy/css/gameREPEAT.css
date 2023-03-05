@@ -446,7 +446,7 @@ height: 40px;
    justify-content: center;
    align-items: center;
    flex-wrap: wrap;
-   width: 80%;
+   max-width: 330px;
    height: 40%;
    gap: 15px;
 }
