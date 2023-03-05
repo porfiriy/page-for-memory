@@ -35,6 +35,7 @@ font-size: 14px;
 -moz-text-size-adjust: 100%;
 -webkit-text-size-adjust: 100%;
 font-family: 'Balsamiq Sans';
+background: linear-gradient(180deg, #213242 10%, #4D0614 85.15%);
 }
 input,
 button,
@@ -73,16 +74,12 @@ h6 {
 font-size: inherit;
 font-weight: 400;
 }
-
-body {
-	background: linear-gradient(180deg, #213242 10%, #4D0614 85.15%);
-}
 header {
 display: flex;
 width: 100%;
 align-items: center;
 justify-content: space-between;
-margin: 10px 0 100px 0;
+margin: 0 0 100px 0;
 font-size: 32px;
 color: #05EFD4;
 }
@@ -106,7 +103,12 @@ transform: scale(0.5);
 	align-items: center;
 	justify-content: center;
 	margin: 0% auto;
-	background-color: #213242; ;
+	background: rgba( 33, 50, 66, 0.25 );
+	box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+	backdrop-filter: blur( 5px );
+	-webkit-backdrop-filter: blur( 5px );
+	border-radius: 10px;
+	border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 .profile_first{
 display: flex;
@@ -166,6 +168,9 @@ border-radius: 13px;
 	justify-content: center;
 	width: 80px;
 }
+.count{
+	color: #fec727;
+}
 .statistics{
 font-size: 26px;
 color: #05EFD4;
@@ -178,4 +183,12 @@ margin: 0% auto;
 	border-radius: 10px;
 	margin: 10%;
 	padding: 10px;
+}
+.statistic-page{
+	display: block;
+	border: 2px solid #05EFD4;  
+	border-radius: 10px;
+	margin: 10%;
+	padding: 10px;
+	color: #05EFD4; 
 }

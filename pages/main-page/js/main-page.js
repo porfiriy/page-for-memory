@@ -67,7 +67,7 @@ itemAchievmentsNavigation.onclick = function () { //при нажатии на �
   audioSwap.play();
 }
 //поворот нижней кнопки Достижений
-let arrows = document.getElementsByClassName("scroll");
+/*let arrows = document.getElementsByClassName("scroll");
 for (let i = 0; i < arrows.length; i++) {
   arrows[i].addEventListener("click", function (event) {
     if (this.style.transform == "")
@@ -75,7 +75,7 @@ for (let i = 0; i < arrows.length; i++) {
     else
       this.style.transform = "";
   });
-}
+}*/
 //Скрипт на скролл у ачивок
 AchievmentsScrollButton.onclick = function scrollToDown() {
   document.getElementById('achievments-container').scrollTo(9999, 9999);

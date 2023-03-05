@@ -97,9 +97,10 @@ header {
 	line-height: 24px;
 	align-items: center;
 	text-align: center;
+	transition: 0.2s;
  }
 .skip-button:active{
-    transform: scale(0.5);
+    transform: scale(0.8);
 }
 .container .form{
 	display: flex;
@@ -188,6 +189,11 @@ outline: none;
 	5px 5px 15px rgba(0,0,0,0.35),
 	inset -5px -5px 15px rgba(255,255,255,0.1),
 	inset 5px 5px 15px rgba(0,0,0,0.35);
+	transition: 0.3s;
+}
+.container .form .inputBox input:active{
+	transform: scale(0.95);
+	box-shadow: inset 2px 3px 3px rgb(255 255 255 / 25%), 0px 0px 20px 0px rgb(29, 136, 148);
 }
 .container .form p{
 	color: rgba(255,255,255,0.5);
