@@ -537,31 +537,7 @@
  .item-games:active{
 	transform: scale(0.5);
  }
- .item-games-in-dev{ 
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-	width: 100px;
-	height: 100px;
-	background: rgba(82, 82, 82, 0.74);
-	border: 4px solid #9c9c9c;
-	border-radius: 18px;
-	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-	filter: blur(1px);
- }
- .item-games-in-dev:hover{
-	-webkit-box-shadow: 0px 0px 20px 10px rgba(255, 255, 255, 0.30);
-	-moz-box-shadow: 0px 0px 20px 10px rgba(255, 255, 255, 0.30);
-	box-shadow: 0px 0px 20px 1px rgba(255, 255, 255, 0.30);
-	transition: 0.6s;
- }
- .in-dev{ 
-	display: flex;
-	text-align: center;
-	align-items: center;
-	justify-content: center;
- }
+
  .img-colors{
 	font-size: 54px;
 	color: #000;
@@ -569,8 +545,8 @@
  .random-game-button{
 	width: 85%;
 	height: 60px;
-	background: linear-gradient(150.29deg, #FEC727 24.95%, #0D0ECB 62.12%);
-	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background: linear-gradient(225deg, rgba(169, 0, 228, 0.74) 0%, rgba(0, 23, 225, 0.74) 100%);
+    box-shadow: inset 2px 3px 3px rgb(255 255 255 / 25%);
 	border-radius: 10px;
 	font-family: 'Balsamiq Sans';
 	font-style: normal;
@@ -580,10 +556,12 @@
 	display: flex;
 	align-items: center;
 	text-align: center;
+	justify-content: center;
 	letter-spacing: 0.08em;
 	margin: 20px auto;
-	color: #000000;
+	color: #ffffff;
 	border: 3px solid black;
+	border: 2px solid #05EFD4;
  }
  .random-game-button:active{
 	transform: scale(0.5);
@@ -1071,12 +1049,42 @@ text-decoration: none;
   }
   .in_dev{
 	 background-color: rgb(43,43,43);
- filter: blur(2px);
+	 filter: blur(3px);
   }
   .in_dev_text{
+	font-size: 14px;
 	 position: absolute;
 	 color: #05EFD4;
 	 margin: -60px 6px;
-	 text-decoration: underline;
   }
-  
+  .in_dev_text:hover{
+	text-decoration: underline;
+  }
+  .item-games-in-dev{ 
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	width: 100px;
+	height: 100px;
+    background: rgb(61, 61, 61);
+	border: 4px solid #9c9c9c;
+	border-radius: 18px;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	font-size: 60px;
+ }
+ .item-games-in-dev:hover{
+	-webkit-box-shadow: 0px 0px 20px 10px rgba(255, 255, 255, 0.30);
+	-moz-box-shadow: 0px 0px 20px 10px rgba(255, 255, 255, 0.30);
+	box-shadow: 0px 0px 20px 1px rgba(255, 255, 255, 0.30);
+	transition: 0.6s;
+ }
+ .in-dev_text{
+    left: 40px;
+	bottom: 222px; 
+	font-size: 14px; 
+	 color: #05EFD4;
+  }
+  .in-dev_text:hover{
+	text-decoration: underline;
+  }
