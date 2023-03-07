@@ -94,6 +94,12 @@ transition: 0.1s;
 .comeback-button:active{
 transform: scale(0.80);
 }
+.page-name{
+transition: 0.4s;
+}
+.page-name:hover{
+	text-shadow: 0 0 10px #05efd4;
+}
 .settings{
 	transition: 0.1s;
 }
