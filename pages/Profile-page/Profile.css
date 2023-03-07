@@ -75,6 +75,7 @@ font-size: inherit;
 font-weight: 400;
 }
 header {
+	padding: 12px;
 display: flex;
 width: 100%;
 align-items: center;
@@ -88,17 +89,21 @@ color: #05EFD4;
 font-size: 44px;
 -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 -webkit-tap-highlight-color: transparent;
+transition: 0.1s;
 }
 .comeback-button:active{
-transform: scale(0.5);
+transform: scale(0.80);
+}
+.settings{
+	transition: 0.1s;
 }
 .settings:active{
-	transform: scale(0.5);
+	transform: scale(0.80);
 }
 .profile-container{
 	border: 3px solid  #05EFD4;
 	border-radius: 25px;
-	width: 80%;
+	width: 90%;
 	text-align: center;
 	align-items: center;
 	justify-content: center;
@@ -123,6 +128,10 @@ margin: 10% auto;
 border: 3px solid #05EFD4;
 border-radius: 13px;
 }
+.profile-name{
+    text-shadow: 0 0 10px #05efd4;
+    text-decoration: underline;
+}
 .currency{
 	display: flex;  
 	justify-content: space-around;  
@@ -132,41 +141,19 @@ border-radius: 13px;
 	align-items: center;
 	margin: 20% auto;
 }
-.eye-icon{
-	color: #fec727;
-}
-.memoney{
+.currencies{
 	display: flex;
+	width: 95px;
 	border: 2px solid #05EFD4;  
 	border-radius: 10px;
 	padding: 5px;
 	height: 40px;
 	text-align: center;
 	align-items: center;
-	justify-content: center;
-	width: 80px;
+	justify-content: space-between;
 }
-.iq{
-	display: flex;
-	border: 2px solid #05EFD4;  
-	border-radius: 10px;
-	padding: 5px;
-	height: 40px;
-	text-align: center;
-	align-items: center;
-	justify-content: center;
-	width: 80px;
-}
-.hints{
-	display: flex;
-	border: 2px solid #05EFD4;  
-	border-radius: 10px;
-	padding: 5px;
-	height: 40px;
-	text-align: center;
-	align-items: center;
-	justify-content: center;
-	width: 80px;
+.money-pct{
+	width: 25px;
 }
 .count{
 	color: #fec727;
@@ -183,6 +170,7 @@ margin: 0% auto;
 	border-radius: 10px;
 	margin: 10%;
 	padding: 10px;
+	transition: 0.4s;
 }
 .statistic-page{
 	display: block;
@@ -191,4 +179,11 @@ margin: 0% auto;
 	margin: 10%;
 	padding: 10px;
 	color: #05EFD4; 
+	transition: 0.4s;
+}
+.button:active{
+transform: scale(0.9);
+box-shadow: 0px -1px 20px 0px rgb(0 211 255), 0px 2px 4px 1px rgb(0 255 26 / 70%);
+background-color: #05EFD4;
+color: #000000;
 }
