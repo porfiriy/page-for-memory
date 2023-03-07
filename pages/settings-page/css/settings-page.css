@@ -343,3 +343,10 @@ justify-content: center;
 	color: #000000;
 	transition: 0.4s;
   }
+  .in-dev:hover{
+	transition: 0.4s;
+	border-radius: 10px;
+	color: #ffffff;
+	background-color: #000000;
+	opacity: 0.2;
+  }
