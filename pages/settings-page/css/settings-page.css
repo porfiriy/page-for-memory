@@ -259,6 +259,7 @@ body {
 	transform:translate(-50%, -50%);
 	padding: 5px;
     line-height: 125%;
+	overflow: scroll;
   }
   .close-about-us{
 	display: flex;
