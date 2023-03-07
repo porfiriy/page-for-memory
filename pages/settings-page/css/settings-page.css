@@ -142,12 +142,23 @@ body {
    border-radius: 10px;
    box-shadow: 0px -1px 20px 0px rgb(255 255 255 / 25%), 0px 2px 4px 1px rgb(0 0 0 / 45%);
    color: #FFFFFF;
+   transition: 0.4s;
 }
 .main-item:active{
-   transform: scale(0.5);
+   transform: scale(0.9);
+   box-shadow: 0px -1px 20px 0px rgb(0 211 255), 0px 2px 4px 1px rgb(0 255 26 / 70%);
+   background-color: #05EFD4;
+   color: #000000;
 }
 .sign-in {
 	color: rgb(160, 40, 207);
+	transition: 0.4s;
+}
+.sign-in:active{
+    transform: scale(0.9);
+    box-shadow: 0px -1px 20px 0px rgb(0 211 255), 0px 2px 4px 1px rgb(0 255 26 / 70%);
+    background-color: #05EFD4;
+    color: #000000;
 }
 .gamepad {
 	width: 45px;
@@ -172,9 +183,9 @@ body {
 	margin: 0 auto;
 	height: 15%;
 	width: 170px;
-	background-color:#d66d0b;
+	background-color:#0c4e74;
 	z-index: 3;
-	border: 4px solid #FEC727;
+	border: 4px solid #05EFD4;
 	border-radius: 15px;
 }
 .footer {
@@ -186,7 +197,7 @@ body {
    font-family: 'Balsamiq Sans', cursive;
    margin: 20px;
    font-size: 24px;
-   color: #ffffff;
+   color: #05EFD4;
 }
 .donate-text{
    margin: 10px;
@@ -212,13 +223,69 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background-color: #FEC727;
+	background-color: #05EFD4;
 	border-radius: 35%;
 	color: red;
   }
   .Porfiriy{
 	margin: 15%;
+	color: #05EFD4;
+  }
+  .Porfiriy-text{
+	color: #05EFD4;
   }
   .Aleksey{
 	margin: 15%;
+  }
+  .Aleksey-text{
+	color: #05EFD4;
+  }
+  .about-us-container{
+	display: none;
+	flex-direction: column;
+	justify-content: space-between;
+	font-size: 16px;
+	font-family: 'Balsamiq Sans', cursive;
+	position: absolute;
+	background-color:#0c4e74;
+	z-index: 3;
+	border: 4px solid #05EFD4;
+	border-radius: 15px;
+	width: 300px;
+	height: 320px;
+	color: #05EFD4;
+	top:50%;
+	left:50%;
+	transform:translate(-50%, -50%);
+	padding: 5px;
+    line-height: 125%;
+  }
+  .close-about-us{
+	display: flex;
+	justify-content: center;
+	border: 3px solid #05EFD4;
+	border-radius: 10px;
+    box-shadow: 0px -1px 4px rgb(0 255 5 / 30%), 0px 3px 0px rgb(0 241 255 / 25%);
+	color: red;
+	font-size: 26px;
+  }
+  .close-about-us:active{ 
+    transform: scale(0.95);
+	box-shadow: 0px -1px 20px 0px rgb(0 211 255), 0px 2px 4px 1px rgb(0 255 26 / 70%);
+	background-color: #05EFD4;
+	color: #000000;
+	transition: 0.4s;
+  }
+  .lasttxt{ 
+	display: flex;
+justify-content: center;
+  }
+  .text-about-us{
+	transition: 0.2s;
+  }
+  .text-about-us:hover{
+	color: #ffffff;
+	background-color: #000000;
+	border: 23px solid #000000;
+	overflow: scroll;
   }
