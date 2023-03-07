@@ -32,6 +32,9 @@ const everydayNewWordCloseButton = document.querySelector('.everyday_new-word-cl
 const dayHistoryButton = document.querySelector('.day_history');
 const newWordButton = document.querySelector('.new_word');
 const AchievmentsScrollButton = document.querySelector('.scroll');
+const InfoForTasks = document.querySelector('.info-button-body');
+const InfoTasksButton = document.querySelector('.word-day-info-button');
+const CloseInfoForTasks = document.querySelector('.close-every-day-tasks-info');
 function activeLink() {
   list.forEach((item) =>
     item.classList.remove('active'));
@@ -112,6 +115,15 @@ everydayTasksCloseButton.onclick = function () {
   wordDayContainer.style = 'display: none;';
   audioClick.play();
 }
+InfoTasksButton.onclick = function () {
+	InfoForTasks.style = 'display: flex; z-index:6;';
+	containerGrayBackground.style = 'display: block; z-index:5;';
+}
+CloseInfoForTasks.onclick = function () {
+	InfoForTasks.style = 'display: none;';
+	containerGrayBackground.style = 'display: block; z-index: 3;';
+	audioClick.play();
+  }
 wordDayCloseButton.onclick = function () {
   containerGrayBackground.style = 'display: none;';
   wordDayContainer.style = 'display: none;';
