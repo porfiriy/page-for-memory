@@ -369,6 +369,7 @@ border: 5px solid #05EFD4;
 padding: 8px;
 border-radius: 10px;
 width: 200px;
+height: 114px;
 margin: 50px auto;
  }
  .flags-body-img{
@@ -389,7 +390,7 @@ justify-content: space-around;
 text-align: center;
  }
  .country-button{
-font-size: 22px;
+font-size: 18px;
 min-width: 40%;
 border: 2px solid #05EFD4;
 border-radius: 10px;
