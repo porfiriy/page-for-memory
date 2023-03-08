@@ -33,8 +33,11 @@ const dayHistoryButton = document.querySelector('.day_history');
 const newWordButton = document.querySelector('.new_word');
 const AchievmentsScrollButton = document.querySelector('.scroll');
 const InfoForTasks = document.querySelector('.info-button-body');
-const InfoTasksButton = document.querySelector('.word-day-info-button');
+const InfoWordDayButton = document.querySelector('.word-day-info-button');
+const InfoTasksButton = document.querySelector('.tasks-info-button');
 const CloseInfoForTasks = document.querySelector('.close-every-day-tasks-info');
+const EverydayInfoButton = document.querySelector('.everyday-info-button-body');
+const CloseInfoForEverydayWords = document.querySelector('.close-everyday-info-button-body');
 function activeLink() {
   list.forEach((item) =>
     item.classList.remove('active'));
@@ -104,36 +107,47 @@ itemAnalyticNavigation.onclick = function () {
   containerStorePage.style = 'display: none;';
   audioSwap.play();
 }
-everydayTasksButton.onclick = function () { //при нажатии на кнопку ежедневки
+everydayTasksButton.onclick = function () { //при нажатии на кнопку ежедневных заданий
   containerEverydayTasks.style = 'display: block;';
   containerGrayBackground.style = 'display: block;';
   audioClick.play();
 }
-everydayTasksCloseButton.onclick = function () {
+everydayTasksCloseButton.onclick = function () { //при закрытии ежедневных заданий
   containerEverydayTasks.style = 'display: none;';
   containerGrayBackground.style = 'display: none;';
   wordDayContainer.style = 'display: none;';
   audioClick.play();
 }
-InfoTasksButton.onclick = function () {
+InfoTasksButton.onclick = function () { //при нажатии на кнопку инфы ежедневных заданий
 	InfoForTasks.style = 'display: flex; z-index:6;';
 	containerGrayBackground.style = 'display: block; z-index:5;';
 }
-CloseInfoForTasks.onclick = function () {
+CloseInfoForTasks.onclick = function () { //при закрытии инфы ежедневных заданий
 	InfoForTasks.style = 'display: none;';
 	containerGrayBackground.style = 'display: block; z-index: 3;';
 	audioClick.play();
-  }
-wordDayCloseButton.onclick = function () {
-  containerGrayBackground.style = 'display: none;';
-  wordDayContainer.style = 'display: none;';
-  audioClick.play();
 }
-wordDayButton.onclick = function () {
+wordDayButton.onclick = function () { //при нажатии на кнопку ежедневных фактов
   wordDayContainer.style = 'display: block;';
   containerGrayBackground.style = 'display: block;';
   audioClick.play();
 }
+wordDayCloseButton.onclick = function () { //при закрытии ежедневных фактов
+	containerGrayBackground.style = 'display: none;';
+	wordDayContainer.style = 'display: none;';
+	audioClick.play();
+  }
+InfoWordDayButton.onclick = function () { //при нажатии на кнопку инфы ежедневных фактов
+	EverydayInfoButton.style = 'display: flex; z-index:6;';
+	containerGrayBackground.style = 'display: block; z-index:5;';
+	audioClick.play();
+  }
+CloseInfoForEverydayWords.onclick = function () { //при закрытии инфы ежедневных фактов
+	EverydayInfoButton.style = 'display: none;';
+	containerGrayBackground.style = 'display: block; z-index: 3;';
+	audioClick.play();
+  }
+
 settingsButton.onclick = function () {
   audioClick.play();
 }
