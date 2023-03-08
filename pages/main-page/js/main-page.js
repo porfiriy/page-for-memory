@@ -138,8 +138,8 @@ wordDayCloseButton.onclick = function () { //при закрытии ежедн�
 	audioClick.play();
   }
 InfoWordDayButton.onclick = function () { //при нажатии на кнопку инфы ежедневных фактов
-	EverydayInfoButton.style = 'display: flex; z-index:6;';
-	containerGrayBackground.style = 'display: block; z-index:5;';
+	EverydayInfoButton.style = 'display: flex; z-index:5;';
+	containerGrayBackground.style = 'display: block; z-index:4;';
 	audioClick.play();
   }
 CloseInfoForEverydayWords.onclick = function () { //при закрытии инфы ежедневных фактов
