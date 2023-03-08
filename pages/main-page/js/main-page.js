@@ -38,6 +38,9 @@ const InfoTasksButton = document.querySelector('.tasks-info-button');
 const CloseInfoForTasks = document.querySelector('.close-every-day-tasks-info');
 const EverydayInfoButton = document.querySelector('.everyday-info-button-body');
 const CloseInfoForEverydayWords = document.querySelector('.close-everyday-info-button-body');
+const AllLevelsButton = document.querySelector('.player-level');
+const AllLevels = document.querySelector('.all-lvls-container');
+const CloseAllLevels = document.querySelector('.close-levels-container');
 function activeLink() {
   list.forEach((item) =>
     item.classList.remove('active'));
@@ -89,6 +92,14 @@ AchievmentsScrollButton.onclick = function scrollToDown() {
 AchievmentsScrollButton.onclick = function scrollToTop() {
   document.getElementById('achievments-container').scrollTo(0, 0);
 };
+//Уровни
+AllLevelsButton.onclick = function () { // Открыть уровни
+  AllLevels.style = 'display: flex;';
+}
+CloseAllLevels.onclick = function () { //Закрыть уровни
+	AllLevels.style = 'display: none;';
+}
+
 
 //Магазин
 itemStoreNavigation.onclick = function () { //при нажатии на кнопку Store
