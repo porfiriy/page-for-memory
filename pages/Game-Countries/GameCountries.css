@@ -76,7 +76,7 @@
  html,body {
     width: 100%;
     height: 100%;
-	background: linear-gradient(174.76deg, #0400BE 6.65%, #4D0614 69.15%);
+	background: #213242;
 	font-family: 'Balsamiq Sans';
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 	-webkit-tap-highlight-color: transparent;
@@ -275,7 +275,7 @@
 	text-shadow: 0px -1px 5px rgba(255, 255, 255, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
  header{
-	margin: 0 0 10% auto;
+	margin: 0 0 50px auto;
  }
  .topButton-gameWords {
 	display: flex;
@@ -291,7 +291,7 @@
 	width: 40px;
 	height: 40px;
 	font-size: 44px;
-	color: #FEC727;
+	color: #05EFD4;
 	z-index: 2;
  }
  .comeback-button-body:active{
@@ -302,7 +302,7 @@
 	align-items: center;
 	justify-content: center;
 	font-size: 34px;
-	color: #FEC727;
+	color: #05EFD4;
  }
  .linkToTheSettings:active{
 	transform: scale(0.5);
@@ -313,8 +313,8 @@
 	justify-content: center;
 	font-size: 34px;
 	font-weight: 900;
-	color: #FEC727;
-	margin: 5px 10px 0 0;
+	color: #05EFD4;
+	margin: 0px 5px 0 0;
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 	-webkit-tap-highlight-color: transparent;
  }
@@ -324,8 +324,8 @@
  .answers{
 	display: flex;
 	justify-content: space-between;
-	width: 90%;
-	margin: 10% auto;
+	width: 80%;
+	margin: 50px auto;
  }
  .correct{
 display: flex;
@@ -333,7 +333,7 @@ text-align: center;
 align-items: center;
 justify-content: center;
 color: rgb(0, 255, 0);
-border: 2px solid #FEC727;
+border: 2px solid #05EFD4;
 border-radius: 10px;
 font-size: 40px;
 width: 30%;
@@ -345,7 +345,7 @@ text-align: center;
 align-items: center;
 justify-content: center;
 color: rgb(255, 0, 0);
-border: 2px solid #FEC727;
+border: 2px solid #05EFD4;
 border-radius: 10px;
 font-size: 40px;
 width: 30%;
@@ -365,12 +365,12 @@ font-size: 30px;
 display: flex;
 align-items: center;
 justify-content: center;
-border: 5px solid #FEC727;
+border: 5px solid #05EFD4;
 padding: 2%;
 border-radius: 10px;
 width: 200px;
 height: 150px;
-margin: 10% auto;
+margin: 80px auto;
  }
  .flags-body-img{
 	width: 95%;
@@ -382,30 +382,34 @@ height: 100%;
  }
  .country-answers-container{
 width: 100%;
-color: #FEC727;
+color: #05EFD4;
 display: flex;
 flex-wrap: wrap;
 align-items: center;
 justify-content: space-around;
 text-align: center;
-margin: 30% auto;
+margin: 100px auto;
  }
  .country-button{
-font-size: 24px;
-width: 40%;
-border: 2px solid #FEC727;
+font-size: 22px;
+min-width: 40%;
+border: 2px solid #05EFD4;
 border-radius: 10px;
-margin: 4% auto;
+margin: 20px auto;
 padding: 10px;
+transition: 0.2s;
  }
- .country:active{
-	transform: scale(0.5);
+ .country-button:active{
+    transform: scale(0.8);
+    background-color: #05EFD4;
+    color: #000000;
+    box-shadow: 0 0 10px 0px #05efd4;
  } 
  .button-hardMode-container{
 	display: none;
 	flex-wrap: wrap;
 	width: 100%;
-	color: #FEC727;
+	color: #05EFD4;
 	align-items: center;
 	justify-content: space-around;
 	text-align: center;
@@ -435,7 +439,7 @@ padding: 10px;
 .deadLineWrapper{
    margin: 10px auto;
    height: 24px;
-   width: 300px;
+   width: 70%;
    background-color: #383DA6;
    border-radius: 6px;
 }
@@ -446,7 +450,7 @@ padding: 10px;
    bottom: 0px;
    left: 0;
    height: 24px;
-   width: 296px;
+   width: 100%;
    background-color: #05EFD4;
 }
 
