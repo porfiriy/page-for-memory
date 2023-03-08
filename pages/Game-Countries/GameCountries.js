@@ -59,6 +59,8 @@ let menuResultsTimer = document.querySelector(".box-informations-orange__time");
 
 let ModeTimeAnim;
 let randomNumberBtn;
+let arrAlredyExistNumbrs = [];
+let conditionPress = false;//при нажатии на кнопку будет true
 let countRightBody = document.querySelector(".count-right");
 let countWrongBody = document.querySelector(".count-wrong");
 let hardModeButtonsContainer = document.querySelector('.button-hardMode-container');
@@ -96,7 +98,7 @@ easyModeButton.onclick = function () {//при нажатии на изи кно
    modeOptionsContainer.style = 'display: none;';
    gameMode.innerHTML = 'Легко';
    gameMode.classList.add('game-mode-style-easy');
-   ModeTimeAnim = '25';
+   ModeTimeAnim = '30';
    startButtonContainer.style = 'display: block;'
    startButtonGameMode.innerHTML = 'Легко';
    startButtonGameMode.classList.add('start-menu__easy-game-mode');
@@ -110,7 +112,7 @@ normalModeButton.onclick = function () {
    modeOptionsContainer.style = 'display: none;';
    gameMode.innerHTML = 'Нормально';
    gameMode.classList.add('game-mode-style-normal');
-   ModeTimeAnim = '20';
+   ModeTimeAnim = '25';
    startButtonContainer.style = 'display: block;'
    startButtonGameMode.innerHTML = 'Нормально';
    startButtonGameMode.classList.add('start-menu__normal-game-mode');
@@ -124,7 +126,7 @@ hardModeButton.onclick = function () {
    modeOptionsContainer.style = 'display: none;';
    gameMode.innerHTML = 'Сложно';
    gameMode.classList.add('game-mode-style-hard');
-   ModeTimeAnim = '15';
+   ModeTimeAnim = '22';
    startButtonContainer.style = 'display: block;'
    startButtonGameMode.innerHTML = 'Сложно';
    startButtonGameMode.classList.add('start-menu__hard-game-mode');
@@ -139,7 +141,7 @@ crazyModeButton.onclick = function () {
    modeOptionsContainer.style = 'display: none;';
    gameMode.innerHTML = 'Безумно';
    gameMode.classList.add('game-mode-style-crazy');
-   ModeTimeAnim = '10';
+   ModeTimeAnim = '20';
    startButtonContainer.style = 'display: block;'
    startButtonGameMode.innerHTML = 'Безумно';
    startButtonGameMode.classList.add('start-menu__crazy-game-mode');
@@ -154,17 +156,52 @@ victoryLooseScreenResultsButton.onclick = function () {
    resultsMenuContainer.style = 'display:block;'
 }
 button1.onclick = function () {
-   checkPressButton();
+   conditionPress = true;
+   checkPressButton(button1);
+
+}
+button2.onclick = function () {
+   conditionPress = true;
+   checkPressButton(button2);
+}
+button3.onclick = function () {
+   conditionPress = true;
+   checkPressButton(button3);
+}
+button4.onclick = function () {
+   conditionPress = true;
+   checkPressButton(button4);
+}
+button5.onclick = function () {
+   conditionPress = true;
+   checkPressButton(button5);
+}
+button6.onclick = function () {
+   conditionPress = true;
+   checkPressButton(button6);
 }
 
-function checkPressButton() {
-   if (arrButtons[randomNumberBtn] == button1) {
-      rightAnswer = + 1;
+function checkPressButton(numberButton) {
+   if (arrButtons[randomNumberBtn] == numberButton) {
+      rightAnswer += 1;
       countRightBody.innerHTML = rightAnswer;
+      if (wrongAnswer > 0 && rightAnswer + wrongAnswer == 10) {
+         showLooseMessage();
+      }
+      if (rightAnswer == 10) {
+         showWinMessage();
+      }
    } else {
-      wrongAnswer = + 1;
+      wrongAnswer += 1;
       countWrongBody.innerHTML = wrongAnswer;
+      if (wrongAnswer > 0 && rightAnswer + wrongAnswer == 10) {
+         showLooseMessage();
+      }
+      if (rightAnswer == 10) {
+         showLooseMessage();
+      }
    }
+   showFlags();
 }
 
 function randomLoopForArr() {
@@ -179,21 +216,65 @@ function randomLoopForArr() {
       m[r] = (l in m) ? m[l] : l;
    }
    console.log(arrayRandomNumbers);
+
 }
 
-function showFlags() {
-   for (let i = 0; i < 10; i++) {//цикл с изменениями флагов по итерации 
-      flagsBody.innerHTML = `<img class="img-country" src="${arrCounrysImgEasy[arrayRandomNumbers[i]]}">`;//добавляет флаг в html
-      randomNumberBtn = Math.floor(Math.random() * numbrButtnsForMode);//рандомная кнопка с правильным ответом
-      let iterCount = 1;// нужно чтобы с каждой итерац менялся индекс массива
-      for (let k = 0; k <= numbrButtnsForMode; k++) {
-         arrButtons[k].innerHTML = arrCounrysTextEasy[arrayRandomNumbers[iterCount]];
-         iterCount++;
-      }
-      arrButtons[randomNumberBtn].innerHTML = arrCounrysTextEasy[arrayRandomNumbers[i]];//вставляет правильный ответ текст в кнопку
-      break;
-   }
+//анимация проигриша 
+function showLooseMessage() {
+   deadeLine.style = "animation-play-state: paused ";
+   victoryLooseScreenContainer.style = 'display:flex;';
+   victoryLooseScreenWinLooseText.innerHTML = 'Поражение!'
+   victoryLooseScreenWinLooseText.classList.add('loose-text-red');
+   resultsMenuWinLooseItem.innerHTML = 'Поражение!';
+   resultsMenuWinLooseItem.classList.add('items-container__win-loose-item-red');
+   resultsMenuWinLooseIcon.innerHTML = '<ion-icon name="thumbs-down-outline"></ion-icon>';
+   resultsMenuOpenedCardsItem.innerHTML = `${rightAnswer}`;
+   resultsMenuDoneCardsItem.classList.add('items-container__done-cards-item-red');
+   resultsMenuTimeItem.classList.add('items-container__time-item-red');
 }
+function showWinMessage() {
+   deadeLine.style = "animation-play-state: paused ";
+   victoryLooseScreenContainer.style = 'display:flex;';
+   victoryLooseScreenWinLooseText.innerHTML = 'Победа!'
+   victoryLooseScreenWinLooseText.classList.add('victory-text-green');
+   resultsMenuWinLooseItem.innerHTML = 'Победа!'
+   resultsMenuWinLooseItem.classList.add('items-container__win-loose-item-green');
+   resultsMenuWinLooseIcon.innerHTML = '<ion-icon name="thumbs-up-outline"></ion-icon>';
+   resultsMenuOpenedCardsItem.innerHTML = '20';
+   resultsMenuDoneCardsItem.classList.add('items-container__done-cards-item-green');
+   resultsMenuTimeItem.classList.add('items-container__time-item-green');
+   resultsMenuIqItem.innerHTML = '+50';
+   resultsMenuExpItem.innerHTML = '+20';
+}
+deadeLine.addEventListener("animationend", showLooseMessage);
+
+function showFlags() {
+   if (conditionPress == true) {
+      arrayRandomNumbers = [];
+      randomLoopForArr();
+      for (let i = 0; i < arrAlredyExistNumbrs.length; i++) {
+         if (arrayRandomNumbers[0] == arrAlredyExistNumbrs[i]) {
+            arrayRandomNumbers = [];
+            randomLoopForArr();
+            console.log('уже есть ,нужен новый');
+         }
+      }
+      conditionPress = false;
+   }
+
+   flagsBody.innerHTML = `<img class="img-country" src="${arrCounrysImgEasy[arrayRandomNumbers[0]]}">`;//добавляет флаг в html
+   arrAlredyExistNumbrs.push(arrayRandomNumbers[0]);
+   randomNumberBtn = Math.floor(Math.random() * numbrButtnsForMode);//рандомная кнопка с правильным ответом
+   console.log(randomNumberBtn);
+   let iterCount = 1;// нужно чтобы с каждой итерац менялся индекс массива
+   for (let k = 0; k <= numbrButtnsForMode; k++) {
+      arrButtons[k].innerHTML = arrCounrysTextEasy[arrayRandomNumbers[iterCount]];
+      iterCount++;
+   }
+   arrButtons[randomNumberBtn].innerHTML = arrCounrysTextEasy[arrayRandomNumbers[0]];//вставляет правильный ответ текст в кнопку
+
+}
+
 
 
 
@@ -201,8 +282,6 @@ function showFlags() {
 function game() {
    randomLoopForArr();
    showFlags();
-
-
    deadeLine.style = `animation: deadeLine ${ModeTimeAnim}s linear `;//запуск анимации,c переменной под каждый мод игы
 }
 
