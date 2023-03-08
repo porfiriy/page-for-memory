@@ -247,8 +247,8 @@ color: #05EFD4;
 	transition: 0.1s;
  }
  .everyday-word-button:active{
-    transform: scale(0.85);
-	box-shadow: inset 2px 3px 3px rgb(255 255 255 / 25%), 0px 0px 8px 0px rgb(0 218 255);
+    transform: scale(0.95);
+	box-shadow: inset 2px 3px 3px rgb(255 255 255 / 25%), 0px 0px 20px -4px rgb(0 218 255);
  }
  .everyday_body{
 	 width: 100%;
@@ -334,12 +334,19 @@ color: #05EFD4;
 	font-size: 40px;
 	border: 1px solid #05EFD4;
 	color: #05EFD4;
+	transition: 0.2s;
  }
  .bonus-button:active{
-	transform: scale(0.6);
+	transform: scale(0.8);
+    box-shadow: 0px 0px 20px 2px rgb(10 242 255 / 25%);
+	color: #213242;
+	background-color: #05EFD4;
  }
  .everyday-tasks-button:active{
-	transform: scale(0.6);
+	transform: scale(0.8);
+    box-shadow: 0px 0px 20px 2px rgb(10 242 255 / 25%);
+	color: #213242;
+	background-color: #05EFD4;
  }
  .everyday-tasks-button {
 	display: flex;
@@ -353,6 +360,7 @@ color: #05EFD4;
 	border-radius: 50%;
 	font-size: 40px;
 	color: #05EFD4;
+	transition: 0.2s;
  }
  .info-button-body{
 	display: none;
@@ -835,9 +843,11 @@ color: #05EFD4;
 	font-weight: 900;
 	font-size: 47px;
 	margin: 10px;
+	transition: 0.1s;
   }
   .close-window:active{
-	transform: scale(0.5);
+    transform: scale(0.80);
+    box-shadow: 0px 0px 10px -2px #00f6ff;
   }
    .day-word-container{
 	font-family: 'Balsamiq Sans', cursive;
@@ -937,9 +947,11 @@ color: #05EFD4;
 	font-size: 47px;
 	margin: 10px;
 	color: #FFFFFF;
+	transition: 0.1s;
  }
  .info-button:active{
-	transform: scale(0.5);
+    transform: scale(0.80);
+    box-shadow: 0px 0px 10px -2px #00f6ff;
  }
  
  
