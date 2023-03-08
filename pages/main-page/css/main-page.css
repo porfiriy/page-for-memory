@@ -365,9 +365,10 @@ color: #05EFD4;
 	transform:translate(-50%, -50%);
 	padding: 10px;
 	background-color: #213242;
-	color: #05EFD4;
+	color: #ffffff;
 	line-height: 130%;
 	font-size: 18px;
+	width: 250px;
  }
  .close-every-day-tasks-info{
 	display: flex;
@@ -416,9 +417,10 @@ color: #05EFD4;
 	transform:translate(-50%, -50%);
 	padding: 10px;
 	background-color: #213242;
-	color: #05EFD4;
+	color: #ffffff;
 	line-height: 130%;
 	font-size: 18px;
+	width: 250px;
  }
  .close-everyday-info-button-body{
 	display: flex;
