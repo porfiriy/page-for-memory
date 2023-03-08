@@ -215,6 +215,82 @@ color: #05EFD4;
 	font-weight: 800;
 	color: #05efd4;
  }
+ .all-lvls-container{
+	display: none;
+	flex-direction: column;
+	position: absolute;
+	text-align: center;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	color: #05EFD4;
+	font-size: 18px;
+	background: #213242;
+	padding: 10px;
+	border: 2px solid #05EFD4;
+	border-radius: 10px;
+ }
+ .level{
+transition: 0.2s;
+ }
+ .level:hover{
+	background-color: #000;
+	border-radius: 10px;
+ }
+ .close-levels-container{
+	margin: 6px 0 0px 0;
+	border: 2px solid #05EFD4;
+	border-radius: 10px;
+	text-align: center;
+	transition: 0.1s;
+ }
+ .close-levels-container:active{
+	transform: scale(0.95);
+    box-shadow: 0px 0px 20px 2px rgb(10 242 255 / 25%);
+	background-color: #05EFD4;
+	color: #000;
+ }
+    .level-one:hover{
+		background-color: rgb(255, 255, 255);
+		color: rgb(0, 0, 0);
+	}
+	.level-two:hover{
+		background-color: rgb(196, 227, 252);
+		color: rgb(0, 0, 0);
+		}
+	.level-three:hover{
+		background-color: rgb(0, 140, 255);
+		color: rgb(0, 0, 0);
+		}
+	.level-four:hover{
+		background-color: rgb(255, 255, 0);
+		color: rgb(0, 0, 0);
+		}
+	.level-five:hover{
+		background-color: rgb(255, 150, 0);
+		color: rgb(0, 0, 0);
+		}
+	.level-six:hover{
+		background-color: rgb(20, 196, 20);
+		color: rgb(0, 0, 0);
+		}
+	.level-seven:hover{
+		background-color: rgb(0, 0, 255);
+		color: rgb(0, 0, 0);
+		}
+	.level-eight:hover{
+		background-color: rgb(255, 0, 255);
+		color: rgb(0, 0, 0);
+		}
+	.level-nine:hover{
+		background-color: rgb(100, 0, 255);
+		color: rgb(0, 0, 0);
+		}
+	.level-ten:hover{
+		background-color: rgb(255, 0, 0);
+		color: rgb(0, 0, 0);
+		}
+	
  .profile{
 	 width: 45px;
 	 height: 45px;
