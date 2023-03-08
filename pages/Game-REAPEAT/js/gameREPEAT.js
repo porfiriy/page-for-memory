@@ -21,7 +21,6 @@ const resultsMenuTimeItem = document.querySelector('.items-container__time-item'
 const resultsMenuOpenedCardsItem = document.querySelector('.done-levels');
 const resultsMenuDoneCardsItem = document.querySelector('.items-container__done-levels-item');
 const resultsMenuWinLooseIcon = document.querySelector('.items-container__win-loose-icon');
-const resultsMenuTime = document.querySelector('.results-menu__time');
 const resultsMenuIqItem = document.querySelector('.items-container__iq-item');
 const resultsMenuExpItem = document.querySelector('.items-container__exp-item');
 
@@ -34,7 +33,12 @@ let numberButtonFofLvls = 3;//с учетом нуля 3
 let pressButtons = [];
 let ButtonValue = [];
 let rightWrongAnswer;
+let nextLvl = 2;
+let DelLastElemPressBtn = 0;
+let newRandCount = 1;
+let iterationLoopCount = 3;
 let deadeLine = document.querySelector(".deadeLine");
+let arrayRandomNumbers = [];//массив рандобных чисел для блоков без повторения
 
 
 //при нажатии на отмену вспл окна настройки 
@@ -78,17 +82,7 @@ document.querySelector('.linkToTheRestart').onclick = function () {
 game();
 function game() {
 
-   viewCards();
-   //считает время с начала игры
-   let seconds = 0;
-   let minutes = 0;
-   function timerGame() {
-      let timerID = setInterval(function () {
-
-         seconds += 1;
-      }, 1000)
-   }
-
+   showCards();
 
    //линия времени 
    function getId(id) {
@@ -99,15 +93,25 @@ function game() {
       if (rightWrongAnswer == true) {
          console.log('тру говорит');
          for (let i = 0; i < 3; i++) {
-            allButtonsStyle[ButtonValue[i]].style = 'background-color: green;';
+            allButtonsStyle[ButtonValue[i]].style = 'background-color:green;';
+
          }
-         lvlCounter += 1;
+         setInterval(() => {//убирает зелёный цвет через время
+            for (let i = 0; i < 3; i++) {
+               allButtonsStyle[pressButtons[i]].style = 'background-color:#fff;';
+            }
+         }, 1000);
+
+         nextLvl++;
+         deadeLine.style = "animation-play-state: paused ";
+         console.log(ButtonValue)
+
       }
       else {
          console.log('в ответе фолс пишет')
          for (let i = 0; i < 3; i++) {
-            allButtonsStyle[pressButtons[i]].style = 'background-color: red;';
-            showMessageLoose();
+            allButtonsStyle[pressButtons[i]].classList.add('game-buttons-container__button-red');
+            setInterval(showMessageLoose, 1000);
          }
 
 
@@ -115,42 +119,28 @@ function game() {
    }
 
    function startDeadeLine() {
-      deadeLine.style = "animation: deadeLine 7s linear ";
-      timerGame();
+      deadeLine.style = "animation: deadeLine 5s linear ";
    }
 
 
    function checkEcualPressAndValueBttn(arr1, arr2) {//сравнивает массивы 
-      console.log(ButtonValue);
-      console.log(pressButtons);
 
+      if (DelLastElemPressBtn == 2) {
+         pressButtons.pop();
+         console.log('Удалён элем')
+         console.log(pressButtons);
+      }
       rightWrongAnswer = arr1.sort().toString() == arr2.sort().toString();//сортирует массивы и сравнивает
-      // let wrongAnswerId = [];
-      // let rightAnswer;
-      // for (let i = 0; i < arr2.length; i++) {
-      //    if (arr1[i] == arr2[i]) {
-      //       rightAnswer = true;
-      //    } else {
-      //       rightAnswer = false;
-      //       wrongAnswerId = i;
-      //       continue;
-      //    }
-      // }
-      // if (rightAnswer == true) {
-      //    console.log('vse verno');
-      // } else {
-      //    console.log(`oshibka v ${wrongAnswerId}`);
-      // }
-      // console.log(`sort${pressButtons}`);
-      // console.log(`sort${ButtonValue}`)
 
    }
+
    function checkLengthPressButtons() {
       if (pressButtons.length === numberButtonFofLvls) {
-         console.log("3 ecual");
+         DelLastElemPressBtn++;
+         numberButtonFofLvls = 9;
          checkEcualPressAndValueBttn(pressButtons, ButtonValue);
          changesLvlCounter();
-         viewCards();
+         showCards();
       }
    }
 
@@ -159,10 +149,7 @@ function game() {
    for (let elem of allButtonsStyle)//перебирает колекцию по элементам
       elem.onclick = function () {
          checkLengthPressButtons();
-         elem.classList.add('activated');
-         if (elem.classList.contains('activated')) {
-            elem.classList.add('activated-button');
-         }
+         elem.classList.add('activated-button');
       }
 
    //анимация проигриша 
@@ -175,8 +162,6 @@ function game() {
       resultsMenuWinLooseIcon.innerHTML = '<ion-icon name="thumbs-down-outline"></ion-icon>';
       resultsMenuOpenedCardsItem.innerHTML = `${lvlCounter}`;
       resultsMenuDoneCardsItem.classList.add('items-container__done-levels-item-red');
-      resultsMenuTimeItem.classList.add('items-container__time-item-red');
-      resultsMenuTime.innerHTML = `${seconds}`;
    }
    deadeLine.addEventListener("animationend", showMessageLoose);
 
@@ -184,14 +169,12 @@ function game() {
       resultsMenuContainer.style = 'display:block;'
    }
 
-   function viewCards() {
-
+   function showCards() {
       //выдаёт рандомнst кнопки по лвлам //!НУЖНО ОПТИМИЗИРОВАТЬ
       const range = 15;
       const count = 15;      // кол-во требуемых чисел
-
       let m = {};
-      let arrayRandomNumbers = [];//массив рандобных чисел для блоков без повторения
+
       for (let i = 0; i < count; ++i) {
          let r = Math.floor(Math.random() * (range - i));
          arrayRandomNumbers.push(((r in m) ? m[r] : r) + 1);
@@ -212,67 +195,78 @@ function game() {
          });
       }
 
+
       checkLvlCounter();
       function checkLvlCounter() {
-         //Lvl 1
-         if (lvlCounter == 1) {
-            lvlCounterText.innerHTML = '1';
-            for (let i = 0; i < 3; i++) {
+         //Lvl 1 и т.д
+
+         for (; lvlCounter < nextLvl; lvlCounter++) {
+
+
+            lvlCounterText.innerHTML = `${lvlCounter}`;
+            for (let i = 0; i < iterationLoopCount; i++) {
                ButtonValue.push(arrayRandomNumbers[i]);
             }
             //выводит рандомные блоки на экран
-            for (let i = 0; i < 3; i++) {
+            for (let i = 0; i < iterationLoopCount; i++) {
                allButtonsStyle[arrayRandomNumbers[i]].classList.add('activated-button');
             }
 
             setTimeout(() => {//убирает ранд блоки с экрана
-               for (let i = 0; i < 3; i++) {
+               for (let i = 0; i < iterationLoopCount; i++) {
                   allButtonsStyle[arrayRandomNumbers[i]].classList.remove('activated-button');
                }
 
                startDeadeLine();
+               iterationLoopCount += 3;
             }, 3000);
+
+
 
          }
          //lvl 2
-         if (lvlCounter == 2) {
-            lvlCounterText.innerHTML = '2';
-            for (let i = 0; i < 3; i++) {
-               ButtonValue.push(arrayRandomNumbers[i]);
-            }
-            //выводит рандомные блоки на экран
-            for (let i = 0; i < 3; i++) {
-               allButtonsStyle[arrayRandomNumbers[i]].classList.add('activated-button');
-            }
+         // if (lvlCounter == 2) {
+         //    setInterval(() => {
+         //       lvlCounterText.innerHTML = '2';
 
-            setTimeout(() => {//убирает ранд блоки с экрана
-               for (let i = 0; i < 3; i++) {
-                  allButtonsStyle[arrayRandomNumbers[i]].classList.remove('activated-button');
-               }
+         //       for (let i = 0; i < 3; i++) {//присваивает рандомные кнопки
+         //          ButtonValue.push(arrayRandomNumbers[i]);
+         //       }
+         //выводит рандомные блоки на экран
+         //       for (let i = 0; i < 3; i++) {
+         //          allButtonsStyle[arrayRandomNumbers[i]].classList.add('activated-button');
+         //       }
 
-               startDeadeLine();
-            }, 3000);
+         //       setTimeout(() => {//убирает ранд блоки с экрана
+         //          for (let i = 0; i < 3; i++) {
+         //             allButtonsStyle[arrayRandomNumbers[i]].classList.remove('activated-button');
+         //          }
 
-         }
+         //          startDeadeLine();
+         //       }, 3000);
+         //    }, 2000);
+
+
+         // }
+         //}
+
+
+
+         console.log('buttnValue');
+         console.log(ButtonValue);
+
+
+
       }
 
 
-
-      console.log('buttnValue');
-      console.log(ButtonValue);
-
-
+      //анимация проигриша
+      //    function showMessage() {
+      //       looseTab.style = 'visibility:visible;';
+      //       audioFaile.play();
+      //    }
+      //    deadeLine.addEventListener("animationend", showMessage);
+      // }
 
    }
-
-
-   //анимация проигриша
-   //    function showMessage() {
-   //       looseTab.style = 'visibility:visible;';
-   //       audioFaile.play();
-   //    }
-   //    deadeLine.addEventListener("animationend", showMessage);
-   // }
-
 }
-

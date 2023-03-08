@@ -459,7 +459,7 @@ height: 40px;
    border-radius: 10px;
 }
 .game-buttons-container__button-green{
-   background-color: chartreuse;
+   background-color: rgb(4, 155, 24);
 }
 .game-buttons-container__button-red{
    background-color: rgb(221, 39, 15);
