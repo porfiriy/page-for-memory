@@ -370,7 +370,7 @@ padding: 2%;
 border-radius: 10px;
 width: 200px;
 height: 150px;
-margin: 80px auto;
+margin: 50px auto;
  }
  .flags-body-img{
 	width: 95%;
@@ -388,7 +388,6 @@ flex-wrap: wrap;
 align-items: center;
 justify-content: space-around;
 text-align: center;
-margin: 100px auto;
  }
  .country-button{
 font-size: 22px;
