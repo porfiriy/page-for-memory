@@ -744,9 +744,11 @@ transition: 0.2s;
 	border: 3px solid black;
 	border: 2px solid #05EFD4;
 	transition: 0.2s;
+	transition: 0.1s;
  }
  .random-game-button:active{
-	transform: scale(0.5);
+    transform: scale(0.9);
+    box-shadow: inset 2px 3px 3px rgb(255 255 255 / 25%), 0px 0px 20px 0px #05EFD4;
  }
  
  
@@ -1240,7 +1242,7 @@ text-decoration: none;
 	box-shadow: inset 2px 3px 3px rgb(255 255 255 / 25%), 0px 0px 20px 0px rgb(119 0 255);
   }
   .in_dev{
-	 background-color: rgb(43,43,43);
+	background-color: rgb(61, 61, 61);
 	 filter: blur(3px);
   }
   .in_dev_text{
