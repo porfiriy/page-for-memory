@@ -2,7 +2,9 @@
 //звук 
 let audioClick = new Audio('/page-for-memory/pages/main-page/sounds/mixkit-modern-click-box-check-1120.wav');
 let audioSwap = new Audio('');
-let audiomeme = new Audio('/page-for-memory/pages/main-page/sounds/dwayne-sound.mp3')
+let audiomeme = new Audio('/page-for-memory/pages/main-page/sounds/dwayne-sound.mp3');
+let audioNavigClick = new Audio('/page-for-memory/pages/main-page/sounds/start-13691.mp3')
+
 const list = document.querySelectorAll('.list')
 const itemHomeNavigation = document.querySelector('.list-home');
 const itemGamesNavigation = document.querySelector('.list-games');
@@ -41,6 +43,8 @@ const CloseInfoForEverydayWords = document.querySelector('.close-everyday-info-b
 const AllLevelsButton = document.querySelector('.player-level');
 const AllLevels = document.querySelector('.all-lvls-container');
 const CloseAllLevels = document.querySelector('.close-levels-container');
+const convertCurrencyBtn = document.querySelector('.convert-currency-button');
+
 function activeLink() {
   list.forEach((item) =>
     item.classList.remove('active'));
@@ -55,7 +59,7 @@ itemHomeNavigation.onclick = function () {//при нажатии на элем 
   containerAchievmentsPage.style = 'display: none;';
   containerStorePage.style = 'display: none;';
   containerAnalyticPage.style = 'display:none;';
-  audioSwap.play();
+  audioNavigClick.play();
 }
 
 //Игры
@@ -64,7 +68,7 @@ itemGamesNavigation.onclick = function () { //при нажатии на кно�
   containerAchievmentsPage.style = 'display: none;';
   containerStorePage.style = 'display: none;';
   containerAnalyticPage.style = 'display:none;';
-  audioSwap.play();
+  audioNavigClick.play();
 }
 
 //Достижения
@@ -73,7 +77,7 @@ itemAchievmentsNavigation.onclick = function () { //при нажатии на �
   containerGamesPage.style = 'display: none;'; //убирает страницу игр
   containerStorePage.style = 'display: none;';
   containerAnalyticPage.style = 'display:none;';
-  audioSwap.play();
+  audioNavigClick.play();
 }
 //поворот нижней кнопки Достижений
 /*let arrows = document.getElementsByClassName("scroll");
@@ -95,10 +99,19 @@ AchievmentsScrollButton.onclick = function scrollToTop() {
 //Уровни
 AllLevelsButton.onclick = function () { // Открыть уровни
   AllLevels.style = 'display: flex;';
+  audioClick.play();
 }
 CloseAllLevels.onclick = function () { //Закрыть уровни
-	AllLevels.style = 'display: none;';
+  AllLevels.style = 'display: none;';
+  audioClick.play();
 }
+
+convertCurrencyBtn.onclick = function () { //Кнопка конверт валюты
+  audioClick.play();
+}
+
+
+
 
 
 //Магазин
@@ -107,7 +120,7 @@ itemStoreNavigation.onclick = function () { //при нажатии на кно�
   containerGamesPage.style = 'display: none;'; //убирает страницу игр
   containerAchievmentsPage.style = 'display: none;';
   containerAnalyticPage.style = 'display:none;';
-  audioSwap.play();
+  audioNavigClick.play();
 }
 
 //Аналитика
@@ -116,7 +129,7 @@ itemAnalyticNavigation.onclick = function () {
   containerGamesPage.style = 'display: none;'; //убирает страницу игр
   containerAchievmentsPage.style = 'display: none;';
   containerStorePage.style = 'display: none;';
-  audioSwap.play();
+  audioNavigClick.play();
 }
 everydayTasksButton.onclick = function () { //при нажатии на кнопку ежедневных заданий
   containerEverydayTasks.style = 'display: block;';
@@ -130,13 +143,13 @@ everydayTasksCloseButton.onclick = function () { //при закрытии еж�
   audioClick.play();
 }
 InfoTasksButton.onclick = function () { //при нажатии на кнопку инфы ежедневных заданий
-	InfoForTasks.style = 'display: flex; z-index:6;';
-	containerGrayBackground.style = 'display: block; z-index:5;';
+  InfoForTasks.style = 'display: flex; z-index:6;';
+  containerGrayBackground.style = 'display: block; z-index:5;';
 }
 CloseInfoForTasks.onclick = function () { //при закрытии инфы ежедневных заданий
-	InfoForTasks.style = 'display: none;';
-	containerGrayBackground.style = 'display: block; z-index: 3;';
-	audioClick.play();
+  InfoForTasks.style = 'display: none;';
+  containerGrayBackground.style = 'display: block; z-index: 3;';
+  audioClick.play();
 }
 wordDayButton.onclick = function () { //при нажатии на кнопку ежедневных фактов
   wordDayContainer.style = 'display: block;';
@@ -144,20 +157,20 @@ wordDayButton.onclick = function () { //при нажатии на кнопку 
   audioClick.play();
 }
 wordDayCloseButton.onclick = function () { //при закрытии ежедневных фактов
-	containerGrayBackground.style = 'display: none;';
-	wordDayContainer.style = 'display: none;';
-	audioClick.play();
-  }
+  containerGrayBackground.style = 'display: none;';
+  wordDayContainer.style = 'display: none;';
+  audioClick.play();
+}
 InfoWordDayButton.onclick = function () { //при нажатии на кнопку инфы ежедневных фактов
-	EverydayInfoButton.style = 'display: flex; z-index:5;';
-	containerGrayBackground.style = 'display: block; z-index:4;';
-	audioClick.play();
-  }
+  EverydayInfoButton.style = 'display: flex; z-index:5;';
+  containerGrayBackground.style = 'display: block; z-index:4;';
+  audioClick.play();
+}
 CloseInfoForEverydayWords.onclick = function () { //при закрытии инфы ежедневных фактов
-	EverydayInfoButton.style = 'display: none;';
-	containerGrayBackground.style = 'display: block; z-index: 3;';
-	audioClick.play();
-  }
+  EverydayInfoButton.style = 'display: none;';
+  containerGrayBackground.style = 'display: block; z-index: 3;';
+  audioClick.play();
+}
 
 settingsButton.onclick = function () {
   audioClick.play();
