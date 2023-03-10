@@ -39,7 +39,7 @@ height: 4%;
  }
  .comeback-button {
 	display: flex;
-	color: #FEC727;
+	color: #05EFD4;
 	font-size: 44px;
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 	-webkit-tap-highlight-color: transparent;
@@ -56,7 +56,7 @@ height: 4%;
 font-weight: 700;
 font-size: 36px;
 letter-spacing: 0.10em;
-color: #FEC727;
+color: #05EFD4;
 margin: 10px auto;
  }
  .User-name{
@@ -72,7 +72,7 @@ margin: 10px auto;
 font-weight: 700;
 font-size: 24px;
 letter-spacing: 0.10em;
-color: #FEC727;
+color: #05EFD4;
 margin: 0 0 5% 0;
  }
  .analitycs-container{
@@ -89,7 +89,7 @@ margin: 0 0 5% 0;
 	align-items: center;
 	justify-content: space-around;
 	color: #f8f5f5;
-	border: 3px solid #FEC727;
+	border: 3px solid #05EFD4;
 	border-radius: 10px; 
     margin: 20px auto;
  }
@@ -116,7 +116,7 @@ margin: 0 0 5% 0;
 	width: 50%;
 	gap: 15px;
 	font-size: 46px;
-	color: #FEC727;
+	color: #05EFD4;
  }
  .main-info{
 	color: aqua;
@@ -134,7 +134,7 @@ margin: 0 0 5% 0;
 	align-items: center;
 	justify-content: space-around;
 	color: #f8f5f5;
-	border: 3px solid #FEC727;
+	border: 3px solid #05EFD4;
 	border-radius: 10px; 
     margin: 20px auto;
  }
@@ -143,7 +143,7 @@ margin: 0 0 5% 0;
 	align-items: center;
 	justify-content: space-around;
 	color: #f8f5f5;
-	border: 3px solid #FEC727;
+	border: 3px solid #05EFD4;
 	border-radius: 10px; 
     margin: 20px auto;
  }
@@ -152,7 +152,7 @@ margin: 0 0 5% 0;
 	align-items: center;
 	justify-content: space-around;
 	color: #f8f5f5;
-	border: 3px solid #FEC727;
+	border: 3px solid #05EFD4;
 	border-radius: 10px; 
     margin: 20px auto;
  }
@@ -161,7 +161,7 @@ margin: 0 0 5% 0;
 	align-items: center;
 	justify-content: space-around;
 	color: #f8f5f5;
-	border: 3px solid #FEC727;
+	border: 3px solid #05EFD4;
 	border-radius: 10px; 
     margin: 20px auto;
  }
@@ -170,7 +170,7 @@ margin: 0 0 5% 0;
 	align-items: center;
 	justify-content: space-around;
 	color: #f8f5f5;
-	border: 3px solid #FEC727;
+	border: 3px solid #05EFD4;
 	border-radius: 10px; 
     margin: 20px auto;
  }
