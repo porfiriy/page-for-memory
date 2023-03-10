@@ -29,7 +29,7 @@
 	height: 100%;
 	width: 100%;
 	font-family: 'Balsamiq Sans', cursive;
-	background: linear-gradient(165deg, #010042 0%, #4E0000 100%);
+	background: #213242;
  }
 header{
 	display: flex;
@@ -194,3 +194,12 @@ margin: 0 0 5% 0;
 	width: 70%;
 	height: 40%;
  }
+ .trophy{
+	color: #FFC632;
+ }
+ .star{
+	color: rgb(255, 255, 0);
+ }
+.plus{
+	color: #755bd5;
+}

@@ -750,7 +750,33 @@ transition: 0.2s;
     transform: scale(0.9);
     box-shadow: inset 2px 3px 3px rgb(255 255 255 / 25%), 0px 0px 20px 0px #05EFD4;
  }
- 
+ .random-game-button-in-dev{
+	width: 85%;
+	height: 60px;
+    background: linear-gradient(225deg, rgba(169, 0, 228, 0.74) 0%, rgba(0, 23, 225, 0.74) 100%);
+    box-shadow: inset 2px 3px 3px rgb(255 255 255 / 25%);
+	border-radius: 10px;
+	font-family: 'Balsamiq Sans';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 94.19%;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	letter-spacing: 0.08em;
+	margin: 20px auto;
+	color: #ffffff;
+	border: 3px solid black;
+	border: 2px solid #05EFD4;
+	transition: 0.4s;
+ }
+ .random-game-button-in-dev:hover{
+    box-shadow: inset 2px 3px 3px rgb(255 255 255 / 31%), 0px 0px 20px 0px #72727294;
+    color: #05EFD4;
+    background: #323232;
+ }
  
  
  .page-achievments-container{
