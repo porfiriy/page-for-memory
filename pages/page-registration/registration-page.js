@@ -12,4 +12,4 @@ buttonAuthorisation.onclick = function () {
 buttonRegistration.onclick = function () {
    pgAuthorisContainer.style = 'display:none;';
    pgRegistrContainer.style = 'display:flex;';
-}zzz
+}
